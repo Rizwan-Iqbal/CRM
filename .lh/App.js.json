@@ -1,0 +1,410 @@
+{
+    "sourceFile": "App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 98,
+            "patches": [
+                {
+                    "date": 1664454463276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1664454516279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,9 @@\n import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   return (\n-    // <View style={styles.container}>\n-    //   <Text>Open up App.js to start working on your app!</Text>\n-    //   <StatusBar style=\"auto\" />\n-    // </View>\n-\n+    \n     <IntroScreen />\n   );\n }\n \n"
+                },
+                {
+                    "date": 1664455744666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   return (\n-    \n+\n     <IntroScreen />\n   );\n }\n \n"
+                },
+                {
+                    "date": 1664517463401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import { StatusBar } from 'expo-status-bar';\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n+import { useFonts } from 'expo-font'\n \n export default function App() {\n   return (\n \n"
+                },
+                {
+                    "date": 1664517493408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,11 @@\n import IntroScreen from './src/components/IntroScreen';\n import { useFonts } from 'expo-font'\n \n export default function App() {\n+  const [fontsLoaded] = useFonts({\n+    'Inter-Black': require('./assets/fonts/Inter-Black.otf'),\n+  });\n   return (\n \n     <IntroScreen />\n   );\n"
+                },
+                {
+                    "date": 1664517558127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { useFonts } from 'expo-font'\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Inter-Black.otf'),\n+    'segoe-ui': require('./assets/fonts/Segoe-UI'),\n   });\n   return (\n \n     <IntroScreen />\n"
+                },
+                {
+                    "date": 1664517580627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { useFonts } from 'expo-font'\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'segoe-ui': require('./assets/fonts/Segoe-UI'),\n+    'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n   });\n   return (\n \n     <IntroScreen />\n"
+                },
+                {
+                    "date": 1664517705920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { StatusBar } from 'expo-status-bar';\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n-import { useFonts } from 'expo-font'\n+import { useFonts } from 'expo-font';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n"
+                },
+                {
+                    "date": 1664518046473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n     'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n   });\n   return (\n \n-    <IntroScreen />\n+    // <IntroScreen />\n+    <Text style={styles.txt}>sosiodsd</Text>\n   );\n }\n \n const styles = StyleSheet.create({\n@@ -19,5 +20,8 @@\n     backgroundColor: '#fff',\n     alignItems: 'center',\n     justifyContent: 'center',\n   },\n+  txt:{\n+    fontFamily: 'segoe-ui',\n+  },\n });\n"
+                },
+                {
+                    "date": 1664518062634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,12 @@\n   const [fontsLoaded] = useFonts({\n     'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n   });\n   return (\n-\n+    <View>\n     // <IntroScreen />\n-    <Text style={styles.txt}>sosiodsd</Text>\n+      <Text style={styles.txt}>sosiodsd</Text>\n+    </View>\n   );\n }\n \n const styles = StyleSheet.create({\n@@ -20,8 +21,8 @@\n     backgroundColor: '#fff',\n     alignItems: 'center',\n     justifyContent: 'center',\n   },\n-  txt:{\n+  txt: {\n     fontFamily: 'segoe-ui',\n   },\n });\n"
+                },
+                {
+                    "date": 1664518171324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n     'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n   });\n   return (\n     <View>\n-    // <IntroScreen />\n-      <Text style={styles.txt}>sosiodsd</Text>\n+\n+      <Text style={styles.txt}> sosiodsd </Text>\n     </View>\n   );\n }\n \n@@ -21,8 +21,9 @@\n     backgroundColor: '#fff',\n     alignItems: 'center',\n     justifyContent: 'center',\n   },\n+\n   txt: {\n     fontFamily: 'segoe-ui',\n   },\n });\n"
+                },
+                {
+                    "date": 1664518660068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { StatusBar } from 'expo-status-bar';\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n-import { useFonts } from 'expo-font';\n+import * as font from 'expo-font';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n"
+                },
+                {
+                    "date": 1664518722720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,15 @@\n import { StatusBar } from 'expo-status-bar';\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n-import * as font from 'expo-font';\n+import * as Font from 'expo-font';\n \n+const getFont = () => {\n+\n+}\n+\n export default function App() {\n-  const [fontsLoaded] = useFonts({\n-    'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n-  });\n+\n   return (\n     <View>\n \n       <Text style={styles.txt}> sosiodsd </Text>\n"
+                },
+                {
+                    "date": 1664518764022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import IntroScreen from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n \n const getFont = () => {\n-\n+return Font.loadAsync()\n }\n \n export default function App() {\n \n"
+                },
+                {
+                    "date": 1664518851811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n import IntroScreen from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n \n const getFont = () => {\n-return Font.loadAsync()\n+return Font.loadAsync({\n+  'segoe-ui': require('./assets/fonts/Segoe-UI.ttf');\n+})\n }\n \n export default function App() {\n \n"
+                },
+                {
+                    "date": 1664518863564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import * as Font from 'expo-font';\n \n const getFont = () => {\n return Font.loadAsync({\n-  'segoe-ui': require('./assets/fonts/Segoe-UI.ttf');\n+  'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n })\n }\n \n export default function App() {\n"
+                },
+                {
+                    "date": 1664518895329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,13 @@\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n \n-const getFont = () => {\n-return Font.loadAsync({\n+const getFont = () => Font.loadAsync({\n   'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n-})\n-}\n+});\n \n+\n export default function App() {\n \n   return (\n     <View>\n"
+                },
+                {
+                    "date": 1664518937492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n \n \n export default function App() {\n \n+  const \n   return (\n     <View>\n \n       <Text style={styles.txt}> sosiodsd </Text>\n"
+                },
+                {
+                    "date": 1664518972644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,18 @@\n import { StatusBar } from 'expo-status-bar';\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n+import { useState } from 'react';\n \n const getFont = () => Font.loadAsync({\n   'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n });\n \n \n export default function App() {\n \n-  const \n+  const [fontsLoaded , setFontsLoaded] = useState(false);\n   return (\n     <View>\n \n       <Text style={styles.txt}> sosiodsd </Text>\n"
+                },
+                {
+                    "date": 1664519019658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,14 @@\n \n export default function App() {\n \n   const [fontsLoaded , setFontsLoaded] = useState(false);\n+  if(fontsLoaded){\n+    return <IntroScreen />\n+  }\n+  else{\n+    \n+  }\n   return (\n     <View>\n \n       <Text style={styles.txt}> sosiodsd </Text>\n"
+                },
+                {
+                    "date": 1664519083355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n import { useState } from 'react';\n+import A\n \n const getFont = () => Font.loadAsync({\n   'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n });\n@@ -15,9 +16,9 @@\n   if(fontsLoaded){\n     return <IntroScreen />\n   }\n   else{\n-    \n+\n   }\n   return (\n     <View>\n \n"
+                },
+                {
+                    "date": 1664519103259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n import { useState } from 'react';\n-import A\n+import { AppLoading } from 'expo';\n \n const getFont = () => Font.loadAsync({\n   'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n });\n"
+                },
+                {
+                    "date": 1664519194899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,14 +11,19 @@\n \n \n export default function App() {\n \n-  const [fontsLoaded , setFontsLoaded] = useState(false);\n-  if(fontsLoaded){\n+  const [fontsLoaded, setFontsLoaded] = useState(false);\n+  if (fontsLoaded) {\n     return <IntroScreen />\n   }\n-  else{\n+  else {\n+    <AppLoading\n+    startA >\n \n+\n+    </AppLoading>\n+\n   }\n   return (\n     <View>\n \n"
+                },
+                {
+                    "date": 1664519213829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     return <IntroScreen />\n   }\n   else {\n     <AppLoading\n-    startA >\n+    startAsync >\n \n \n     </AppLoading>\n \n"
+                },
+                {
+                    "date": 1664519253856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,14 @@\n     return <IntroScreen />\n   }\n   else {\n     <AppLoading\n-    startAsync >\n+    startAsync = {getFont}\n+    \n+     />\n \n \n-    </AppLoading>\n+    \n \n   }\n   return (\n     <View>\n"
+                },
+                {
+                    "date": 1664519271618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,12 @@\n   }\n   else {\n     <AppLoading\n     startAsync = {getFont}\n-    \n+\n+    onFinish = ()={\n+      \n+    }\n      />\n \n \n     \n"
+                },
+                {
+                    "date": 1664519291370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n   else {\n     <AppLoading\n     startAsync = {getFont}\n \n-    onFinish = ()={\n-      \n+    onFinish = { () => }\n+\n     }\n      />\n \n \n"
+                },
+                {
+                    "date": 1664519311207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   else {\n     <AppLoading\n     startAsync = {getFont}\n \n-    onFinish = { () => }\n+    onFinish = { () => setFontsLoaded(true)}\n \n     }\n      />\n \n"
+                },
+                {
+                    "date": 1664519344043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,27 +17,27 @@\n     return <IntroScreen />\n   }\n   else {\n     <AppLoading\n-    startAsync = {getFont}\n+      startAsync={getFont}\n \n-    onFinish = { () => setFontsLoaded(true)}\n+      onFinish={() => setFontsLoaded(true)}\n+    />\n+  }\n \n-    }\n-     />\n \n \n-    \n \n-  }\n-  return (\n-    <View>\n \n-      <Text style={styles.txt}> sosiodsd </Text>\n-    </View>\n-  );\n }\n+return (\n+  <View>\n \n+    <Text style={styles.txt}> sosiodsd </Text>\n+  </View>\n+);\n+}\n+\n const styles = StyleSheet.create({\n   container: {\n     flex: 1,\n     backgroundColor: '#fff',\n"
+                },
+                {
+                    "date": 1664519383335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,15 @@\n   if (fontsLoaded) {\n     return <IntroScreen />\n   }\n   else {\n-    <AppLoading\n+    return(\n+      <AppLoading\n       startAsync={getFont}\n \n       onFinish={() => setFontsLoaded(true)}\n     />\n+    )\n   }\n \n \n \n"
+                },
+                {
+                    "date": 1664519392452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,15 +16,15 @@\n   if (fontsLoaded) {\n     return <IntroScreen />\n   }\n   else {\n-    return(\n+    return (\n       <AppLoading\n-      startAsync={getFont}\n+        startAsync={getFont}\n \n-      onFinish={() => setFontsLoaded(true)}\n-    />\n-    )\n+        onFinish={() => setFontsLoaded(true)}\n+      />\n+    );\n   }\n \n \n \n"
+                },
+                {
+                    "date": 1664519397812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         startAsync={getFont}\n \n         onFinish={() => setFontsLoaded(true)}\n       />\n-    );\n+    )\n   }\n \n \n \n"
+                },
+                {
+                    "date": 1664519425043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,13 +25,8 @@\n       />\n     )\n   }\n \n-\n-\n-\n-\n-}\n return (\n   <View>\n \n     <Text style={styles.txt}> sosiodsd </Text>\n"
+                },
+                {
+                    "date": 1664519479613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,14 +25,8 @@\n       />\n     )\n   }\n \n-return (\n-  <View>\n-\n-    <Text style={styles.txt}> sosiodsd </Text>\n-  </View>\n-);\n }\n \n const styles = StyleSheet.create({\n   container: {\n@@ -41,8 +35,5 @@\n     alignItems: 'center',\n     justifyContent: 'center',\n   },\n \n-  txt: {\n-    fontFamily: 'segoe-ui',\n-  },\n });\n"
+                },
+                {
+                    "date": 1664519671787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import { StatusBar } from 'expo-status-bar';\n import { StyleSheet, Text, View } from 'react-native';\n import IntroScreen from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n import { useState } from 'react';\n@@ -19,10 +18,9 @@\n   else {\n     return (\n       <AppLoading\n         startAsync={getFont}\n-\n-        onFinish={() => setFontsLoaded(true)}\n+        onFinish = {() => setFontsLoaded(true)}\n       />\n     )\n   }\n \n"
+                },
+                {
+                    "date": 1664520032848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import * as Font from 'expo-font';\n import { useState } from 'react';\n import { AppLoading } from 'expo';\n \n-const getFont = () => Font.loadAsync({\n+const getFonts = () => Font.loadAsync({\n   'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n });\n \n \n@@ -17,9 +17,9 @@\n   }\n   else {\n     return (\n       <AppLoading\n-        startAsync={getFont}\n+        startAsync={getFonts}\n         onFinish = {() => setFontsLoaded(true)}\n       />\n     )\n   }\n"
+                },
+                {
+                    "date": 1664520080594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         onFinish = {() => setFontsLoaded(true)}\n       />\n     )\n   }\n-\n+ \n }\n \n const styles = StyleSheet.create({\n   container: {\n"
+                },
+                {
+                    "date": 1664520169325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,17 +14,17 @@\n   const [fontsLoaded, setFontsLoaded] = useState(false);\n   if (fontsLoaded) {\n     return <IntroScreen />\n   }\n-  else {\n+  else { \n     return (\n       <AppLoading\n         startAsync={getFonts}\n         onFinish = {() => setFontsLoaded(true)}\n       />\n     )\n   }\n- \n+  \n }\n \n const styles = StyleSheet.create({\n   container: {\n"
+                },
+                {
+                    "date": 1664520200080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,19 +12,22 @@\n export default function App() {\n \n   const [fontsLoaded, setFontsLoaded] = useState(false);\n   if (fontsLoaded) {\n-    return <IntroScreen />\n+    return\n+    (\n+      <IntroScreen />\n+    );\n   }\n-  else { \n+  else {\n     return (\n       <AppLoading\n         startAsync={getFonts}\n-        onFinish = {() => setFontsLoaded(true)}\n+        onFinish={() => setFontsLoaded(true)}\n       />\n     )\n   }\n-  \n+\n }\n \n const styles = StyleSheet.create({\n   container: {\n"
+                },
+                {
+                    "date": 1664520210011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,9 @@\n export default function App() {\n \n   const [fontsLoaded, setFontsLoaded] = useState(false);\n   if (fontsLoaded) {\n-    return\n-    (\n+    return (\n       <IntroScreen />\n     );\n   }\n   else {\n"
+                },
+                {
+                    "date": 1664520217486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,9 @@\n   if (fontsLoaded) {\n     return (\n       <IntroScreen />\n     );\n-  }\n-  else {\n+  } else {\n     return (\n       <AppLoading\n         startAsync={getFonts}\n         onFinish={() => setFontsLoaded(true)}\n"
+                },
+                {
+                    "date": 1664520276713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     );\n   } else {\n     return (\n       <AppLoading\n-        startAsync={getFonts}\n+        startAsync = {getFonts}\n         onFinish={() => setFontsLoaded(true)}\n       />\n     )\n   }\n"
+                },
+                {
+                    "date": 1664520282081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   } else {\n     return (\n       <AppLoading\n         startAsync = {getFonts}\n-        onFinish={() => setFontsLoaded(true)}\n+        onFinish = {() => setFontsLoaded(true)}\n       />\n     )\n   }\n \n"
+                },
+                {
+                    "date": 1664520289455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   } else {\n     return (\n       <AppLoading\n         startAsync = {getFonts}\n-        onFinish = {() => setFontsLoaded(true)}\n+        onFinish = {()=> setFontsLoaded(true)}\n       />\n     )\n   }\n \n"
+                },
+                {
+                    "date": 1664520544146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { StyleSheet, Text, View } from 'react-native';\n-import IntroScreen from './src/components/IntroScreen';\n+import {IntroScreen} from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n import { useState } from 'react';\n import { AppLoading } from 'expo';\n \n"
+                },
+                {
+                    "date": 1664520685571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { StyleSheet, Text, View } from 'react-native';\n-import {IntroScreen} from './src/components/IntroScreen';\n+import { IntroScreen } from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n import { useState } from 'react';\n import { AppLoading } from 'expo';\n \n"
+                },
+                {
+                    "date": 1664520928462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { StyleSheet, Text, View } from 'react-native';\n-import { IntroScreen } from './src/components/IntroScreen';\n+import  IntroScreen  from './src/components/IntroScreen';\n import * as Font from 'expo-font';\n import { useState } from 'react';\n import { AppLoading } from 'expo';\n \n"
+                },
+                {
+                    "date": 1664520984981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,22 +10,24 @@\n \n \n export default function App() {\n \n-  const [fontsLoaded, setFontsLoaded] = useState(false);\n-  if (fontsLoaded) {\n-    return (\n-      <IntroScreen />\n-    );\n-  } else {\n-    return (\n-      <AppLoading\n-        startAsync = {getFonts}\n-        onFinish = {()=> setFontsLoaded(true)}\n-      />\n-    )\n-  }\n+  return <IntroScreen />\n \n+  // const [fontsLoaded, setFontsLoaded] = useState(false);\n+  // if (fontsLoaded) {\n+  //   return (\n+  //     <IntroScreen />\n+  //   );\n+  // } else {\n+  //   return (\n+  //     <AppLoading\n+  //       startAsync = {getFonts}\n+  //       onFinish = {()=> setFontsLoaded(true)}\n+  //     />\n+  //   )\n+  // }\n+\n }\n \n const styles = StyleSheet.create({\n   container: {\n"
+                },
+                {
+                    "date": 1664521065279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,24 +10,22 @@\n \n \n export default function App() {\n \n-  return <IntroScreen />\n+  const [fontsLoaded, setFontsLoaded] = useState(false);\n+  if (fontsLoaded) {\n+    return (\n+      <IntroScreen />\n+    );\n+  } else {\n+    return (\n+      <AppLoading\n+        startAsync = {getFonts}\n+        onFinish = {()=> setFontsLoaded(true)}\n+      />\n+    )\n+  }\n \n-  // const [fontsLoaded, setFontsLoaded] = useState(false);\n-  // if (fontsLoaded) {\n-  //   return (\n-  //     <IntroScreen />\n-  //   );\n-  // } else {\n-  //   return (\n-  //     <AppLoading\n-  //       startAsync = {getFonts}\n-  //       onFinish = {()=> setFontsLoaded(true)}\n-  //     />\n-  //   )\n-  // }\n-\n }\n \n const styles = StyleSheet.create({\n   container: {\n"
+                },
+                {
+                    "date": 1664522448951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,38 +1,42 @@\n-import { StyleSheet, Text, View } from 'react-native';\n-import  IntroScreen  from './src/components/IntroScreen';\n-import * as Font from 'expo-font';\n-import { useState } from 'react';\n-import { AppLoading } from 'expo';\n+import { useEffect, useCallback } from 'react';\n+import { Text, View, StyleSheet } from 'react-native';\n+import { useFonts } from 'expo-font';\n+import * as SplashScreen from 'expo-splash-screen';\n \n-const getFonts = () => Font.loadAsync({\n-  'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n-});\n+export default function App() {\n+  const [fontsLoaded] = useFonts({\n+    'Inter-Black': require('./assets/fonts/Inter-Black.otf'),\n+  });\n \n+  useEffect(() => {\n+    async function prepare() {\n+      await SplashScreen.preventAutoHideAsync();\n+    }\n+    prepare();\n+  }, []);\n \n-export default function App() {\n+  const onLayoutRootView = useCallback(async () => {\n+    if (fontsLoaded) {\n+      await SplashScreen.hideAsync();\n+    }\n+  }, [fontsLoaded]);\n \n-  const [fontsLoaded, setFontsLoaded] = useState(false);\n-  if (fontsLoaded) {\n-    return (\n-      <IntroScreen />\n-    );\n-  } else {\n-    return (\n-      <AppLoading\n-        startAsync = {getFonts}\n-        onFinish = {()=> setFontsLoaded(true)}\n-      />\n-    )\n+  if (!fontsLoaded) {\n+    return null;\n   }\n \n+  return (\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n+      <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n+      <Text style={{ fontSize: 30 }}>Platform Default</Text>\n+    </View>\n+  );\n }\n \n const styles = StyleSheet.create({\n   container: {\n     flex: 1,\n-    backgroundColor: '#fff',\n+    justifyContent: 'center',\n     alignItems: 'center',\n-    justifyContent: 'center',\n   },\n-\n });\n"
+                },
+                {
+                    "date": 1664522493478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import * as SplashScreen from 'expo-splash-screen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Inter-Black.otf'),\n+    'Inter-Black': require('./assets/fonts/Segoe-UI.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664522659250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,30 +1,30 @@\n import { useEffect, useCallback } from 'react';\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n-import * as SplashScreen from 'expo-splash-screen';\n+// import * as SplashScreen from 'expo-splash-screen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Segoe-UI.ttf'),\n   });\n \n-  useEffect(() => {\n-    async function prepare() {\n-      await SplashScreen.preventAutoHideAsync();\n-    }\n-    prepare();\n-  }, []);\n+  // useEffect(() => {\n+  //   async function prepare() {\n+  //     await SplashScreen.preventAutoHideAsync();\n+  //   }\n+  //   prepare();\n+  // }, []);\n \n-  const onLayoutRootView = useCallback(async () => {\n-    if (fontsLoaded) {\n-      await SplashScreen.hideAsync();\n-    }\n-  }, [fontsLoaded]);\n+  // const onLayoutRootView = useCallback(async () => {\n+  //   if (fontsLoaded) {\n+  //     await SplashScreen.hideAsync();\n+  //   }\n+  // }, [fontsLoaded]);\n \n-  if (!fontsLoaded) {\n-    return null;\n-  }\n+  // if (!fontsLoaded) {\n+  //   return null;\n+  // }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n       <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n"
+                },
+                {
+                    "date": 1664522687893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   //   return null;\n   // }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n+    <View style={styles.container}>\n       <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n       <Text style={{ fontSize: 30 }}>Platform Default</Text>\n     </View>\n   );\n"
+                },
+                {
+                    "date": 1664522741013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { useEffect, useCallback } from 'react';\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n-// import * as SplashScreen from 'expo-splash-screen';\n+import * as SplashScreen from 'expo-splash-screen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Segoe-UI.ttf'),\n"
+                },
+                {
+                    "date": 1664522784754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,27 +7,27 @@\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Segoe-UI.ttf'),\n   });\n \n-  // useEffect(() => {\n-  //   async function prepare() {\n-  //     await SplashScreen.preventAutoHideAsync();\n-  //   }\n-  //   prepare();\n-  // }, []);\n+  useEffect(() => {\n+    async function prepare() {\n+      await SplashScreen.preventAutoHideAsync();\n+    }\n+    prepare();\n+  }, []);\n \n-  // const onLayoutRootView = useCallback(async () => {\n-  //   if (fontsLoaded) {\n-  //     await SplashScreen.hideAsync();\n-  //   }\n-  // }, [fontsLoaded]);\n+  const onLayoutRootView = useCallback(async () => {\n+    if (fontsLoaded) {\n+      await SplashScreen.hideAsync();\n+    }\n+  }, [fontsLoaded]);\n \n-  // if (!fontsLoaded) {\n-  //   return null;\n-  // }\n+  if (!fontsLoaded) {\n+    return null;\n+  }\n \n   return (\n-    <View style={styles.container}>\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n       <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n       <Text style={{ fontSize: 30 }}>Platform Default</Text>\n     </View>\n   );\n"
+                },
+                {
+                    "date": 1664523017019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import * as SplashScreen from 'expo-splash-screen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Segoe-UI.ttf'),\n+    'Inter-Black': require('./assets/fonts/Segoe-UI-Bold.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664523125877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import * as SplashScreen from 'expo-splash-screen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Segoe-UI-Bold.ttf'),\n+    'Inter-Black': require('./assets/fonts/Segoe-UI-Italic.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664523168857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import * as SplashScreen from 'expo-splash-screen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Segoe-UI-Italic.ttf'),\n+    'Inter-Black': require('./assets/fonts/Segoe-UI-Bold.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664523204836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n-      <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n+      <Text style={{  fontSize: 30 }}>Inter Black</Text>\n       <Text style={{ fontSize: 30 }}>Platform Default</Text>\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1664523317267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import * as SplashScreen from 'expo-splash-screen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Segoe-UI-Bold.ttf'),\n+    'Inter-Black': require('./assets/fonts/Poppins-Regular.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664523354810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n-      <Text style={{  fontSize: 30 }}>Inter Black</Text>\n+      <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n       <Text style={{ fontSize: 30 }}>Platform Default</Text>\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1664523384173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,14 +7,14 @@\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Poppins-Regular.ttf'),\n   });\n \n-  useEffect(() => {\n-    async function prepare() {\n-      await SplashScreen.preventAutoHideAsync();\n-    }\n-    prepare();\n-  }, []);\n+  // useEffect(() => {\n+  //   async function prepare() {\n+  //     await SplashScreen.preventAutoHideAsync();\n+  //   }\n+  //   prepare();\n+  // }, []);\n \n   const onLayoutRootView = useCallback(async () => {\n     if (fontsLoaded) {\n       await SplashScreen.hideAsync();\n"
+                },
+                {
+                    "date": 1664523469883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,20 +14,20 @@\n   //   }\n   //   prepare();\n   // }, []);\n \n-  const onLayoutRootView = useCallback(async () => {\n-    if (fontsLoaded) {\n-      await SplashScreen.hideAsync();\n-    }\n-  }, [fontsLoaded]);\n+  // const onLayoutRootView = useCallback(async () => {\n+  //   if (fontsLoaded) {\n+  //     await SplashScreen.hideAsync();\n+  //   }\n+  // }, [fontsLoaded]);\n \n-  if (!fontsLoaded) {\n-    return null;\n-  }\n+  // if (!fontsLoaded) {\n+  //   return null;\n+  // }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n+    <View style={styles.container} >\n       <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n       <Text style={{ fontSize: 30 }}>Platform Default</Text>\n     </View>\n   );\n"
+                },
+                {
+                    "date": 1664523539969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,27 +7,27 @@\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Poppins-Regular.ttf'),\n   });\n \n-  // useEffect(() => {\n-  //   async function prepare() {\n-  //     await SplashScreen.preventAutoHideAsync();\n-  //   }\n-  //   prepare();\n-  // }, []);\n+  useEffect(() => {\n+    async function prepare() {\n+      await SplashScreen.preventAutoHideAsync();\n+    }\n+    prepare();\n+  }, []);\n \n-  // const onLayoutRootView = useCallback(async () => {\n-  //   if (fontsLoaded) {\n-  //     await SplashScreen.hideAsync();\n-  //   }\n-  // }, [fontsLoaded]);\n+  const onLayoutRootView = useCallback(async () => {\n+    if (fontsLoaded) {\n+      await SplashScreen.hideAsync();\n+    }\n+  }, [fontsLoaded]);\n \n-  // if (!fontsLoaded) {\n-  //   return null;\n-  // }\n+  if (!fontsLoaded) {\n+    return null;\n+  }\n \n   return (\n-    <View style={styles.container} >\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n       <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n       <Text style={{ fontSize: 30 }}>Platform Default</Text>\n     </View>\n   );\n"
+                },
+                {
+                    "date": 1664523686422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { useEffect, useCallback } from 'react';\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n import * as SplashScreen from 'expo-splash-screen';\n+import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Poppins-Regular.ttf'),\n@@ -26,10 +27,12 @@\n   }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n-      <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n-      <Text style={{ fontSize: 30 }}>Platform Default</Text>\n+      {/* <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n+      <Text style={{ fontSize: 30 }}>Platform Default</Text> */}\n+\n+      <IntroScreen />\n     </View>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1664523707489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Poppins-Regular.ttf'),\n+    'Inter-Black': require('./assets/fonts/Poppins-Bold.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664523755232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Poppins-Bold.ttf'),\n+    'Inter-Black': require('./assets/fonts/Poppins-Italic.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664523806481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,14 +26,9 @@\n     return null;\n   }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n-      {/* <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n-      <Text style={{ fontSize: 30 }}>Platform Default</Text> */}\n-\n       <IntroScreen />\n-    </View>\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664523910888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,14 @@\n     return null;\n   }\n \n   return (\n+    <View>\n+      {/* <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n+      <Text style={{ fontSize: 30 }}>Platform Default</Text> */}\n+\n       <IntroScreen />\n+    </View>\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664523987793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     return null;\n   }\n \n   return (\n-    <View>\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n       {/* <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n       <Text style={{ fontSize: 30 }}>Platform Default</Text> */}\n \n       <IntroScreen />\n"
+                },
+                {
+                    "date": 1664524031632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Poppins-Italic.ttf'),\n+    'Inter-Black': require('./assets/fonts/Poppins-ExtraBoldItalic.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664524060660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Poppins-ExtraBoldItalic.ttf'),\n+    'Inter-Black': require('./assets/fonts/Poppins-Italic.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664524072384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,12 @@\n import { useEffect, useCallback } from 'react';\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n import * as SplashScreen from 'expo-splash-screen';\n-import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Poppins-Italic.ttf'),\n+    'Inter-Black': require('./assets/fonts/Poppins-Regular.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n@@ -27,12 +26,10 @@\n   }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n-      {/* <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n-      <Text style={{ fontSize: 30 }}>Platform Default</Text> */}\n-\n-      <IntroScreen />\n+      <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n+      <Text style={{ fontSize: 30 }}>Platform Default</Text>\n     </View>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1664524358889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { useEffect, useCallback } from 'react';\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n import * as SplashScreen from 'expo-splash-screen';\n+import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Poppins-Regular.ttf'),\n@@ -26,10 +27,11 @@\n   }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n-      <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n-      <Text style={{ fontSize: 30 }}>Platform Default</Text>\n+      {/* <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n+      <Text style={{ fontSize: 30 }}>Platform Default</Text> */}\n+      <IntroScreen />\n     </View>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1664524393154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Poppins-Regular.ttf'),\n+    'Inter-Black': require('./assets/fonts/Poppins-ExtraBoldItalic.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1664525213756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import { useEffect, useCallback } from 'react';\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n import * as SplashScreen from 'expo-splash-screen';\n-import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Poppins-ExtraBoldItalic.ttf'),\n@@ -27,11 +26,10 @@\n   }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n-      {/* <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n-      <Text style={{ fontSize: 30 }}>Platform Default</Text> */}\n-      <IntroScreen />\n+      <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n+      <Text style={{ fontSize: 30 }}>Platform Default</Text>\n     </View>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1664525582822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { useEffect, useCallback } from 'react';\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n-import * as SplashScreen from 'expo-splash-screen';\n+import * as SplashScreen from 'expo-splash-screen'; \n+import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'Inter-Black': require('./assets/fonts/Poppins-ExtraBoldItalic.ttf'),\n@@ -28,8 +29,10 @@\n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n       <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n       <Text style={{ fontSize: 30 }}>Platform Default</Text>\n+\n+      <IntroScreen />\n     </View>\n   );\n }\n \n"
+                },
+                {
+                    "date": 1664528703614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n import { useEffect, useCallback } from 'react';\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n-import * as SplashScreen from 'expo-splash-screen'; \n+import * as SplashScreen from 'expo-splash-screen';\n import IntroScreen from './src/components/IntroScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n-    'Inter-Black': require('./assets/fonts/Poppins-ExtraBoldItalic.ttf'),\n+    'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\n   });\n \n   useEffect(() => {\n     async function prepare() {\n@@ -27,11 +27,8 @@\n   }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n-      <Text style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Inter Black</Text>\n-      <Text style={{ fontSize: 30 }}>Platform Default</Text>\n-\n       <IntroScreen />\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1664528821073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,17 +26,10 @@\n     return null;\n   }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n+    <View>\n       <IntroScreen />\n     </View>\n   );\n }\n \n-const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    justifyContent: 'center',\n-    alignItems: 'center',\n-  },\n-});\n"
+                },
+                {
+                    "date": 1664528859552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     return null;\n   }\n \n   return (\n-    <View>\n+    <View onLayout={onLayoutRootView}>\n       <IntroScreen />\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1664528873577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     return null;\n   }\n \n   return (\n-    <View onLayout={onLayoutRootView}>\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n       <IntroScreen />\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1664528882924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,4 +32,11 @@\n     </View>\n   );\n }\n \n+const styles = StyleSheet.create({\n+  container: {\n+    flex: 1,\n+    justifyContent: 'center',\n+    alignItems: 'center',\n+  },\n+});\n"
+                },
+                {
+                    "date": 1664528982985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,6 +37,7 @@\n   container: {\n     flex: 1,\n     justifyContent: 'center',\n     alignItems: 'center',\n+    \n   },\n });\n"
+                },
+                {
+                    "date": 1664529006546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,11 @@\n     return null;\n   }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n+    \n       <IntroScreen />\n-    </View>\n+    \n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664529015783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,12 +32,5 @@\n     \n   );\n }\n \n-const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    justifyContent: 'center',\n-    alignItems: 'center',\n-    \n-  },\n-});\n+\n"
+                },
+                {
+                    "date": 1664529075811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,18 @@\n     return null;\n   }\n \n   return (\n-    \n+    <View style={styles.container} onLayout={onLayoutRootView}>\n       <IntroScreen />\n-    \n+    </View>\n   );\n }\n \n-\n+const styles = StyleSheet.create({\n+  container: {\n+    flex: 1,\n+    justifyContent: 'center',\n+    alignItems: 'center',\n+    \n+  },\n+});\n"
+                },
+                {
+                    "date": 1664529164285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n const styles = StyleSheet.create({\n   container: {\n-    flex: 1,\n+    // flex: 1,\n     justifyContent: 'center',\n     alignItems: 'center',\n     \n   },\n"
+                },
+                {
+                    "date": 1664529171262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n const styles = StyleSheet.create({\n   container: {\n-    // flex: 1,\n+    flex: 1,\n     justifyContent: 'center',\n     alignItems: 'center',\n     \n   },\n"
+                },
+                {
+                    "date": 1664529184941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,12 +32,12 @@\n     </View>\n   );\n }\n \n-const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    justifyContent: 'center',\n-    alignItems: 'center',\n+// const styles = StyleSheet.create({\n+//   container: {\n+//     flex: 1,\n+//     justifyContent: 'center',\n+//     alignItems: 'center',\n     \n-  },\n-});\n+//   },\n+// });\n"
+                },
+                {
+                    "date": 1664529194583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     return null;\n   }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n+    <View style={} onLayout={onLayoutRootView}>\n       <IntroScreen />\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1664529202701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     return null;\n   }\n \n   return (\n-    <View style={} onLayout={onLayoutRootView}>\n+    <View  onLayout={onLayoutRootView}>\n       <IntroScreen />\n     </View>\n   );\n }\n"
+                },
+                {
+                    "date": 1664529213465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,18 +26,18 @@\n     return null;\n   }\n \n   return (\n-    <View  onLayout={onLayoutRootView}>\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n       <IntroScreen />\n     </View>\n   );\n }\n \n-// const styles = StyleSheet.create({\n-//   container: {\n-//     flex: 1,\n-//     justifyContent: 'center',\n-//     alignItems: 'center',\n+const styles = StyleSheet.create({\n+  container: {\n+    flex: 1,\n+    justifyContent: 'center',\n+    alignItems: 'center',\n     \n-//   },\n-// });\n+  },\n+});\n"
+                },
+                {
+                    "date": 1664529238254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,7 +37,9 @@\n   container: {\n     flex: 1,\n     justifyContent: 'center',\n     alignItems: 'center',\n+    margin: 0,\n+    padding:  0\n     \n   },\n });\n"
+                },
+                {
+                    "date": 1664529252134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   container: {\n     flex: 1,\n     justifyContent: 'center',\n     alignItems: 'center',\n-    margin: 0,\n-    padding:  0\n+    margin: '0',\n+    padding:  '0',\n     \n   },\n });\n"
+                },
+                {
+                    "date": 1664529264081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n   container: {\n     flex: 1,\n     justifyContent: 'center',\n     alignItems: 'center',\n-    margin: '0',\n-    padding:  '0',\n+    margin: 0,\n+    padding:  ,\n     \n   },\n });\n"
+                },
+                {
+                    "date": 1664529270840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,8 @@\n     flex: 1,\n     justifyContent: 'center',\n     alignItems: 'center',\n     margin: 0,\n-    padding:  ,\n+    padding: 0,\n     \n   },\n });\n"
+                },
+                {
+                    "date": 1664529318743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { useEffect, useCallback } from 'react';\n-import { Text, View, StyleSheet } from 'react-native';\n+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';\n import { useFonts } from 'expo-font';\n import * as SplashScreen from 'expo-splash-screen';\n import IntroScreen from './src/components/IntroScreen';\n \n@@ -26,11 +26,11 @@\n     return null;\n   }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n+    <TouchableOpacity  onLayout={onLayoutRootView}>\n       <IntroScreen />\n-    </View>\n+    </TouchableOpacity>\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664529349725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     return null;\n   }\n \n   return (\n-    <TouchableOpacity  onLayout={onLayoutRootView}>\n+    <TouchableOpacity >\n       <IntroScreen />\n     </TouchableOpacity>\n   );\n }\n"
+                },
+                {
+                    "date": 1664529452868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { useEffect, useCallback } from 'react';\n-import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';\n+import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n import * as SplashScreen from 'expo-splash-screen';\n import IntroScreen from './src/components/IntroScreen';\n \n@@ -26,11 +26,11 @@\n     return null;\n   }\n \n   return (\n-    <TouchableOpacity >\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n       <IntroScreen />\n-    </TouchableOpacity>\n+    </View>\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                }
+            ],
+            "date": 1664454463276,
+            "name": "Commit-0",
+            "content": "import { StatusBar } from 'expo-status-bar';\nimport { StyleSheet, Text, View } from 'react-native';\nimport IntroScreen from './src/components/IntroScreen';\n\nexport default function App() {\n  return (\n    // <View style={styles.container}>\n    //   <Text>Open up App.js to start working on your app!</Text>\n    //   <StatusBar style=\"auto\" />\n    // </View>\n\n    <IntroScreen />\n  );\n}\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n    backgroundColor: '#fff',\n    alignItems: 'center',\n    justifyContent: 'center',\n  },\n});\n"
+        }
+    ]
+}

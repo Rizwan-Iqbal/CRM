@@ -1,0 +1,162 @@
+{
+    "sourceFile": "src/components/IntroScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 36,
+            "patches": [
+                {
+                    "date": 1664454200921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1664454225799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const IntroScreen = () => {\r\n   return (\r\n     <View>\r\n-      <Text>IntroScreen</Text>\r\n+      <Text>Law CRM</Text>\r\n     </View>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664454309904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,29 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n \r\n const IntroScreen = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Law CRM</Text>\r\n-    </View>\r\n-  )\r\n+    return (\r\n+        <View style={styles.container}>\r\n+            <Text style={styles.introTitle}>Law CRM</Text>\r\n+        </View>\r\n+    )\r\n }\r\n \r\n+\r\n+const styles = StyleSheet.create({\r\n+    container: {\r\n+        flex: 1,\r\n+        backgroundColor: '#fff',\r\n+        alignItems: 'center',\r\n+        justifyContent: 'center',\r\n+    },\r\n+    \r\n+    introTitle: {\r\n+\r\n+    }\r\n+\r\n+});\r\n+\r\n+\r\n+\r\n export default IntroScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664454388288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { View, Text } from 'react-native'\r\n+import { View, Text, StyleSheet } from 'react-native'\r\n import React from 'react'\r\n \r\n const IntroScreen = () => {\r\n     return (\r\n@@ -16,11 +16,13 @@\n         backgroundColor: '#fff',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n     },\r\n-    \r\n+\r\n     introTitle: {\r\n-\r\n+        fontSize: 65,\r\n+        fontWeight: 'bold',\r\n+        fontFamily: ''\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664454408501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: ''\r\n+        fontFamily: 'Segoe UI',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664454591022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n const styles = StyleSheet.create({\r\n     container: {\r\n         flex: 1,\r\n-        backgroundColor: '#fff',\r\n+        backgroundColor: '#',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1664454602773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n const styles = StyleSheet.create({\r\n     container: {\r\n         flex: 1,\r\n-        backgroundColor: '#',\r\n+        backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1664454630555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n         fontFamily: 'Segoe UI',\r\n+        color: 'white',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664454800510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n const styles = StyleSheet.create({\r\n     container: {\r\n         flex: 1,\r\n-        backgroundColor: '#000000',\r\n+        // backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1664454808152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n         fontFamily: 'Segoe UI',\r\n-        color: 'white',\r\n+        // color: 'white',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664455252472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n         fontFamily: 'Segoe UI',\r\n-        // color: 'white',\r\n+        // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664458351957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: 'Segoe UI',\r\n+        fontFamily: 'Segoe Ui Font',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664458363485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n const styles = StyleSheet.create({\r\n     container: {\r\n         flex: 1,\r\n-        // backgroundColor: '#000000',\r\n+        // backgroundColor: '#000000',r\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1664458426906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: 'Segoe Ui Font',\r\n+        fontFamily: 'Segoe UI Font',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664458554633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: 'Segoe UI Font',\r\n+        fontFamily: 'Segoe-UI-Font',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664517621054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: 'Segoe-UI-Font',\r\n+        fontFamily: 'segoe-ui',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664517734712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n-import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react'\r\n+import { View, Text, StyleSheet } from 'react-native';\r\n+import React from 'react';\r\n+import { useFonts } from 'expo-font';\r\n \r\n const IntroScreen = () => {\r\n     return (\r\n         <View style={styles.container}>\r\n"
+                },
+                {
+                    "date": 1664517758992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,11 @@\n import React from 'react';\r\n import { useFonts } from 'expo-font';\r\n \r\n const IntroScreen = () => {\r\n+    const [fontsLoaded] = useFonts({\r\n+        'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n+      });\r\n     return (\r\n         <View style={styles.container}>\r\n             <Text style={styles.introTitle}>Law CRM</Text>\r\n         </View>\r\n"
+                },
+                {
+                    "date": 1664517947860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { useFonts } from 'expo-font';\r\n \r\n const IntroScreen = () => {\r\n     const [fontsLoaded] = useFonts({\r\n-        'segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n+        'segoe-ui': require('./././fonts/Segoe-UI.ttf'),\r\n       });\r\n     return (\r\n         <View style={styles.container}>\r\n             <Text style={styles.introTitle}>Law CRM</Text>\r\n"
+                },
+                {
+                    "date": 1664517978450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,8 @@\n-import { View, Text, StyleSheet } from 'react-native';\r\n-import React from 'react';\r\n-import { useFonts } from 'expo-font';\r\n+import { View, Text, StyleSheet } from 'react-native'\r\n+import React from 'react'\r\n \r\n const IntroScreen = () => {\r\n-    const [fontsLoaded] = useFonts({\r\n-        'segoe-ui': require('./././fonts/Segoe-UI.ttf'),\r\n-      });\r\n     return (\r\n         <View style={styles.container}>\r\n             <Text style={styles.introTitle}>Law CRM</Text>\r\n         </View>\r\n@@ -24,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: 'segoe-ui',\r\n+        fontFamily: 'Segoe-UI-Font',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664519588588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: 'Segoe-UI-Font',\r\n+        fontFamily: 'segoe-ui',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664519745877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,7 +26,5 @@\n     }\r\n \r\n });\r\n \r\n-\r\n-\r\n export default IntroScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664523662621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: 'segoe-ui',\r\n+        fontFamily: 'Inter-Black',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664524338065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react'\r\n+import React from 'react';\r\n+import { useFonts } from 'expo-font';\r\n+import * as SplashScreen from 'expo-splash-screen';\r\n \r\n const IntroScreen = () => {\r\n     return (\r\n         <View style={styles.container}>\r\n"
+                },
+                {
+                    "date": 1664524789603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n-        fontWeight: 'bold',\r\n-        fontFamily: 'Inter-Black',\r\n+        // fontWeight: 'bold',\r\n+        fontFamily: 'Poppins-ExtraBoldItalic',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664525188962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,6 @@\n import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react';\r\n-import { useFonts } from 'expo-font';\r\n-import * as SplashScreen from 'expo-splash-screen';\r\n+import React from 'react'\r\n \r\n const IntroScreen = () => {\r\n     return (\r\n         <View style={styles.container}>\r\n@@ -21,12 +19,14 @@\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n-        // fontWeight: 'bold',\r\n-        fontFamily: 'Poppins-ExtraBoldItalic',\r\n+        fontWeight: 'bold',\r\n+        fontFamily: 'Segoe-UI-Font',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n \r\n+\r\n+\r\n export default IntroScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664525500604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontWeight: 'bold',\r\n-        fontFamily: 'Segoe-UI-Font',\r\n+        fontFamily: 'Inter-Black',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664525643665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,24 +9,24 @@\n     )\r\n }\r\n \r\n \r\n-const styles = StyleSheet.create({\r\n-    container: {\r\n-        flex: 1,\r\n-        // backgroundColor: '#000000',r\r\n-        alignItems: 'center',\r\n-        justifyContent: 'center',\r\n-    },\r\n+// const styles = StyleSheet.create({\r\n+//     container: {\r\n+//         flex: 1,\r\n+//         // backgroundColor: '#000000',r\r\n+//         alignItems: 'center',\r\n+//         justifyContent: 'center',\r\n+//     },\r\n \r\n-    introTitle: {\r\n-        fontSize: 65,\r\n-        fontWeight: 'bold',\r\n-        fontFamily: 'Inter-Black',\r\n-        // color: 'white',react-native -v\r\n-    }\r\n+//     introTitle: {\r\n+//         fontSize: 65,\r\n+//         fontWeight: 'bold',\r\n+//         fontFamily: 'Inter-Black',\r\n+//         // color: 'white',react-native -v\r\n+//     }\r\n \r\n-});\r\n+// });\r\n \r\n \r\n \r\n export default IntroScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664525660172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,10 @@\n import React from 'react'\r\n \r\n const IntroScreen = () => {\r\n     return (\r\n-        <View style={styles.container}>\r\n-            <Text style={styles.introTitle}>Law CRM</Text>\r\n+        <View >\r\n+            <Text >Law CRM</Text>\r\n         </View>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664525691697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const IntroScreen = () => {\r\n     return (\r\n         <View >\r\n-            <Text >Law CRM</Text>\r\n+            <Text {{ fontFamily: 'Inter-Black', fontSize: 30 }}>Law CRM</Text>\r\n         </View>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664525698861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const IntroScreen = () => {\r\n     return (\r\n         <View >\r\n-            <Text {{ fontFamily: 'Inter-Black', fontSize: 30 }}>Law CRM</Text>\r\n+            <Text >Law CRM</Text>\r\n         </View>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664525715254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const IntroScreen = () => {\r\n     return (\r\n         <View >\r\n-            <Text >Law CRM</Text>\r\n+            <Text  style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Law CRM</Text>\r\n         </View>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664525753545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,31 +2,31 @@\n import React from 'react'\r\n \r\n const IntroScreen = () => {\r\n     return (\r\n-        <View >\r\n-            <Text  style={{ fontFamily: 'Inter-Black', fontSize: 30 }}>Law CRM</Text>\r\n+        <View style={styles.container}>\r\n+            <Text style={styles.introTitle}>Law CRM</Text>\r\n         </View>\r\n     )\r\n }\r\n \r\n \r\n-// const styles = StyleSheet.create({\r\n-//     container: {\r\n-//         flex: 1,\r\n-//         // backgroundColor: '#000000',r\r\n-//         alignItems: 'center',\r\n-//         justifyContent: 'center',\r\n-//     },\r\n+const styles = StyleSheet.create({\r\n+    container: {\r\n+        flex: 1,\r\n+        // backgroundColor: '#000000',r\r\n+        alignItems: 'center',\r\n+        justifyContent: 'center',\r\n+    },\r\n \r\n-//     introTitle: {\r\n-//         fontSize: 65,\r\n-//         fontWeight: 'bold',\r\n-//         fontFamily: 'Inter-Black',\r\n-//         // color: 'white',react-native -v\r\n-//     }\r\n+    introTitle: {\r\n+        fontSize: 65,\r\n+        fontWeight: 'bold',\r\n+        fontFamily: 'Segoe-UI-Font',\r\n+        // color: 'white',react-native -v\r\n+    }\r\n \r\n-// });\r\n+});\r\n \r\n \r\n \r\n export default IntroScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664525766831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n-        fontWeight: 'bold',\r\n+        // fontWeight: 'bold',\r\n         fontFamily: 'Segoe-UI-Font',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1664525784125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         // fontWeight: 'bold',\r\n-        fontFamily: 'Segoe-UI-Font',\r\n+        fontFamily: 'Inter-Black',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664528716206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         // fontWeight: 'bold',\r\n-        fontFamily: 'Inter-Black',\r\n+        fontFamily: 'Segoe-ui-bold',\r\n         // color: 'white',react-native -v\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664528735529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,18 +12,17 @@\n \r\n const styles = StyleSheet.create({\r\n     container: {\r\n         flex: 1,\r\n-        // backgroundColor: '#000000',r\r\n+        backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n-        // fontWeight: 'bold',\r\n         fontFamily: 'Segoe-ui-bold',\r\n-        // color: 'white',react-native -v\r\n+        color: 'white',\r\n     }\r\n \r\n });\r\n \r\n"
+                }
+            ],
+            "date": 1664454200921,
+            "name": "Commit-0",
+            "content": "import { View, Text } from 'react-native'\r\nimport React from 'react'\r\n\r\nconst IntroScreen = () => {\r\n  return (\r\n    <View>\r\n      <Text>IntroScreen</Text>\r\n    </View>\r\n  )\r\n}\r\n\r\nexport default IntroScreen"
+        }
+    ]
+}

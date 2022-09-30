@@ -1,0 +1,38 @@
+{
+    "sourceFile": "react-native.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1664455594636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1664455728034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n     project: {\r\n         ios: {},\r\n         android: {},\r\n     },\r\n-    assets: ['./assets/fonts']\r\n+    assets: ['./assets/fonts/Segoe-UI-Font']\r\n     };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664457484577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n     project: {\r\n         ios: {},\r\n         android: {},\r\n     },\r\n-    assets: ['./assets/fonts/Segoe-UI-Font']\r\n+    assets: ['./assets/fonts/Segoe-UI-Font/']\r\n     };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664457534834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n     project: {\r\n         ios: {},\r\n         android: {},\r\n     },\r\n-    assets: ['./assets/fonts/Segoe-UI-Font/']\r\n+    assets: ['./assets/fonts/Segoe-UI-Font/SEGOEUI']\r\n     };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664457542142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n     project: {\r\n         ios: {},\r\n         android: {},\r\n     },\r\n-    assets: ['./assets/fonts/Segoe-UI-Font/SEGOEUI']\r\n+    assets: ['./assets/fonts/Segoe-UI-Font/SEGOEUI.TTF']\r\n     };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664457838179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n     project: {\r\n         ios: {},\r\n         android: {},\r\n     },\r\n-    assets: ['./assets/fonts/Segoe-UI-Font/SEGOEUI.TTF']\r\n+    assets: ['./assets/fonts/']\r\n     };\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1664455594636,
+            "name": "Commit-0",
+            "content": "module.exports = {\r\n    project: {\r\n        ios: {},\r\n        android: {},\r\n    },\r\n    assets: ['./assets/fonts']\r\n    };"
+        }
+    ]
+}

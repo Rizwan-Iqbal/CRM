@@ -1,0 +1,26 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1664522805135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1664522843983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,11 @@\n     \"expo-status-bar\": \"~1.4.0\",\n     \"react\": \"18.0.0\",\n     \"react-native\": \"0.69.6\",\n     \"react-native-version-check\": \"^3.4.3\",\n-    \"expo-font\": \"~10.2.0\"\n-    \n+    // \"expo-font\": \"~10.2.0\"\n+    \"expo-font\": \"*\",\n+    \"expo-splash-screen\": \"*\"\n   },\n   \"devDependencies\": {\n     \"@babel/core\": \"^7.12.9\"\n   },\n"
+                },
+                {
+                    "date": 1664522891642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     \"expo-status-bar\": \"~1.4.0\",\n     \"react\": \"18.0.0\",\n     \"react-native\": \"0.69.6\",\n     \"react-native-version-check\": \"^3.4.3\",\n-    // \"expo-font\": \"~10.2.0\"\n+\n     \"expo-font\": \"*\",\n     \"expo-splash-screen\": \"*\"\n   },\n   \"devDependencies\": {\n"
+                }
+            ],
+            "date": 1664522805135,
+            "name": "Commit-0",
+            "content": "{\n  \"name\": \"crm\",\n  \"version\": \"1.0.0\",\n  \"main\": \"node_modules/expo/AppEntry.js\",\n  \"scripts\": {\n    \"start\": \"expo start\",\n    \"android\": \"expo start --android\",\n    \"ios\": \"expo start --ios\",\n    \"web\": \"expo start --web\"\n  },\n  \"dependencies\": {\n    \"expo\": \"~46.0.13\",\n    \"expo-status-bar\": \"~1.4.0\",\n    \"react\": \"18.0.0\",\n    \"react-native\": \"0.69.6\",\n    \"react-native-version-check\": \"^3.4.3\",\n    \"expo-font\": \"~10.2.0\"\n    \n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"^7.12.9\"\n  },\n  \"private\": true\n}\n"
+        }
+    ]
+}
