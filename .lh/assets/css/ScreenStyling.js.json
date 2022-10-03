@@ -1,0 +1,22 @@
+{
+    "sourceFile": "assets/css/ScreenStyling.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1664772779324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1664772793771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n import { StyleSheet } from 'react-native';\r\n-\r\n const styles = StyleSheet.create({\r\n     IntroContainer: {\r\n         flex: 1,\r\n         backgroundColor: '#000000',\r\n@@ -13,5 +12,7 @@\n         fontFamily: 'Segoe-ui-bold',\r\n         color: 'white',\r\n     }\r\n \r\n-});\n\\ No newline at end of file\n+});\r\n+\r\n+export { styles }\r\n"
+                }
+            ],
+            "date": 1664772779324,
+            "name": "Commit-0",
+            "content": "import { StyleSheet } from 'react-native';\r\n\r\nconst styles = StyleSheet.create({\r\n    IntroContainer: {\r\n        flex: 1,\r\n        backgroundColor: '#000000',\r\n        alignItems: 'center',\r\n        justifyContent: 'center',\r\n    },\r\n\r\n    introTitle: {\r\n        fontSize: 65,\r\n        fontFamily: 'Segoe-ui-bold',\r\n        color: 'white',\r\n    }\r\n\r\n});"
+        }
+    ]
+}

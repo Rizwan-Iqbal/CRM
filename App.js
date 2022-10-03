@@ -3,6 +3,7 @@ import { Text, View, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import IntroScreen from './src/components/IntroScreen';
+import SignInScreen from './src/components/SignInScreen';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,9 +28,15 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container} onLayout={onLayoutRootView}>
-      <IntroScreen />
+    // <View style = {styles.container} onLayout={onLayoutRootView}>
+    //   <SignInScreen />
+    //   <IntroScreen />
+    // </View>
+
+    <View onLayout={onLayoutRootView}>
+      <SignInScreen />
     </View>
+
   );
 }
 
@@ -40,6 +47,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     margin: 0,
     padding: 0,
-    
+    backgroundColor: 'black',
+
   },
 });

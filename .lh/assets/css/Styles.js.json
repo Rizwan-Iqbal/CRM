@@ -1,0 +1,290 @@
+{
+    "sourceFile": "assets/css/Styles.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 68,
+            "patches": [
+                {
+                    "date": 1664773148633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1664773526530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { StyleSheet } from 'react-native';\r\n const styles = StyleSheet.create({\r\n \r\n     // Intro Screen Styling\r\n-    \r\n+\r\n     IntroContainer: {\r\n         flex: 1,\r\n         backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n@@ -13,8 +13,13 @@\n     introTitle: {\r\n         fontSize: 65,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         color: 'white',\r\n+    },\r\n+\r\n+    // Signin Screen Styling\r\n+    SignInTitle: {\r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664773544084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,10 @@\n     },\r\n \r\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n+        fontSize: 65,\r\n+        fontFamily: 'Segoe-ui-bold',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664773549614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     },\r\n \r\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n-        fontSize: 65,\r\n+        fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1664773567590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n+        textAlign: 'center',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664773593106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n+        margin: 30,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664773602292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        margin: 30,\r\n+        margin: 35,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664774230077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,11 @@\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         margin: 35,\r\n \r\n+    },\r\n+    SignInScreenImages: {\r\n+        \r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664774399326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n         textAlign: 'center',\r\n         margin: 35,\r\n \r\n     },\r\n-    SignInScreenImages: {\r\n-        \r\n+    SignInScreenImage: {\r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664775975345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontFamily: 'Segoe-ui-bold',\r\n-        color: 'white',\r\n+        // color: 'white',\r\n     },\r\n \r\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n"
+                },
+                {
+                    "date": 1664775986951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n         fontFamily: 'Segoe-ui-bold',\r\n-        // color: 'white',\r\n+        color: 'white',\r\n     },\r\n \r\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n"
+                },
+                {
+                    "date": 1664776832817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         margin: 35,\r\n+        color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n"
+                },
+                {
+                    "date": 1664776848008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n+        flex: 1,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664776867150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,11 @@\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n-        flex: 1,\r\n+        margin: 40,\r\n \r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664776902353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n-        margin: 40,\r\n \r\n+        width: 100,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664776908992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        width: 100,\r\n+        width: 100%,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664776914474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        width: 100%,\r\n+        width: '100%',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664776933613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        width: '100%',\r\n+        // width: '100%',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664776963658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        // width: '100%',\r\n+        width: 500,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664776970445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        width: 500,\r\n+        width: 300,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664776976446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        width: 300,\r\n+        width: 400,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664776981684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        width: 400,\r\n+        width: 350,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777009125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,11 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        width: 350,\r\n+        width: 3500,\r\n+        flex: 1,\r\n+        justifyContent: 'center',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777028045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n \r\n         width: 3500,\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n+        alignItems: 'flex-start',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777033469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n     SignInScreenImage: {\r\n \r\n         width: 3500,\r\n         flex: 1,\r\n-        justifyContent: 'center',\r\n-        alignItems: 'flex-start',\r\n+        // justifyContent: 'center',\r\n+        // alignItems: 'flex-start',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777042145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,11 +27,11 @@\n     },\r\n     SignInScreenImage: {\r\n \r\n         width: 3500,\r\n-        flex: 1,\r\n-        // justifyContent: 'center',\r\n-        // alignItems: 'flex-start',\r\n+        // flex: 1,\r\n+        justifyContent: 'center',\r\n+        alignItems: 'flex-start',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777055889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,13 +26,8 @@\n \r\n     },\r\n     SignInScreenImage: {\r\n \r\n-        width: 3500,\r\n-        // flex: 1,\r\n-        justifyContent: 'center',\r\n-        alignItems: 'flex-start',\r\n-\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664777436359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        margin: 35,\r\n+        // margin: 35,\r\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n"
+                },
+                {
+                    "date": 1664777445303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        // margin: 35,\r\n+        margin: 35,\r\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n"
+                },
+                {
+                    "date": 1664777519033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n+        height: '100%',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777544307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n-        height: '100%',\r\n+        marginTop: 0,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777562369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n-        marginTop: 0,\r\n+        position: 'absolute',\r\n+        top: 0,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777575877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,9 @@\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n-        position: 'absolute',\r\n-        top: 0,\r\n+        \r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664777621639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        margin: 35,\r\n+        margin: 25,\r\n         color: 'white',\r\n \r\n     },\r\n     SignInScreenImage: {\r\n"
+                },
+                {
+                    "date": 1664777649079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         margin: 25,\r\n         color: 'white',\r\n+        paddingTop: 10,\r\n \r\n     },\r\n     SignInScreenImage: {\r\n         \r\n"
+                },
+                {
+                    "date": 1664777658963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,8 @@\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         margin: 25,\r\n         color: 'white',\r\n-        paddingTop: 10,\r\n \r\n     },\r\n     SignInScreenImage: {\r\n         \r\n"
+                },
+                {
+                    "date": 1664778167416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n         margin: 25,\r\n         color: 'white',\r\n \r\n     },\r\n-    SignInScreenImage: {\r\n-        \r\n+    backIcon: {\r\n+        margin: 25,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664778181249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,12 +24,9 @@\n         margin: 25,\r\n         color: 'white',\r\n \r\n     },\r\n-    backIcon: {\r\n-        margin: 25,\r\n+   \r\n \r\n-    }\r\n-\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1664778479819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,11 @@\n         margin: 25,\r\n         color: 'white',\r\n \r\n     },\r\n-   \r\n+    backIcon: {\r\n+        marginLeft: 10,\r\n+    }\r\n \r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1664778685691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,11 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n+    },\r\n+    SignInScreenImage: {\r\n+        height: 300,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664778697164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n-        height: 300,\r\n+        height: 100,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664778706095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n-        height: 100,\r\n+    \r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664778987769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,11 @@\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n     \r\n+    },\r\n+    signInImg: {\r\n+        margin: 40,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664779000499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        margin: 40,\r\n+        margin: 20,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664779025615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        margin: 20,\r\n+        marginTop: 40,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664779044005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        marginTop: 40,\r\n+        marginTop: 20,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664779062358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,10 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        marginTop: 20,\r\n+        margin: 20,\r\n+    \r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664779070261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        margin: 20,\r\n+        margin: 10,\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779092875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        margin: 10,\r\n+        margin: 0,\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779122760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        margin: 0,\r\n+        width: '90%',\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779134496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n     \r\n     },\r\n     signInImg: {\r\n         width: '90%',\r\n+        textAlign: 'center',\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779149163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     \r\n     },\r\n     signInImg: {\r\n         width: '90%',\r\n-        textAlign: 'center',\r\n+        alignContent: 'center',\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779160644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     \r\n     },\r\n     signInImg: {\r\n         width: '90%',\r\n-        alignContent: 'center',\r\n+        alignItems: 'center'\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779175843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,9 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        width: '90%',\r\n-        alignItems: 'center'\r\n+        \r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779229587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,11 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        \r\n+        marginTop: 20,\r\n+        marginLeft: 10,\r\n+        marginRight: 10,\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779258673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n     signInImg: {\r\n         marginTop: 20,\r\n         marginLeft: 10,\r\n         marginRight: 10,\r\n+        borderColor:'green';\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779264574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     signInImg: {\r\n         marginTop: 20,\r\n         marginLeft: 10,\r\n         marginRight: 10,\r\n-        borderColor:'green';\r\n+        borderColor:'green',\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779280180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n         marginTop: 20,\r\n         marginLeft: 10,\r\n         marginRight: 10,\r\n         borderColor:'green',\r\n+        borderWidth: 2,\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779291836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n         marginLeft: 10,\r\n-        marginRight: 10,\r\n+        marginRight: 20,\r\n         borderColor:'green',\r\n         borderWidth: 2,\r\n     \r\n     }\r\n"
+                },
+                {
+                    "date": 1664779403991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,13 +31,13 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        marginTop: 20,\r\n-        marginLeft: 10,\r\n-        marginRight: 20,\r\n-        borderColor:'green',\r\n-        borderWidth: 2,\r\n+        // marginTop: 20,\r\n+        // marginLeft: 10,\r\n+        // marginRight: 20,\r\n+        // borderColor:'green',\r\n+        // borderWidth: 2,\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779410033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     SignInScreenImage: {\r\n     \r\n     },\r\n     signInImg: {\r\n-        // marginTop: 20,\r\n+        marginTop: 20,\r\n         // marginLeft: 10,\r\n         // marginRight: 20,\r\n         // borderColor:'green',\r\n         // borderWidth: 2,\r\n"
+                },
+                {
+                    "date": 1664779420006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n         // marginLeft: 10,\r\n         // marginRight: 20,\r\n         // borderColor:'green',\r\n         // borderWidth: 2,\r\n+        alignContent: 'center',\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779427024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n         // marginRight: 20,\r\n         // borderColor:'green',\r\n         // borderWidth: 2,\r\n         alignContent: 'center',\r\n+        justifyContent: 'center'\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779439560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n         // borderColor:'green',\r\n         // borderWidth: 2,\r\n         alignContent: 'center',\r\n         justifyContent: 'center'\r\n+        alignItems: center,\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779444829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         // borderColor:'green',\r\n         // borderWidth: 2,\r\n         alignContent: 'center',\r\n         justifyContent: 'center'\r\n-        alignItems: center,\r\n+        alignItems: 'center',\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779450663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         // marginRight: 20,\r\n         // borderColor:'green',\r\n         // borderWidth: 2,\r\n         alignContent: 'center',\r\n-        justifyContent: 'center'\r\n+        justifyContent: 'center',\r\n         alignItems: 'center',\r\n     \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1664779465775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n         // borderWidth: 2,\r\n         alignContent: 'center',\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n+        textAlign: 'center',\r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779472448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,16 +32,9 @@\n     \r\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n-        // marginLeft: 10,\r\n-        // marginRight: 20,\r\n-        // borderColor:'green',\r\n-        // borderWidth: 2,\r\n-        alignContent: 'center',\r\n-        justifyContent: 'center',\r\n-        alignItems: 'center',\r\n-        textAlign: 'center',\r\n+  \r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1664779478845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,8 @@\n     \r\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n-  \r\n     \r\n     }\r\n \r\n });\r\n"
+                }
+            ],
+            "date": 1664773148633,
+            "name": "Commit-0",
+            "content": "import { StyleSheet } from 'react-native';\r\nconst styles = StyleSheet.create({\r\n\r\n    // Intro Screen Styling\r\n    \r\n    IntroContainer: {\r\n        flex: 1,\r\n        backgroundColor: '#000000',\r\n        alignItems: 'center',\r\n        justifyContent: 'center',\r\n    },\r\n\r\n    introTitle: {\r\n        fontSize: 65,\r\n        fontFamily: 'Segoe-ui-bold',\r\n        color: 'white',\r\n    }\r\n\r\n});\r\n\r\nexport { styles }\r\n"
+        }
+    ]
+}

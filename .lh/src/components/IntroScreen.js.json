@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 36,
+            "activePatchIndex": 40,
             "patches": [
                 {
                     "date": 1664454200921,
@@ -152,6 +152,22 @@
                 {
                     "date": 1664528735529,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,18 +12,17 @@\n \r\n const styles = StyleSheet.create({\r\n     container: {\r\n         flex: 1,\r\n-        // backgroundColor: '#000000',r\r\n+        backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n-        // fontWeight: 'bold',\r\n         fontFamily: 'Segoe-ui-bold',\r\n-        // color: 'white',react-native -v\r\n+        color: 'white',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1664772740265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,30 +2,16 @@\n import React from 'react'\r\n \r\n const IntroScreen = () => {\r\n     return (\r\n-        <View style={styles.container}>\r\n+        <View style={styles.IntroContainer}>\r\n             <Text style={styles.introTitle}>Law CRM</Text>\r\n         </View>\r\n     )\r\n }\r\n \r\n \r\n-const styles = StyleSheet.create({\r\n-    container: {\r\n-        flex: 1,\r\n-        backgroundColor: '#000000',\r\n-        alignItems: 'center',\r\n-        justifyContent: 'center',\r\n-    },\r\n \r\n-    introTitle: {\r\n-        fontSize: 65,\r\n-        fontFamily: 'Segoe-ui-bold',\r\n-        color: 'white',\r\n-    }\r\n \r\n-});\r\n \r\n \r\n-\r\n export default IntroScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664772900138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-import { View, Text, StyleSheet } from 'react-native'\r\n-import React from 'react'\r\n-\r\n+import { View, Text, StyleSheet } from 'react-native';\r\n+import React from 'react';\r\n+import { styles } from '../../assets/css/ScreenStyling';\r\n const IntroScreen = () => {\r\n     return (\r\n         <View style={styles.IntroContainer}>\r\n             <Text style={styles.introTitle}>Law CRM</Text>\r\n"
+                },
+                {
+                    "date": 1664772990345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,5 @@\n         </View>\r\n     )\r\n }\r\n \r\n-\r\n-\r\n-\r\n-\r\n-\r\n export default IntroScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664773052411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { View, Text, StyleSheet } from 'react-native';\r\n import React from 'react';\r\n-import { styles } from '../../assets/css/ScreenStyling';\r\n+import { styles } from '../../assets/css/Styles';\r\n const IntroScreen = () => {\r\n     return (\r\n         <View style={styles.IntroContainer}>\r\n             <Text style={styles.introTitle}>Law CRM</Text>\r\n"
                 }
             ],
             "date": 1664454200921,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 98,
+            "activePatchIndex": 118,
             "patches": [
                 {
                     "date": 1664454463276,
@@ -400,6 +400,86 @@
                 {
                     "date": 1664529452868,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { useEffect, useCallback } from 'react';\n-import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';\n+import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n import * as SplashScreen from 'expo-splash-screen';\n import IntroScreen from './src/components/IntroScreen';\n \n@@ -26,11 +26,11 @@\n     return null;\n   }\n \n   return (\n-    <TouchableOpacity >\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n       <IntroScreen />\n-    </TouchableOpacity>\n+    </View>\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664772367266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,7 +39,8 @@\n     justifyContent: 'center',\n     alignItems: 'center',\n     margin: 0,\n     padding: 0,\n+    backgroundColor: 'black',\n     \n   },\n });\n"
+                },
+                {
+                    "date": 1664773397934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import { Text, View, StyleSheet } from 'react-native';\n import { useFonts } from 'expo-font';\n import * as SplashScreen from 'expo-splash-screen';\n import IntroScreen from './src/components/IntroScreen';\n+import SignInScreen from './src/components/SignInScreen';\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\n@@ -26,11 +27,13 @@\n     return null;\n   }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n-      <IntroScreen />\n-    </View>\n+    // <View style={styles.container} onLayout={onLayoutRootView}>\n+    //   <IntroScreen />\n+    // </View>\n+\n+    <SignInScreen />\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664774345078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,11 @@\n   return (\n     // <View style={styles.container} onLayout={onLayoutRootView}>\n     //   <IntroScreen />\n     // </View>\n-\n-    <SignInScreen />\n+    <View>\n+      <SignInScreen />\n+    </View>\n   );\n }\n \n const styles = StyleSheet.create({\n@@ -43,7 +44,7 @@\n     alignItems: 'center',\n     margin: 0,\n     padding: 0,\n     backgroundColor: 'black',\n-    \n+\n   },\n });\n"
+                },
+                {
+                    "date": 1664774368638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,11 +30,10 @@\n   return (\n     // <View style={styles.container} onLayout={onLayoutRootView}>\n     //   <IntroScreen />\n     // </View>\n-    <View>\n-      <SignInScreen />\n-    </View>\n+\n+    <SignInScreen />\n   );\n }\n \n const styles = StyleSheet.create({\n@@ -44,7 +43,7 @@\n     alignItems: 'center',\n     margin: 0,\n     padding: 0,\n     backgroundColor: 'black',\n-\n+    \n   },\n });\n"
+                },
+                {
+                    "date": 1664774708131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,11 +27,11 @@\n     return null;\n   }\n \n   return (\n-    // <View style={styles.container} onLayout={onLayoutRootView}>\n-    //   <IntroScreen />\n-    // </View>\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n+      <IntroScreen />\n+    </View>\n \n     <SignInScreen />\n   );\n }\n@@ -43,7 +43,7 @@\n     alignItems: 'center',\n     margin: 0,\n     padding: 0,\n     backgroundColor: 'black',\n-    \n+\n   },\n });\n"
+                },
+                {
+                    "date": 1664774719808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,12 +28,12 @@\n   }\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n+      <SignInScreen />\n       <IntroScreen />\n     </View>\n \n-    <SignInScreen />\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664774734609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n       <SignInScreen />\n-      <IntroScreen />\n+      {/* <IntroScreen /> */}\n     </View>\n \n   );\n }\n"
+                },
+                {
+                    "date": 1664774769093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,8 @@\n     justifyContent: 'center',\n     alignItems: 'center',\n     margin: 0,\n     padding: 0,\n-    backgroundColor: 'black',\n+    // backgroundColor: 'black',\n \n   },\n });\n"
+                },
+                {
+                    "date": 1664774783922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \n   return (\n     <View style={styles.container} onLayout={onLayoutRootView}>\n       <SignInScreen />\n-      {/* <IntroScreen /> */}\n+      <IntroScreen />\n     </View>\n \n   );\n }\n@@ -42,8 +42,8 @@\n     justifyContent: 'center',\n     alignItems: 'center',\n     margin: 0,\n     padding: 0,\n-    // backgroundColor: 'black',\n+    backgroundColor: 'black',\n \n   },\n });\n"
+                },
+                {
+                    "date": 1664774825078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,13 +27,19 @@\n     return null;\n   }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n-      <SignInScreen />\n-      <IntroScreen />\n+    <View>\n+      <View style={styles.container} onLayout={onLayoutRootView}>\n+        <SignInScreen />\n+        <IntroScreen />\n+      </View>\n+\n+      <View style={styles.container} onLayout={onLayoutRootView}>\n+        <SignInScreen />\n+        <IntroScreen />\n+      </View>\n     </View>\n-\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664774854751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,15 +28,13 @@\n   }\n \n   return (\n     <View>\n-      <View style={styles.container} onLayout={onLayoutRootView}>\n-        <SignInScreen />\n+      {/* <View style={styles.container} onLayout={onLayoutRootView}>\n         <IntroScreen />\n-      </View>\n+      </View> */}\n \n       <View style={styles.container} onLayout={onLayoutRootView}>\n-        <SignInScreen />\n         <IntroScreen />\n       </View>\n     </View>\n   );\n"
+                },
+                {
+                    "date": 1664774870350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,17 +27,17 @@\n     return null;\n   }\n \n   return (\n-    <View>\n+    // <View>\n       {/* <View style={styles.container} onLayout={onLayoutRootView}>\n         <IntroScreen />\n       </View> */}\n \n       <View style={styles.container} onLayout={onLayoutRootView}>\n         <IntroScreen />\n       </View>\n-    </View>\n+    {/* </View> */}\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664775845989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,17 +27,18 @@\n     return null;\n   }\n \n   return (\n-    // <View>\n+    <View>\n       {/* <View style={styles.container} onLayout={onLayoutRootView}>\n         <IntroScreen />\n       </View> */}\n \n       <View style={styles.container} onLayout={onLayoutRootView}>\n+\n         <IntroScreen />\n       </View>\n-    {/* </View> */}\n+    </View>\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664775900294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,18 +27,15 @@\n     return null;\n   }\n \n   return (\n-    <View>\n-      {/* <View style={styles.container} onLayout={onLayoutRootView}>\n-        <IntroScreen />\n-      </View> */}\n+    <View style={styles.container} onLayout={onLayoutRootView}>\n+      <SignInScreen />\n+      <IntroScreen />\n+    </View>\n \n-      <View style={styles.container} onLayout={onLayoutRootView}>\n+    \n \n-        <IntroScreen />\n-      </View>\n-    </View>\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664775938899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     return null;\n   }\n \n   return (\n-    <View style={styles.container} onLayout={onLayoutRootView}>\n+    <View  onLayout={onLayoutRootView}>\n       <SignInScreen />\n       <IntroScreen />\n     </View>\n \n"
+                },
+                {
+                    "date": 1664776015469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n     return null;\n   }\n \n   return (\n-    <View  onLayout={onLayoutRootView}>\n-      <SignInScreen />\n+    <View onLayout={onLayoutRootView}>\n+      {/* <SignInScreen /> */}\n       <IntroScreen />\n     </View>\n \n     \n"
+                },
+                {
+                    "date": 1664776083374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,15 +27,19 @@\n     return null;\n   }\n \n   return (\n+    // <View style = {styles.container} onLayout={onLayoutRootView}>\n+    //   <SignInScreen />\n+    //   <IntroScreen />\n+    // </View>\n+\n     <View onLayout={onLayoutRootView}>\n-      {/* <SignInScreen /> */}\n-      <IntroScreen />\n+      <SignInScreen />\n     </View>\n \n-    \n \n+\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664776095143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,19 +27,19 @@\n     return null;\n   }\n \n   return (\n-    // <View style = {styles.container} onLayout={onLayoutRootView}>\n+    <View style = {styles.container} onLayout={onLayoutRootView}>\n+      <SignInScreen />\n+      <IntroScreen />\n+    </View>\n+\n+    // <View onLayout={onLayoutRootView}>\n     //   <SignInScreen />\n-    //   <IntroScreen />\n     // </View>\n \n-    <View onLayout={onLayoutRootView}>\n-      <SignInScreen />\n-    </View>\n \n \n-\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664776106226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,19 +27,19 @@\n     return null;\n   }\n \n   return (\n-    <View style = {styles.container} onLayout={onLayoutRootView}>\n+    // <View style = {styles.container} onLayout={onLayoutRootView}>\n+    //   <SignInScreen />\n+    //   <IntroScreen />\n+    // </View>\n+\n+    <View onLayout={onLayoutRootView}>\n       <SignInScreen />\n-      <IntroScreen />\n     </View>\n \n-    // <View onLayout={onLayoutRootView}>\n-    //   <SignInScreen />\n-    // </View>\n \n \n-\n   );\n }\n \n const styles = StyleSheet.create({\n"
+                },
+                {
+                    "date": 1664777247310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,8 @@\n     <View onLayout={onLayoutRootView}>\n       <SignInScreen />\n     </View>\n \n-\n-\n   );\n }\n \n const styles = StyleSheet.create({\n"
                 }
             ],
             "date": 1664454463276,

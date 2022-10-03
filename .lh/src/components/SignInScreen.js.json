@@ -1,0 +1,418 @@
+{
+    "sourceFile": "src/components/SignInScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 100,
+            "patches": [
+                {
+                    "date": 1664772467759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1664772492276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n-      <Text>SignInScreen</Text>\r\n+     <View></View>\r\n     </View>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664772842295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n-import { View, Text } from 'react-native'\r\n-import React from 'react'\r\n+import { View, Text } from 'react-native';\r\n+import React from 'react';\r\n+import Sty\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664772871351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { View, Text } from 'react-native';\r\n import React from 'react';\r\n-import Sty\r\n+import { styles } from '../../assets/css/ScreenStyling';\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664773020850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { View, Text } from 'react-native';\r\n import React from 'react';\r\n-import { styles } from '../../assets/css/ScreenStyling';\r\n+import { styles } from '../../assets/css/Styles';\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664773332356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { View, Text } from 'react-native';\r\n import React from 'react';\r\n-import { styles } from '../../assets/css/Styles';\r\n+import { styles } from '../../assets/css/';\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664773343482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { View, Text } from 'react-native';\r\n import React from 'react';\r\n-import { styles } from '../../assets/css/';\r\n+import { styles } from '../../assets/css/Styles';\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664773371272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,11 @@\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n-     <View></View>\r\n+     <View>\r\n+        <Text></Text>\r\n+     </View>\r\n     </View>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664773381907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <Text></Text>\r\n+        <Text>Welcome Back !</Text>\r\n      </View>\r\n     </View>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1664773465321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <Text>Welcome Back !</Text>\r\n+        <Text style = {styles.SignInTitle}>Welcome Back !</Text>\r\n      </View>\r\n     </View>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1664773801251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,11 @@\n import { View, Text } from 'react-native';\r\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n+import { ImageBackground } from 'react-native';\r\n \r\n+const image = { uri: \"https://reactjs.org/logo-og.png\" };\r\n+\r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n"
+                },
+                {
+                    "date": 1664773945817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: \"https://reactjs.org/logo-og.png\" };\r\n+const image = { uri: \"\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664773987837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: \"\" };\r\n+const image = { uri: './././' };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664773998695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: './././' };\r\n+const image = { uri: '' };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664774044596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: '' };\r\n+const image = { uri: './././assets/css/signInBg.png' };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664774116986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n+        <ImageBackground source={image} resizeMode>\r\n         <Text style = {styles.SignInTitle}>Welcome Back !</Text>\r\n+        </ImageBackground>\r\n      </View>\r\n     </View>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1664774214823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source={image} resizeMode>\r\n+        <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImages}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back !</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664774279407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   return (\r\n     <View>\r\n      <View>\r\n         <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImages}>\r\n-        <Text style = {styles.SignInTitle}>Welcome Back !</Text>\r\n+        <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n   )\r\n"
+                },
+                {
+                    "date": 1664774301838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: './././assets/css/signInBg.png' };\r\n+const image = { uri: 'https://reactjs.org/logo-og.png' };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664774394719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImages}>\r\n+        <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664774469343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImage}>\r\n+        {/* <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImage}> */}\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n-        </ImageBackground>\r\n+        {/* </ImageBackground> */}\r\n      </View>\r\n     </View>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1664774627088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: 'https://reactjs.org/logo-og.png' };\r\n+// const image = { uri: 'https://reactjs.org/logo-og.png' };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664776122130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        {/* <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImage}> */}\r\n+        <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n-        {/* </ImageBackground> */}\r\n+        </ImageBackground>\r\n      </View>\r\n     </View>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1664776128322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-// const image = { uri: 'https://reactjs.org/logo-og.png' };\r\n+const image = { uri: 'https://reactjs.org/logo-og.png' };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664776231236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: 'https://reactjs.org/logo-og.png' };\r\n+const image = { uri: \"././assets/images/signInBg.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664776238396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: \"././assets/images/signInBg.png\" };\r\n+const image = { uri: \"./././assets/images/signInBg.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664776321553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: \"./././assets/images/signInBg.png\" };\r\n+const image = { uri: \"././././assets/images/signInBg.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664776381563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: \"././././assets/images/signInBg.png\" };\r\n+const image = { uri: \"https://codeflarelimited.com/blog/wp-content/uploads/2020/11/cropped-codeflare.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664776454603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-const image = { uri: \"https://codeflarelimited.com/blog/wp-content/uploads/2020/11/cropped-codeflare.png\" };\r\n+const image = { uri: \"././././assets/images/signInBg.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664776511804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n+\r\n const image = { uri: \"././././assets/images/signInBg.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1664776693692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source={image} resizeMode= 'cover' style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source = {require('')} resizeMode= 'cover' style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664776787391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source = {require('')} resizeMode= 'cover' style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode= 'cover' style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664776928520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode= 'cover' style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source = {require('../../assets/images/signInBg.png')} style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777130538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n \r\n-const image = { uri: \"././././assets/images/signInBg.png\" };\r\n+const image = { uri: \"././././assets/images/Group42.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664777220734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n \r\n-const image = { uri: \"././././assets/images/Group42.png\" };\r\n+const image = { uri: \"././././assets/images/Group.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664777339770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n \r\n-const image = { uri: \"././././assets/images/Group.png\" };\r\n+const image = { uri: \"././././assets/images/Group42.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664777378904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source = {require('../../assets/images/signInBg.png')} style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777397327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n \r\n-const image = { uri: \"././././assets/images/Group42.png\" };\r\n+const image = { uri: \"././././assets/images/signInBg.png\" };\r\n \r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n"
+                },
+                {
+                    "date": 1664777451941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'cover'} style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777461102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'cover'} style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777488698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'auto'} style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777494430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'auto'} style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777697914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n   return (\r\n     <View>\r\n      <View>\r\n         <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n+       <Image\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777737324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   return (\r\n     <View>\r\n      <View>\r\n         <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n-       <Image\r\n+        <Image source={require('./my-icon.png')} />;\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777753779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   return (\r\n     <View>\r\n      <View>\r\n         <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n-        <Image source={require('./my-icon.png')} />;\r\n+        <Image source= {require('./my-icon.png')} />;\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777787735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   return (\r\n     <View>\r\n      <View>\r\n         <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n-        <Image source= {require('./my-icon.png')} />;\r\n+        <Image source= {require('././././assets/images/back.png')} />;\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777837264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,17 +2,14 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n-\r\n-const image = { uri: \"././././assets/images/signInBg.png\" };\r\n-\r\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n         <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n-        <Image source= {require('././././assets/images/back.png')} />;\r\n+        <Image source= {require('../../assets/images/back.png')} />;\r\n         <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664777860528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { View, Text } from 'react-native';\r\n+import { View, Text, Image } from 'react-native';\r\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n"
+                },
+                {
+                    "date": 1664777901013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n const SignInScreen = () => {\r\n   return (\r\n     <View>\r\n      <View>\r\n-        <ImageBackground source = {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n+        <ImageBackground source= {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n         <Image source= {require('../../assets/images/back.png')} />;\r\n-        <Text style = {styles.SignInTitle}>Welcome Back!</Text>\r\n+        <Text style = {styles.SignInTitle}> Welcome Back! </Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n   )\r\n"
+                },
+                {
+                    "date": 1664777977553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <View>\r\n      <View>\r\n         <ImageBackground source= {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n         <Image source= {require('../../assets/images/back.png')} />;\r\n-        <Text style = {styles.SignInTitle}> Welcome Back! </Text>\r\n+        {/* <Text style = {styles.SignInTitle}> Welcome Back! </Text> */}\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n   )\r\n"
+                },
+                {
+                    "date": 1664777994108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <View>\r\n      <View>\r\n         <ImageBackground source= {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n         <Image source= {require('../../assets/images/back.png')} />;\r\n-        {/* <Text style = {styles.SignInTitle}> Welcome Back! </Text> */}\r\n+        <Text style = {styles.SignInTitle}> Welcome Back! </Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n   )\r\n"
+                },
+                {
+                    "date": 1664778095396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return (\r\n     <View>\r\n      <View>\r\n         <ImageBackground source= {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n-        <Image source= {require('../../assets/images/back.png')} />;\r\n+        <Image source= {require('../../assets/images/back.png')} />\r\n         <Text style = {styles.SignInTitle}> Welcome Back! </Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664778150752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   return (\r\n     <View>\r\n      <View>\r\n         <ImageBackground source= {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n-        <Image source= {require('../../assets/images/back.png')} />\r\n+        <Image source= {require('../../assets/images/back.png')} style= {styles.backIcon} />\r\n         <Text style = {styles.SignInTitle}> Welcome Back! </Text>\r\n         </ImageBackground>\r\n      </View>\r\n     </View>\r\n"
+                },
+                {
+                    "date": 1664778349872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,17 +3,19 @@\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n \r\n const SignInScreen = () => {\r\n-  return (\r\n-    <View>\r\n-     <View>\r\n-        <ImageBackground source= {require('../../assets/images/signInBg.png')} resizeMode = {'contain'} style = {styles.SignInScreenImage}>\r\n-        <Image source= {require('../../assets/images/back.png')} style= {styles.backIcon} />\r\n-        <Text style = {styles.SignInTitle}> Welcome Back! </Text>\r\n-        </ImageBackground>\r\n-     </View>\r\n-    </View>\r\n-  )\r\n+    return (\r\n+        <View>\r\n+            <View>\r\n+                <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n+                    <View style= {{ flexDirection: 'row', }}>\r\n+                        <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n+                        <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n+                    </View>\r\n+                </ImageBackground>\r\n+            </View>\r\n+        </View>\r\n+    )\r\n }\r\n \r\n export default SignInScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664778409839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     return (\r\n         <View>\r\n             <View>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n-                    <View style= {{ flexDirection: 'row', }}>\r\n+                    <View style= {{ flexDirection: 'row', justifyContent: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n                     </View>\r\n                 </ImageBackground>\r\n"
+                },
+                {
+                    "date": 1664778425816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     return (\r\n         <View>\r\n             <View>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n-                    <View style= {{ flexDirection: 'row', justifyContent: 'center', }}>\r\n+                    <View style= {{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n                     </View>\r\n                 </ImageBackground>\r\n"
+                },
+                {
+                    "date": 1664778432154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     return (\r\n         <View>\r\n             <View>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n-                    <View style= {{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>\r\n+                    <View style= {{ flexDirection: 'row', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n                     </View>\r\n                 </ImageBackground>\r\n"
+                },
+                {
+                    "date": 1664778579834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n-            <View>\r\n+            <View style= {{ padding: 30, }}>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n                     <View style= {{ flexDirection: 'row', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n"
+                },
+                {
+                    "date": 1664778589454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n-            <View style= {{ padding: 30, }}>\r\n+            <View style= {{ paddingTop: 20 }}>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n                     <View style= {{ flexDirection: 'row', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n"
+                },
+                {
+                    "date": 1664778597781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n-            <View style= {{ paddingTop: 20 }}>\r\n+            <View >\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n                     <View style= {{ flexDirection: 'row', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n"
+                },
+                {
+                    "date": 1664778617088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n-            <View >\r\n+            <View style= {{height: 100,}}>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n                     <View style= {{ flexDirection: 'row', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n"
+                },
+                {
+                    "date": 1664778622657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n-            <View style= {{height: 100,}}>\r\n+            <View style= {{height: 500,}}>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n                     <View style= {{ flexDirection: 'row', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n"
+                },
+                {
+                    "date": 1664778635495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n-            <View style= {{height: 500,}}>\r\n+            <View>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n                     <View style= {{ flexDirection: 'row', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n"
+                },
+                {
+                    "date": 1664778869847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,14 @@\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n                     </View>\r\n                 </ImageBackground>\r\n             </View>\r\n+        \r\n+        <View>\r\n+            <Image></Image>\r\n         </View>\r\n+\r\n+        </View>\r\n     )\r\n }\r\n \r\n export default SignInScreen\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1664778958016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n                 </ImageBackground>\r\n             </View>\r\n         \r\n         <View>\r\n-            <Image></Image>\r\n+          <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n         </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664779394474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n                 </ImageBackground>\r\n             </View>\r\n         \r\n         <View>\r\n-          <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n+          <Image source={require('../../assets/images/signInImg_300x300.png')} style={styles.signInImg}></Image>\r\n         </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664779499814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                     </View>\r\n                 </ImageBackground>\r\n             </View>\r\n         \r\n-        <View>\r\n+        <View style= {{alignItems: 'center',}}>\r\n           <Image source={require('../../assets/images/signInImg_300x300.png')} style={styles.signInImg}></Image>\r\n         </View>\r\n \r\n         </View>\r\n"
+                },
+                {
+                    "date": 1664780196196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n                 </ImageBackground>\r\n             </View>\r\n         \r\n         <View style= {{alignItems: 'center',}}>\r\n-          <Image source={require('../../assets/images/signInImg_300x300.png')} style={styles.signInImg}></Image>\r\n+          <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n         </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664782745405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,19 +7,19 @@\n     return (\r\n         <View>\r\n             <View>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n-                    <View style= {{ flexDirection: 'row', alignItems: 'center', }}>\r\n+                    <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                         <Image source={require('../../assets/images/back.png')} style={styles.backIcon} />\r\n                         <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n                     </View>\r\n                 </ImageBackground>\r\n             </View>\r\n-        \r\n-        <View style= {{alignItems: 'center',}}>\r\n-          <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n-        </View>\r\n \r\n+            <View style={{ alignItems: 'center', }}>\r\n+                <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n+            </View>\r\n+\r\n         </View>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664782789589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n             <View style={{ alignItems: 'center', }}>\r\n                 <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n             </View>\r\n \r\n+            <View></View>\r\n+\r\n         </View>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1664782800595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n             <View style={{ alignItems: 'center', }}>\r\n                 <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n             </View>\r\n \r\n-            <View></View>\r\n+            <View>\r\n+                \r\n+            </View>\r\n \r\n         </View>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1664782846475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,22 @@\n                 <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n             </View>\r\n \r\n             <View>\r\n-                \r\n+                <View>\r\n+                    <FontAwesome\r\n+                        style={styles.icon}\r\n+                        name=\"user\"\r\n+                        size={30}\r\n+                        color=\"rgb(0, 200, 160)\"\r\n+                    />\r\n+                    <TextInput\r\n+                        style={styles.input}\r\n+                        placeholder={props.placeholder}\r\n+                        placeholderTextColor=\"rgb(150,150,150)\"\r\n+                        onChangeText={(e) => changeHandler(e)}\r\n+                    />\r\n+                </View>\r\n             </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664783332781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { View, Text, Image } from 'react-native';\r\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n+Import { FontAwesome }\r\n \r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n"
+                },
+                {
+                    "date": 1664783592807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { View, Text, Image } from 'react-native';\r\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n-Import { FontAwesome }\r\n+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'\r\n \r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n"
+                },
+                {
+                    "date": 1664784134869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n                 <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n             </View>\r\n \r\n             <View>\r\n-                <View>\r\n+                {/* <View>\r\n                     <FontAwesome\r\n                         style={styles.icon}\r\n                         name=\"user\"\r\n                         size={30}\r\n@@ -33,9 +33,9 @@\n                         placeholder={props.placeholder}\r\n                         placeholderTextColor=\"rgb(150,150,150)\"\r\n                         onChangeText={(e) => changeHandler(e)}\r\n                     />\r\n-                </View>\r\n+                </View> */}\r\n             </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664784220032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             <View style={{ alignItems: 'center', }}>\r\n                 <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n             </View>\r\n \r\n-            <View>\r\n+       \r\n                 {/* <View>\r\n                     <FontAwesome\r\n                         style={styles.icon}\r\n                         name=\"user\"\r\n@@ -34,9 +34,9 @@\n                         placeholderTextColor=\"rgb(150,150,150)\"\r\n                         onChangeText={(e) => changeHandler(e)}\r\n                     />\r\n                 </View> */}\r\n-            </View>\r\n+           \r\n \r\n         </View>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1664787056754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n             <View style={{ alignItems: 'center', }}>\r\n                 <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n             </View>\r\n \r\n-       \r\n-                {/* <View>\r\n+            <View>\r\n+                <View>\r\n                     <FontAwesome\r\n                         style={styles.icon}\r\n                         name=\"user\"\r\n                         size={30}\r\n@@ -33,10 +33,10 @@\n                         placeholder={props.placeholder}\r\n                         placeholderTextColor=\"rgb(150,150,150)\"\r\n                         onChangeText={(e) => changeHandler(e)}\r\n                     />\r\n-                </View> */}\r\n-           \r\n+                </View>\r\n+            </View>\r\n \r\n         </View>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1664788084136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             </View>\r\n \r\n             <View>\r\n                 <View>\r\n-                    <FontAwesome\r\n+                    <FontAwesomeIcon\r\n                         style={styles.icon}\r\n                         name=\"user\"\r\n                         size={30}\r\n                         color=\"rgb(0, 200, 160)\"\r\n"
+                },
+                {
+                    "date": 1664788101432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { View, Text, Image } from 'react-native';\r\n+import { View, Text, Image, TextInput } from 'react-native';\r\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'\r\n"
+                },
+                {
+                    "date": 1664788165491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,11 +29,9 @@\n                         color=\"rgb(0, 200, 160)\"\r\n                     />\r\n                     <TextInput\r\n                         style={styles.input}\r\n-                        placeholder={props.placeholder}\r\n                         placeholderTextColor=\"rgb(150,150,150)\"\r\n-                        onChangeText={(e) => changeHandler(e)}\r\n                     />\r\n                 </View>\r\n             </View>\r\n \r\n"
+                },
+                {
+                    "date": 1664788291053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             <View>\r\n                 <View>\r\n                     <FontAwesomeIcon\r\n                         style={styles.icon}\r\n-                        name=\"user\"\r\n+                        icon=\"user\"\r\n                         size={30}\r\n                         color=\"rgb(0, 200, 160)\"\r\n                     />\r\n                     <TextInput\r\n"
+                },
+                {
+                    "date": 1664788312413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             <View>\r\n                 <View>\r\n                     <FontAwesomeIcon\r\n                         style={styles.icon}\r\n-                        icon=\"user\"\r\n+                        icon=\"person\"\r\n                         size={30}\r\n                         color=\"rgb(0, 200, 160)\"\r\n                     />\r\n                     <TextInput\r\n"
+                },
+                {
+                    "date": 1664788330741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             <View>\r\n                 <View>\r\n                     <FontAwesomeIcon\r\n                         style={styles.icon}\r\n-                        icon=\"person\"\r\n+                        icon=\"mail\"\r\n                         size={30}\r\n                         color=\"rgb(0, 200, 160)\"\r\n                     />\r\n                     <TextInput\r\n"
+                },
+                {
+                    "date": 1664789339399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,13 @@\n import { View, Text, Image, TextInput } from 'react-native';\r\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'\r\n+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'\r\n+import {solid, regular, brands, icon} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n \r\n+\r\n const SignInScreen = () => {\r\n     return (\r\n         <View>\r\n             <View>\r\n@@ -21,18 +24,26 @@\n             </View>\r\n \r\n             <View>\r\n                 <View>\r\n-                    <FontAwesomeIcon\r\n+                    {/* <FontAwesomeIcon\r\n                         style={styles.icon}\r\n                         icon=\"mail\"\r\n                         size={30}\r\n                         color=\"rgb(0, 200, 160)\"\r\n                     />\r\n                     <TextInput\r\n                         style={styles.input}\r\n                         placeholderTextColor=\"rgb(150,150,150)\"\r\n-                    />\r\n+                    /> */}\r\n+\r\n+                    \r\n+                    <FontAwesomeIcon icon={solid('user-secret')} />\r\n+                    <FontAwesomeIcon icon={regular('coffee')} />\r\n+                    <FontAwesomeIcon icon={icon({ name: 'coffee', style: 'solid' })} />\r\n+                    <FontAwesomeIcon icon={brands('twitter')} />\r\n+\r\n+\r\n                 </View>\r\n             </View>\r\n \r\n         </View>\r\n"
+                },
+                {
+                    "date": 1664789354307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'\r\n import {solid, regular, brands, icon} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n \r\n \r\n const SignInScreen = () => {\r\n"
+                },
+                {
+                    "date": 1664789390458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import {solid, regular, brands, icon} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n+import {solid, brands, icon} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n \r\n \r\n const SignInScreen = () => {\r\n     return (\r\n"
+                },
+                {
+                    "date": 1664789404268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,8 @@\n                     /> */}\r\n \r\n                     \r\n                     <FontAwesomeIcon icon={solid('user-secret')} />\r\n-                    <FontAwesomeIcon icon={regular('coffee')} />\r\n                     <FontAwesomeIcon icon={icon({ name: 'coffee', style: 'solid' })} />\r\n                     <FontAwesomeIcon icon={brands('twitter')} />\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1664789563064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import {solid, brands, icon} from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n+import { solid, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n \r\n \r\n const SignInScreen = () => {\r\n     return (\r\n@@ -22,27 +22,13 @@\n                 <Image source={require('../../assets/images/signInImg.png')} style={styles.signInImg}></Image>\r\n             </View>\r\n \r\n             <View>\r\n-                <View>\r\n-                    {/* <FontAwesomeIcon\r\n-                        style={styles.icon}\r\n-                        icon=\"mail\"\r\n-                        size={30}\r\n-                        color=\"rgb(0, 200, 160)\"\r\n-                    />\r\n-                    <TextInput\r\n-                        style={styles.input}\r\n-                        placeholderTextColor=\"rgb(150,150,150)\"\r\n-                    /> */}\r\n \r\n-                    \r\n-                    <FontAwesomeIcon icon={solid('user-secret')} />\r\n-                    <FontAwesomeIcon icon={icon({ name: 'coffee', style: 'solid' })} />\r\n-                    <FontAwesomeIcon icon={brands('twitter')} />\r\n-\r\n-\r\n-                </View>\r\n+                <FontAwesomeIcon icon={solid('user-secret')} />\r\n+                <FontAwesomeIcon icon={icon({ name: 'coffee', style: 'solid' })} />\r\n+                <FontAwesomeIcon icon={brands('twitter')} />\r\n+                \r\n             </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664789675912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import { solid, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n+import { solid, brands,  icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n \r\n \r\n const SignInScreen = () => {\r\n     return (\r\n@@ -26,9 +26,9 @@\n \r\n                 <FontAwesomeIcon icon={solid('user-secret')} />\r\n                 <FontAwesomeIcon icon={icon({ name: 'coffee', style: 'solid' })} />\r\n                 <FontAwesomeIcon icon={brands('twitter')} />\r\n-                \r\n+\r\n             </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664789784205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import { solid, brands,  icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n+import { Solid, Brands, Icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n \r\n \r\n const SignInScreen = () => {\r\n     return (\r\n"
+                },
+                {
+                    "date": 1664789791895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,11 @@\n             </View>\r\n \r\n             <View>\r\n \r\n-                <FontAwesomeIcon icon={solid('user-secret')} />\r\n-                <FontAwesomeIcon icon={icon({ name: 'coffee', style: 'solid' })} />\r\n-                <FontAwesomeIcon icon={brands('twitter')} />\r\n+                <FontAwesomeIcon icon={Solid('user-secret')} />\r\n+                <FontAwesomeIcon icon={Icon({ name: 'coffee', style: 'solid' })} />\r\n+                <FontAwesomeIcon icon={Brands('twitter')} />\r\n \r\n             </View>\r\n \r\n         </View>\r\n"
+                },
+                {
+                    "date": 1664789821365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \r\n             <View>\r\n \r\n                 <FontAwesomeIcon icon={Solid('user-secret')} />\r\n-                <FontAwesomeIcon icon={Icon({ name: 'coffee', style: 'solid' })} />\r\n+                \r\n                 <FontAwesomeIcon icon={Brands('twitter')} />\r\n \r\n             </View>\r\n \r\n"
+                },
+                {
+                    "date": 1664789866692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,9 @@\n             </View>\r\n \r\n             <View>\r\n \r\n-                <FontAwesomeIcon icon={Solid('user-secret')} />\r\n-                \r\n+  \r\n                 <FontAwesomeIcon icon={Brands('twitter')} />\r\n \r\n             </View>\r\n \r\n"
+                },
+                {
+                    "date": 1664789892564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import { Solid, Brands, Icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n+import { solid, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n \r\n \r\n const SignInScreen = () => {\r\n     return (\r\n@@ -23,11 +23,14 @@\n             </View>\r\n \r\n             <View>\r\n \r\n-  \r\n-                <FontAwesomeIcon icon={Brands('twitter')} />\r\n+                <FontAwesomeIcon icon={solid('user-secret')} />\r\n+                <FontAwesomeIcon icon={icon({ name: 'coffee', style: 'solid' })} />\r\n+                <FontAwesomeIcon icon={brands('twitter')} />\r\n \r\n+\r\n+\r\n             </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664789956631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import { solid, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used\r\n+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\n \r\n \r\n const SignInScreen = () => {\r\n     return (\r\n"
+                },
+                {
+                    "date": 1664789972960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,8 @@\n             </View>\r\n \r\n             <View>\r\n \r\n-                <FontAwesomeIcon icon={solid('user-secret')} />\r\n-                <FontAwesomeIcon icon={icon({ name: 'coffee', style: 'solid' })} />\r\n-                <FontAwesomeIcon icon={brands('twitter')} />\r\n \r\n \r\n \r\n             </View>\r\n"
+                },
+                {
+                    "date": 1664790009635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,11 @@\n import { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\n \r\n \r\n const SignInScreen = () => {\r\n+\r\n+    const element = <FontAwesomeIcon icon={faEnvelope} />\r\n+\r\n     return (\r\n         <View>\r\n             <View>\r\n                 <ImageBackground source={require('../../assets/images/signInBg.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n@@ -24,10 +27,10 @@\n \r\n             <View>\r\n \r\n \r\n+                <Text>element</Text>\r\n \r\n-\r\n             </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664790043188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \r\n             <View>\r\n \r\n \r\n-                <Text>element</Text>\r\n+                <Text>{element}</Text>\r\n \r\n             </View>\r\n \r\n         </View>\r\n"
+                },
+                {
+                    "date": 1664790059125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n import { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\n \r\n \r\n+const element = <FontAwesomeIcon icon={faEnvelope} />\r\n const SignInScreen = () => {\r\n \r\n-    const element = <FontAwesomeIcon icon={faEnvelope} />\r\n \r\n     return (\r\n         <View>\r\n             <View>\r\n"
+                },
+                {
+                    "date": 1664790075676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,8 @@\n \r\n             <View>\r\n \r\n \r\n-                <Text>{element}</Text>\r\n-\r\n             </View>\r\n \r\n         </View>\r\n     )\r\n"
+                },
+                {
+                    "date": 1664790095283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,8 @@\n import { ImageBackground } from 'react-native';\r\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n import { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\n \r\n-\r\n-const element = <FontAwesomeIcon icon={faEnvelope} />\r\n const SignInScreen = () => {\r\n \r\n \r\n     return (\r\n"
+                }
+            ],
+            "date": 1664772467759,
+            "name": "Commit-0",
+            "content": "import { View, Text } from 'react-native'\r\nimport React from 'react'\r\n\r\nconst SignInScreen = () => {\r\n  return (\r\n    <View>\r\n      <Text>SignInScreen</Text>\r\n    </View>\r\n  )\r\n}\r\n\r\nexport default SignInScreen"
+        }
+    ]
+}
