@@ -1,5 +1,5 @@
 import { useEffect, useCallback } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet,KeyboardAvoidingView } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import IntroScreen from './src/components/IntroScreen';
@@ -8,6 +8,8 @@ import SignInScreen from './src/components/SignInScreen';
 export default function App() {
   const [fontsLoaded] = useFonts({
     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),
+    'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),
+
   });
 
   useEffect(() => {
@@ -29,13 +31,17 @@ export default function App() {
 
   return (
     // <View style = {styles.container} onLayout={onLayoutRootView}>
-    //   <SignInScreen />
     //   <IntroScreen />
     // </View>
 
-    <View onLayout={onLayoutRootView}>
-      <SignInScreen />
-    </View>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
+      <View onLayout={onLayoutRootView}>
+        <SignInScreen />
+      </View>
+
+    </KeyboardAvoidingView>
 
   );
 }

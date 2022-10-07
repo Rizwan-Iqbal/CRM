@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 68,
+            "activePatchIndex": 188,
             "patches": [
                 {
                     "date": 1664773148633,
@@ -280,6 +280,486 @@
                 {
                     "date": 1664779478845,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,8 @@\n     \r\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n-  \r\n     \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665123292164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n         flex: 1,\r\n         backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n+        width: 100,\r\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n"
+                },
+                {
+                    "date": 1665123301593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         flex: 1,\r\n         backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n-        width: 100,\r\n+        width: '100%',\r\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n"
+                },
+                {
+                    "date": 1665123317313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         flex: 1,\r\n         backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n-        width: '100%',\r\n+       \r\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n"
+                },
+                {
+                    "date": 1665123483716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,12 @@\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n     \r\n+    },\r\n+    form: {\r\n+\r\n+        margin: 10,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665123514122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     \r\n     },\r\n     form: {\r\n \r\n-        margin: 10,\r\n+        marginHorizontal: 10,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665123519699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     \r\n     },\r\n     form: {\r\n \r\n-        marginHorizontal: 10,\r\n+        marginHorizontal: 30,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665123532647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,10 @@\n     },\r\n     form: {\r\n \r\n         marginHorizontal: 30,\r\n+        marginVertical: 30,\r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665123544834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     },\r\n     form: {\r\n \r\n         marginHorizontal: 30,\r\n-        marginVertical: 30,\r\n+        marginVertical: 35,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665123559488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         flex: 1,\r\n         backgroundColor: '#000000',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n-       \r\n+\r\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n@@ -29,19 +29,22 @@\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n-    \r\n+\r\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n-    \r\n+\r\n     },\r\n     form: {\r\n \r\n         marginHorizontal: 30,\r\n         marginVertical: 35,\r\n \r\n+    },\r\n+    input: {\r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665123632937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,10 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n+        borderColor: '#707070',\r\n+        borderWidth: 1,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665123661073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n     },\r\n     input: {\r\n         borderColor: '#707070',\r\n         borderWidth: 1,\r\n+        height: 50,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665123703853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n     input: {\r\n         borderColor: '#707070',\r\n         borderWidth: 1,\r\n         height: 50,\r\n+        \r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665123829492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     input: {\r\n         borderColor: '#707070',\r\n         borderWidth: 1,\r\n         height: 50,\r\n-        \r\n+        borderRadius: 15,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665123849532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,10 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n-        borderColor: '#707070',\r\n-        borderWidth: 1,\r\n+        // borderColor: '#707070',\r\n+        // borderWidth: 1,\r\n         height: 50,\r\n         borderRadius: 15,\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1665123884915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n         height: 50,\r\n         borderRadius: 15,\r\n+        \r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665124050978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n         height: 50,\r\n         borderRadius: 15,\r\n+        shadowColor: '#6F6F6F',\r\n         \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665124103875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         // borderWidth: 1,\r\n         height: 50,\r\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n-        \r\n+        shadowOpacity: 0.6,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665124113696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         // borderWidth: 1,\r\n         height: 50,\r\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n-        shadowOpacity: 0.6,\r\n+        shadowOpacity: 1.6,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665124145605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,10 @@\n         // borderWidth: 1,\r\n         height: 50,\r\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n-        shadowOpacity: 1.6,\r\n+        shadowOpacity: .6,\r\n+        shadowOffset: 1,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665124151025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         // borderWidth: 1,\r\n         height: 50,\r\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n-        shadowOpacity: .6,\r\n+        shadowOpacity: 1.6,\r\n         shadowOffset: 1,\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665128444657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n         shadowOpacity: 1.6,\r\n         shadowOffset: 1,\r\n+        \r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665128483831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,12 +47,14 @@\n         // borderWidth: 1,\r\n         height: 50,\r\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n-        shadowOpacity: 1.6,\r\n-        shadowOffset: 1,\r\n-        \r\n+        shadowOffset: { width: 0, height: 1 },\r\n+        shadowOpacity: 0.8,\r\n+        shadowRadius: 2,\r\n+        elevation: 5,\r\n \r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665128495606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.8,\r\n-        shadowRadius: 2,\r\n+        shadowRadius: 1,\r\n         elevation: 5,\r\n \r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1665128504654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,10 +48,10 @@\n         height: 50,\r\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n-        shadowOpacity: 0.8,\r\n-        shadowRadius: 1,\r\n+        shadowOpacity: 0.6,\r\n+        shadowRadius: 2,\r\n         elevation: 5,\r\n \r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1665128512126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n         shadowColor: '#6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.6,\r\n         shadowRadius: 2,\r\n-        elevation: 5,\r\n+        elevation: 1,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665128521657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,10 @@\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.6,\r\n-        shadowRadius: 2,\r\n-        elevation: 1,\r\n+        shadowRadius: 1,\r\n+        elevation: 6,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665128554329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         height: 50,\r\n         borderRadius: 15,\r\n         shadowColor: '#6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n-        shadowOpacity: 0.6,\r\n+        // shadowOpacity: 0.6,\r\n         shadowRadius: 1,\r\n         elevation: 6,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665128580182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,13 +44,13 @@\n     },\r\n     input: {\r\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n-        height: 50,\r\n+        // height: 50,\r\n         borderRadius: 15,\r\n-        shadowColor: '#6F6F6F',\r\n+        shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n-        // shadowOpacity: 0.6,\r\n+        shadowOpacity: 0.6,\r\n         shadowRadius: 1,\r\n         elevation: 6,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665128590152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     },\r\n     input: {\r\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n-        // height: 50,\r\n+        height: 70,\r\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.6,\r\n"
+                },
+                {
+                    "date": 1665128606296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.6,\r\n-        shadowRadius: 1,\r\n+        shadowRadius: 0.5,\r\n         elevation: 6,\r\n \r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1665128686551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         height: 70,\r\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n-        shadowOpacity: 0.6,\r\n+        shadowOpacity: 0.2,\r\n         shadowRadius: 0.5,\r\n         elevation: 6,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665128698372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.2,\r\n-        shadowRadius: 0.5,\r\n+        shadowRadius: 3,\r\n         elevation: 6,\r\n \r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1665128710922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     },\r\n     input: {\r\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n-        height: 70,\r\n+        height: 80,\r\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.2,\r\n"
+                },
+                {
+                    "date": 1665128725862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,14 +44,14 @@\n     },\r\n     input: {\r\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n-        height: 80,\r\n+        height: 70,\r\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.2,\r\n-        shadowRadius: 3,\r\n+        shadowRadius: .3,\r\n         elevation: 6,\r\n \r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1665128731909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,10 @@\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.2,\r\n-        shadowRadius: .3,\r\n-        elevation: 6,\r\n+        shadowRadius: 3,\r\n+        elevation: .6,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665128739620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 0, height: 1 },\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n-        elevation: .6,\r\n+        elevation: 12,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665128793016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         // borderWidth: 1,\r\n         height: 70,\r\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n-        shadowOffset: { width: 0, height: 1 },\r\n+        shadowOffset: { width: 2, height: 1 },\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n         elevation: 12,\r\n \r\n"
+                },
+                {
+                    "date": 1665128799226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         // borderWidth: 1,\r\n         height: 70,\r\n         borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n-        shadowOffset: { width: 2, height: 1 },\r\n+        shadowOffset: { width: 2, height: 3 },\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n         elevation: 12,\r\n \r\n"
+                },
+                {
+                    "date": 1665128844699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     input: {\r\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n         height: 70,\r\n-        borderRadius: 15,\r\n+        // borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: 2, height: 3 },\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n"
+                },
+                {
+                    "date": 1665128860635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         // borderWidth: 1,\r\n         height: 70,\r\n         // borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n-        shadowOffset: { width: 2, height: 3 },\r\n+        shadowOffset: { width: 0, height: 1},\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n         elevation: 12,\r\n \r\n"
+                },
+                {
+                    "date": 1665128898520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         // borderWidth: 1,\r\n         height: 70,\r\n         // borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n-        shadowOffset: { width: 0, height: 1},\r\n+        shadowOffset: { width: -2, height: 1},\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n         elevation: 12,\r\n \r\n"
+                },
+                {
+                    "date": 1665128981209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,14 +45,14 @@\n     input: {\r\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n         height: 70,\r\n-        // borderRadius: 15,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: -2, height: 1},\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n         elevation: 12,\r\n+        borderRadius: 15,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665128994183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n     input: {\r\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n         height: 70,\r\n+        width: 100%,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: -2, height: 1},\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n"
+                },
+                {
+                    "date": 1665129024307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,8 @@\n     input: {\r\n         // borderColor: '#707070',\r\n         // borderWidth: 1,\r\n         height: 70,\r\n-        width: 100%,\r\n         shadowColor: '##6F6F6F',\r\n         shadowOffset: { width: -2, height: 1},\r\n         shadowOpacity: 0.2,\r\n         shadowRadius: 3,\r\n"
+                },
+                {
+                    "date": 1665129100709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,19 +42,20 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n-        // borderColor: '#707070',\r\n-        // borderWidth: 1,\r\n         height: 70,\r\n-        shadowColor: '##6F6F6F',\r\n-        shadowOffset: { width: -2, height: 1},\r\n-        shadowOpacity: 0.2,\r\n-        shadowRadius: 3,\r\n-        elevation: 12,\r\n-        borderRadius: 15,\r\n+        shadowColor: \"#000\",\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 2,\r\n+        },\r\n+        shadowOpacity: 0.25,\r\n+        shadowRadius: 3.84,\r\n \r\n+        elevation: 5,\r\n \r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665129120241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n             width: 0,\r\n             height: 2,\r\n         },\r\n         shadowOpacity: 0.25,\r\n-        shadowRadius: 3.84,\r\n+        shadowRadius: 8.84,\r\n \r\n         elevation: 5,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665129134282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         shadowOffset: {\r\n             width: 0,\r\n             height: 2,\r\n         },\r\n-        shadowOpacity: 0.25,\r\n+        shadowOpacity: 0.5,\r\n         shadowRadius: 8.84,\r\n \r\n         elevation: 5,\r\n \r\n"
+                },
+                {
+                    "date": 1665129141175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n-        height: 70,\r\n+        // height: 70,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 2,\r\n"
+                },
+                {
+                    "date": 1665129153335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,13 +42,13 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n-        // height: 70,\r\n+        height: 70,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 2,\r\n+            height: 1,\r\n         },\r\n         shadowOpacity: 0.5,\r\n         shadowRadius: 8.84,\r\n \r\n"
+                },
+                {
+                    "date": 1665129181274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         },\r\n         shadowOpacity: 0.5,\r\n         shadowRadius: 8.84,\r\n \r\n-        elevation: 5,\r\n+        elevation: 50,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665129187769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         },\r\n         shadowOpacity: 0.5,\r\n         shadowRadius: 8.84,\r\n \r\n-        elevation: 50,\r\n+        elevation: 1,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665129194988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         },\r\n         shadowOpacity: 0.5,\r\n         shadowRadius: 8.84,\r\n \r\n-        elevation: 1,\r\n+        elevation: 3,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665129209919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n         shadowOpacity: 0.5,\r\n         shadowRadius: 8.84,\r\n \r\n         elevation: 3,\r\n+        borderRadius:15,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665129223945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         height: 70,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 1,\r\n+            height: 31,\r\n         },\r\n         shadowOpacity: 0.5,\r\n         shadowRadius: 8.84,\r\n \r\n"
+                },
+                {
+                    "date": 1665129240572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,18 +43,18 @@\n \r\n     },\r\n     input: {\r\n         height: 70,\r\n+        borderRadius:15,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 31,\r\n+            height: 1,\r\n         },\r\n         shadowOpacity: 0.5,\r\n         shadowRadius: 8.84,\r\n \r\n         elevation: 3,\r\n-        borderRadius:15,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665129246526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n \r\n     },\r\n     input: {\r\n         height: 70,\r\n-        borderRadius:15,\r\n+        borderRadius: 15,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n"
+                },
+                {
+                    "date": 1665129264503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n         },\r\n-        shadowOpacity: 0.5,\r\n+        shadowOpacity: 0.1,\r\n         shadowRadius: 8.84,\r\n \r\n         elevation: 3,\r\n \r\n"
+                },
+                {
+                    "date": 1665129278158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,10 +49,10 @@\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n         },\r\n-        shadowOpacity: 0.1,\r\n-        shadowRadius: 8.84,\r\n+        shadowOpacity: 0.5,\r\n+        shadowRadius: 1.84,\r\n \r\n         elevation: 3,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665129300040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,18 +43,17 @@\n \r\n     },\r\n     input: {\r\n         height: 70,\r\n-        borderRadius: 15,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 1,\r\n+            height: 2,\r\n         },\r\n-        shadowOpacity: 0.5,\r\n-        shadowRadius: 1.84,\r\n+        shadowOpacity: 0.25,\r\n+        shadowRadius: 8.84,\r\n \r\n-        elevation: 3,\r\n+        elevation: 5,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665129310271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n             width: 0,\r\n             height: 2,\r\n         },\r\n         shadowOpacity: 0.25,\r\n-        shadowRadius: 8.84,\r\n+        shadowRadius: 80.84,\r\n \r\n         elevation: 5,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665129319724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n             width: 0,\r\n             height: 2,\r\n         },\r\n         shadowOpacity: 0.25,\r\n-        shadowRadius: 80.84,\r\n+        shadowRadius: 0.84,\r\n \r\n         elevation: 5,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665129326783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n             width: 0,\r\n             height: 2,\r\n         },\r\n         shadowOpacity: 0.25,\r\n-        shadowRadius: 0.84,\r\n+        shadowRadius: 80.84,\r\n \r\n         elevation: 5,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665129380389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,16 +46,15 @@\n         height: 70,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 2,\r\n+            height: 1,\r\n         },\r\n-        shadowOpacity: 0.25,\r\n-        shadowRadius: 80.84,\r\n+        shadowOpacity: 0.18,\r\n+        shadowRadius: 1.00,\r\n+        \r\n+        elevation: 1,\r\n \r\n-        elevation: 5,\r\n-\r\n-\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665129395300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n-        height: 70,\r\n+        height: 50,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n"
+                },
+                {
+                    "date": 1665129418189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,10 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n-        height: 50,\r\n+        // height: 50,\r\n+        padding: 50,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n@@ -53,8 +54,9 @@\n         shadowRadius: 1.00,\r\n         \r\n         elevation: 1,\r\n \r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665129425645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,9 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n-        // height: 50,\r\n-        padding: 50,\r\n+        height: 50,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n@@ -53,10 +52,10 @@\n         shadowOpacity: 0.18,\r\n         shadowRadius: 1.00,\r\n         \r\n         elevation: 1,\r\n+        \r\n \r\n-\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665129436082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n \r\n     },\r\n     input: {\r\n         height: 50,\r\n+        paddingLeft: 10,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n"
+                },
+                {
+                    "date": 1665129451935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n     },\r\n     input: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n+        borderRadius: 10,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n"
+                },
+                {
+                    "date": 1665129460954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     },\r\n     input: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n-        borderRadius: 10,\r\n+        borderRadius: 1,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n"
+                },
+                {
+                    "date": 1665129573151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,10 @@\n     },\r\n     input: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n-        borderRadius: 1,\r\n+        borderRadius: 15,\r\n+        backgroundColor: white,\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n"
+                },
+                {
+                    "date": 1665129578888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     input: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 15,\r\n-        backgroundColor: white,\r\n+        backgroundColor: 'white',\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 1,\r\n"
+                },
+                {
+                    "date": 1665129602870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     },\r\n     input: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n-        borderRadius: 15,\r\n+        borderRadius: 10,\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1665129640168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,14 +49,14 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 1,\r\n+            height: 2,\r\n         },\r\n-        shadowOpacity: 0.18,\r\n-        shadowRadius: 1.00,\r\n+        shadowOpacity: 0.23,\r\n+        shadowRadius: 2.62,\r\n         \r\n-        elevation: 1,\r\n+        elevation: 4,\r\n         \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665130242066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n-        shadowColor: \"#000\",\r\n+        shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 2,\r\n         },\r\n"
+                },
+                {
+                    "date": 1665130272839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,17 +46,17 @@\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n-        shadowColor: \"#6F6F6F\",\r\n+        shadowColor: \"#000\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 2,\r\n+            height: 7,\r\n         },\r\n-        shadowOpacity: 0.23,\r\n-        shadowRadius: 2.62,\r\n+        shadowOpacity: 0.43,\r\n+        shadowRadius: 9.51,\r\n         \r\n-        elevation: 4,\r\n+        elevation: 15,\r\n         \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665130280007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n-        shadowColor: \"#000\",\r\n+        shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 7,\r\n         },\r\n"
+                },
+                {
+                    "date": 1665135715582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,16 +49,16 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 7,\r\n+            height: 12,\r\n         },\r\n-        shadowOpacity: 0.43,\r\n-        shadowRadius: 9.51,\r\n-        \r\n-        elevation: 15,\r\n-        \r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n \r\n+        elevation: 24,\r\n+\r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665136316279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,10 @@\n     input: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n+        borderWidth: 1,\r\n+        borderColor: '#6F6F6F',\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1665136335160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,10 +45,8 @@\n     input: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n-        borderWidth: 1,\r\n-        borderColor: '#6F6F6F',\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1665136372203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n-        shadowColor: \"#6F6F6F\",\r\n+        shadowColor: 'black',\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n"
+                },
+                {
+                    "date": 1665136383407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n-        shadowColor: 'black',\r\n+        shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n"
+                },
+                {
+                    "date": 1665136391871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n-        shadowOpacity: 0.58,\r\n+        shadowOpacity: 10.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 24,\r\n \r\n"
+                },
+                {
+                    "date": 1665136402357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,12 +51,12 @@\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n-        shadowOpacity: 10.58,\r\n+        shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n-        elevation: 24,\r\n+        elevation: 124,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665136410505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n-        elevation: 124,\r\n+        elevation: 1,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665136417611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n-        elevation: 1,\r\n+        elevation: 10,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665136431263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n             width: 0,\r\n             height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n-        shadowRadius: 16.00,\r\n+        shadowRadius: 6.00,\r\n \r\n         elevation: 10,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665136437083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n             width: 0,\r\n             height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n-        shadowRadius: 6.00,\r\n+        shadowRadius: 116.00,\r\n \r\n         elevation: 10,\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665136444623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,11 +52,11 @@\n             width: 0,\r\n             height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n-        shadowRadius: 116.00,\r\n+        shadowRadius: 16.00,\r\n \r\n-        elevation: 10,\r\n+        elevation: 1,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665136456124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n-        elevation: 1,\r\n+        elevation: 16,\r\n \r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665136473311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 12,\r\n+            height: 2,\r\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n"
+                },
+                {
+                    "date": 1665136486317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 2,\r\n+            height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n"
+                },
+                {
+                    "date": 1665136534743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n         marginVertical: 35,\r\n \r\n     },\r\n     input: {\r\n+        margin: 10,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n@@ -55,10 +56,8 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n-\r\n-\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665136555154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,10 +37,10 @@\n \r\n     },\r\n     form: {\r\n \r\n-        marginHorizontal: 30,\r\n-        marginVertical: 35,\r\n+        marginHorizontal: 20,\r\n+        marginVertical: 20,\r\n \r\n     },\r\n     input: {\r\n         margin: 10,\r\n"
+                },
+                {
+                    "date": 1665138263074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,11 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n+    },\r\n+    remember: {\r\n+        \r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138271640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n         elevation: 16,\r\n     },\r\n     remember: {\r\n-        \r\n+        color: \r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138279501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n         elevation: 16,\r\n     },\r\n     remember: {\r\n-        color: \r\n+        color: '#6F6F6F',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138313051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n         elevation: 16,\r\n     },\r\n     remember: {\r\n         color: '#6F6F6F',\r\n+        fontSize: 10,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138330681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n     },\r\n     remember: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n+        fontWeight: 'bold',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138352192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     },\r\n     remember: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n-        fontWeight: 'bold',\r\n+        fontWeight: '600',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138372664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n     remember: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n         fontWeight: '600',\r\n+        fontFamily: 'Segoe-ui-bold',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138447500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     remember: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n         fontWeight: '600',\r\n-        fontFamily: 'Segoe-ui-bold',\r\n+        fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138454240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     },\r\n     remember: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n-        fontWeight: '600',\r\n+        fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665138459767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     },\r\n     remember: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n-        fontWeight: '700',\r\n+        fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665138676532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,13 +57,16 @@\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n     },\r\n-    remember: {\r\n+    rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n+    },\r\n+    rememberContainer: {\r\n+        flex: 1,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138715347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,9 @@\n         fontFamily: 'Segoe-ui',\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n+        alignContent: 'center',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138722092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,9 @@\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n         alignContent: 'center',\r\n+        justifyContent: 'center',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138748235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,9 @@\n     rememberContainer: {\r\n         flex: 1,\r\n         alignContent: 'center',\r\n         justifyContent: 'center',\r\n+        display: 'none',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138755005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n     rememberContainer: {\r\n         flex: 1,\r\n         alignContent: 'center',\r\n         justifyContent: 'center',\r\n-        display: 'none',\r\n+      \r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138868519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n     rememberContainer: {\r\n         flex: 1,\r\n         alignContent: 'center',\r\n         justifyContent: 'center',\r\n-      \r\n+      flexDirection: 'row',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138877844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,10 +65,8 @@\n         fontFamily: 'Segoe-ui',\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n-        alignContent: 'center',\r\n-        justifyContent: 'center',\r\n       flexDirection: 'row',\r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665138953395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,11 @@\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n+    },\r\n+    checkbox: {\r\n+        borderColor: 'red',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665138971236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,10 @@\n         flex: 1,\r\n       flexDirection: 'row',\r\n     },\r\n     checkbox: {\r\n-        borderColor: 'red',\r\n+        borderColor: '#474747',\r\n+        borderWidth: 0.5,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665139009439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,10 @@\n     },\r\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n+        width: 11,\r\n+        heihj\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665139018372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n         width: 11,\r\n-        heihj\r\n+        height: 10,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665139041774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n         width: 11,\r\n-        height: 10,\r\n+        height: 11,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665139075963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n+        marginLeft: 10,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665139122151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 20,\r\n \r\n     },\r\n     input: {\r\n-        margin: 10,\r\n+        // margin: 10,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n"
+                },
+                {
+                    "date": 1665139143321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 20,\r\n \r\n     },\r\n     input: {\r\n-        // margin: 10,\r\n+        margin: 10,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n@@ -67,14 +67,16 @@\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n+      margin; 10,\r\n     },\r\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n         width: 11,\r\n         height: 11,\r\n+        \r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665139150916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n-      margin; 10,\r\n+      margin: 10,\r\n     },\r\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n"
+                },
+                {
+                    "date": 1665139169144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n-        marginLeft: 10,\r\n+        marginLeft: 6,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n"
                 }
             ],
             "date": 1664773148633,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 40,
+            "activePatchIndex": 42,
             "patches": [
                 {
                     "date": 1664454200921,
@@ -168,6 +168,14 @@
                 {
                     "date": 1664773052411,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { View, Text, StyleSheet } from 'react-native';\r\n import React from 'react';\r\n-import { styles } from '../../assets/css/ScreenStyling';\r\n+import { styles } from '../../assets/css/Styles';\r\n const IntroScreen = () => {\r\n     return (\r\n         <View style={styles.IntroContainer}>\r\n             <Text style={styles.introTitle}>Law CRM</Text>\r\n"
+                },
+                {
+                    "date": 1665122981561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,13 @@\n import React from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n const IntroScreen = () => {\r\n     return (\r\n-        <View style={styles.IntroContainer}>\r\n-            <Text style={styles.introTitle}>Law CRM</Text>\r\n+        <View style={styles.container}>\r\n+            <View style={IntroContainer}>\r\n+\r\n+                <Text style={styles.introTitle}>Law CRM</Text>\r\n+            </View>\r\n         </View>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1665123262442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { styles } from '../../assets/css/Styles';\r\n const IntroScreen = () => {\r\n     return (\r\n         <View style={styles.container}>\r\n-            <View style={IntroContainer}>\r\n+            <View style={styles.IntroContainer}>\r\n \r\n                 <Text style={styles.introTitle}>Law CRM</Text>\r\n             </View>\r\n         </View>\r\n"
                 }
             ],
             "date": 1664454200921,
