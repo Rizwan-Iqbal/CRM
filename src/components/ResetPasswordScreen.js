@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-const SignInScreen = () => {
+const ResetPasswordScreen = () => {
     const [isSelected, setSelection] = useState(false);
 
 
@@ -19,53 +19,36 @@ const SignInScreen = () => {
 
                 <View style={styles.container}>
                     <View>
-                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>
+                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >
                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-                                {/* <Image source={require('../../assets/images/back.png')} style={styles.backIcon} /> */}
-                                <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>
-                                <Text style={styles.SignInTitle}> Welcome Back! </Text>
+                            <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>
+                                <Text style={styles.SignInTitle}> Reset Password </Text>
                             </View>
                         </ImageBackground>
                     </View>
 
                     <View style={{ alignItems: 'center', }}>
-                        <Image source={require('../../assets/images/Sign-In-Img.png')} heigh style={styles.signInImg}></Image>
+                        <Image source={require('../../assets/images/Sign-up-Img.png')} style={styles.signInImg}></Image>
                     </View>
 
                     <View>
                         <View style={styles.form}>
                             <View style = {styles.inputEmail}>
                                 <TextInput style={styles.input}
-                                    placeholder="Email"
-                                />
-                                <Icon style = {styles.emailIcon} name={'envelope'} solid  size={20}/>
+                                    placeholder="Password" />
+                                <Icon style = {styles.emailIcon} name={'lock'} solid  size={20}/>
+                                <Icon style = {styles.eyeIcon} name={'eye-slash'} solid  size={18}/>
                             </View>
                             <View style = {styles.inputEmail}>
                                 <TextInput style={styles.input}
-                                    placeholder="Password" />
+                                    placeholder="Confirm Password" />
                                 <Icon style = {styles.emailIcon} name={'lock'} solid  size={20}/>
-                            </View>
-                            <View style={styles.AfterFormContainer}>
-                                <View style={styles.rememberContainer}>
-                                    <Checkbox
-                                        value={isSelected}
-                                        onValueChange={setSelection}
-                                        style={styles.checkbox}
-                                    />
-                                    <Text style={styles.rememberTxt}>Remember me</Text>
-
-                                </View>
-                                <View>
-                                    <Text style={styles.forgetTxt}>Forgot Password?</Text>
-                                </View>
-                            </View>
-                            <View style={styles.newUser}>
-                            <Text style={styles.newUserText}>New User?<Text style = {{ color: 'black'}}> Sign Up </Text></Text>
+                                <Icon style = {styles.eyeIcon} name={'eye-slash'} solid  size={18}/>
 
                             </View>
                             <View>
-                                <TouchableOpacity style={styles.signInBtnContainer}>
-                                    <Text style={styles.signInBtn}>Sign In</Text>
+                                <TouchableOpacity style = {{ width: '45%', marginLeft: '25%', marginTop: 20,}} disabled = {'true'}>
+                                    <Text style={styles.forgetBtn} >Submit</Text>
                                 </TouchableOpacity>
                             </View>
 
@@ -84,4 +67,4 @@ const SignInScreen = () => {
     )
 }
 
-export default SignInScreen
+export default ResetPasswordScreen

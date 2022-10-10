@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 188,
+            "activePatchIndex": 469,
             "patches": [
                 {
                     "date": 1664773148633,
@@ -760,6 +760,1130 @@
                 {
                     "date": 1665139169144,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n-        marginLeft: 10,\r\n+        marginLeft: 6,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665383546958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n-      margin: 10,\r\n+      margin: 6,\r\n     },\r\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n"
+                },
+                {
+                    "date": 1665383557993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n-      margin: 6,\r\n+      marginTop: 6,\r\n     },\r\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n"
+                },
+                {
+                    "date": 1665383575617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,10 @@\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n-      marginTop: 6,\r\n+      marginTop: 5,\r\n+      marginLeft: 10,\r\n     },\r\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n"
+                },
+                {
+                    "date": 1665383581100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n       flexDirection: 'row',\r\n-      marginTop: 5,\r\n+      marginTop: 3,\r\n       marginLeft: 10,\r\n     },\r\n     checkbox: {\r\n         borderColor: '#474747',\r\n"
+                },
+                {
+                    "date": 1665383669885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,18 +66,26 @@\n         marginLeft: 6,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n-      flexDirection: 'row',\r\n-      marginTop: 3,\r\n-      marginLeft: 10,\r\n+        flexDirection: 'row',\r\n+        marginTop: 3,\r\n+        marginLeft: 10,\r\n     },\r\n     checkbox: {\r\n         borderColor: '#474747',\r\n         borderWidth: 0.5,\r\n         width: 11,\r\n         height: 11,\r\n-        \r\n+\r\n+    },\r\n+    forgetTxt: {\r\n+        color: '#6F6F6F',\r\n+        fontSize: 10,\r\n+        fontWeight: '600',\r\n+        fontFamily: 'Segoe-ui',\r\n+        marginLeft: 6,\r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665383706086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,9 @@\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 6,\r\n+        \r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665383718346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 6,\r\n-        \r\n+        textAlign: 'right',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665383728494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,8 @@\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 6,\r\n-        textAlign: 'right',\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665383780421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,11 @@\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 6,\r\n \r\n+    },\r\n+    AfterFormContainer:{\r\n+        \r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665383791457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,10 +85,11 @@\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 6,\r\n \r\n     },\r\n-    AfterFormContainer:{\r\n-        \r\n+    AfterFormContainer: {\r\n+        flex: 1,\r\n+        flexDirection: 'row',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665383842648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n     },\r\n     forgetTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n-        fontWeight: '600',\r\n+        fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 6,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665383855637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,10 +79,10 @@\n \r\n     },\r\n     forgetTxt: {\r\n         color: '#6F6F6F',\r\n-        fontSize: 10,\r\n-        fontWeight: '700',\r\n+        fontSize: 8,\r\n+        fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 6,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665383906679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,12 +79,12 @@\n \r\n     },\r\n     forgetTxt: {\r\n         color: '#6F6F6F',\r\n-        fontSize: 8,\r\n+        fontSize: 9,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n-        marginLeft: 6,\r\n+       \r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665383926627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n         color: '#6F6F6F',\r\n         fontSize: 9,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n-       \r\n+       marginRight: 10,\r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665383951650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,11 @@\n         fontSize: 9,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n        marginRight: 10,\r\n+       marginTop: 3,\r\n \r\n+\r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665383971998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n-        marginLeft: 6,\r\n+        marginLeft: 4,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665383985987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 4,\r\n+        marginBottom: 2,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665383992536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 4,\r\n-        marginBottom: 2,\r\n+        marginBottom: 20,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665384007677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 4,\r\n-        marginBottom: 20,\r\n+        marginTop: -4,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665384016087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 4,\r\n-        marginTop: -4,\r\n+        marginTop: -1,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665384021643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n         fontSize: 10,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginLeft: 4,\r\n-        marginTop: -1,\r\n+        marginTop: -2,\r\n     },\r\n     rememberContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665384185031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,8 +91,13 @@\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n+    },\r\n+    newUser: {\r\n+        flex: 1,\r\n+        justifyContent: 'center',\r\n+        alignItems: 'center',\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665384201403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,9 @@\n     newUser: {\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n+        marginTop: 20,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665384207365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n     newUser: {\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n-        marginTop: 20,\r\n+        marginTop: 25,\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665384297762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,10 @@\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n         marginTop: 25,\r\n+        fontSize: 10,\r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665384311150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,8 @@\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n         marginTop: 25,\r\n-        fontSize: 10,\r\n \r\n     }\r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665384393828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,13 @@\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n         marginTop: 25,\r\n \r\n+    },\r\n+\r\n+    newUserText:{\r\n+        fontSize: 10,\r\n+\r\n     }\r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665384404537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n     newUser: {\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n-        marginTop: 25,\r\n+        marginTop: 22,\r\n \r\n     },\r\n \r\n     newUserText:{\r\n"
+                },
+                {
+                    "date": 1665384417224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n     newUser: {\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n-        marginTop: 22,\r\n+        marginTop: 18,\r\n \r\n     },\r\n \r\n     newUserText:{\r\n"
+                },
+                {
+                    "date": 1665384445763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 20,\r\n \r\n     },\r\n     input: {\r\n-        margin: 10,\r\n+        margin: 5,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n@@ -96,9 +96,9 @@\n     newUser: {\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n-        marginTop: 18,\r\n+        marginTop: 15,\r\n \r\n     },\r\n \r\n     newUserText:{\r\n"
+                },
+                {
+                    "date": 1665384452419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 20,\r\n \r\n     },\r\n     input: {\r\n-        margin: 5,\r\n+        margin: 7,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n"
+                },
+                {
+                    "date": 1665384477503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     },\r\n     form: {\r\n \r\n         marginHorizontal: 20,\r\n-        marginVertical: 20,\r\n+        marginVertical: 10,\r\n \r\n     },\r\n     input: {\r\n         margin: 7,\r\n"
+                },
+                {
+                    "date": 1665384489775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 10,\r\n \r\n     },\r\n     input: {\r\n-        margin: 7,\r\n+        margin: 9,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n"
+                },
+                {
+                    "date": 1665384542683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,10 @@\n \r\n     newUserText:{\r\n         fontSize: 10,\r\n \r\n-    }\r\n+    },\r\n+    \r\n \r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1665384767849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,10 +83,10 @@\n         color: '#6F6F6F',\r\n         fontSize: 9,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n-       marginRight: 10,\r\n-       marginTop: 3,\r\n+        marginRight: 10,\r\n+        marginTop: 3,\r\n \r\n \r\n     },\r\n     AfterFormContainer: {\r\n@@ -100,13 +100,16 @@\n         marginTop: 15,\r\n \r\n     },\r\n \r\n-    newUserText:{\r\n+    newUserText: {\r\n         fontSize: 10,\r\n \r\n     },\r\n-    \r\n+    signInBtn: {\r\n \r\n+    }\r\n+\r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1665384778329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n         fontSize: 10,\r\n \r\n     },\r\n     signInBtn: {\r\n-\r\n+backgroundColor: \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665384789099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n         fontSize: 10,\r\n \r\n     },\r\n     signInBtn: {\r\n-backgroundColor: \r\n+backgroundColor: '#FFFFFF',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665384822581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n         fontSize: 10,\r\n \r\n     },\r\n     signInBtn: {\r\n-backgroundColor: '#FFFFFF',\r\n+        backgroundColor: '#FFFFFF',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665384848435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,10 +104,12 @@\n     newUserText: {\r\n         fontSize: 10,\r\n \r\n     },\r\n+\r\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n+        color: 'black',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665384878004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,9 @@\n \r\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n+        fontSize: 30,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665384887262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,8 +109,9 @@\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 30,\r\n+        width: 100,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385402859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,10 +108,9 @@\n \r\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n-        fontSize: 30,\r\n-        width: 100,\r\n+        fontSize: 30\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385423051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,11 @@\n \r\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n-        fontSize: 30\r\n+        fontSize: 18,\r\n+        fontWeight: '600',\r\n+        fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385447748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 18,\r\n-        fontWeight: '600',\r\n+        fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665385462445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,10 +108,10 @@\n \r\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n-        fontSize: 18,\r\n-        fontWeight: '700',\r\n+        fontSize: 16,\r\n+        fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665385496573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,11 +108,11 @@\n \r\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n-        fontSize: 16,\r\n+        fontSize: 12,\r\n         fontWeight: '600',\r\n-        fontFamily: 'Segoe-ui',\r\n+        fontFamily: 'Segoe-ui-bold',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385523411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,8 @@\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 12,\r\n-        fontWeight: '600',\r\n         fontFamily: 'Segoe-ui-bold',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665385534944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,10 @@\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 12,\r\n-        fontFamily: 'Segoe-ui-bold',\r\n+        fontWeight: '600',\r\n+        fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385545090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 12,\r\n-        fontWeight: '600',\r\n+        fontWeight: '650',\r\n         fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665385551065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     signInBtn: {\r\n         backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 12,\r\n-        fontWeight: '650',\r\n+        fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665385563638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,9 +106,9 @@\n \r\n     },\r\n \r\n     signInBtn: {\r\n-        backgroundColor: '#FFFFFF',\r\n+        // backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n"
+                },
+                {
+                    "date": 1665385593481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,15 +106,25 @@\n \r\n     },\r\n \r\n     signInBtn: {\r\n-        // backgroundColor: '#FFFFFF',\r\n+        backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-    }\r\n+        backgroundColor: 'white',\r\n+        shadowColor: \"#6F6F6F\",\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 12,\r\n+        },\r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n \r\n+        elevation: 16,\r\n+    },\r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1665385615876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,9 +106,8 @@\n \r\n     },\r\n \r\n     signInBtn: {\r\n-        backgroundColor: '#FFFFFF',\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n"
+                },
+                {
+                    "date": 1665385642903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,8 +120,12 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n+        margin: 9,\r\n+        height: 50,\r\n+        paddingLeft: 10,\r\n+        borderRadius: 10,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385654835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,8 @@\n \r\n         elevation: 16,\r\n         margin: 9,\r\n         height: 50,\r\n-        paddingLeft: 10,\r\n         borderRadius: 10,\r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665385666474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n-        margin: 9,\r\n+        // margin: 9,\r\n         height: 50,\r\n         borderRadius: 10,\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665385681143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,11 +120,11 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n-        // margin: 9,\r\n         height: 50,\r\n         borderRadius: 10,\r\n+        width: 100,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385686839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n \r\n         elevation: 16,\r\n         height: 50,\r\n         borderRadius: 10,\r\n-        width: 100,\r\n+        width: 150,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385737382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,10 +122,15 @@\n \r\n         elevation: 16,\r\n         height: 50,\r\n         borderRadius: 10,\r\n-        width: 150,\r\n+        width: 120,\r\n     },\r\n+    signInBtn: {\r\n+        flex: 1,\r\n+        justifyContent: 'center',\r\n+        alignItems: 'center',\r\n+    }\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665385763444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,9 @@\n     },\r\n     signInBtn: {\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n-        alignItems: 'center',\r\n+        // alignItems: 'center',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385773352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,10 +125,10 @@\n         borderRadius: 10,\r\n         width: 120,\r\n     },\r\n     signInBtn: {\r\n-        flex: 1,\r\n-        justifyContent: 'center',\r\n+        // flex: 1,\r\n+        // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665385825443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n         fontSize: 10,\r\n \r\n     },\r\n \r\n-    signInBtn: {\r\n+    signInBtnContainer: {\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n"
+                },
+                {
+                    "date": 1665385831408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,11 +125,11 @@\n         borderRadius: 10,\r\n         width: 120,\r\n     },\r\n     signInBtn: {\r\n-        // flex: 1,\r\n-        // justifyContent: 'center',\r\n-        // alignItems: 'center',\r\n+        flex: 1,\r\n+        justifyContent: 'center',\r\n+        alignItems: 'center',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385843403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,13 +123,13 @@\n         elevation: 16,\r\n         height: 50,\r\n         borderRadius: 10,\r\n         width: 120,\r\n-    },\r\n-    signInBtn: {\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n+    },\r\n+    signInBtn: {\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385875412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,11 +126,10 @@\n         width: 120,\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n+        textAlign: 'center',\r\n     },\r\n-    signInBtn: {\r\n-    }\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665385887047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,11 +124,10 @@\n         height: 50,\r\n         borderRadius: 10,\r\n         width: 120,\r\n         flex: 1,\r\n-        justifyContent: 'center',\r\n+        // justifyContent: 'center',\r\n         alignItems: 'center',\r\n-        textAlign: 'center',\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385895344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,10 +123,10 @@\n         elevation: 16,\r\n         height: 50,\r\n         borderRadius: 10,\r\n         width: 120,\r\n-        flex: 1,\r\n-        // justifyContent: 'center',\r\n+        // flex: 1,\r\n+        justifyContent: 'center',\r\n         alignItems: 'center',\r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665385914936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,10 +122,10 @@\n \r\n         elevation: 16,\r\n         height: 50,\r\n         borderRadius: 10,\r\n-        width: 120,\r\n-        // flex: 1,\r\n+        width: 110,\r\n+        flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665385929158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,8 +126,9 @@\n         width: 110,\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n+        marginTop: 20,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665385980213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,8 +127,9 @@\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n         marginTop: 20,\r\n+        \r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665386021489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,13 +106,13 @@\n \r\n     },\r\n \r\n     signInBtnContainer: {\r\n-        color: 'black',\r\n-        fontSize: 12,\r\n-        fontWeight: '700',\r\n-        fontFamily: 'Segoe-ui',\r\n-        backgroundColor: 'white',\r\n+        // color: 'black',\r\n+        // fontSize: 12,\r\n+        // fontWeight: '700',\r\n+        // fontFamily: 'Segoe-ui',\r\n+        // backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n"
+                },
+                {
+                    "date": 1665386048887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,11 +120,11 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n+        // width: 110,\r\n         height: 50,\r\n         borderRadius: 10,\r\n-        width: 110,\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n         marginTop: 20,\r\n"
+                },
+                {
+                    "date": 1665386063438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n-        // width: 110,\r\n+        width: '10%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n"
+                },
+                {
+                    "date": 1665386069952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n-        width: '10%',\r\n+        width: '40%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n         flex: 1,\r\n         justifyContent: 'center',\r\n"
+                },
+                {
+                    "date": 1665386090598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,11 +123,12 @@\n         elevation: 16,\r\n         width: '40%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n-        flex: 1,\r\n-        justifyContent: 'center',\r\n-        alignItems: 'center',\r\n+        // flex: 1,\r\n+        textAlign: 'center',\r\n+        // justifyContent: 'center',\r\n+        // alignItems: 'center',\r\n         marginTop: 20,\r\n         \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665386109063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n         width: '40%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n         // flex: 1,\r\n-        textAlign: 'center',\r\n+      marginLeft; '50%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n         \r\n"
+                },
+                {
+                    "date": 1665386115304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n         width: '40%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n         // flex: 1,\r\n-      marginLeft; '50%',\r\n+      marginLeft: '50%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n         \r\n"
+                },
+                {
+                    "date": 1665386121012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n         width: '40%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n         // flex: 1,\r\n-      marginLeft: '50%',\r\n+      marginLeft: '30%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n         \r\n"
+                },
+                {
+                    "date": 1665386179615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,13 +106,9 @@\n \r\n     },\r\n \r\n     signInBtnContainer: {\r\n-        // color: 'black',\r\n-        // fontSize: 12,\r\n-        // fontWeight: '700',\r\n-        // fontFamily: 'Segoe-ui',\r\n-        // backgroundColor: 'white',\r\n+\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n@@ -124,14 +120,21 @@\n         width: '40%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n         // flex: 1,\r\n-      marginLeft: '30%',\r\n+        marginLeft: '30%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n-        \r\n+\r\n     },\r\n+    signInBtn: {\r\n+        color: 'black',\r\n+        fontSize: 12,\r\n+        fontWeight: '700',\r\n+        fontFamily: 'Segoe-ui',\r\n+        backgroundColor: 'white',\r\n+    }\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665386203507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,10 +116,10 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n-        width: '40%',\r\n-        height: 50,\r\n+        // width: '40%',\r\n+        // height: 50,\r\n         borderRadius: 10,\r\n         // flex: 1,\r\n         marginLeft: '30%',\r\n         // justifyContent: 'center',\r\n"
+                },
+                {
+                    "date": 1665386215017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n         // width: '40%',\r\n         // height: 50,\r\n         borderRadius: 10,\r\n         // flex: 1,\r\n-        marginLeft: '30%',\r\n+        // marginLeft: '30%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665386227945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,8 +132,9 @@\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'white',\r\n+        padding: 30,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665386235645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'white',\r\n-        padding: 30,\r\n+        padding: 20,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665386253155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,8 +133,9 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'white',\r\n         padding: 20,\r\n+        width: '40%',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665386270557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n \r\n         elevation: 16,\r\n         // width: '40%',\r\n         // height: 50,\r\n-        borderRadius: 10,\r\n+        // borderRadius: 10,\r\n         // flex: 1,\r\n         // marginLeft: '30%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n"
+                },
+                {
+                    "date": 1665386361674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,15 +126,16 @@\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n \r\n     },\r\n+\r\n     signInBtn: {\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'white',\r\n-        padding: 20,\r\n+      \r\n         width: '40%',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665386373831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,8 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'white',\r\n       \r\n-        width: '40%',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665386383767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,10 +116,10 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n \r\n         elevation: 16,\r\n-        // width: '40%',\r\n-        // height: 50,\r\n+        width: '40%',\r\n+        height: 50,\r\n         // borderRadius: 10,\r\n         // flex: 1,\r\n         // marginLeft: '30%',\r\n         // justifyContent: 'center',\r\n"
+                },
+                {
+                    "date": 1665386396886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,17 +107,17 @@\n     },\r\n \r\n     signInBtnContainer: {\r\n \r\n-        shadowColor: \"#6F6F6F\",\r\n-        shadowOffset: {\r\n-            width: 0,\r\n-            height: 12,\r\n-        },\r\n-        shadowOpacity: 0.58,\r\n-        shadowRadius: 16.00,\r\n+        // shadowColor: \"#6F6F6F\",\r\n+        // shadowOffset: {\r\n+        //     width: 0,\r\n+        //     height: 12,\r\n+        // },\r\n+        // shadowOpacity: 0.58,\r\n+        // shadowRadius: 16.00,\r\n \r\n-        elevation: 16,\r\n+        // elevation: 16,\r\n         width: '40%',\r\n         height: 50,\r\n         // borderRadius: 10,\r\n         // flex: 1,\r\n"
+                },
+                {
+                    "date": 1665386414960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        backgroundColor: 'white',\r\n+        backgroundColor: 'red',\r\n       \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665386428813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n         width: '40%',\r\n         height: 50,\r\n         // borderRadius: 10,\r\n         // flex: 1,\r\n-        // marginLeft: '30%',\r\n+        marginLeft: '30%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665386435175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,9 +116,9 @@\n         // shadowOpacity: 0.58,\r\n         // shadowRadius: 16.00,\r\n \r\n         // elevation: 16,\r\n-        width: '40%',\r\n+        width: '30%',\r\n         height: 50,\r\n         // borderRadius: 10,\r\n         // flex: 1,\r\n         marginLeft: '30%',\r\n"
+                },
+                {
+                    "date": 1665386442242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n         width: '30%',\r\n         height: 50,\r\n         // borderRadius: 10,\r\n         // flex: 1,\r\n-        marginLeft: '30%',\r\n+        marginLeft: '33%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665386448704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n         width: '30%',\r\n         height: 50,\r\n         // borderRadius: 10,\r\n         // flex: 1,\r\n-        marginLeft: '33%',\r\n+        marginLeft: '36%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665386482732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n         width: '30%',\r\n         height: 50,\r\n         // borderRadius: 10,\r\n         // flex: 1,\r\n-        marginLeft: '36%',\r\n+        marginLeft: '35%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n \r\n@@ -133,8 +133,9 @@\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'red',\r\n+        padding: 20,\r\n       \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665386490941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,9 +133,9 @@\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'red',\r\n-        padding: 20,\r\n+        padding: 10,\r\n       \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665386502032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,8 +134,9 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'red',\r\n         padding: 10,\r\n+        textAlign: 'center',\r\n       \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665386510820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n \r\n         // elevation: 16,\r\n         width: '30%',\r\n         height: 50,\r\n-        // borderRadius: 10,\r\n+        borderRadius: 10,\r\n         // flex: 1,\r\n         marginLeft: '35%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n"
+                },
+                {
+                    "date": 1665386520184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,25 +118,25 @@\n \r\n         // elevation: 16,\r\n         width: '30%',\r\n         height: 50,\r\n-        borderRadius: 10,\r\n         // flex: 1,\r\n         marginLeft: '35%',\r\n         // justifyContent: 'center',\r\n         // alignItems: 'center',\r\n         marginTop: 20,\r\n-\r\n+        \r\n     },\r\n-\r\n+    \r\n     signInBtn: {\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         backgroundColor: 'red',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n+        borderRadius: 10,\r\n       \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665386533512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,17 +107,17 @@\n     },\r\n \r\n     signInBtnContainer: {\r\n \r\n-        // shadowColor: \"#6F6F6F\",\r\n-        // shadowOffset: {\r\n-        //     width: 0,\r\n-        //     height: 12,\r\n-        // },\r\n-        // shadowOpacity: 0.58,\r\n-        // shadowRadius: 16.00,\r\n+        shadowColor: \"#6F6F6F\",\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 12,\r\n+        },\r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n \r\n-        // elevation: 16,\r\n+        elevation: 16,\r\n         width: '30%',\r\n         height: 50,\r\n         // flex: 1,\r\n         marginLeft: '35%',\r\n"
+                },
+                {
+                    "date": 1665386556015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        backgroundColor: 'red',\r\n+        backgroundColor: 'white',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n         borderRadius: 10,\r\n       \r\n"
+                },
+                {
+                    "date": 1665386613489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,33 +107,29 @@\n     },\r\n \r\n     signInBtnContainer: {\r\n \r\n+        width: '30%',\r\n+        height: 50,\r\n+        marginLeft: '35%',\r\n+        marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n-\r\n         elevation: 16,\r\n-        width: '30%',\r\n-        height: 50,\r\n-        // flex: 1,\r\n-        marginLeft: '35%',\r\n-        // justifyContent: 'center',\r\n-        // alignItems: 'center',\r\n-        marginTop: 20,\r\n+        backgroundColor: 'white',\r\n         \r\n     },\r\n     \r\n     signInBtn: {\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        backgroundColor: 'white',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n         borderRadius: 10,\r\n       \r\n"
+                },
+                {
+                    "date": 1665386643927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n-        borderRadius: 10,\r\n+        // borderRadius: 10,\r\n       \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665386677969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,8 +120,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         backgroundColor: 'white',\r\n+        borderRadius: 10,\r\n         \r\n     },\r\n     \r\n     signInBtn: {\r\n@@ -130,9 +131,8 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n-        // borderRadius: 10,\r\n       \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665386690640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n \r\n     signInBtnContainer: {\r\n \r\n         width: '30%',\r\n-        height: 50,\r\n+        height: 30,\r\n         marginLeft: '35%',\r\n         marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n"
+                },
+                {
+                    "date": 1665386696737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n \r\n     signInBtnContainer: {\r\n \r\n         width: '30%',\r\n-        height: 30,\r\n+        height: 40,\r\n         marginLeft: '35%',\r\n         marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n"
+                },
+                {
+                    "date": 1665386716182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n     },\r\n \r\n     signInBtnContainer: {\r\n \r\n-        width: '30%',\r\n+        width: '40%',\r\n         height: 40,\r\n         marginLeft: '35%',\r\n         marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n"
+                },
+                {
+                    "date": 1665386725817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     signInBtnContainer: {\r\n \r\n         width: '40%',\r\n         height: 40,\r\n-        marginLeft: '35%',\r\n+        marginLeft: '32%',\r\n         marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1665386732538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     signInBtnContainer: {\r\n \r\n         width: '40%',\r\n         height: 40,\r\n-        marginLeft: '32%',\r\n+        marginLeft: '30%',\r\n         marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1665386765067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,17 +109,17 @@\n     signInBtnContainer: {\r\n \r\n         width: '40%',\r\n         height: 40,\r\n-        marginLeft: '30%',\r\n+        marginLeft: '31%',\r\n         marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n-        shadowRadius: 16.00,\r\n+        shadowRadius: 6.00,\r\n         elevation: 16,\r\n         backgroundColor: 'white',\r\n         borderRadius: 10,\r\n         \r\n@@ -132,9 +132,9 @@\n         fontFamily: 'Segoe-ui',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n       \r\n-    }\r\n+    },\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665386772618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,10 +117,10 @@\n             width: 0,\r\n             height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n-        shadowRadius: 6.00,\r\n-        elevation: 16,\r\n+        shadowRadius: 16.00,\r\n+        elevation: 6,\r\n         backgroundColor: 'white',\r\n         borderRadius: 10,\r\n         \r\n     },\r\n"
+                },
+                {
+                    "date": 1665386998613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,20 +121,23 @@\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n         borderRadius: 10,\r\n-        \r\n+\r\n     },\r\n-    \r\n+\r\n     signInBtn: {\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n-      \r\n+\r\n     },\r\n+    footerTxt: {\r\n+textAlign: 'center',\r\n+    }\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665387019917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,8 +135,9 @@\n \r\n     },\r\n     footerTxt: {\r\n textAlign: 'center',\r\n+color: '#6F6F6F',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665387038777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,8 +136,10 @@\n     },\r\n     footerTxt: {\r\n textAlign: 'center',\r\n color: '#6F6F6F',\r\n+fontSize: 10,\r\n+fontWeight: 600,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665387062269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,12 +134,12 @@\n         textAlign: 'center',\r\n \r\n     },\r\n     footerTxt: {\r\n-textAlign: 'center',\r\n-color: '#6F6F6F',\r\n-fontSize: 10,\r\n-fontWeight: 600,\r\n+        textAlign: 'center',\r\n+        color: '#6F6F6F',\r\n+        fontSize: 10,\r\n+        fontWeight: 600,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665387079151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,10 +136,11 @@\n     },\r\n     footerTxt: {\r\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n+        fontFamily: 'Segoe-ui',\r\n+        fontWeight: 600,\r\n         fontSize: 10,\r\n-        fontWeight: 600,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665387226427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,11 +136,11 @@\n     },\r\n     footerTxt: {\r\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n-        fontFamily: 'Segoe-ui',\r\n-        fontWeight: 600,\r\n-        fontSize: 10,\r\n+        // fontFamily: 'Segoe-ui',\r\n+        // fontWeight: 600,\r\n+        // fontSize: 10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665387245499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,11 +136,11 @@\n     },\r\n     footerTxt: {\r\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n-        // fontFamily: 'Segoe-ui',\r\n-        // fontWeight: 600,\r\n-        // fontSize: 10,\r\n+        fontFamily: 'Segoe-ui',\r\n+        fontWeight: 600,\r\n+        fontSize: 10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665387345070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n     footerTxt: {\r\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Segoe-ui',\r\n-        fontWeight: 600,\r\n+        // fontWeight: 600,\r\n         fontSize: 10,\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665387375645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,8 @@\n     footerTxt: {\r\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Segoe-ui',\r\n-        // fontWeight: 600,\r\n         fontSize: 10,\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665387478043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,9 @@\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Segoe-ui',\r\n         fontSize: 10,\r\n+        marginTop:10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665388167253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n+        height : 100,\r\n \r\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n"
+                },
+                {
+                    "date": 1665388185887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n         height : 100,\r\n+        marginTop: 0,\r\n \r\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n"
+                },
+                {
+                    "date": 1665388195159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n-        height : 100,\r\n+        height : 90,\r\n         marginTop: 0,\r\n \r\n     },\r\n     signInImg: {\r\n"
+                },
+                {
+                    "date": 1665388201624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n-        height : 90,\r\n+        height : 190,\r\n         marginTop: 0,\r\n \r\n     },\r\n     signInImg: {\r\n"
+                },
+                {
+                    "date": 1665388222951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,11 +29,11 @@\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n-        height : 190,\r\n-        marginTop: 0,\r\n \r\n+\r\n+\r\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665388236827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,8 @@\n         marginLeft: 10,\r\n     },\r\n     SignInScreenImage: {\r\n \r\n-\r\n-\r\n     },\r\n     signInImg: {\r\n         marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665394621872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,8 +139,12 @@\n         color: '#6F6F6F',\r\n         fontFamily: 'Segoe-ui',\r\n         fontSize: 10,\r\n         marginTop:10,\r\n+    },\r\n+    inputEmail: {\r\n+        flex: 1,\r\n+        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394639414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,9 +142,9 @@\n         marginTop:10,\r\n     },\r\n     inputEmail: {\r\n         flex: 1,\r\n-        \r\n+        flexDirection:'row',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394653583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,10 +141,9 @@\n         fontSize: 10,\r\n         marginTop:10,\r\n     },\r\n     inputEmail: {\r\n-        flex: 1,\r\n-        flexDirection:'row',\r\n+        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394676075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,9 +141,9 @@\n         fontSize: 10,\r\n         marginTop:10,\r\n     },\r\n     inputEmail: {\r\n-        \r\n+        position: 'relative',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394747256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,8 +142,12 @@\n         marginTop:10,\r\n     },\r\n     inputEmail: {\r\n         position: 'relative',\r\n+    },\r\n+    emailIcon: {\r\n+        position: 'absolute',\r\n+        top: 100,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394753412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n         position: 'relative',\r\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n-        top: 100,\r\n+        top: 0,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394761910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n         position: 'relative',\r\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n-        top: 0,\r\n+        top: 30,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394773585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,8 +146,9 @@\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n         top: 30,\r\n+        left:10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394780652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n         top: 30,\r\n-        left:10,\r\n+        left: 30,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665394998344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n         position: 'relative',\r\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n-        top: 30,\r\n+        top: 28,\r\n         left: 30,\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665395046852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n         position: 'relative',\r\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n-        top: 28,\r\n+        top: 25,\r\n         left: 30,\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665395054493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n         top: 25,\r\n-        left: 30,\r\n+        left: 25,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665395065593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,10 +145,10 @@\n         position: 'relative',\r\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n-        top: 25,\r\n-        left: 25,\r\n+        top: 22,\r\n+        left: 22,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665395075680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,10 +145,10 @@\n         position: 'relative',\r\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n-        top: 22,\r\n-        left: 22,\r\n+        top: 23,\r\n+        left: 20,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665395080842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n-        left: 20,\r\n+        left: 18,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665395088830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n-        left: 18,\r\n+        left: 15,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665395094677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n-        left: 15,\r\n+        left: 10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665395122216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n     },\r\n     emailIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n-        left: 10,\r\n+        left: 15,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665395345547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n         marginVertical: 10,\r\n \r\n     },\r\n     input: {\r\n+        paddingLeft: 10,\r\n         margin: 9,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n"
+                },
+                {
+                    "date": 1665395353960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 10,\r\n \r\n     },\r\n     input: {\r\n-        paddingLeft: 10,\r\n+        paddingLeft: 30,\r\n         margin: 9,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n"
+                },
+                {
+                    "date": 1665395392999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         marginVertical: 10,\r\n \r\n     },\r\n     input: {\r\n-        paddingLeft: 30,\r\n+\r\n         margin: 9,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n@@ -55,10 +55,10 @@\n             height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n-\r\n         elevation: 16,\r\n+        padding: 100,\r\n     },\r\n     rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n@@ -139,9 +139,9 @@\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Segoe-ui',\r\n         fontSize: 10,\r\n-        marginTop:10,\r\n+        marginTop: 10,\r\n     },\r\n     inputEmail: {\r\n         position: 'relative',\r\n     },\r\n"
+                },
+                {
+                    "date": 1665395400700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        padding: 100,\r\n+        paddingLeft: 100,\r\n     },\r\n     rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n"
+                },
+                {
+                    "date": 1665395411702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        paddingLeft: 100,\r\n+        paddingLeft: 10,\r\n     },\r\n     rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n"
+                },
+                {
+                    "date": 1665395419623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        paddingLeft: 10,\r\n+        paddingLeft: 30,\r\n     },\r\n     rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n"
+                },
+                {
+                    "date": 1665396757340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        margin: 25,\r\n+        margin: 45,\r\n         color: 'white',\r\n \r\n     },\r\n     backIcon: {\r\n"
+                },
+                {
+                    "date": 1665396762585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        margin: 45,\r\n+        margin: 35,\r\n         color: 'white',\r\n \r\n     },\r\n     backIcon: {\r\n"
+                },
+                {
+                    "date": 1665396772325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        margin: 35,\r\n+        margin: 25,\r\n         color: 'white',\r\n \r\n     },\r\n     backIcon: {\r\n"
+                },
+                {
+                    "date": 1665396811054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        margin: 25,\r\n+        // margin: 25,\r\n         color: 'white',\r\n \r\n     },\r\n     backIcon: {\r\n"
+                },
+                {
+                    "date": 1665396820087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        // margin: 25,\r\n+        marginTop: 25,\r\n         color: 'white',\r\n \r\n     },\r\n     backIcon: {\r\n"
+                },
+                {
+                    "date": 1665396837433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,10 @@\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         marginTop: 25,\r\n+        marginTop: 25,\r\n+\r\n         color: 'white',\r\n \r\n     },\r\n     backIcon: {\r\n"
+                },
+                {
+                    "date": 1665396849844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         marginTop: 25,\r\n+        marginBottom: 25,\r\n         marginTop: 25,\r\n \r\n         color: 'white',\r\n \r\n"
+                },
+                {
+                    "date": 1665396858606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         marginTop: 25,\r\n         marginBottom: 25,\r\n-        marginTop: 25,\r\n+        // marginTop: 25,\r\n \r\n         color: 'white',\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665396885502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        marginTop: 25,\r\n-        marginBottom: 25,\r\n+        marginTop: 30,\r\n+        marginBottom: 30,\r\n         // marginTop: 25,\r\n \r\n         color: 'white',\r\n \r\n"
+                },
+                {
+                    "date": 1665396893126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        marginTop: 30,\r\n+        marginTop: 27,\r\n         marginBottom: 30,\r\n         // marginTop: 25,\r\n \r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1665396898899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        marginTop: 27,\r\n+        marginTop: 26,\r\n         marginBottom: 30,\r\n         // marginTop: 25,\r\n \r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1665396910643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n-        marginTop: 26,\r\n-        marginBottom: 30,\r\n+        marginTop: 25,\r\n+        marginBottom: 25,\r\n         // marginTop: 25,\r\n \r\n         color: 'white',\r\n \r\n"
+                },
+                {
+                    "date": 1665396925021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     },\r\n \r\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n-        fontSize: 30,\r\n+        fontSize: 26,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         marginTop: 25,\r\n         marginBottom: 25,\r\n"
+                },
+                {
+                    "date": 1665396946248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     },\r\n \r\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n-        fontSize: 26,\r\n+        fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         marginTop: 25,\r\n         marginBottom: 25,\r\n"
+                },
+                {
+                    "date": 1665398414136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     SignInScreenImage: {\r\n \r\n     },\r\n     signInImg: {\r\n-        marginTop: 20,\r\n+        margin: 20,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398435096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,10 @@\n     SignInScreenImage: {\r\n \r\n     },\r\n     signInImg: {\r\n-        margin: 20,\r\n+        marginLeft: 20,\r\n+        marginRight: 20,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398447372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,9 @@\n     SignInScreenImage: {\r\n \r\n     },\r\n     signInImg: {\r\n-        marginLeft: 20,\r\n-        marginRight: 20,\r\n+        marginTop: 20,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398728196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,11 +31,8 @@\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n-    SignInScreenImage: {\r\n-\r\n-    },\r\n     signInImg: {\r\n         marginTop: 20,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665398771249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,10 @@\n     backIcon: {\r\n         marginLeft: 10,\r\n     },\r\n     signInImg: {\r\n-        marginTop: 20,\r\n+        // marginTop: 20,\r\n+        padding: 30,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398779375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         marginLeft: 10,\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n-        padding: 30,\r\n+        padding: 100,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398798864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         marginLeft: 10,\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n-        padding: 100,\r\n+        margin: 40,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398811749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n         margin: 40,\r\n+        marginRight: 20,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398819038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n         margin: 40,\r\n-        marginRight: 20,\r\n+        marginRight: 40,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398828234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n         margin: 40,\r\n-        marginRight: 40,\r\n+        marginLeft: 40,\r\n \r\n     },\r\n     form: {\r\n \r\n"
+                },
+                {
+                    "date": 1665398863132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,11 +33,10 @@\n         marginLeft: 10,\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n-        margin: 40,\r\n-        marginLeft: 40,\r\n \r\n+\r\n     },\r\n     form: {\r\n \r\n         marginHorizontal: 20,\r\n"
+                },
+                {
+                    "date": 1665398948341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n-        textAlign: 'center',\r\n+        // textAlign: 'center',\r\n         marginTop: 25,\r\n         marginBottom: 25,\r\n         // marginTop: 25,\r\n \r\n"
+                },
+                {
+                    "date": 1665398954413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n         fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n-        // textAlign: 'center',\r\n+        textAlign: 'center',\r\n         marginTop: 25,\r\n         marginBottom: 25,\r\n         // marginTop: 25,\r\n \r\n"
+                },
+                {
+                    "date": 1665399012009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n \r\n     },\r\n     input: {\r\n \r\n-        margin: 9,\r\n+        margin: 12,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n"
+                },
+                {
+                    "date": 1665399020014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n \r\n     },\r\n     input: {\r\n \r\n-        margin: 12,\r\n+        margin: 10,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n"
+                },
+                {
+                    "date": 1665399045771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n \r\n     },\r\n     input: {\r\n \r\n-        margin: 10,\r\n+        margin: 9,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n@@ -140,9 +140,9 @@\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Segoe-ui',\r\n         fontSize: 10,\r\n-        marginTop: 10,\r\n+        marginTop: 15,\r\n     },\r\n     inputEmail: {\r\n         position: 'relative',\r\n     },\r\n"
+                },
+                {
+                    "date": 1665400227767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n+        width: 150,\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n \r\n@@ -140,9 +141,9 @@\n         textAlign: 'center',\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Segoe-ui',\r\n         fontSize: 10,\r\n-        marginTop: 15,\r\n+        marginTop: 25,\r\n     },\r\n     inputEmail: {\r\n         position: 'relative',\r\n     },\r\n"
+                },
+                {
+                    "date": 1665400234616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n-        width: 150,\r\n+        width: 50,\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665400261217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n-        width: 50,\r\n+        width: '50%'\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665400273240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n         width: '50%'\r\n+        height: '50%'\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665400281767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n-        width: '50%'\r\n+        width: '50%',\r\n         height: '50%'\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n"
+                },
+                {
+                    "date": 1665401710017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n-        width: '50%',\r\n-        height: '50%'\r\n+        height: 50,\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665401730947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n-        height: 50,\r\n+        height: 30,\r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665401801467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 10,\r\n-        height: 30,\r\n+        \r\n     },\r\n     signInImg: {\r\n         // marginTop: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665402168893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,10 @@\n         marginLeft: 10,\r\n         \r\n     },\r\n     signInImg: {\r\n-        // marginTop: 20,\r\n+       width: 100,\r\n+       height: 100,\r\n \r\n \r\n     },\r\n     form: {\r\n"
+                },
+                {
+                    "date": 1665402181862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n         marginLeft: 10,\r\n         \r\n     },\r\n     signInImg: {\r\n-       width: 100,\r\n-       height: 100,\r\n+       width: 250,\r\n+       height: 250,\r\n \r\n \r\n     },\r\n     form: {\r\n"
+                },
+                {
+                    "date": 1665402258876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n         marginLeft: 10,\r\n         \r\n     },\r\n     signInImg: {\r\n-       width: 250,\r\n-       height: 250,\r\n+       width: 300,\r\n+       height: 300,\r\n \r\n \r\n     },\r\n     form: {\r\n"
+                },
+                {
+                    "date": 1665402340953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n         marginLeft: 10,\r\n         \r\n     },\r\n     signInImg: {\r\n-       width: 300,\r\n-       height: 300,\r\n+       width: 320,\r\n+       height: 320,\r\n \r\n \r\n     },\r\n     form: {\r\n"
+                },
+                {
+                    "date": 1665402354342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n         marginLeft: 10,\r\n         \r\n     },\r\n     signInImg: {\r\n-       width: 320,\r\n-       height: 320,\r\n+       width: 280,\r\n+       height: 280,\r\n \r\n \r\n     },\r\n     form: {\r\n"
+                },
+                {
+                    "date": 1665402364015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n         marginLeft: 10,\r\n         \r\n     },\r\n     signInImg: {\r\n-       width: 280,\r\n-       height: 280,\r\n+       width: 300,\r\n+       height: 300,\r\n \r\n \r\n     },\r\n     form: {\r\n"
+                },
+                {
+                    "date": 1665403240809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         color: 'white',\r\n \r\n     },\r\n     backIcon: {\r\n-        marginLeft: 10,\r\n+        marginLeft: 8,\r\n         \r\n     },\r\n     signInImg: {\r\n        width: 300,\r\n"
+                },
+                {
+                    "date": 1665403646159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,8 +106,9 @@\n     },\r\n \r\n     newUserText: {\r\n         fontSize: 10,\r\n+        color: '#6F6F6F',\r\n \r\n     },\r\n \r\n     signInBtnContainer: {\r\n"
+                },
+                {
+                    "date": 1665403667322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,8 +107,9 @@\n \r\n     newUserText: {\r\n         fontSize: 10,\r\n         color: '#6F6F6F',\r\n+        fontWeight:600,\r\n \r\n     },\r\n \r\n     signInBtnContainer: {\r\n"
+                },
+                {
+                    "date": 1665403678870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,10 +107,8 @@\n \r\n     newUserText: {\r\n         fontSize: 10,\r\n         color: '#6F6F6F',\r\n-        fontWeight:600,\r\n-\r\n     },\r\n \r\n     signInBtnContainer: {\r\n \r\n"
+                },
+                {
+                    "date": 1665403948088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,8 +105,9 @@\n \r\n     },\r\n \r\n     newUserText: {\r\n+        fontWeight: 'bold',\r\n         fontSize: 10,\r\n         color: '#6F6F6F',\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665403960657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,8 @@\n \r\n     },\r\n \r\n     newUserText: {\r\n-        fontWeight: 'bold',\r\n         fontSize: 10,\r\n         color: '#6F6F6F',\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665404513886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,8 +151,14 @@\n     emailIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n         left: 15,\r\n+    },\r\n+\r\n+    eyeIcon: {\r\n+        position: 'absolute',\r\n+        top: 23,\r\n+        left: 15,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665404521692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n \r\n     eyeIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n-        left: 15,\r\n+        left: 115,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665404532302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n \r\n     eyeIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n-        left: 115,\r\n+        right: 15,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665404543695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n \r\n     eyeIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n-        right: 15,\r\n+        right: 10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665407159773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,17 @@\n \r\n     eyeIcon: {\r\n         position: 'absolute',\r\n         top: 23,\r\n-        right: 10,\r\n+        right: 20,\r\n+    },\r\n+    forgetBtn: {\r\n+        color: 'black',\r\n+        fontSize: 12,\r\n+        fontWeight: '700',\r\n+        fontFamily: 'Segoe-ui',\r\n+        padding: 10,\r\n+        textAlign: 'center',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665407167599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -158,8 +158,9 @@\n         position: 'absolute',\r\n         top: 23,\r\n         right: 20,\r\n     },\r\n+    \r\n     forgetBtn: {\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n"
+                },
+                {
+                    "date": 1665407186246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -158,16 +158,17 @@\n         position: 'absolute',\r\n         top: 23,\r\n         right: 20,\r\n     },\r\n-    \r\n+\r\n     forgetBtn: {\r\n         color: 'black',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n+        backgroundColor: 'black',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665407260461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,13 +160,13 @@\n         right: 20,\r\n     },\r\n \r\n     forgetBtn: {\r\n-        color: 'black',\r\n+        color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        padding: 10,\r\n+        padding: 20,\r\n         textAlign: 'center',\r\n         backgroundColor: 'black',\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665407270524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,11 +164,12 @@\n         color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        padding: 20,\r\n+        padding: 10,\r\n         textAlign: 'center',\r\n         backgroundColor: 'black',\r\n+        borderRadius: 15,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665407286943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,8 +160,9 @@\n         right: 20,\r\n     },\r\n \r\n     forgetBtn: {\r\n+        width: 140,\r\n         color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n"
+                },
+                {
+                    "date": 1665407300915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n         right: 20,\r\n     },\r\n \r\n     forgetBtn: {\r\n-        width: 140,\r\n+        \r\n         color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n"
+                },
+                {
+                    "date": 1665407314311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,8 @@\n         right: 20,\r\n     },\r\n \r\n     forgetBtn: {\r\n-        \r\n         color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n"
+                },
+                {
+                    "date": 1665407761340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -166,9 +166,9 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 10,\r\n         textAlign: 'center',\r\n-        backgroundColor: 'black',\r\n+        backgroundColor: '#6F6F6F',\r\n         borderRadius: 15,\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665407775261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n         right: 20,\r\n     },\r\n \r\n     forgetBtn: {\r\n-        color: 'white',\r\n+        // color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 10,\r\n"
+                },
+                {
+                    "date": 1665407781959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n         right: 20,\r\n     },\r\n \r\n     forgetBtn: {\r\n-        // color: 'white',\r\n+        color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 10,\r\n"
+                },
+                {
+                    "date": 1665407823718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,9 +112,9 @@\n \r\n     signInBtnContainer: {\r\n \r\n         width: '40%',\r\n-        height: 40,\r\n+        // height: 40,\r\n         marginLeft: '31%',\r\n         marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n"
+                },
+                {
+                    "date": 1665407836478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,9 +112,9 @@\n \r\n     signInBtnContainer: {\r\n \r\n         width: '40%',\r\n-        // height: 40,\r\n+        height: 40,\r\n         marginLeft: '31%',\r\n         marginTop: 20,\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n"
+                },
+                {
+                    "date": 1665407924223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n         color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        padding: 10,\r\n+        padding: 20,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15,\r\n     }\r\n"
+                },
+                {
+                    "date": 1665407930460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n         color: 'white',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        padding: 20,\r\n+        padding: 15,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15,\r\n     }\r\n"
+                },
+                {
+                    "date": 1665407957139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,9 +161,9 @@\n     },\r\n \r\n     forgetBtn: {\r\n         color: 'white',\r\n-        fontSize: 12,\r\n+        fontSize: 25,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 15,\r\n         textAlign: 'center',\r\n"
+                },
+                {
+                    "date": 1665407963922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n \r\n     forgetBtn: {\r\n         color: 'white',\r\n         fontSize: 25,\r\n-        fontWeight: '700',\r\n+        fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 15,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n"
+                },
+                {
+                    "date": 1665407969228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,10 +161,10 @@\n     },\r\n \r\n     forgetBtn: {\r\n         color: 'white',\r\n-        fontSize: 25,\r\n-        fontWeight: '600',\r\n+        fontSize: 20,\r\n+        fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 15,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n"
+                },
+                {
+                    "date": 1665407981033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,9 +161,9 @@\n     },\r\n \r\n     forgetBtn: {\r\n         color: 'white',\r\n-        fontSize: 20,\r\n+        fontSize: 16,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 15,\r\n         textAlign: 'center',\r\n"
+                },
+                {
+                    "date": 1665408007015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,8 +168,10 @@\n         padding: 15,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15,\r\n+        marginLeft: '31%',\r\n+        marginTop: 20,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665408029771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,10 +168,9 @@\n         padding: 15,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15,\r\n-        marginLeft: '31%',\r\n-        marginTop: 20,\r\n+       \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665408074004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n         color: 'white',\r\n         fontSize: 16,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        padding: 15,\r\n+        padding: 12,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15,\r\n        \r\n"
+                },
+                {
+                    "date": 1665408083413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,9 +161,9 @@\n     },\r\n \r\n     forgetBtn: {\r\n         color: 'white',\r\n-        fontSize: 16,\r\n+        fontSize: 15,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         padding: 12,\r\n         textAlign: 'center',\r\n"
+                },
+                {
+                    "date": 1665408088703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n         color: 'white',\r\n         fontSize: 15,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        padding: 12,\r\n+        padding: 10,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15,\r\n        \r\n"
+                },
+                {
+                    "date": 1665408666286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     },\r\n \r\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n-        fontSize: 30,\r\n+        fontSize: 25,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         marginTop: 25,\r\n         marginBottom: 25,\r\n@@ -164,9 +164,9 @@\n         color: 'white',\r\n         fontSize: 15,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        padding: 10,\r\n+        padding: 12,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15,\r\n        \r\n"
+                },
+                {
+                    "date": 1665409146033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     },\r\n \r\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n-        fontSize: 25,\r\n+        fontSize: 30,\r\n         fontFamily: 'Segoe-ui-bold',\r\n         textAlign: 'center',\r\n         marginTop: 25,\r\n         marginBottom: 25,\r\n@@ -167,10 +167,12 @@\n         fontFamily: 'Segoe-ui',\r\n         padding: 12,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n-        borderRadius: 15,\r\n-       \r\n+        borderRadius: 15, \r\n+    },\r\n+    otpTxt: {\r\n+        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665409162769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,8 +170,10 @@\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15, \r\n     },\r\n     otpTxt: {\r\n+        fontSize: 23,\r\n+        textAlign: 'center',\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665409209375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,8 +172,9 @@\n     },\r\n     otpTxt: {\r\n         fontSize: 23,\r\n         textAlign: 'center',\r\n+        fontFamily: 'Segoe-ui-bold',\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665409314672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,8 +173,9 @@\n     otpTxt: {\r\n         fontSize: 23,\r\n         textAlign: 'center',\r\n         fontFamily: 'Segoe-ui-bold',\r\n+        color: '#474747'\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665409320220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -170,9 +170,9 @@\n         backgroundColor: '#6F6F6F',\r\n         borderRadius: 15, \r\n     },\r\n     otpTxt: {\r\n-        fontSize: 23,\r\n+        fontSize: 20,\r\n         textAlign: 'center',\r\n         fontFamily: 'Segoe-ui-bold',\r\n         color: '#474747'\r\n         \r\n"
+                },
+                {
+                    "date": 1665409354526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -175,8 +175,11 @@\n         textAlign: 'center',\r\n         fontFamily: 'Segoe-ui-bold',\r\n         color: '#474747'\r\n         \r\n+    },\r\n+    otpInsideTxt:{\r\n+        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665409377050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,9 +177,10 @@\n         color: '#474747'\r\n         \r\n     },\r\n     otpInsideTxt:{\r\n-        \r\n+        color: '#474747',\r\n+        font\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665409383233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n         \r\n     },\r\n     otpInsideTxt:{\r\n         color: '#474747',\r\n-        font\r\n+        fontSize: 12,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665409392951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,8 +179,9 @@\n     },\r\n     otpInsideTxt:{\r\n         color: '#474747',\r\n         fontSize: 12,\r\n+        textAlign: 'center',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665409440091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,11 +177,14 @@\n         color: '#474747'\r\n         \r\n     },\r\n     otpInsideTxt:{\r\n+        fontWeight: 600,\r\n         color: '#474747',\r\n         fontSize: 12,\r\n         textAlign: 'center',\r\n+        fontFamily: 'Segoe-ui',\r\n+\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665409449857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,11 +177,11 @@\n         color: '#474747'\r\n         \r\n     },\r\n     otpInsideTxt:{\r\n+        fontSize: 12,\r\n         fontWeight: 600,\r\n         color: '#474747',\r\n-        fontSize: 12,\r\n         textAlign: 'center',\r\n         fontFamily: 'Segoe-ui',\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1665409506351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,9 +172,8 @@\n     },\r\n     otpTxt: {\r\n         fontSize: 20,\r\n         textAlign: 'center',\r\n-        fontFamily: 'Segoe-ui-bold',\r\n         color: '#474747'\r\n         \r\n     },\r\n     otpInsideTxt:{\r\n"
+                },
+                {
+                    "date": 1665409545017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,17 +172,15 @@\n     },\r\n     otpTxt: {\r\n         fontSize: 20,\r\n         textAlign: 'center',\r\n-        color: '#474747'\r\n-        \r\n+        color: '#474747'  \r\n     },\r\n     otpInsideTxt:{\r\n         fontSize: 12,\r\n-        fontWeight: 600,\r\n         color: '#474747',\r\n         textAlign: 'center',\r\n-        fontFamily: 'Segoe-ui',\r\n+      \r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665409570912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,10 +178,8 @@\n     otpInsideTxt:{\r\n         fontSize: 12,\r\n         color: '#474747',\r\n         textAlign: 'center',\r\n-      \r\n-\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665409621596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,14 +172,19 @@\n     },\r\n     otpTxt: {\r\n         fontSize: 20,\r\n         textAlign: 'center',\r\n-        color: '#474747'  \r\n+        fontFamily: 'Segoe-ui-bold',\r\n+        color: '#474747'\r\n+        \r\n     },\r\n     otpInsideTxt:{\r\n         fontSize: 12,\r\n+        fontWeight: 600,\r\n         color: '#474747',\r\n         textAlign: 'center',\r\n+        fontFamily: 'Segoe-ui',\r\n+\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665409630134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n         \r\n     },\r\n     otpInsideTxt:{\r\n         fontSize: 12,\r\n-        fontWeight: 600,\r\n+        \r\n         color: '#474747',\r\n         textAlign: 'center',\r\n         fontFamily: 'Segoe-ui',\r\n \r\n"
+                },
+                {
+                    "date": 1665409636436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,9 @@\n         fontSize: 12,\r\n         \r\n         color: '#474747',\r\n         textAlign: 'center',\r\n-        fontFamily: 'Segoe-ui',\r\n+       \r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665409693602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,13 +178,10 @@\n         \r\n     },\r\n     otpInsideTxt:{\r\n         fontSize: 12,\r\n-        \r\n         color: '#474747',\r\n         textAlign: 'center',\r\n-       \r\n-\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665410275900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,8 +180,14 @@\n     otpInsideTxt:{\r\n         fontSize: 12,\r\n         color: '#474747',\r\n         textAlign: 'center',\r\n+    },\r\n+    underlineStyleHighLighted: {\r\n+\r\n+    },\r\n+    underlineStyleBase: {\r\n+        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665410749572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -185,9 +185,12 @@\n     underlineStyleHighLighted: {\r\n \r\n     },\r\n     underlineStyleBase: {\r\n-        \r\n+\r\n+    },\r\n+    otpInput:{\r\n+        textAlign: 'center',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665410990419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -186,8 +186,10 @@\n \r\n     },\r\n     underlineStyleBase: {\r\n \r\n+        borderRadius: 8,\r\n+        \r\n     },\r\n     otpInput:{\r\n         textAlign: 'center',\r\n     }\r\n"
+                },
+                {
+                    "date": 1665411005983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -187,9 +187,9 @@\n     },\r\n     underlineStyleBase: {\r\n \r\n         borderRadius: 8,\r\n-        \r\n+        borderColor: '#6F6F6F',\r\n     },\r\n     otpInput:{\r\n         textAlign: 'center',\r\n     }\r\n"
+                },
+                {
+                    "date": 1665411023362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,8 +188,9 @@\n     underlineStyleBase: {\r\n \r\n         borderRadius: 8,\r\n         borderColor: '#6F6F6F',\r\n+        borderWidth: 1,\r\n     },\r\n     otpInput:{\r\n         textAlign: 'center',\r\n     }\r\n"
+                },
+                {
+                    "date": 1665411067410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -187,9 +187,8 @@\n     },\r\n     underlineStyleBase: {\r\n \r\n         borderRadius: 8,\r\n-        borderColor: '#6F6F6F',\r\n         borderWidth: 1,\r\n     },\r\n     otpInput:{\r\n         textAlign: 'center',\r\n"
+                },
+                {
+                    "date": 1665411118683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -186,10 +186,18 @@\n \r\n     },\r\n     underlineStyleBase: {\r\n \r\n+        shadowColor: \"#6F6F6F\",\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 12,\r\n+        },\r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n+        elevation: 6,\r\n+        backgroundColor: 'white',\r\n         borderRadius: 8,\r\n-        borderWidth: 1,\r\n     },\r\n     otpInput:{\r\n         textAlign: 'center',\r\n     }\r\n"
+                },
+                {
+                    "date": 1665411240535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,8 +182,9 @@\n         color: '#474747',\r\n         textAlign: 'center',\r\n     },\r\n     underlineStyleHighLighted: {\r\n+        color: 'black',\r\n \r\n     },\r\n     underlineStyleBase: {\r\n \r\n"
+                },
+                {
+                    "date": 1665411286636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,12 +182,13 @@\n         color: '#474747',\r\n         textAlign: 'center',\r\n     },\r\n     underlineStyleHighLighted: {\r\n-        color: 'black',\r\n+     \r\n \r\n     },\r\n     underlineStyleBase: {\r\n+        color: 'black',\r\n \r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1665412884629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,13 +30,13 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 8,\r\n-        \r\n+\r\n     },\r\n     signInImg: {\r\n-       width: 300,\r\n-       height: 300,\r\n+        width: 300,\r\n+        height: 300,\r\n \r\n \r\n     },\r\n     form: {\r\n@@ -89,10 +89,19 @@\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n         marginRight: 10,\r\n         marginTop: 3,\r\n+    },\r\n \r\n+    ResendOtpTxt: {\r\n \r\n+        color: '#6F6F6F',\r\n+        fontSize: 9,\r\n+        fontWeight: '600',\r\n+        fontFamily: 'Segoe-ui',\r\n+        marginRight: 10,\r\n+        marginTop: 3,\r\n+\r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n         flexDirection: 'row',\r\n@@ -167,25 +176,25 @@\n         fontFamily: 'Segoe-ui',\r\n         padding: 12,\r\n         textAlign: 'center',\r\n         backgroundColor: '#6F6F6F',\r\n-        borderRadius: 15, \r\n+        borderRadius: 15,\r\n     },\r\n     otpTxt: {\r\n         fontSize: 20,\r\n         textAlign: 'center',\r\n         fontFamily: 'Segoe-ui-bold',\r\n         color: '#474747'\r\n-        \r\n+\r\n     },\r\n-    otpInsideTxt:{\r\n+    otpInsideTxt: {\r\n         fontSize: 12,\r\n         color: '#474747',\r\n         textAlign: 'center',\r\n     },\r\n     underlineStyleHighLighted: {\r\n-     \r\n \r\n+\r\n     },\r\n     underlineStyleBase: {\r\n         color: 'black',\r\n \r\n@@ -199,9 +208,9 @@\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n         borderRadius: 8,\r\n     },\r\n-    otpInput:{\r\n+    otpInput: {\r\n         textAlign: 'center',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665412959672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,10 +97,9 @@\n         color: '#6F6F6F',\r\n         fontSize: 9,\r\n         fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n-        marginRight: 10,\r\n-        marginTop: 3,\r\n+      \r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665412969729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,10 +94,10 @@\n \r\n     ResendOtpTxt: {\r\n \r\n         color: '#6F6F6F',\r\n-        fontSize: 9,\r\n-        fontWeight: '600',\r\n+        fontSize: 15,\r\n+        fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n       \r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665412977681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \r\n     ResendOtpTxt: {\r\n \r\n         color: '#6F6F6F',\r\n-        fontSize: 15,\r\n+        fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n       \r\n \r\n"
+                },
+                {
+                    "date": 1665412988384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n \r\n     ResendOtpTxt: {\r\n \r\n         color: '#6F6F6F',\r\n-        fontSize: 10,\r\n+        fontSize: 11,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n       \r\n \r\n"
+                },
+                {
+                    "date": 1665413006436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,11 +93,11 @@\n     },\r\n \r\n     ResendOtpTxt: {\r\n \r\n-        color: '#6F6F6F',\r\n-        fontSize: 11,\r\n-        fontWeight: '700',\r\n+        color: 'black',\r\n+        fontSize: 13,\r\n+        // fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n       \r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665413013795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n     ResendOtpTxt: {\r\n \r\n         color: 'black',\r\n         fontSize: 13,\r\n-        // fontWeight: '700',\r\n+        fontWeight: '600',\r\n         fontFamily: 'Segoe-ui',\r\n       \r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665413022070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,10 +94,10 @@\n \r\n     ResendOtpTxt: {\r\n \r\n         color: 'black',\r\n-        fontSize: 13,\r\n-        fontWeight: '600',\r\n+        fontSize: 10,\r\n+        fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n       \r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665413031418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,9 +92,9 @@\n         marginTop: 3,\r\n     },\r\n \r\n     ResendOtpTxt: {\r\n-\r\n+        color: '#6F6F6F',\r\n         color: 'black',\r\n         fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n"
+                },
+                {
+                    "date": 1665413170315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,11 @@\n         color: 'black',\r\n         fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n+        flex: 1,\r\n+        justifyContent: 'flex-end',\r\n+        alignItems: 'flex-end',\r\n       \r\n \r\n     },\r\n     AfterFormContainer: {\r\n"
+                },
+                {
+                    "date": 1665413177714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,11 +97,9 @@\n         color: 'black',\r\n         fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-        flex: 1,\r\n-        justifyContent: 'flex-end',\r\n-        alignItems: 'flex-end',\r\n+       \r\n       \r\n \r\n     },\r\n     AfterFormContainer: {\r\n"
+                },
+                {
+                    "date": 1665413188743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,10 +97,9 @@\n         color: 'black',\r\n         fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-       \r\n-      \r\n+       textAlign: 'right',\r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665413208027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,9 @@\n         fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n+       marginTop: -30,\r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665413229656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n         fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n-       marginTop: -30,\r\n+       marginTop: -25,\r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665413269812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,8 +99,9 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n        marginTop: -25,\r\n+       fontStyle: \r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665413324660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n        marginTop: -25,\r\n-       fontStyle: \r\n+       textDecoration: 'underline',\r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665413335308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n        marginTop: -25,\r\n-       textDecoration: 'underline',\r\n+       textDecorationLine: 'underline',\r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665414118633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,15 +92,13 @@\n         marginTop: 3,\r\n     },\r\n \r\n     ResendOtpTxt: {\r\n-        color: '#6F6F6F',\r\n         color: 'black',\r\n         fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n-       marginTop: -25,\r\n        textDecorationLine: 'underline',\r\n \r\n     },\r\n     AfterFormContainer: {\r\n"
+                },
+                {
+                    "date": 1665414131742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,9 @@\n         fontSize: 10,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n+       marginTop: -10,\r\n        textDecorationLine: 'underline',\r\n \r\n     },\r\n     AfterFormContainer: {\r\n"
+                },
+                {
+                    "date": 1665414143269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,13 +93,13 @@\n     },\r\n \r\n     ResendOtpTxt: {\r\n         color: 'black',\r\n-        fontSize: 10,\r\n+        fontSize: 15,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n-       marginTop: -10,\r\n+       marginTop: -5,\r\n        textDecorationLine: 'underline',\r\n \r\n     },\r\n     AfterFormContainer: {\r\n"
+                },
+                {
+                    "date": 1665414153052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,10 +93,10 @@\n     },\r\n \r\n     ResendOtpTxt: {\r\n         color: 'black',\r\n-        fontSize: 15,\r\n-        fontWeight: '700',\r\n+        fontSize: 12,\r\n+        // fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n        marginTop: -5,\r\n        textDecorationLine: 'underline',\r\n"
+                },
+                {
+                    "date": 1665414179273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,11 +92,11 @@\n         marginTop: 3,\r\n     },\r\n \r\n     ResendOtpTxt: {\r\n-        color: 'black',\r\n+        color: '#6F6F6F',\r\n         fontSize: 12,\r\n-        // fontWeight: '700',\r\n+        fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n        textAlign: 'right',\r\n        marginTop: -5,\r\n        textDecorationLine: 'underline',\r\n"
+                },
+                {
+                    "date": 1665414235791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,15 +92,15 @@\n         marginTop: 3,\r\n     },\r\n \r\n     ResendOtpTxt: {\r\n-        color: '#6F6F6F',\r\n+        color: '#474747',\r\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n-       textAlign: 'right',\r\n-       marginTop: -5,\r\n-       textDecorationLine: 'underline',\r\n+        textAlign: 'right',\r\n+        marginTop: -5,\r\n+        textDecorationLine: 'underline',\r\n \r\n     },\r\n     AfterFormContainer: {\r\n         flex: 1,\r\n"
+                },
+                {
+                    "date": 1665414258029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n         fontSize: 12,\r\n         fontWeight: '700',\r\n         fontFamily: 'Segoe-ui',\r\n         textAlign: 'right',\r\n-        marginTop: -5,\r\n+        marginTop: -7,\r\n         textDecorationLine: 'underline',\r\n \r\n     },\r\n     AfterFormContainer: {\r\n"
                 }
             ],
             "date": 1664773148633,

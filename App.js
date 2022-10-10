@@ -1,9 +1,14 @@
 import { useEffect, useCallback } from 'react';
-import { Text, View, StyleSheet,KeyboardAvoidingView } from 'react-native';
+import { Text, View, StyleSheet, KeyboardAvoidingView } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import IntroScreen from './src/components/IntroScreen';
 import SignInScreen from './src/components/SignInScreen';
+import SignUpScreen from './src/components/SignUpScreen';
+import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';
+import ResetPasswordScreen from './src/components/ResetPasswordScreen';
+import OtpVarification from './src/components/OtpVarification';
+
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -37,10 +42,22 @@ export default function App() {
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
-      <View onLayout={onLayoutRootView}>
+      {/* <View onLayout={onLayoutRootView}>
         <SignInScreen />
-      </View>
+      </View> */}
+      {/* <View onLayout={onLayoutRootView}>
+        <SignUpScreen />
+      </View> */}
 
+      {/* <View onLayout={onLayoutRootView}>
+        <ForgetPasswordScreen />
+      </View> */}
+      {/* <View onLayout={onLayoutRootView}>
+        <ResetPasswordScreen />
+      </View> */}
+      <View onLayout={onLayoutRootView}>
+        <OtpVarification />
+      </View>
     </KeyboardAvoidingView>
 
   );

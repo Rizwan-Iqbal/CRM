@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 142,
+            "activePatchIndex": 164,
             "patches": [
                 {
                     "date": 1664454463276,
@@ -576,6 +576,94 @@
                 {
                     "date": 1665138435598,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,10 @@\n \n export default function App() {\n   const [fontsLoaded] = useFonts({\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\n+    'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n+\n   });\n \n   useEffect(() => {\n     async function prepare() {\n"
+                },
+                {
+                    "date": 1665396381431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,59 +1,62 @@\n-import { useEffect, useCallback } from 'react';\n-import { Text, View, StyleSheet,KeyboardAvoidingView } from 'react-native';\n-import { useFonts } from 'expo-font';\n-import * as SplashScreen from 'expo-splash-screen';\n-import IntroScreen from './src/components/IntroScreen';\n-import SignInScreen from './src/components/SignInScreen';\n-\n-export default function App() {\n-  const [fontsLoaded] = useFonts({\n-    'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\n-    'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\n-\n-  });\n-\n-  useEffect(() => {\n-    async function prepare() {\n-      await SplashScreen.preventAutoHideAsync();\n-    }\n-    prepare();\n-  }, []);\n-\n-  const onLayoutRootView = useCallback(async () => {\n-    if (fontsLoaded) {\n-      await SplashScreen.hideAsync();\n-    }\n-  }, [fontsLoaded]);\n-\n-  if (!fontsLoaded) {\n-    return null;\n-  }\n-\n-  return (\n-    // <View style = {styles.container} onLayout={onLayoutRootView}>\n-    //   <IntroScreen />\n-    // </View>\n-\n-    <KeyboardAvoidingView\n-      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\n-    >\n-      <View onLayout={onLayoutRootView}>\n-        <SignInScreen />\n-      </View>\n-\n-    </KeyboardAvoidingView>\n-\n-  );\n-}\n-\n-const styles = StyleSheet.create({\n-  container: {\n-    flex: 1,\n-    justifyContent: 'center',\n-    alignItems: 'center',\n-    margin: 0,\n-    padding: 0,\n-    backgroundColor: 'black',\n-\n-  },\n-});\n+import { useEffect, useCallback } from 'react';\r\n+import { Text, View, StyleSheet,KeyboardAvoidingView } from 'react-native';\r\n+import { useFonts } from 'expo-font';\r\n+import * as SplashScreen from 'expo-splash-screen';\r\n+import IntroScreen from './src/components/IntroScreen';\r\n+import SignInScreen from './src/components/SignInScreen';\r\n+\r\n+export default function App() {\r\n+  const [fontsLoaded] = useFonts({\r\n+    'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n+    'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n+\r\n+  });\r\n+\r\n+  useEffect(() => {\r\n+    async function prepare() {\r\n+      await SplashScreen.preventAutoHideAsync();\r\n+    }\r\n+    prepare();\r\n+  }, []);\r\n+\r\n+  const onLayoutRootView = useCallback(async () => {\r\n+    if (fontsLoaded) {\r\n+      await SplashScreen.hideAsync();\r\n+    }\r\n+  }, [fontsLoaded]);\r\n+\r\n+  if (!fontsLoaded) {\r\n+    return null;\r\n+  }\r\n+\r\n+  return (\r\n+    // <View style = {styles.container} onLayout={onLayoutRootView}>\r\n+    //   <IntroScreen />\r\n+    // </View>\r\n+\r\n+    <KeyboardAvoidingView\r\n+      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n+    >\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <SignInScreen />\r\n+      </View> */}\r\n+       <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n+      </View>\r\n+\r\n+    </KeyboardAvoidingView>\r\n+\r\n+  );\r\n+}\r\n+\r\n+const styles = StyleSheet.create({\r\n+  container: {\r\n+    flex: 1,\r\n+    justifyContent: 'center',\r\n+    alignItems: 'center',\r\n+    margin: 0,\r\n+    padding: 0,\r\n+    backgroundColor: 'black',\r\n+\r\n+  },\r\n+});\r\n"
+                },
+                {
+                    "date": 1665396451740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n import { useFonts } from 'expo-font';\r\n import * as SplashScreen from 'expo-splash-screen';\r\n import IntroScreen from './src/components/IntroScreen';\r\n import SignInScreen from './src/components/SignInScreen';\r\n+import SignInScreen from './src/components/SignUpScreen';\r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1665396468497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { useFonts } from 'expo-font';\r\n import * as SplashScreen from 'expo-splash-screen';\r\n import IntroScreen from './src/components/IntroScreen';\r\n import SignInScreen from './src/components/SignInScreen';\r\n-import SignInScreen from './src/components/SignUpScreen';\r\n+import SignUpScreen from './src/components/SignUpScreen';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n"
+                },
+                {
+                    "date": 1665397416671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View>\r\n+       {/* <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View> */}\r\n-       <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665397741149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View> */}\r\n+       <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View>\r\n-       {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665398203769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View>\r\n+       {/* <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View> */}\r\n-       <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665398612464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View> */}\r\n+       <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View>\r\n-       {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665398892895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View>\r\n+       {/* <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View> */}\r\n-       <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665399077516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View> */}\r\n+       <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View>\r\n-       {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665399889375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View>\r\n+       {/* <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View> */}\r\n-       <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665403054014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View> */}\r\n+       <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View>\r\n-       {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665403257739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View>\r\n+       {/* <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View> */}\r\n-       <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665403273553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View> */}\r\n+       <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View>\r\n-       {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665403571030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View>\r\n+       {/* <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View> */}\r\n-       <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665403739840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View> */}\r\n+       <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View>\r\n-       {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665403993861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View>\r\n+       {/* <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View> */}\r\n-       <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665404310517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n+      </View> */}\r\n+       <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n       </View>\r\n-       {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665404864915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import * as SplashScreen from 'expo-splash-screen';\r\n import IntroScreen from './src/components/IntroScreen';\r\n import SignInScreen from './src/components/SignInScreen';\r\n import SignUpScreen from './src/components/SignUpScreen';\r\n+import ForgetPasswordScreen from './src/components/forgetPasswordScreen';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -45,8 +46,12 @@\n        <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n       </View>\r\n \r\n+      <View onLayout={onLayoutRootView}>\r\n+        <ForgetPasswordScreen />\r\n+      </View>\r\n+\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665404875484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,11 +42,11 @@\n     >\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n       </View> */}\r\n-       <View onLayout={onLayoutRootView}>\r\n+       {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n-      </View>\r\n+      </View> */}\r\n \r\n       <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n       </View>\r\n"
+                },
+                {
+                    "date": 1665404997222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import * as SplashScreen from 'expo-splash-screen';\r\n import IntroScreen from './src/components/IntroScreen';\r\n import SignInScreen from './src/components/SignInScreen';\r\n import SignUpScreen from './src/components/SignUpScreen';\r\n-import ForgetPasswordScreen from './src/components/forgetPasswordScreen';\r\n+import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n"
+                },
+                {
+                    "date": 1665408510648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n import { useEffect, useCallback } from 'react';\r\n-import { Text, View, StyleSheet,KeyboardAvoidingView } from 'react-native';\r\n+import { Text, View, StyleSheet, KeyboardAvoidingView } from 'react-native';\r\n import { useFonts } from 'expo-font';\r\n import * as SplashScreen from 'expo-splash-screen';\r\n import IntroScreen from './src/components/IntroScreen';\r\n import SignInScreen from './src/components/SignInScreen';\r\n import SignUpScreen from './src/components/SignUpScreen';\r\n import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';\r\n+import ResetPasswordScreen from './src/components/ResetPasswordScreen';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -42,16 +43,18 @@\n     >\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n       </View> */}\r\n-       {/* <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n       </View> */}\r\n \r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <ForgetPasswordScreen />\r\n+      </View> */}\r\n       <View onLayout={onLayoutRootView}>\r\n-        <ForgetPasswordScreen />\r\n+        <ResetPasswordScreen />\r\n       </View>\r\n-\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665408826780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n import SignInScreen from './src/components/SignInScreen';\r\n import SignUpScreen from './src/components/SignUpScreen';\r\n import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';\r\n import ResetPasswordScreen from './src/components/ResetPasswordScreen';\r\n+import OtpVarification from './src/components/OtpVarification';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -50,10 +51,13 @@\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n       </View> */}\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <ResetPasswordScreen />\r\n+      </View> */}\r\n       <View onLayout={onLayoutRootView}>\r\n-        <ResetPasswordScreen />\r\n+        <OtpVarification />\r\n       </View>\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
                 }
             ],
             "date": 1664454463276,
