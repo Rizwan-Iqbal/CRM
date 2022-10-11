@@ -36,8 +36,6 @@ const styles = StyleSheet.create({
     signInImg: {
         width: 300,
         height: 300,
-
-
     },
     form: {
 
@@ -98,7 +96,7 @@ const styles = StyleSheet.create({
         fontWeight: '700',
         fontFamily: 'Segoe-ui',
         textAlign: 'right',
-        marginTop: -7,
+        // marginTop: -7,
         textDecorationLine: 'underline',
 
     },
@@ -191,11 +189,10 @@ const styles = StyleSheet.create({
         color: '#474747',
         textAlign: 'center',
     },
-    underlineStyleHighLighted: {
 
-
-    },
     underlineStyleBase: {
+        width: 70,
+        height: 80,
         color: 'black',
 
         shadowColor: "#6F6F6F",
@@ -211,8 +208,184 @@ const styles = StyleSheet.create({
     },
     otpInput: {
         textAlign: 'center',
-    }
+    },
+    HomeTitle: {
+        fontSize: 20,
+        fontFamily: 'Poppins-semibold',
+        color: 'white',
+        textAlign: 'center',
+        marginTop: 30,
+        marginLeft: 10,
+        color: 'white',
 
+    },
+
+    headerRight: {
+        position: 'absolute',
+        right: 15,
+        flexDirection: 'row',
+        marginTop: 30,
+
+    },
+    profile: {
+        width: 60,
+        height: 60,
+    },
+
+    profileContainer: {
+        flexDirection: 'row',
+        margin: 10,
+        marginBottom: 15,
+    },
+
+    userWelcome: {
+        color: 'white',
+        fontSize: 15,
+        fontFamily: 'Poppins-semibold',
+        lineHeight: 20,
+    },
+
+    userDetail: {
+        flexDirection: 'column',
+        margin: 7,
+    },
+
+    userName: {
+        color: 'white',
+        fontSize: 12,
+        fontFamily: 'Poppins-semibold',
+    },
+
+    homeContainer: {
+        marginHorizontal: 15,
+        marginTop: -5,
+
+    },
+    topTxt: {
+        color: '#474747',
+        fontWeight: '600',
+        fontSize: 20,
+        fontFamily: 'Poppins-semibold',
+    },
+    line: {
+        borderBottomColor: '#707070',
+        borderBottomWidth: 0.5,
+        marginVertical: 2,
+    },
+    clientsIcon: {
+        alignItems: 'center',
+        // marginVertical: 30,
+        marginBottom: 40,
+    },
+
+    casesIcon: {
+        alignItems: 'center',
+        marginVertical: 10,
+    },
+
+    clientsBackImg: {
+        borderRadius: 15,
+        width: 180,
+        height: 213,
+        paddingVertical: 30,
+    },
+
+    casesBackImg: {
+        borderRadius: 15,
+        width: 180,
+        height: 112,
+        marginTop: 5,
+    },
+
+    title: {
+        fontSize: 16,
+        fontFamily: 'Poppins-semibold',
+        color: 'white',
+        textAlign: 'left',
+        position: 'absolute',
+        left: 12,
+    },
+    ItemsContainer: {
+        flexDirection: 'row',
+
+    },
+    singleItem: {
+        height: 'auto',
+    },
+    left: {
+        flexDirection: 'column',
+        maxWidth: '50%',
+    },
+
+    right: {
+        flexDirection: 'column',
+        maxWidth: '50%',
+
+    },
+
+    notification: {
+        width: 200,
+        height: 300,
+        backgroundColor: 'white',
+        color: 'black',
+    },
+
+    notiImg: {
+        width: 300,
+        height: 360,
+        marginTop: '10%',
+    },
+
+    noNotiTxt: {
+        fontSize: 25,
+        fontFamily: 'Poppins-semibold',
+        color: '#474747',
+        marginVertical: '10%',
+    },
+    notiContainer: {
+        margin: 12,
+        height: 'auto',
+        // paddingLeft: 10,
+        borderRadius: 10,
+        backgroundColor: 'white',
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        flexDirection: 'row',
+    },
+
+    containerInside: {
+        flexDirection: 'row',
+        width: '50%',
+    },
+    notiProfile: {
+        width: 50,
+        height: 50,
+        margin: 10,
+    },
+    notiName: {
+        fontFamily: 'Poppins-semibold',
+        fontSize: 14,
+    },
+    notiTxt: {
+        fontFamily: 'Poppins-regular',
+        fontSize: 10,
+    },
+
+    notiDate: {
+
+        fontFamily: 'Poppins-semibold',
+        fontSize: 10,
+        position: 'absolute',
+        right: -150,
+        bottom: 5,
+    },
+   
 
 });
 

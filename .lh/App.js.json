@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 164,
+            "activePatchIndex": 194,
             "patches": [
                 {
                     "date": 1664454463276,
@@ -664,6 +664,126 @@
                 {
                     "date": 1665408826780,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n import SignInScreen from './src/components/SignInScreen';\r\n import SignUpScreen from './src/components/SignUpScreen';\r\n import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';\r\n import ResetPasswordScreen from './src/components/ResetPasswordScreen';\r\n+import OtpVarification from './src/components/OtpVarification';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -50,10 +51,13 @@\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n       </View> */}\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <ResetPasswordScreen />\r\n+      </View> */}\r\n       <View onLayout={onLayoutRootView}>\r\n-        <ResetPasswordScreen />\r\n+        <OtpVarification />\r\n       </View>\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665464733371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n import SignUpScreen from './src/components/SignUpScreen';\r\n import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';\r\n import ResetPasswordScreen from './src/components/ResetPasswordScreen';\r\n import OtpVarification from './src/components/OtpVarification';\r\n+import HomeScreen from './src/components/HomeScreen';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -54,10 +55,14 @@\n       </View> */}\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ResetPasswordScreen />\r\n       </View> */}\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <OtpVarification />\r\n+      </View> */}\r\n+\r\n       <View onLayout={onLayoutRootView}>\r\n-        <OtpVarification />\r\n+        <HomeScreen />\r\n       </View>\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665472487792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n+    'poppins': require('./assets/fonts/Segoe-UI.ttf'),\r\n \r\n   });\r\n \r\n   useEffect(() => {\r\n"
+                },
+                {
+                    "date": 1665472528973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n-    'poppins': require('./assets/fonts/Segoe-UI.ttf'),\r\n+    'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n \r\n   });\r\n \r\n   useEffect(() => {\r\n"
+                },
+                {
+                    "date": 1665472594419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n     'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n+    'Poppins-regular': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n \r\n+\r\n   });\r\n \r\n   useEffect(() => {\r\n     async function prepare() {\r\n"
+                },
+                {
+                    "date": 1665472611906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n     'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n-    'Poppins-regular': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n+    'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n \r\n \r\n   });\r\n \r\n"
+                },
+                {
+                    "date": 1665472772534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n     'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n     'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n+    'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n \r\n \r\n   });\r\n \r\n"
+                },
+                {
+                    "date": 1665478010623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,11 +49,11 @@\n     >\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n       </View> */}\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n-      </View> */}\r\n+      </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n       </View> */}\r\n@@ -63,11 +63,11 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <OtpVarification />\r\n       </View> */}\r\n \r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <HomeScreen />\r\n-      </View>\r\n+      </View> */}\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665479651255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,11 +49,11 @@\n     >\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n       </View> */}\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n-      </View>\r\n+      </View> */}\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n       </View> */}\r\n@@ -63,11 +63,11 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <OtpVarification />\r\n       </View> */}\r\n \r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <HomeScreen />\r\n-      </View> */}\r\n+      </View>\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665488645463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,15 +59,15 @@\n       </View> */}\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ResetPasswordScreen />\r\n       </View> */}\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <OtpVarification />\r\n-      </View> */}\r\n+      </View>\r\n \r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <HomeScreen />\r\n-      </View>\r\n+      </View> */}\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665488681673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,14 +56,14 @@\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n       </View> */}\r\n+      <View onLayout={onLayoutRootView}>\r\n+        <ResetPasswordScreen />\r\n+      </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n-        <ResetPasswordScreen />\r\n+        <OtpVarification />\r\n       </View> */}\r\n-      <View onLayout={onLayoutRootView}>\r\n-        <OtpVarification />\r\n-      </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <HomeScreen />\r\n       </View> */}\r\n"
+                },
+                {
+                    "date": 1665488828066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,15 +53,15 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n       </View> */}\r\n \r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n-      </View> */}\r\n-      <View onLayout={onLayoutRootView}>\r\n-        <ResetPasswordScreen />\r\n       </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n+        <ResetPasswordScreen />\r\n+      </View> */}\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <OtpVarification />\r\n       </View> */}\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n"
+                },
+                {
+                    "date": 1665488843763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,15 +49,15 @@\n     >\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n       </View> */}\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n-      </View> */}\r\n+      </View>\r\n \r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n-      </View>\r\n+      </View> */}\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ResetPasswordScreen />\r\n       </View> */}\r\n       {/* <View onLayout={onLayoutRootView}>\r\n"
+                },
+                {
+                    "date": 1665488872216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,14 +46,14 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n+      <View onLayout={onLayoutRootView}>\r\n+        <SignInScreen />\r\n+      </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n-        <SignInScreen />\r\n+        <SignUpScreen />\r\n       </View> */}\r\n-      <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ForgetPasswordScreen />\r\n       </View> */}\r\n"
+                },
+                {
+                    "date": 1665488891675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,18 +39,18 @@\n     return null;\r\n   }\r\n \r\n   return (\r\n-    // <View style = {styles.container} onLayout={onLayoutRootView}>\r\n-    //   <IntroScreen />\r\n-    // </View>\r\n+    <View style = {styles.container} onLayout={onLayoutRootView}>\r\n+      <IntroScreen />\r\n+    </View>\r\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n-      </View>\r\n+      </View> */}\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n       </View> */}\r\n \r\n"
+                },
+                {
+                    "date": 1665488922507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,15 +39,17 @@\n     return null;\r\n   }\r\n \r\n   return (\r\n-    <View style = {styles.container} onLayout={onLayoutRootView}>\r\n-      <IntroScreen />\r\n-    </View>\r\n \r\n+\r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n+\r\n+      <View style={styles.container} onLayout={onLayoutRootView}>\r\n+        <IntroScreen />\r\n+      </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n       </View> */}\r\n       {/* <View onLayout={onLayoutRootView}>\r\n"
+                },
+                {
+                    "date": 1665488952957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,9 @@\n   return (\r\n \r\n \r\n     <KeyboardAvoidingView\r\n-      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n-    >\r\n+      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n \r\n       <View style={styles.container} onLayout={onLayoutRootView}>\r\n         <IntroScreen />\r\n       </View>\r\n"
+                },
+                {
+                    "date": 1665488973546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n \r\n-      <View style={styles.container} onLayout={onLayoutRootView}>\r\n+      <View  onLayout={onLayoutRootView}>\r\n         <IntroScreen />\r\n       </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n"
+                },
+                {
+                    "date": 1665489026979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,16 +39,16 @@\n     return null;\r\n   }\r\n \r\n   return (\r\n+    <View style={styles.container} onLayout={onLayoutRootView}>\r\n+    <IntroScreen />\r\n+  </View>\r\n \r\n+    // <KeyboardAvoidingView\r\n+    //   behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n \r\n-    <KeyboardAvoidingView\r\n-      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n-\r\n-      <View  onLayout={onLayoutRootView}>\r\n-        <IntroScreen />\r\n-      </View>\r\n+     \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n       </View> */}\r\n       {/* <View onLayout={onLayoutRootView}>\r\n@@ -67,9 +67,9 @@\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <HomeScreen />\r\n       </View> */}\r\n-    </KeyboardAvoidingView>\r\n+    // </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1665489068898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,19 +39,18 @@\n     return null;\r\n   }\r\n \r\n   return (\r\n-    <View style={styles.container} onLayout={onLayoutRootView}>\r\n-    <IntroScreen />\r\n-  </View>\r\n+    // <View style = {styles.container} onLayout={onLayoutRootView}>\r\n+    //   <IntroScreen />\r\n+    // </View>\r\n \r\n-    // <KeyboardAvoidingView\r\n-    //   behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n-\r\n-     \r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+    <KeyboardAvoidingView\r\n+      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n+    >\r\n+      <View onLayout={onLayoutRootView}>\r\n         <SignInScreen />\r\n-      </View> */}\r\n+      </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n       </View> */}\r\n \r\n@@ -67,9 +66,9 @@\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <HomeScreen />\r\n       </View> */}\r\n-    // </KeyboardAvoidingView>\r\n+    </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1665489089731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n       <View onLayout={onLayoutRootView}>\r\n-        <SignInScreen />\r\n+        <IntroScreen />\r\n       </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n       </View> */}\r\n"
+                },
+                {
+                    "date": 1665489103362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n     >\r\n-      <View onLayout={onLayoutRootView}>\r\n+      <View style = {styles.container} onLayout={onLayoutRootView}>\r\n         <IntroScreen />\r\n       </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n"
+                },
+                {
+                    "date": 1665489193591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,24 +21,24 @@\n \r\n \r\n   });\r\n \r\n-  useEffect(() => {\r\n-    async function prepare() {\r\n-      await SplashScreen.preventAutoHideAsync();\r\n-    }\r\n-    prepare();\r\n-  }, []);\r\n+  // useEffect(() => {\r\n+  //   async function prepare() {\r\n+  //     await SplashScreen.preventAutoHideAsync();\r\n+  //   }\r\n+  //   prepare();\r\n+  // }, []);\r\n \r\n-  const onLayoutRootView = useCallback(async () => {\r\n-    if (fontsLoaded) {\r\n-      await SplashScreen.hideAsync();\r\n-    }\r\n-  }, [fontsLoaded]);\r\n+  // const onLayoutRootView = useCallback(async () => {\r\n+  //   if (fontsLoaded) {\r\n+  //     await SplashScreen.hideAsync();\r\n+  //   }\r\n+  // }, [fontsLoaded]);\r\n \r\n-  if (!fontsLoaded) {\r\n-    return null;\r\n-  }\r\n+  // if (!fontsLoaded) {\r\n+  //   return null;\r\n+  // }\r\n \r\n   return (\r\n     // <View style = {styles.container} onLayout={onLayoutRootView}>\r\n     //   <IntroScreen />\r\n"
+                },
+                {
+                    "date": 1665489226998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,18 +39,19 @@\n   //   return null;\r\n   // }\r\n \r\n   return (\r\n+    <IntroScreen />\r\n     // <View style = {styles.container} onLayout={onLayoutRootView}>\r\n     //   <IntroScreen />\r\n     // </View>\r\n \r\n-    <KeyboardAvoidingView\r\n-      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n-    >\r\n-      <View style = {styles.container} onLayout={onLayoutRootView}>\r\n-        <IntroScreen />\r\n-      </View>\r\n+    // <KeyboardAvoidingView\r\n+    //   behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n+    // >\r\n+    //   <View style = {styles.container} onLayout={onLayoutRootView}>\r\n+    //     <IntroScreen />\r\n+    //   </View>\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SignUpScreen />\r\n       </View> */}\r\n \r\n@@ -66,9 +67,9 @@\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <HomeScreen />\r\n       </View> */}\r\n-    </KeyboardAvoidingView>\r\n+    // </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1665489260432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,56 +21,12 @@\n \r\n \r\n   });\r\n \r\n-  // useEffect(() => {\r\n-  //   async function prepare() {\r\n-  //     await SplashScreen.preventAutoHideAsync();\r\n-  //   }\r\n-  //   prepare();\r\n-  // }, []);\r\n-\r\n-  // const onLayoutRootView = useCallback(async () => {\r\n-  //   if (fontsLoaded) {\r\n-  //     await SplashScreen.hideAsync();\r\n-  //   }\r\n-  // }, [fontsLoaded]);\r\n-\r\n-  // if (!fontsLoaded) {\r\n-  //   return null;\r\n-  // }\r\n-\r\n   return (\r\n     <IntroScreen />\r\n-    // <View style = {styles.container} onLayout={onLayoutRootView}>\r\n-    //   <IntroScreen />\r\n-    // </View>\r\n+    \r\n \r\n-    // <KeyboardAvoidingView\r\n-    //   behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n-    // >\r\n-    //   <View style = {styles.container} onLayout={onLayoutRootView}>\r\n-    //     <IntroScreen />\r\n-    //   </View>\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <ForgetPasswordScreen />\r\n-      </View> */}\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <ResetPasswordScreen />\r\n-      </View> */}\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <OtpVarification />\r\n-      </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <HomeScreen />\r\n-      </View> */}\r\n-    // </KeyboardAvoidingView>\r\n-\r\n   );\r\n }\r\n \r\n const styles = StyleSheet.create({\r\n"
+                },
+                {
+                    "date": 1665489278064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n   });\r\n \r\n   return (\r\n-    <IntroScreen />\r\n+    <IntroScreen styles = {styles.container} />\r\n     \r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665489304059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,12 +21,55 @@\n \r\n \r\n   });\r\n \r\n+  useEffect(() => {\r\n+    async function prepare() {\r\n+      await SplashScreen.preventAutoHideAsync();\r\n+    }\r\n+    prepare();\r\n+  }, []);\r\n+\r\n+  const onLayoutRootView = useCallback(async () => {\r\n+    if (fontsLoaded) {\r\n+      await SplashScreen.hideAsync();\r\n+    }\r\n+  }, [fontsLoaded]);\r\n+\r\n+  if (!fontsLoaded) {\r\n+    return null;\r\n+  }\r\n+\r\n   return (\r\n-    <IntroScreen styles = {styles.container} />\r\n-    \r\n+    // <View style = {styles.container} onLayout={onLayoutRootView}>\r\n+    //   <IntroScreen />\r\n+    // </View>\r\n \r\n+    <KeyboardAvoidingView\r\n+      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n+    >\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <SignInScreen />\r\n+      </View> */}\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <SignUpScreen />\r\n+      </View> */}\r\n+\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <ForgetPasswordScreen />\r\n+      </View> */}\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <ResetPasswordScreen />\r\n+      </View> */}\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <OtpVarification />\r\n+      </View> */}\r\n+\r\n+      <View onLayout={onLayoutRootView}>\r\n+        <HomeScreen />\r\n+      </View>\r\n+    </KeyboardAvoidingView>\r\n+\r\n   );\r\n }\r\n \r\n const styles = StyleSheet.create({\r\n"
+                },
+                {
+                    "date": 1665491223362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';\r\n import ResetPasswordScreen from './src/components/ResetPasswordScreen';\r\n import OtpVarification from './src/components/OtpVarification';\r\n import HomeScreen from './src/components/HomeScreen';\r\n+import NoNotificationScreen from './src/components/NoNotificationScreen';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -62,11 +63,16 @@\n       </View> */}\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <OtpVarification />\r\n       </View> */}\r\n+      {/* \r\n+      <View onLayout={onLayoutRootView}>\r\n+        <HomeScreen />\r\n+      </View> */}\r\n \r\n+\r\n       <View onLayout={onLayoutRootView}>\r\n-        <HomeScreen />\r\n+        <NoNotificationScreen />\r\n       </View>\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665493099551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,10 +69,14 @@\n         <HomeScreen />\r\n       </View> */}\r\n \r\n \r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <NoNotificationScreen />\r\n+      </View> */}\r\n+\r\n       <View onLayout={onLayoutRootView}>\r\n-        <NoNotificationScreen />\r\n+        <NotificationScreen />\r\n       </View>\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665493115551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,12 @@\n import ResetPasswordScreen from './src/components/ResetPasswordScreen';\r\n import OtpVarification from './src/components/OtpVarification';\r\n import HomeScreen from './src/components/HomeScreen';\r\n import NoNotificationScreen from './src/components/NoNotificationScreen';\r\n+import NotificationScreen from './src/components/NoNotificationScreen';\r\n \r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1665493170761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n import ResetPasswordScreen from './src/components/ResetPasswordScreen';\r\n import OtpVarification from './src/components/OtpVarification';\r\n import HomeScreen from './src/components/HomeScreen';\r\n import NoNotificationScreen from './src/components/NoNotificationScreen';\r\n-import NotificationScreen from './src/components/NoNotificationScreen';\r\n+import NotificationScreen from './src/components/NotificationScreen';\r\n \r\n \r\n \r\n export default function App() {\r\n"
                 }
             ],
             "date": 1664454463276,

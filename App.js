@@ -8,12 +8,20 @@ import SignUpScreen from './src/components/SignUpScreen';
 import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';
 import ResetPasswordScreen from './src/components/ResetPasswordScreen';
 import OtpVarification from './src/components/OtpVarification';
+import HomeScreen from './src/components/HomeScreen';
+import NoNotificationScreen from './src/components/NoNotificationScreen';
+import NotificationScreen from './src/components/NotificationScreen';
+
 
 
 export default function App() {
   const [fontsLoaded] = useFonts({
     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),
     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),
+    'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),
+    'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),
+    'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),
+
 
   });
 
@@ -55,8 +63,21 @@ export default function App() {
       {/* <View onLayout={onLayoutRootView}>
         <ResetPasswordScreen />
       </View> */}
-      <View onLayout={onLayoutRootView}>
+      {/* <View onLayout={onLayoutRootView}>
         <OtpVarification />
+      </View> */}
+      {/* 
+      <View onLayout={onLayoutRootView}>
+        <HomeScreen />
+      </View> */}
+
+
+      {/* <View onLayout={onLayoutRootView}>
+        <NoNotificationScreen />
+      </View> */}
+
+      <View onLayout={onLayoutRootView}>
+        <NotificationScreen />
       </View>
     </KeyboardAvoidingView>
 

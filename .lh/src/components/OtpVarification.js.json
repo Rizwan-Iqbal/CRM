@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 44,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1665408779405,
@@ -184,6 +184,34 @@
                 {
                     "date": 1665414878888,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,14 +75,14 @@\n                                 </TouchableOpacity>\r\n                             </View>\r\n \r\n                         </View>\r\n-                        <View style={styles.footerContainer}>\r\n+                        {/* <View style={styles.footerContainer}>\r\n \r\n                             <Text style={styles.footerTxt}> Law case All rights reserve 2022 {'\\n'}\r\n                                 Product of Fission Monster {'\\n'}\r\n                                 App version V1</Text>\r\n-                        </View>\r\n+                        </View> */}\r\n                     </View>\r\n \r\n                 </View>\r\n             </ScrollView>\r\n"
+                },
+                {
+                    "date": 1665464390309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,11 @@\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n                             </View>\r\n+                            <View>\r\n+                                <Text>oadjospdjosdj</Text>\r\n+                            </View>\r\n                         </ImageBackground>\r\n                     </View>\r\n \r\n                     <View style={{ alignItems: 'center', }}>\r\n"
+                },
+                {
+                    "date": 1665464410055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,11 @@\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n                             </View>\r\n-                            <View>\r\n+                            \r\n                                 <Text>oadjospdjosdj</Text>\r\n-                            </View>\r\n+                          \r\n                         </ImageBackground>\r\n                     </View>\r\n \r\n                     <View style={{ alignItems: 'center', }}>\r\n"
+                },
+                {
+                    "date": 1665464421415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,11 @@\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n+                                <Text>oadjospdjosdj</Text>\r\n                             </View>\r\n                             \r\n-                                <Text>oadjospdjosdj</Text>\r\n                           \r\n                         </ImageBackground>\r\n                     </View>\r\n \r\n"
+                },
+                {
+                    "date": 1665464440497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n-                                <Text>oadjospdjosdj</Text>\r\n+                                <Text style = {{color: 'white'}}>oadjospdjosdj</Text>\r\n                             </View>\r\n                             \r\n                           \r\n                         </ImageBackground>\r\n"
+                },
+                {
+                    "date": 1665464466676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n-                                <Text style = {{color: 'white'}}>oadjospdjosdj</Text>\r\n+                                <Text style = {{color: 'white'}}> {'\\n'} oadjospdjosdj</Text>\r\n                             </View>\r\n                             \r\n                           \r\n                         </ImageBackground>\r\n"
+                },
+                {
+                    "date": 1665464476526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n-                                <Text style = {{color: 'white'}}> {'\\n'} oadjospdjosdj</Text>\r\n+                                <Text style = {{color: 'white'}}> {'\\n'}{'\\n'}{'\\n'}{'\\n'}{'\\n'} oadjospdjosdj</Text>\r\n                             </View>\r\n                             \r\n                           \r\n                         </ImageBackground>\r\n"
+                },
+                {
+                    "date": 1665464497361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,12 +25,9 @@\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n-                                <Text style = {{color: 'white'}}> {'\\n'}{'\\n'}{'\\n'}{'\\n'}{'\\n'} oadjospdjosdj</Text>\r\n                             </View>\r\n-                            \r\n-                          \r\n                         </ImageBackground>\r\n                     </View>\r\n \r\n                     <View style={{ alignItems: 'center', }}>\r\n"
                 }
             ],
             "date": 1665408779405,
