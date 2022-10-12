@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1665491193760,
@@ -52,6 +52,14 @@
                 {
                     "date": 1665492270844,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,13 +33,10 @@\n                     </View>\r\n \r\n                     <View>\r\n                         <View style={styles.form}>\r\n-                            \r\n-                            \r\n-                            \r\n                             <View style={styles.newUser}>\r\n-                            <Text style={styles.newUserText}>No Notifications</Text>\r\n+                            <Text style={styles.noNotiTxt}>No Notifications</Text>\r\n \r\n                             </View>\r\n                            \r\n \r\n"
+                },
+                {
+                    "date": 1665555264897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             <ScrollView>\r\n \r\n                 <View style={styles.container}>\r\n                     <View>\r\n-                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n+                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} style={styles.SignInScreenImage}>\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 {/* <Image source={require('../../assets/images/back.png')} style={styles.backIcon} /> */}\r\n                                 <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>\r\n                                 <Text style={styles.SignInTitle}> Notification </Text>\r\n"
+                },
+                {
+                    "date": 1665556630368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n                     <View>\r\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} style={styles.SignInScreenImage}>\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 {/* <Image source={require('../../assets/images/back.png')} style={styles.backIcon} /> */}\r\n-                                <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>\r\n+                                <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={30}/>\r\n                                 <Text style={styles.SignInTitle}> Notification </Text>\r\n                             </View>\r\n                         </ImageBackground>\r\n                     </View>\r\n"
                 }
             ],
             "date": 1665491193760,

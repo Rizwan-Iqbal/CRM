@@ -19,9 +19,9 @@ const ResetPasswordScreen = () => {
 
                 <View style={styles.container}>
                     <View>
-                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >
+                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} >
                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-                            <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>
+                            <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={30}/>
                                 <Text style={styles.SignInTitle}> Reset Password </Text>
                             </View>
                         </ImageBackground>

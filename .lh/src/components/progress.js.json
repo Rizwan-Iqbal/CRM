@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/components/progress.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1665578032051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1665578057116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n-import { View, Text } from 'react-native'\r\n-import React from 'react'\r\n+import { View, Text } from 'react-native';\r\n+import React from 'react';\r\n+import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';\r\n \r\n+\r\n const progress = () => {\r\n   return (\r\n     <View>\r\n       <Text>progress</Text>\r\n"
+                },
+                {
+                    "date": 1665578084659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,31 @@\n import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';\r\n \r\n \r\n const progress = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>progress</Text>\r\n+    <View style={{ flex: 1 }}>\r\n+        <ProgressSteps>\r\n+            <ProgressStep label=\"First Step\">\r\n+                <View style={{ alignItems: 'center' }}>\r\n+                    <Text>This is the content within step 1!</Text>\r\n+                </View>\r\n+            </ProgressStep>\r\n+            <ProgressStep label=\"Second Step\">\r\n+                <View style={{ alignItems: 'center' }}>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                </View>\r\n+            </ProgressStep>\r\n+            <ProgressStep label=\"Third Step\">\r\n+                <View style={{ alignItems: 'center' }}>\r\n+                    <Text>This is the content within step 3!</Text>\r\n+                </View>\r\n+            </ProgressStep>\r\n+        </ProgressSteps>\r\n     </View>\r\n-  )\r\n+    return (\r\n+        <View>\r\n+            <Text>progress</Text>\r\n+        </View>\r\n+    )\r\n }\r\n \r\n export default progress\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665578112644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,14 @@\n                 </View>\r\n             </ProgressStep>\r\n         </ProgressSteps>\r\n     </View>\r\n+\r\n+    const buttonTextStyle = {\r\n+        color: '#393939'\r\n+    };\r\n+\r\n+\r\n     return (\r\n         <View>\r\n             <Text>progress</Text>\r\n         </View>\r\n"
+                },
+                {
+                    "date": 1665578163649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,11 +29,22 @@\n     };\r\n \r\n \r\n     return (\r\n-        <View>\r\n-            <Text>progress</Text>\r\n-        </View>\r\n+        <View style={{flex: 1}}>\r\n+        <ProgressSteps>\r\n+            <ProgressStep label=\"First Step\" nextBtnTextStyle={buttonTextStyle} previousBtnTextStyle={buttonTextStyle}>\r\n+                <View style={{ alignItems: 'center' }}>\r\n+                    <Text>This is the content within step 1!</Text>\r\n+                </View>\r\n+            </ProgressStep>\r\n+            <ProgressStep label=\"Second Step\" nextBtnTextStyle={buttonTextStyle} previousBtnTextStyle={buttonTextStyle}>\r\n+                <View style={{ alignItems: 'center' }}>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                </View>\r\n+            </ProgressStep>\r\n+        </ProgressSteps>\r\n+    </View>\r\n     )\r\n }\r\n \r\n export default progress\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665578320907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import React from 'react';\r\n import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';\r\n \r\n \r\n-const progress = () => {\r\n+const Progress = () => {\r\n     <View style={{ flex: 1 }}>\r\n         <ProgressSteps>\r\n             <ProgressStep label=\"First Step\">\r\n                 <View style={{ alignItems: 'center' }}>\r\n@@ -46,5 +46,5 @@\n     </View>\r\n     )\r\n }\r\n \r\n-export default progress\n\\ No newline at end of file\n+export default Progress\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665578382465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,29 @@\n         <ProgressSteps>\r\n             <ProgressStep label=\"First Step\">\r\n                 <View style={{ alignItems: 'center' }}>\r\n                     <Text>This is the content within step 1!</Text>\r\n+                    <Text>This is the content within step 1!</Text>\r\n+                    <Text>This is the content within step 1!</Text>\r\n+                    <Text>This is the content within step 1!</Text>\r\n+                    <Text>This is the content within step 1!</Text>\r\n+                    <Text>This is the content within step 1!</Text>\r\n+                    <Text>This is the content within step 1!</Text>\r\n+\r\n                 </View>\r\n             </ProgressStep>\r\n             <ProgressStep label=\"Second Step\">\r\n                 <View style={{ alignItems: 'center' }}>\r\n                     <Text>This is the content within step 2!</Text>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+                    <Text>This is the content within step 2!</Text>\r\n+\r\n                 </View>\r\n             </ProgressStep>\r\n             <ProgressStep label=\"Third Step\">\r\n                 <View style={{ alignItems: 'center' }}>\r\n"
+                },
+                {
+                    "date": 1665580085902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     };\r\n \r\n \r\n     return (\r\n-        <View style={{flex: 1}}>\r\n+        <View >\r\n         <ProgressSteps>\r\n             <ProgressStep label=\"First Step\" nextBtnTextStyle={buttonTextStyle} previousBtnTextStyle={buttonTextStyle}>\r\n                 <View style={{ alignItems: 'center' }}>\r\n                     <Text>This is the content within step 1!</Text>\r\n"
+                }
+            ],
+            "date": 1665578032051,
+            "name": "Commit-0",
+            "content": "import { View, Text } from 'react-native'\r\nimport React from 'react'\r\n\r\nconst progress = () => {\r\n  return (\r\n    <View>\r\n      <Text>progress</Text>\r\n    </View>\r\n  )\r\n}\r\n\r\nexport default progress"
+        }
+    ]
+}

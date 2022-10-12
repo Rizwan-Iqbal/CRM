@@ -19,18 +19,22 @@ const styles = StyleSheet.create({
 
     // Signin Screen Styling
     SignInTitle: {
-        fontSize: 30,
-        fontFamily: 'Segoe-ui-bold',
-        textAlign: 'center',
-        marginTop: 25,
+        fontSize: 24,
+        fontFamily: 'Poppins-semibold',
+        textAlign: 'left',
+        marginTop: 40,
         marginBottom: 25,
-        // marginTop: 25,
-
         color: 'white',
+        width: '75%',
+
 
     },
     backIcon: {
-        marginLeft: 8,
+        marginLeft: 12,
+        width: '25%',
+        marginTop: 12,
+        // paddingRight: 60,
+
 
     },
     signInImg: {
@@ -264,7 +268,7 @@ const styles = StyleSheet.create({
     topTxt: {
         color: '#474747',
         fontWeight: '600',
-        fontSize: 20,
+        fontSize: 16,
         fontFamily: 'Poppins-semibold',
     },
     line: {
@@ -343,7 +347,8 @@ const styles = StyleSheet.create({
         marginVertical: '10%',
     },
     notiContainer: {
-        margin: 12,
+        marginHorizontal: 15,
+        marginVertical: 7,
         height: 'auto',
         // paddingLeft: 10,
         borderRadius: 10,
@@ -359,9 +364,32 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
 
+    switchContainer: {
+        marginHorizontal: 15,
+        marginVertical: 7,
+        height: 'auto',
+        borderRadius: 10,
+        backgroundColor: 'white',
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+    },
+
     containerInside: {
         flexDirection: 'row',
         width: '50%',
+    },
+    switchContainerInside: {
+        flexDirection: 'row',
+        width: '70%',
+        alignItems: 'center',
     },
     notiProfile: {
         width: 50,
@@ -385,7 +413,57 @@ const styles = StyleSheet.create({
         right: -150,
         bottom: 5,
     },
-   
+
+    switchTxt: {
+        fontFamily: 'Poppins-semibold',
+        fontSize: 12,
+        color: '#6F6F6F',
+    },
+    searchContainer: {
+        flexDirection: 'row',
+        marginBottom: 40,
+    },
+    searchInput: {
+
+        margin: 10,
+        height: 50,
+        // paddingLeft: 10,
+        borderRadius: 25,
+        backgroundColor: 'white',
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        paddingLeft: 15,
+        width: '100%',
+
+    },
+    searchInnerContainer: {
+        width: '75%',
+        flexDirection: 'row',
+    },
+    casesTitle: {
+        marginBottom: 0,
+        
+    },
+
+    caseBackIcon: {
+        marginTop: 30,
+    },
+    searchIcon:{
+        right: 7,
+        
+    },
+    settingIcon: {
+
+        marginHorizontal: 12,
+        marginTop: 5,
+    },
+
 
 });
 

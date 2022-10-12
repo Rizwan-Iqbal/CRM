@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 51,
+            "activePatchIndex": 54,
             "patches": [
                 {
                     "date": 1665408779405,
@@ -212,6 +212,18 @@
                 {
                     "date": 1665464497361,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,12 +25,9 @@\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n-                                <Text style = {{color: 'white'}}> {'\\n'}{'\\n'}{'\\n'}{'\\n'}{'\\n'} oadjospdjosdj</Text>\r\n                             </View>\r\n-                            \r\n-                          \r\n                         </ImageBackground>\r\n                     </View>\r\n \r\n                     <View style={{ alignItems: 'center', }}>\r\n"
+                },
+                {
+                    "date": 1665555289697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <ScrollView>\r\n \r\n                 <View style={styles.container}>\r\n                     <View>\r\n-                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >\r\n+                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n                             </View>\r\n"
+                },
+                {
+                    "date": 1665556551204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                 <View style={styles.container}>\r\n                     <View>\r\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n-                                <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />\r\n+                                <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n                             </View>\r\n                         </ImageBackground>\r\n                     </View>\r\n"
+                },
+                {
+                    "date": 1665556581555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n \r\n                 <View style={styles.container}>\r\n                     <View>\r\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} >\r\n-                            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n+                            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}>\r\n                                 <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                                 <Text style={styles.SignInTitle}> OTP Verification</Text>\r\n                             </View>\r\n                         </ImageBackground>\r\n"
                 }
             ],
             "date": 1665408779405,

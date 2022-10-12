@@ -22,9 +22,9 @@ const OtpVarification = () => {
 
                 <View style={styles.container}>
                     <View>
-                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >
-                            <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-                                <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />
+                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} >
+                            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}>
+                                <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={30} />
                                 <Text style={styles.SignInTitle}> OTP Verification</Text>
                             </View>
                         </ImageBackground>

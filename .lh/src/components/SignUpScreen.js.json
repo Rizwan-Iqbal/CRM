@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 39,
+            "activePatchIndex": 41,
             "patches": [
                 {
                     "date": 1665396633445,
@@ -164,6 +164,14 @@
                 {
                     "date": 1665408260505,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n                         <View style={styles.footerContainer}>\r\n \r\n                             <Text style={styles.footerTxt}> Law case All rights reserve 2022 {'\\n'}\r\n                                 Product of Fission Monster {'\\n'}\r\n-                                App vision V1</Text>\r\n+                                App version V1</Text>\r\n                         </View>\r\n                     </View>\r\n \r\n                 </View>\r\n"
+                },
+                {
+                    "date": 1665555315942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             <ScrollView>\r\n \r\n                 <View style={styles.container}>\r\n                     <View>\r\n-                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} >\r\n+                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} >\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                             <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>\r\n                                 <Text style={styles.SignInTitle}> Create an account </Text>\r\n                             </View>\r\n"
+                },
+                {
+                    "date": 1665556435177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n \r\n                 <View style={styles.container}>\r\n                     <View>\r\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} >\r\n-                            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n-                            <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>\r\n+                            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}>\r\n+                            <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={30}/>\r\n                                 <Text style={styles.SignInTitle}> Create an account </Text>\r\n                             </View>\r\n                         </ImageBackground>\r\n                     </View>\r\n"
                 }
             ],
             "date": 1665396633445,

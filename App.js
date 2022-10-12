@@ -11,6 +11,12 @@ import OtpVarification from './src/components/OtpVarification';
 import HomeScreen from './src/components/HomeScreen';
 import NoNotificationScreen from './src/components/NoNotificationScreen';
 import NotificationScreen from './src/components/NotificationScreen';
+import NotificationSettingScreen from './src/components/NotificationSettingScreen';
+import ComingSoonScreen from './src/components/ComingSoonScreen';
+import ClientScreen from './src/components/ClientScreen';
+import Tab from './src/components/Tab';
+import Progress from './src/components/Progress';
+
 
 
 
@@ -76,9 +82,28 @@ export default function App() {
         <NoNotificationScreen />
       </View> */}
 
-      <View onLayout={onLayoutRootView}>
+      {/* <View onLayout={onLayoutRootView}>
         <NotificationScreen />
+      </View> */}
+
+      {/* <View onLayout={onLayoutRootView}>
+        <NotificationSettingScreen />
+      </View> */}
+
+      {/* <View onLayout={onLayoutRootView}>
+        <ComingSoonScreen />
+      </View> */}
+      
+      {/* <View onLayout={onLayoutRootView}>
+        <ClientScreen />
+      </View> */}
+
+
+
+      <View onLayout={onLayoutRootView}>
+        <Progress />
       </View>
+      
     </KeyboardAvoidingView>
 
   );

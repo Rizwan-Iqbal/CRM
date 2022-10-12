@@ -19,10 +19,10 @@ const NotificationScreen = () => {
 
                 <View style={styles.container}>
                     <View>
-                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>
+                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} style={styles.SignInScreenImage}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                 {/* <Image source={require('../../assets/images/back.png')} style={styles.backIcon} /> */}
-                                <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={35} />
+                                <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={30} />
                                 <Text style={styles.SignInTitle}> Notification </Text>
                             </View>
                         </ImageBackground>
@@ -81,6 +81,7 @@ const NotificationScreen = () => {
                             <Text style = {styles.notiDate}>11 Sep 2022</Text>
                         </View>
                     </View>
+
 
 
 

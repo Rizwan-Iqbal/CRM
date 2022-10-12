@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/components/Tab.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1665569637198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1665569742003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n-import React from 'react';\r\n import { Tab, Text, TabView } from '@rneui/themed';\r\n+import React, { useState } from 'react';\r\n \r\n export default () => {\r\n const [index, setIndex] = React.useState(0);\r\n \r\n"
+                },
+                {
+                    "date": 1665569752615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Tab, Text, TabView } from '@rneui/themed';\r\n import React, { useState } from 'react';\r\n \r\n export default () => {\r\n-const [index, setIndex] = React.useState(0);\r\n+const [index, setIndex] = useState(0);\r\n \r\n return (\r\n   <>\r\n     <Tab\r\n"
+                },
+                {
+                    "date": 1665569765758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Tab, Text, TabView } from '@rneui/themed';\r\n import React, { useState } from 'react';\r\n \r\n export default () => {\r\n-const [index, setIndex] = useState(0);\r\n+const [index, setIndex] = useState(true);\r\n \r\n return (\r\n   <>\r\n     <Tab\r\n"
+                },
+                {
+                    "date": 1665569881024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export default () => {\r\n const [index, setIndex] = useState(true);\r\n \r\n return (\r\n-  <>\r\n+  \r\n     <Tab\r\n       value={index}\r\n       onChange={(e) => setIndex(e)}\r\n       indicatorStyle={{\r\n@@ -42,7 +42,7 @@\n       <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>\r\n         <Text h1>Cart</Text>\r\n       </TabView.Item>\r\n     </TabView>\r\n-  </>\r\n+  \r\n );\r\n };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665569924666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export default () => {\r\n const [index, setIndex] = useState(true);\r\n \r\n return (\r\n-  \r\n+  <>\r\n     <Tab\r\n       value={index}\r\n       onChange={(e) => setIndex(e)}\r\n       indicatorStyle={{\r\n@@ -42,7 +42,7 @@\n       <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>\r\n         <Text h1>Cart</Text>\r\n       </TabView.Item>\r\n     </TabView>\r\n-  \r\n+  </>\r\n );\r\n };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665570073009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,12 +33,12 @@\n     </Tab>\r\n \r\n     <TabView value={index} onChange={setIndex} animationType=\"spring\">\r\n       <TabView.Item style={{ backgroundColor: 'red', width: '100%' }}>\r\n-        <Text h1>Recent</Text>\r\n+        <Text >Recent</Text>\r\n       </TabView.Item>\r\n       <TabView.Item style={{ backgroundColor: 'blue', width: '100%' }}>\r\n-        <Text h1>Favorite</Text>\r\n+        <Text >Favorite</Text>\r\n       </TabView.Item>\r\n       <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>\r\n         <Text h1>Cart</Text>\r\n       </TabView.Item>\r\n"
+                },
+                {
+                    "date": 1665570156718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n import { Tab, Text, TabView } from '@rneui/themed';\r\n import React, { useState } from 'react';\r\n+import { View } from 'react-native';\r\n \r\n export default () => {\r\n const [index, setIndex] = useState(true);\r\n \r\n return (\r\n-  <>\r\n+  <View>\r\n     <Tab\r\n       value={index}\r\n       onChange={(e) => setIndex(e)}\r\n       indicatorStyle={{\r\n@@ -42,7 +43,7 @@\n       <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>\r\n         <Text h1>Cart</Text>\r\n       </TabView.Item>\r\n     </TabView>\r\n-  </>\r\n+  </View>\r\n );\r\n };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665570966904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,12 @@\n+import React from 'react';\r\n import { Tab, Text, TabView } from '@rneui/themed';\r\n-import React, { useState } from 'react';\r\n-import { View } from 'react-native';\r\n \r\n export default () => {\r\n-const [index, setIndex] = useState(true);\r\n+const [index, setIndex] = React.useState(0);\r\n \r\n return (\r\n-  <View>\r\n+  <>\r\n     <Tab\r\n       value={index}\r\n       onChange={(e) => setIndex(e)}\r\n       indicatorStyle={{\r\n@@ -34,16 +33,16 @@\n     </Tab>\r\n \r\n     <TabView value={index} onChange={setIndex} animationType=\"spring\">\r\n       <TabView.Item style={{ backgroundColor: 'red', width: '100%' }}>\r\n-        <Text >Recent</Text>\r\n+        <Text h1>Recent</Text>\r\n       </TabView.Item>\r\n       <TabView.Item style={{ backgroundColor: 'blue', width: '100%' }}>\r\n-        <Text >Favorite</Text>\r\n+        <Text h1>Favorite</Text>\r\n       </TabView.Item>\r\n       <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>\r\n         <Text h1>Cart</Text>\r\n       </TabView.Item>\r\n     </TabView>\r\n-  </View>\r\n+  </>\r\n );\r\n };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665570986965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n       <TabView.Item style={{ backgroundColor: 'red', width: '100%' }}>\r\n         <Text h1>Recent</Text>\r\n       </TabView.Item>\r\n       <TabView.Item style={{ backgroundColor: 'blue', width: '100%' }}>\r\n-        <Text h1>Favorite</Text>\r\n+        <Text h1>FavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavorite</Text>\r\n       </TabView.Item>\r\n       <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>\r\n         <Text h1>Cart</Text>\r\n       </TabView.Item>\r\n"
+                },
+                {
+                    "date": 1665571008736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n       <TabView.Item style={{ backgroundColor: 'red', width: '100%' }}>\r\n         <Text h1>Recent</Text>\r\n       </TabView.Item>\r\n       <TabView.Item style={{ backgroundColor: 'blue', width: '100%' }}>\r\n-        <Text h1>FavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavoriteFavorite</Text>\r\n+        <Text h1>Favorite</Text>\r\n       </TabView.Item>\r\n       <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>\r\n         <Text h1>Cart</Text>\r\n       </TabView.Item>\r\n"
+                }
+            ],
+            "date": 1665569637198,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { Tab, Text, TabView } from '@rneui/themed';\r\n\r\nexport default () => {\r\nconst [index, setIndex] = React.useState(0);\r\n\r\nreturn (\r\n  <>\r\n    <Tab\r\n      value={index}\r\n      onChange={(e) => setIndex(e)}\r\n      indicatorStyle={{\r\n        backgroundColor: 'white',\r\n        height: 3,\r\n      }}\r\n      variant=\"primary\"\r\n    >\r\n      <Tab.Item\r\n        title=\"Recent\"\r\n        titleStyle={{ fontSize: 12 }}\r\n        icon={{ name: 'timer', type: 'ionicon', color: 'white' }}\r\n      />\r\n      <Tab.Item\r\n        title=\"favorite\"\r\n        titleStyle={{ fontSize: 12 }}\r\n        icon={{ name: 'heart', type: 'ionicon', color: 'white' }}\r\n      />\r\n      <Tab.Item\r\n        title=\"cart\"\r\n        titleStyle={{ fontSize: 12 }}\r\n        icon={{ name: 'cart', type: 'ionicon', color: 'white' }}\r\n      />\r\n    </Tab>\r\n\r\n    <TabView value={index} onChange={setIndex} animationType=\"spring\">\r\n      <TabView.Item style={{ backgroundColor: 'red', width: '100%' }}>\r\n        <Text h1>Recent</Text>\r\n      </TabView.Item>\r\n      <TabView.Item style={{ backgroundColor: 'blue', width: '100%' }}>\r\n        <Text h1>Favorite</Text>\r\n      </TabView.Item>\r\n      <TabView.Item style={{ backgroundColor: 'green', width: '100%' }}>\r\n        <Text h1>Cart</Text>\r\n      </TabView.Item>\r\n    </TabView>\r\n  </>\r\n);\r\n};"
+        }
+    ]
+}

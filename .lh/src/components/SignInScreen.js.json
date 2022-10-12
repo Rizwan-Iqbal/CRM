@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 252,
+            "activePatchIndex": 254,
             "patches": [
                 {
                     "date": 1664772467759,
@@ -1016,6 +1016,14 @@
                 {
                     "date": 1665408254573,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n                         <View style={styles.footerContainer}>\r\n \r\n                             <Text style={styles.footerTxt}> Law case All rights reserve 2022 {'\\n'}\r\n                                 Product of Fission Monster {'\\n'}\r\n-                                App vision V1</Text>\r\n+                                App version V1</Text>\r\n                         </View>\r\n                     </View>\r\n \r\n                 </View>\r\n"
+                },
+                {
+                    "date": 1665555308553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             <ScrollView>\r\n \r\n                 <View style={styles.container}>\r\n                     <View>\r\n-                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'contain'} style={styles.SignInScreenImage}>\r\n+                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} style={styles.SignInScreenImage}>\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 {/* <Image source={require('../../assets/images/back.png')} style={styles.backIcon} /> */}\r\n                                 <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>\r\n                                 <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n"
+                },
+                {
+                    "date": 1665556653595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n                     <View>\r\n                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} style={styles.SignInScreenImage}>\r\n                             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                 {/* <Image source={require('../../assets/images/back.png')} style={styles.backIcon} /> */}\r\n-                                <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={35}/>\r\n+                                <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={30}/>\r\n                                 <Text style={styles.SignInTitle}> Welcome Back! </Text>\r\n                             </View>\r\n                         </ImageBackground>\r\n                     </View>\r\n"
                 }
             ],
             "date": 1664772467759,
