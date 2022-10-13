@@ -14,10 +14,7 @@ import NotificationScreen from './src/components/NotificationScreen';
 import NotificationSettingScreen from './src/components/NotificationSettingScreen';
 import ComingSoonScreen from './src/components/ComingSoonScreen';
 import ClientScreen from './src/components/ClientScreen';
-import Tab from './src/components/Tab';
-import Progress from './src/components/Progress';
-
-
+import SupportScreen from './src/components/SupportScreen';
 
 
 export default function App() {
@@ -93,16 +90,14 @@ export default function App() {
       {/* <View onLayout={onLayoutRootView}>
         <ComingSoonScreen />
       </View> */}
-      
-      {/* <View onLayout={onLayoutRootView}>
+
+      <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>
         <ClientScreen />
-      </View> */}
-
-
-
-      <View onLayout={onLayoutRootView}>
-        <Progress />
       </View>
+
+      {/* <View onLayout={onLayoutRootView}>
+        <SupportScreen />
+      </View> */}
       
     </KeyboardAvoidingView>
 

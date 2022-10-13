@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 222,
+            "activePatchIndex": 233,
             "patches": [
                 {
                     "date": 1664454463276,
@@ -896,6 +896,50 @@
                 {
                     "date": 1665578332849,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n import Tab from './src/components/Tab';\r\n-import progress from './src/components/Progress';\r\n+import Progress from './src/components/Progress';\r\n \r\n \r\n \r\n \r\n@@ -100,9 +100,9 @@\n \r\n \r\n \r\n       <View onLayout={onLayoutRootView}>\r\n-        <progress />\r\n+        <Progress />\r\n       </View>\r\n       \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665636140026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,17 +93,17 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ComingSoonScreen />\r\n       </View> */}\r\n       \r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <ClientScreen />\r\n-      </View> */}\r\n+      </View>\r\n \r\n \r\n \r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <Progress />\r\n-      </View>\r\n+      </View> */}\r\n       \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665636216275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n import NotificationScreen from './src/components/NotificationScreen';\r\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n-import Tab from './src/components/Tab';\r\n import Progress from './src/components/Progress';\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665636231147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,10 @@\n import NotificationScreen from './src/components/NotificationScreen';\r\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n-import Progress from './src/components/Progress';\r\n \r\n \r\n-\r\n-\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1665639268568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n import NotificationScreen from './src/components/NotificationScreen';\r\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n+import Tab from './src/components/Tab';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -88,19 +89,22 @@\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ComingSoonScreen />\r\n       </View> */}\r\n-      \r\n+\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <ClientScreen />\r\n+      </View> */}\r\n+\r\n       <View onLayout={onLayoutRootView}>\r\n-        <ClientScreen />\r\n+        <Tab />\r\n       </View>\r\n \r\n \r\n-\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <Progress />\r\n       </View> */}\r\n-      \r\n+\r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665642915247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n import Tab from './src/components/Tab';\r\n+import Support\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -94,13 +95,16 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ClientScreen />\r\n       </View> */}\r\n \r\n+      {/* <View onLayout={onLayoutRootView}>\r\n+        <Tab />\r\n+      </View> */}\r\n+\r\n       <View onLayout={onLayoutRootView}>\r\n         <Tab />\r\n       </View>\r\n \r\n-\r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <Progress />\r\n       </View> */}\r\n \r\n"
+                },
+                {
+                    "date": 1665642929360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n import Tab from './src/components/Tab';\r\n-import Support\r\n \r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1665642962774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n import Tab from './src/components/Tab';\r\n+import SupportScreen from './src/components/SupportScreen';\r\n \r\n \r\n-\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n@@ -100,9 +100,9 @@\n         <Tab />\r\n       </View> */}\r\n \r\n       <View onLayout={onLayoutRootView}>\r\n-        <Tab />\r\n+        <SupportScreen />\r\n       </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <Progress />\r\n"
+                },
+                {
+                    "date": 1665643516625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,19 +91,19 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ComingSoonScreen />\r\n       </View> */}\r\n \r\n-      {/* <View onLayout={onLayoutRootView}>\r\n+      <View onLayout={onLayoutRootView}>\r\n         <ClientScreen />\r\n-      </View> */}\r\n+      </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <Tab />\r\n       </View> */}\r\n \r\n-      <View onLayout={onLayoutRootView}>\r\n+      {/* <View onLayout={onLayoutRootView}>\r\n         <SupportScreen />\r\n-      </View>\r\n+      </View> */}\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <Progress />\r\n       </View> */}\r\n"
+                },
+                {
+                    "date": 1665643567899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ComingSoonScreen />\r\n       </View> */}\r\n \r\n-      <View onLayout={onLayoutRootView}>\r\n+      <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n         <ClientScreen />\r\n       </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n"
+                },
+                {
+                    "date": 1665644193497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n import NotificationScreen from './src/components/NotificationScreen';\r\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n-import Tab from './src/components/Tab';\r\n import SupportScreen from './src/components/SupportScreen';\r\n \r\n \r\n export default function App() {\r\n"
+                },
+                {
+                    "date": 1665644230121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,19 +95,11 @@\n         <ClientScreen />\r\n       </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n-        <Tab />\r\n-      </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n         <SupportScreen />\r\n       </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <Progress />\r\n-      </View> */}\r\n-\r\n+      \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
                 }
             ],
             "date": 1664454463276,

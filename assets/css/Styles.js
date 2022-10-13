@@ -33,8 +33,9 @@ const styles = StyleSheet.create({
         marginLeft: 12,
         width: '25%',
         marginTop: 12,
-        // paddingRight: 60,
-
+        // paddingRight: 60
+    },
+    clientIcon: {
 
     },
     signInImg: {
@@ -184,7 +185,7 @@ const styles = StyleSheet.create({
     otpTxt: {
         fontSize: 20,
         textAlign: 'center',
-        fontFamily: 'Segoe-ui-bold',
+        fontFamily: 'Poppins-semibold',
         color: '#474747'
 
     },
@@ -270,6 +271,12 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         fontSize: 16,
         fontFamily: 'Poppins-semibold',
+    },
+
+    clientTopTxt: {
+
+        textAlign: 'center',
+        marginVertical: 5,
     },
     line: {
         borderBottomColor: '#707070',
@@ -364,6 +371,21 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
 
+    clientContainer: {
+
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        shadowOpacity: 0.38,
+        shadowRadius: 10.00,
+        elevation: 10,
+        marginVertical: 15,
+        marginHorizontal: 10,
+        padding: 15,
+
+    },
+
     switchContainer: {
         marginHorizontal: 15,
         marginVertical: 7,
@@ -386,10 +408,16 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '50%',
     },
+
+    clientMainContainer: {
+        width: '100%',
+        justifyContent: 'space-between'
+    },
     switchContainerInside: {
         flexDirection: 'row',
         width: '70%',
         alignItems: 'center',
+        position: 'relative',
     },
     notiProfile: {
         width: 50,
@@ -400,9 +428,24 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins-semibold',
         fontSize: 14,
     },
+
+    clientID: {
+        fontFamily: 'Poppins-semibold',
+        fontSize: 12,
+    },
     notiTxt: {
         fontFamily: 'Poppins-regular',
         fontSize: 10,
+    },
+    clientDetail: {
+        fontSize: 12,
+        color: '#474747',
+        fontFamily: 'Poppins-semibold',
+        marginLeft:7,
+        marginTop: 3,
+        lineHeight: 23,
+
+
     },
 
     notiDate: {
@@ -448,21 +491,32 @@ const styles = StyleSheet.create({
     },
     casesTitle: {
         marginBottom: 0,
-        
+
     },
 
     caseBackIcon: {
         marginTop: 30,
     },
-    searchIcon:{
+    searchIcon: {
         right: 7,
-        
+
     },
     settingIcon: {
 
         marginHorizontal: 12,
         marginTop: 5,
     },
+    supportTopTxt: {
+        textAlign: 'left',
+        marginTop: 0,
+    },
+
+    clentProfile: {
+        position: 'absolute',
+        right: 10,
+        width: 113,
+        height: 110,
+    }
 
 
 });
