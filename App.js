@@ -15,7 +15,7 @@ import NotificationSettingScreen from './src/components/NotificationSettingScree
 import ComingSoonScreen from './src/components/ComingSoonScreen';
 import ClientScreen from './src/components/ClientScreen';
 import SupportScreen from './src/components/SupportScreen';
-
+import ImagePickerExample from './src/components/ImagePickerExample';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -51,53 +51,13 @@ export default function App() {
     // </View>
 
     <KeyboardAvoidingView
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
-    >
-      {/* <View onLayout={onLayoutRootView}>
-        <SignInScreen />
-      </View> */}
-      {/* <View onLayout={onLayoutRootView}>
-        <SignUpScreen />
-      </View> */}
-
-      {/* <View onLayout={onLayoutRootView}>
-        <ForgetPasswordScreen />
-      </View> */}
-      {/* <View onLayout={onLayoutRootView}>
-        <ResetPasswordScreen />
-      </View> */}
-      {/* <View onLayout={onLayoutRootView}>
-        <OtpVarification />
-      </View> */}
-      {/* 
-      <View onLayout={onLayoutRootView}>
-        <HomeScreen />
-      </View> */}
-
-
-      {/* <View onLayout={onLayoutRootView}>
-        <NoNotificationScreen />
-      </View> */}
-
-      {/* <View onLayout={onLayoutRootView}>
-        <NotificationScreen />
-      </View> */}
-
-      {/* <View onLayout={onLayoutRootView}>
-        <NotificationSettingScreen />
-      </View> */}
-
-      {/* <View onLayout={onLayoutRootView}>
-        <ComingSoonScreen />
-      </View> */}
-
+      behavior={Platform.OS === "ios" ? "padding" : "height"}>
+      
       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>
-        <ClientScreen />
+        <ImagePickerExample />
       </View>
 
-      {/* <View onLayout={onLayoutRootView}>
-        <SupportScreen />
-      </View> */}
+   
       
     </KeyboardAvoidingView>
 

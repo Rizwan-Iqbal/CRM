@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/MyComponent.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1665728227689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1665728227689,
+            "name": "Commit-0",
+            "content": "import * as React from 'react';\r\nimport { View } from 'react-native';\r\nimport { Button, Menu, Divider, Provider } from 'react-native-paper';\r\n\r\nconst MyComponent = () => {\r\n    const [visible, setVisible] = React.useState(false);\r\n\r\n    const openMenu = () => setVisible(true);\r\n\r\n    const closeMenu = () => setVisible(false);\r\n\r\n    return (\r\n        <Provider>\r\n            <View\r\n                style={{\r\n                    paddingTop: 80,\r\n                    flexDirection: 'row',\r\n                    justifyContent: 'center',\r\n                }}>\r\n                <Menu\r\n                    visible={visible}\r\n                    onDismiss={closeMenu}\r\n                    anchor={<Button onPress={openMenu}>Show menu</Button>}>\r\n                    <Menu.Item onPress={() => { }} title=\"Item 1\" />\r\n                    <Menu.Item onPress={() => { }} title=\"Item 2\" />\r\n                    <Divider />\r\n                    <Menu.Item onPress={() => { }} title=\"Item 3\" />\r\n                </Menu>\r\n            </View>\r\n        </Provider>\r\n    );\r\n};\r\n\r\nexport default MyComponent;"
+        }
+    ]
+}

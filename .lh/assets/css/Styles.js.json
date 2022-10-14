@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1107,
+            "activePatchIndex": 1173,
             "patches": [
                 {
                     "date": 1664773148633,
@@ -4436,6 +4436,270 @@
                 {
                     "date": 1665668733112,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -430,9 +430,9 @@\n     },\r\n \r\n     clientID: {\r\n         fontFamily: 'Poppins-semibold',\r\n-        fontSize: 14,\r\n+        fontSize: 12,\r\n     },\r\n     notiTxt: {\r\n         fontFamily: 'Poppins-regular',\r\n         fontSize: 10,\r\n"
+                },
+                {
+                    "date": 1665726133981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -442,9 +442,9 @@\n         color: '#474747',\r\n         fontFamily: 'Poppins-semibold',\r\n         marginLeft:7,\r\n         marginTop: 3,\r\n-        lineHeight: 23,\r\n+        lineHeight: 20,\r\n \r\n \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665726227065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -439,9 +439,9 @@\n     },\r\n     clientDetail: {\r\n         fontSize: 12,\r\n         color: '#474747',\r\n-        fontFamily: 'Poppins-semibold',\r\n+        fontFamily: 'Poppins-regular',\r\n         marginLeft:7,\r\n         marginTop: 3,\r\n         lineHeight: 20,\r\n \r\n"
+                },
+                {
+                    "date": 1665726277196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -442,9 +442,9 @@\n         color: '#474747',\r\n         fontFamily: 'Poppins-regular',\r\n         marginLeft:7,\r\n         marginTop: 3,\r\n-        lineHeight: 20,\r\n+        lineHeight: 18,\r\n \r\n \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665729932389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -515,8 +515,12 @@\n         position: 'absolute',\r\n         right: 10,\r\n         width: 113,\r\n         height: 110,\r\n+    },\r\n+    addItem: {\r\n+        position: 'absolute',\r\n+        right: 10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665729944119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -519,8 +519,10 @@\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n         right: 10,\r\n+        bottom: 20,\r\n+        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665729953358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -518,11 +518,11 @@\n         height: 110,\r\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n-        right: 10,\r\n+        right: 20,\r\n         bottom: 20,\r\n-        \r\n+\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665729964520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -518,10 +518,10 @@\n         height: 110,\r\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n-        right: 20,\r\n-        bottom: 20,\r\n+        right: 30,\r\n+        bottom: 30,\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665730268128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -380,9 +380,9 @@\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n         marginVertical: 15,\r\n-        marginHorizontal: 10,\r\n+        marginHorizontal: 0,\r\n         padding: 15,\r\n \r\n     },\r\n \r\n@@ -519,9 +519,9 @@\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n         right: 30,\r\n-        bottom: 30,\r\n+        bottom: 40,\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665730274791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,10 +379,10 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 15,\r\n-        marginHorizontal: 0,\r\n+        marginVertical: 10,\r\n+        marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665730284048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 10,\r\n+        marginVertical: 0,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730292942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 0,\r\n+        marginVertical: 7,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730320910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 7,\r\n+        marginTop: 7,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730327182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginTop: 7,\r\n+        marginTop: 5,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730350100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginTop: 5,\r\n+        marginVertical: 15,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730399213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -411,8 +411,9 @@\n \r\n     clientMainContainer: {\r\n         width: '100%',\r\n         justifyContent: 'space-between'\r\n+        marginTop: 10,\r\n     },\r\n     switchContainerInside: {\r\n         flexDirection: 'row',\r\n         width: '70%',\r\n"
+                },
+                {
+                    "date": 1665730406826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -410,9 +410,9 @@\n     },\r\n \r\n     clientMainContainer: {\r\n         width: '100%',\r\n-        justifyContent: 'space-between'\r\n+        justifyContent: 'space-between',\r\n         marginTop: 10,\r\n     },\r\n     switchContainerInside: {\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665730413577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -411,9 +411,9 @@\n \r\n     clientMainContainer: {\r\n         width: '100%',\r\n         justifyContent: 'space-between',\r\n-        marginTop: 10,\r\n+        marginTop: -10,\r\n     },\r\n     switchContainerInside: {\r\n         flexDirection: 'row',\r\n         width: '70%',\r\n"
+                },
+                {
+                    "date": 1665730422244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -411,9 +411,9 @@\n \r\n     clientMainContainer: {\r\n         width: '100%',\r\n         justifyContent: 'space-between',\r\n-        marginTop: -10,\r\n+        marginTop: -100,\r\n     },\r\n     switchContainerInside: {\r\n         flexDirection: 'row',\r\n         width: '70%',\r\n"
+                },
+                {
+                    "date": 1665730431783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -411,9 +411,9 @@\n \r\n     clientMainContainer: {\r\n         width: '100%',\r\n         justifyContent: 'space-between',\r\n-        marginTop: -100,\r\n+  \r\n     },\r\n     switchContainerInside: {\r\n         flexDirection: 'row',\r\n         width: '70%',\r\n"
+                },
+                {
+                    "date": 1665730468496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 15,\r\n+        marginVertical: 10,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730480695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 10,\r\n+        marginVertical: 7,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730488931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 7,\r\n+        marginVertical: 5,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730554823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,8 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n+        marginTop: 30,\r\n         marginVertical: 5,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n"
+                },
+                {
+                    "date": 1665730569909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginTop: 30,\r\n+        \r\n         marginVertical: 5,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n"
+                },
+                {
+                    "date": 1665730577002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,8 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        \r\n         marginVertical: 5,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n"
+                },
+                {
+                    "date": 1665730800533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 5,\r\n+        marginVertical: 8,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730817391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 8,\r\n+        marginTop: 8,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665730851329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -379,9 +379,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginTop: 8,\r\n+        marginVertical: 6,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665731141536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -519,9 +519,9 @@\n         height: 110,\r\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n-        right: 30,\r\n+        right: 25,\r\n         bottom: 40,\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665731153468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -519,10 +519,10 @@\n         height: 110,\r\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n-        right: 25,\r\n-        bottom: 40,\r\n+        right: 20,\r\n+        bottom: 50,\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665731162848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -519,9 +519,9 @@\n         height: 110,\r\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n-        right: 20,\r\n+        right: 10,\r\n         bottom: 50,\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665731183409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -520,9 +520,9 @@\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n         right: 10,\r\n-        bottom: 50,\r\n+        bottom: 70,\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665731189140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -519,9 +519,9 @@\n         height: 110,\r\n     },\r\n     addItem: {\r\n         position: 'absolute',\r\n-        right: 10,\r\n+        right: 20,\r\n         bottom: 70,\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665731253020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n     },\r\n \r\n     homeContainer: {\r\n         marginHorizontal: 15,\r\n-        marginTop: -5,\r\n+        // marginTop: -5,\r\n \r\n     },\r\n     topTxt: {\r\n         color: '#474747',\r\n"
+                },
+                {
+                    "date": 1665731261911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n     },\r\n \r\n     homeContainer: {\r\n         marginHorizontal: 15,\r\n-        // marginTop: -5,\r\n+        marginTop: -25,\r\n \r\n     },\r\n     topTxt: {\r\n         color: '#474747',\r\n"
+                },
+                {
+                    "date": 1665731287266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n     },\r\n \r\n     homeContainer: {\r\n         marginHorizontal: 15,\r\n-        marginTop: -25,\r\n+        marginTop: -5,\r\n \r\n     },\r\n     topTxt: {\r\n         color: '#474747',\r\n@@ -275,9 +275,9 @@\n \r\n     clientTopTxt: {\r\n \r\n         textAlign: 'center',\r\n-        marginVertical: 5,\r\n+        // marginVertical: 5,\r\n     },\r\n     line: {\r\n         borderBottomColor: '#707070',\r\n         borderBottomWidth: 0.5,\r\n"
+                },
+                {
+                    "date": 1665731302580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -275,9 +275,9 @@\n \r\n     clientTopTxt: {\r\n \r\n         textAlign: 'center',\r\n-        // marginVertical: 5,\r\n+        marginTop: -25,\r\n     },\r\n     line: {\r\n         borderBottomColor: '#707070',\r\n         borderBottomWidth: 0.5,\r\n"
+                },
+                {
+                    "date": 1665731322412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -276,8 +276,9 @@\n     clientTopTxt: {\r\n \r\n         textAlign: 'center',\r\n         marginTop: -25,\r\n+        marginBottom: 10,\r\n     },\r\n     line: {\r\n         borderBottomColor: '#707070',\r\n         borderBottomWidth: 0.5,\r\n"
+                },
+                {
+                    "date": 1665731811171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -275,9 +275,9 @@\n \r\n     clientTopTxt: {\r\n \r\n         textAlign: 'center',\r\n-        marginTop: -25,\r\n+        marginTop: -15,\r\n         marginBottom: 10,\r\n     },\r\n     line: {\r\n         borderBottomColor: '#707070',\r\n"
+                },
+                {
+                    "date": 1665734370350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -275,9 +275,9 @@\n \r\n     clientTopTxt: {\r\n \r\n         textAlign: 'center',\r\n-        marginTop: -15,\r\n+        marginTop: -10,\r\n         marginBottom: 10,\r\n     },\r\n     line: {\r\n         borderBottomColor: '#707070',\r\n"
+                },
+                {
+                    "date": 1665747871395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -523,8 +523,11 @@\n         position: 'absolute',\r\n         right: 20,\r\n         bottom: 70,\r\n \r\n+    },\r\n+    textArea: {\r\n+        height: 100,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665747897717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -526,8 +526,9 @@\n \r\n     },\r\n     textArea: {\r\n         height: 100,\r\n+        padding: 10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665747947092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -526,9 +526,10 @@\n \r\n     },\r\n     textArea: {\r\n         height: 100,\r\n-        padding: 10,\r\n+        paddingLeft: 0,\r\n+        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665747963052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -526,9 +526,10 @@\n \r\n     },\r\n     textArea: {\r\n         height: 100,\r\n-        paddingLeft: 0,\r\n+        paddingLeft: 10,\r\n+        padding: 0,\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665747981207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -525,9 +525,9 @@\n         bottom: 70,\r\n \r\n     },\r\n     textArea: {\r\n-        height: 100,\r\n+        // height: 100,\r\n         paddingLeft: 10,\r\n         padding: 0,\r\n         \r\n     }\r\n"
+                },
+                {
+                    "date": 1665748011671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 12,\r\n+            // height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n"
+                },
+                {
+                    "date": 1665748018831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     },\r\n     input: {\r\n \r\n         margin: 9,\r\n-        height: 50,\r\n+        // height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n"
+                },
+                {
+                    "date": 1665748025604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        paddingLeft: 30,\r\n+        // paddingLeft: 30,\r\n     },\r\n     rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n"
+                },
+                {
+                    "date": 1665748030933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        // paddingLeft: 30,\r\n+        paddingLeft: 30,\r\n     },\r\n     rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n"
+                },
+                {
+                    "date": 1665748056665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,16 +50,16 @@\n     },\r\n     input: {\r\n \r\n         margin: 9,\r\n-        // height: 50,\r\n+        height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            // height: 12,\r\n+            height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n@@ -525,9 +525,9 @@\n         bottom: 70,\r\n \r\n     },\r\n     textArea: {\r\n-        // height: 100,\r\n+        height: 'auto',\r\n         paddingLeft: 10,\r\n         padding: 0,\r\n         \r\n     }\r\n"
+                },
+                {
+                    "date": 1665748073703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -527,9 +527,8 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n-        padding: 0,\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665748112316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -527,8 +527,9 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n+        justifyContent: 'flex-end',\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665748132325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -528,8 +528,9 @@\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n         justifyContent: 'flex-end',\r\n+        alignItems: 'flex-start',\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665748155339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -528,9 +528,9 @@\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n         justifyContent: 'flex-end',\r\n-        alignItems: 'flex-start',\r\n+        alignItems: 'center',\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665748169402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -527,8 +527,9 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n+        flex: 1,\r\n         justifyContent: 'flex-end',\r\n         alignItems: 'center',\r\n         \r\n     }\r\n"
+                },
+                {
+                    "date": 1665748176633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -527,11 +527,9 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n-        flex: 1,\r\n-        justifyContent: 'flex-end',\r\n-        alignItems: 'center',\r\n+       \r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665748203989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -528,9 +528,8 @@\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n        \r\n-        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665748470787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -412,9 +412,9 @@\n \r\n     clientMainContainer: {\r\n         width: '100%',\r\n         justifyContent: 'space-between',\r\n-  \r\n+\r\n     },\r\n     switchContainerInside: {\r\n         flexDirection: 'row',\r\n         width: '70%',\r\n@@ -442,9 +442,9 @@\n     clientDetail: {\r\n         fontSize: 12,\r\n         color: '#474747',\r\n         fontFamily: 'Poppins-regular',\r\n-        marginLeft:7,\r\n+        marginLeft: 7,\r\n         marginTop: 3,\r\n         lineHeight: 18,\r\n \r\n \r\n@@ -527,11 +527,29 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n-       \r\n+\r\n+    },\r\n+    drop: {\r\n+        borderRadius: 10,\r\n+        borderWidth: 1,\r\n+        borderColor: '#bdc3c7',\r\n+        overflow: 'hidden',\r\n+        shadowColor: \"#6F6F6F\",\r\n+\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 12,\r\n+        },\r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n+        elevation: 6,\r\n+        backgroundColor: 'white',\r\n+        borderRadius: 100,\r\n     }\r\n \r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1665748477958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -532,9 +532,9 @@\n     },\r\n     drop: {\r\n         borderRadius: 10,\r\n         borderWidth: 1,\r\n-        borderColor: '#bdc3c7',\r\n+        // borderColor: '#bdc3c7',\r\n         overflow: 'hidden',\r\n         shadowColor: \"#6F6F6F\",\r\n \r\n         shadowOffset: {\r\n"
+                },
+                {
+                    "date": 1665748484982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -531,9 +531,9 @@\n \r\n     },\r\n     drop: {\r\n         borderRadius: 10,\r\n-        borderWidth: 1,\r\n+        // borderWidth: 1,\r\n         // borderColor: '#bdc3c7',\r\n         overflow: 'hidden',\r\n         shadowColor: \"#6F6F6F\",\r\n \r\n"
+                },
+                {
+                    "date": 1665748497356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -544,9 +544,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n-        borderRadius: 100,\r\n+      \r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665748524451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -527,8 +527,9 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n+        width: '100%',\r\n \r\n     },\r\n     drop: {\r\n         borderRadius: 10,\r\n"
+                },
+                {
+                    "date": 1665748541497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n \r\n     },\r\n     input: {\r\n \r\n-        margin: 9,\r\n+        // margin: 9,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n@@ -527,9 +527,9 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n-        width: '100%',\r\n+       \r\n \r\n     },\r\n     drop: {\r\n         borderRadius: 10,\r\n"
+                },
+                {
+                    "date": 1665748577895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n \r\n     },\r\n     input: {\r\n \r\n-        // margin: 9,\r\n+        margin: 9,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n@@ -527,8 +527,9 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n+        margin: 0,\r\n        \r\n \r\n     },\r\n     drop: {\r\n"
+                },
+                {
+                    "date": 1665748630399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -510,8 +510,9 @@\n     },\r\n     supportTopTxt: {\r\n         textAlign: 'left',\r\n         marginTop: 0,\r\n+        fontSize: 12,\r\n     },\r\n \r\n     clentProfile: {\r\n         position: 'absolute',\r\n"
+                },
+                {
+                    "date": 1665748681419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -510,9 +510,11 @@\n     },\r\n     supportTopTxt: {\r\n         textAlign: 'left',\r\n         marginTop: 0,\r\n-        fontSize: 12,\r\n+        fontSize: 15,\r\n+        fontFamily: 'Poppins-semibold',\r\n+\r\n     },\r\n \r\n     clentProfile: {\r\n         position: 'absolute',\r\n"
                 }
             ],
             "date": 1664773148633,

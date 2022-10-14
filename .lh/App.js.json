@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 233,
+            "activePatchIndex": 240,
             "patches": [
                 {
                     "date": 1664454463276,
@@ -940,6 +940,34 @@
                 {
                     "date": 1665644230121,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,19 +95,11 @@\n         <ClientScreen />\r\n       </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n-        <Tab />\r\n-      </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n         <SupportScreen />\r\n       </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <Progress />\r\n-      </View> */}\r\n-\r\n+      \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665728251150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n import SupportScreen from './src/components/SupportScreen';\r\n+import MyComponent from './src/components/MyComponent';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -90,15 +91,19 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ComingSoonScreen />\r\n       </View> */}\r\n \r\n-      <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n+      {/* <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n         <ClientScreen />\r\n-      </View>\r\n+      </View> */}\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SupportScreen />\r\n       </View> */}\r\n+\r\n+      <View onLayout={onLayoutRootView}>\r\n+        <MyComponent />\r\n+      </View>\r\n       \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665728547822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n import SupportScreen from './src/components/SupportScreen';\r\n-import MyComponent from './src/components/MyComponent';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -91,19 +90,15 @@\n       {/* <View onLayout={onLayoutRootView}>\r\n         <ComingSoonScreen />\r\n       </View> */}\r\n \r\n-      {/* <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n+      <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n         <ClientScreen />\r\n-      </View> */}\r\n+      </View>\r\n \r\n       {/* <View onLayout={onLayoutRootView}>\r\n         <SupportScreen />\r\n       </View> */}\r\n-\r\n-      <View onLayout={onLayoutRootView}>\r\n-        <MyComponent />\r\n-      </View>\r\n       \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665734302022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,55 +50,15 @@\n     //   <IntroScreen />\r\n     // </View>\r\n \r\n     <KeyboardAvoidingView\r\n-      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}\r\n-    >\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <SignInScreen />\r\n-      </View> */}\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <SignUpScreen />\r\n-      </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <ForgetPasswordScreen />\r\n-      </View> */}\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <ResetPasswordScreen />\r\n-      </View> */}\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <OtpVarification />\r\n-      </View> */}\r\n-      {/* \r\n-      <View onLayout={onLayoutRootView}>\r\n-        <HomeScreen />\r\n-      </View> */}\r\n-\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <NoNotificationScreen />\r\n-      </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <NotificationScreen />\r\n-      </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <NotificationSettingScreen />\r\n-      </View> */}\r\n-\r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <ComingSoonScreen />\r\n-      </View> */}\r\n-\r\n+      behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n+      \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n         <ClientScreen />\r\n       </View>\r\n \r\n-      {/* <View onLayout={onLayoutRootView}>\r\n-        <SupportScreen />\r\n-      </View> */}\r\n+   \r\n       \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n"
+                },
+                {
+                    "date": 1665734576463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <ClientScreen />\r\n+        <SupportScreen />\r\n       </View>\r\n \r\n    \r\n       \r\n"
+                },
+                {
+                    "date": 1665754334104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <SupportScreen />\r\n+        <Pick />\r\n       </View>\r\n \r\n    \r\n       \r\n"
+                },
+                {
+                    "date": 1665754388129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n import NotificationSettingScreen from './src/components/NotificationSettingScreen';\r\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n import SupportScreen from './src/components/SupportScreen';\r\n+import ImagePickerExample from './src/components/ImagePickerExample';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -53,9 +54,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <Pick />\r\n+        <ImagePickerExample />\r\n       </View>\r\n \r\n    \r\n       \r\n"
+                },
+                {
+                    "date": 1665754941293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n import ClientScreen from './src/components/ClientScreen';\r\n import SupportScreen from './src/components/SupportScreen';\r\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n \r\n-\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
                 }
             ],
             "date": 1664454463276,

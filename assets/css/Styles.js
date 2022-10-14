@@ -276,7 +276,8 @@ const styles = StyleSheet.create({
     clientTopTxt: {
 
         textAlign: 'center',
-        marginVertical: 5,
+        marginTop: -10,
+        marginBottom: 10,
     },
     line: {
         borderBottomColor: '#707070',
@@ -380,7 +381,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.38,
         shadowRadius: 10.00,
         elevation: 10,
-        marginVertical: 15,
+        marginVertical: 6,
         marginHorizontal: 10,
         padding: 15,
 
@@ -411,7 +412,8 @@ const styles = StyleSheet.create({
 
     clientMainContainer: {
         width: '100%',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+
     },
     switchContainerInside: {
         flexDirection: 'row',
@@ -440,10 +442,10 @@ const styles = StyleSheet.create({
     clientDetail: {
         fontSize: 12,
         color: '#474747',
-        fontFamily: 'Poppins-semibold',
-        marginLeft:7,
+        fontFamily: 'Poppins-regular',
+        marginLeft: 7,
         marginTop: 3,
-        lineHeight: 23,
+        lineHeight: 18,
 
 
     },
@@ -509,6 +511,9 @@ const styles = StyleSheet.create({
     supportTopTxt: {
         textAlign: 'left',
         marginTop: 0,
+        fontSize: 15,
+        fontFamily: 'Poppins-semibold',
+
     },
 
     clentProfile: {
@@ -516,7 +521,38 @@ const styles = StyleSheet.create({
         right: 10,
         width: 113,
         height: 110,
+    },
+    addItem: {
+        position: 'absolute',
+        right: 20,
+        bottom: 70,
+
+    },
+    textArea: {
+        height: 'auto',
+        paddingLeft: 10,
+        margin: 0,
+       
+
+    },
+    drop: {
+        borderRadius: 10,
+        // borderWidth: 1,
+        // borderColor: '#bdc3c7',
+        overflow: 'hidden',
+        shadowColor: "#6F6F6F",
+
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 6,
+        backgroundColor: 'white',
+      
     }
+
 
 
 });
