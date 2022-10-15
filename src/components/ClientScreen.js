@@ -11,11 +11,14 @@ import RnOtpTimer from 'rn-otp-timer';
 import { Tab, TabView } from '@rneui/themed';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { FAB } from '@rneui/themed';
+import { SpeedDial } from '@rneui/themed';
+
 
 const ClientScreen = () => {
     const [isSelected, setSelection] = useState(false);
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
 
 
     // const email = <FontAwesome5 name={'email'} />;
@@ -113,7 +116,7 @@ const ClientScreen = () => {
 
                 <TabView value={index} onChange={setIndex} animationType="spring">
 
-                    <TabView.Item style={{ width: '100%' , marginTop: 8,}}>
+                    <TabView.Item style={{ width: '100%', marginTop: 8, }}>
                         <ScrollView>
                             <View style={[styles.notiContainer, styles.clientContainer]}>
                                 <View style={[styles.containerInside, styles.clientMainContainer]} >
@@ -195,7 +198,7 @@ const ClientScreen = () => {
                                 </View>
 
                             </View>
-                           
+
 
                         </ScrollView>
                     </TabView.Item>
@@ -204,13 +207,36 @@ const ClientScreen = () => {
 
             </View>
 
-            <View style = {styles.addItem}>
-                <FAB
+           
+                {/* <FAB
                     visible={visible}
                     icon={{ name: 'add', color: 'white' }}
                     color="#6F6F6F"
-                />
-            </View>
+                /> */}
+
+                <SpeedDial
+                    isOpen={open}
+                    icon={{ name: 'add', color: '#fff' }}
+                    openIcon={{ name: 'close', color: '#fff' }}
+                    onOpen={() => setOpen(!open)}
+                    onClose={() => setOpen(!open)}>
+                    
+                    <SpeedDial.Action
+                        icon={{ name: 'person', color: '#fff' }}
+                        title="Personal"
+                        onPress={() => console.log('Add Something')}
+                        style = {{backgroundColor: 'red'
+                    
+                    
+                    }}
+                    />
+                    <SpeedDial.Action
+                        icon={{ name: 'business', color: '#fff' }}
+                        title="Company"
+                        onPress={() => console.log('Add Something')}
+                    />
+                </SpeedDial>
+            
 
         </View>
 

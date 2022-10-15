@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 359,
+            "activePatchIndex": 389,
             "patches": [
                 {
                     "date": 1665557710125,
@@ -1444,6 +1444,126 @@
                 {
                     "date": 1665734554621,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n                                     <View style={styles.notiDetail}>\r\n                                         <Text style={styles.clientID}>ID: 78651293</Text>\r\n                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                             <Icon style={styles.clientIcon} name={'user'} color={'#474747'} size={16} />\r\n-                                            <Text style={[styles.notiTxt, styles.clientDetail]}>LLOYDS PR</Text>\r\n+                                            <Text style={[styles.notiTxt, styles.clientDetail]}>John Smith</Text>\r\n \r\n                                         </View>\r\n \r\n                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n@@ -164,9 +164,9 @@\n                                     <View style={styles.notiDetail}>\r\n                                         <Text style={styles.clientID}>ID: 78651293</Text>\r\n                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                             <Icon style={styles.clientIcon} name={'user'} color={'#474747'} size={16} />\r\n-                                            <Text style={[styles.notiTxt, styles.clientDetail]}>John Smith</Text>\r\n+                                            <Text style={[styles.notiTxt, styles.clientDetail]}>LLOYDS PR</Text>\r\n \r\n                                         </View>\r\n \r\n                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n"
+                },
+                {
+                    "date": 1665831572646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -204,13 +204,15 @@\n \r\n             </View>\r\n \r\n             <View style = {styles.addItem}>\r\n-                <FAB\r\n+                {/* <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                />\r\n+                /> */}\r\n+\r\n+                \r\n             </View>\r\n \r\n         </View>\r\n \r\n"
+                },
+                {
+                    "date": 1665831583324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,9 +112,9 @@\n                 </Tab>\r\n \r\n                 <TabView value={index} onChange={setIndex} animationType=\"spring\">\r\n \r\n-                    <TabView.Item style={{ width: '100%' , marginTop: 8,}}>\r\n+                    <TabView.Item style={{ width: '100%', marginTop: 8, }}>\r\n                         <ScrollView>\r\n                             <View style={[styles.notiContainer, styles.clientContainer]}>\r\n                                 <View style={[styles.containerInside, styles.clientMainContainer]} >\r\n \r\n@@ -194,25 +194,42 @@\n                                     </View>\r\n                                 </View>\r\n \r\n                             </View>\r\n-                           \r\n \r\n+\r\n                         </ScrollView>\r\n                     </TabView.Item>\r\n \r\n                 </TabView>\r\n \r\n             </View>\r\n \r\n-            <View style = {styles.addItem}>\r\n+            <View style={styles.addItem}>\r\n                 {/* <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n                 /> */}\r\n \r\n-                \r\n+                <SpeedDial\r\n+                    isOpen={open}\r\n+                    icon={{ name: 'edit', color: '#fff' }}\r\n+                    openIcon={{ name: 'close', color: '#fff' }}\r\n+                    onOpen={() => setOpen(!open)}\r\n+                    onClose={() => setOpen(!open)}\r\n+                >\r\n+                    <SpeedDial.Action\r\n+                        icon={{ name: 'adsddsdd', color: '#fff' }}\r\n+                        title=\"Add\"\r\n+                        onPress={() => console.log('Add Something')}\r\n+                    />\r\n+                    <SpeedDial.Action\r\n+                        icon={{ name: 'delete', color: '#fff' }}\r\n+                        title=\"Delete\"\r\n+                        onPress={() => console.log('Delete Something')}\r\n+                    />\r\n+                </SpeedDial>\r\n             </View>\r\n \r\n         </View>\r\n \r\n"
+                },
+                {
+                    "date": 1665831601430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,11 @@\n import RnOtpTimer from 'rn-otp-timer';\r\n import { Tab, TabView } from '@rneui/themed';\r\n import { SafeAreaProvider } from 'react-native-safe-area-context';\r\n import { FAB } from '@rneui/themed';\r\n+import { SpeedDial } from '@rneui/themed';\r\n \r\n+\r\n const ClientScreen = () => {\r\n     const [isSelected, setSelection] = useState(false);\r\n     const [index, setIndex] = useState(0);\r\n     const [visible, setVisible] = React.useState(true);\r\n"
+                },
+                {
+                    "date": 1665831614634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n const ClientScreen = () => {\r\n     const [isSelected, setSelection] = useState(false);\r\n     const [index, setIndex] = useState(0);\r\n     const [visible, setVisible] = React.useState(true);\r\n+    const [open, setOpen] = React.useState(false);\r\n \r\n \r\n     // const email = <FontAwesome5 name={'email'} />;\r\n \r\n"
+                },
+                {
+                    "date": 1665831673686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -221,9 +221,9 @@\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}\r\n                 >\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'adsddsdd', color: '#fff' }}\r\n+                        icon={{ name: 'add', color: '#fff' }}\r\n                         title=\"Add\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n"
+                },
+                {
+                    "date": 1665831701739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -206,9 +206,9 @@\n                 </TabView>\r\n \r\n             </View>\r\n \r\n-            <View style={styles.addItem}>\r\n+            <View>\r\n                 {/* <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n"
+                },
+                {
+                    "date": 1665831729689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     // const email = <FontAwesome5 name={'email'} />;\r\n \r\n     return (\r\n \r\n-        <View style={{ height: '100%' }}>\r\n+        <View >\r\n             <View>\r\n                 <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   >\r\n                     <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n"
+                },
+                {
+                    "date": 1665831744705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     // const email = <FontAwesome5 name={'email'} />;\r\n \r\n     return (\r\n \r\n-        <View >\r\n+        <View style={{ height: '100%' }}>\r\n             <View>\r\n                 <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   >\r\n                     <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n"
+                },
+                {
+                    "date": 1665831781188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -206,9 +206,9 @@\n                 </TabView>\r\n \r\n             </View>\r\n \r\n-            <View>\r\n+           \r\n                 {/* <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n@@ -218,10 +218,9 @@\n                     isOpen={open}\r\n                     icon={{ name: 'edit', color: '#fff' }}\r\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n-                    onClose={() => setOpen(!open)}\r\n-                >\r\n+                    onClose={() => setOpen(!open)}>\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'add', color: '#fff' }}\r\n                         title=\"Add\"\r\n                         onPress={() => console.log('Add Something')}\r\n@@ -231,9 +230,9 @@\n                         title=\"Delete\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n-            </View>\r\n+            \r\n \r\n         </View>\r\n \r\n     )\r\n"
+                },
+                {
+                    "date": 1665831813854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -215,9 +215,9 @@\n                 /> */}\r\n \r\n                 <SpeedDial\r\n                     isOpen={open}\r\n-                    icon={{ name: 'edit', color: '#fff' }}\r\n+                    icon={{ name: 'add', color: '#fff' }}\r\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n                     <SpeedDial.Action\r\n"
+                },
+                {
+                    "date": 1665831824643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Add\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'delete', color: '#fff' }}\r\n+                        icon={{ name: 'add', color: '#fff' }}\r\n                         title=\"Delete\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665831846855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -221,14 +221,14 @@\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'add', color: '#fff' }}\r\n-                        title=\"Add\"\r\n+                        title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'add', color: '#fff' }}\r\n-                        title=\"Delete\"\r\n+                        title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n             \r\n"
+                },
+                {
+                    "date": 1665831862744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,9 +220,9 @@\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'add', color: '#fff' }}\r\n+                        icon={{ name: 'user', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n"
+                },
+                {
+                    "date": 1665831868976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -220,9 +220,9 @@\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'user', color: '#fff' }}\r\n+                        icon={{ name: 'person', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n"
+                },
+                {
+                    "date": 1665831878601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'add', color: '#fff' }}\r\n+                        icon={{ name: 'company', color: '#fff' }}\r\n                         title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665831885456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'company', color: '#fff' }}\r\n+                        icon={{ name: 'organization', color: '#fff' }}\r\n                         title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665831895494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'organization', color: '#fff' }}\r\n+                        icon={{ name: 'department', color: '#fff' }}\r\n                         title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665831905213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'department', color: '#fff' }}\r\n+                        icon={{ name: 'building', color: '#fff' }}\r\n                         title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665832006190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'building', color: '#fff' }}\r\n+                        icon={{ name: 'warehouse', color: '#fff' }}\r\n                         title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665832056545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'warehouse', color: '#fff' }}\r\n+                        icon={{ name: 'university', color: '#fff' }}\r\n                         title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665832182533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'university', color: '#fff' }}\r\n+                        icon={{ name: 'AccountBalance', color: '#fff' }}\r\n                         title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665832199653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,9 +225,9 @@\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n                     />\r\n                     <SpeedDial.Action\r\n-                        icon={{ name: 'AccountBalance', color: '#fff' }}\r\n+                        icon={{ name: 'business', color: '#fff' }}\r\n                         title=\"Company\"\r\n                         onPress={() => console.log('Delete Something')}\r\n                     />\r\n                 </SpeedDial>\r\n"
+                },
+                {
+                    "date": 1665832232178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,9 +227,9 @@\n                     />\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'business', color: '#fff' }}\r\n                         title=\"Company\"\r\n-                        onPress={() => console.log('Delete Something')}\r\n+                        onPress={() => console.log('Add Something')}\r\n                     />\r\n                 </SpeedDial>\r\n             \r\n \r\n"
+                },
+                {
+                    "date": 1665832284051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,8 +219,9 @@\n                     icon={{ name: 'add', color: '#fff' }}\r\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n+                        backgroundColor: 'red'\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'person', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n"
+                },
+                {
+                    "date": 1665832297864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,9 +219,9 @@\n                     icon={{ name: 'add', color: '#fff' }}\r\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n-                        backgroundColor: 'red'\r\n+                        backgroundColor = {'red'}\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'person', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n"
+                },
+                {
+                    "date": 1665832309475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,9 +219,9 @@\n                     icon={{ name: 'add', color: '#fff' }}\r\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n-                        backgroundColor = {'red'}\r\n+                        backgroundColor = 'red'\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'person', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n"
+                },
+                {
+                    "date": 1665832320949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,9 +219,9 @@\n                     icon={{ name: 'add', color: '#fff' }}\r\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n-                        backgroundColor = 'red'\r\n+                       \r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'person', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n"
+                },
+                {
+                    "date": 1665832425582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,9 +219,9 @@\n                     icon={{ name: 'add', color: '#fff' }}\r\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n-                       \r\n+                       overlayColor: 'red',\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'person', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n"
+                },
+                {
+                    "date": 1665832457487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,13 +219,14 @@\n                     icon={{ name: 'add', color: '#fff' }}\r\n                     openIcon={{ name: 'close', color: '#fff' }}\r\n                     onOpen={() => setOpen(!open)}\r\n                     onClose={() => setOpen(!open)}>\r\n-                       overlayColor: 'red',\r\n+                    \r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'person', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n+                        style = {{backgroundColor: 'red'}}\r\n                     />\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'business', color: '#fff' }}\r\n                         title=\"Company\"\r\n"
+                },
+                {
+                    "date": 1665833266961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,12 @@\n                     <SpeedDial.Action\r\n                         icon={{ name: 'person', color: '#fff' }}\r\n                         title=\"Personal\"\r\n                         onPress={() => console.log('Add Something')}\r\n-                        style = {{backgroundColor: 'red'}}\r\n+                        style = {{backgroundColor: 'red'\r\n+                    \r\n+                    \r\n+                    }}\r\n                     />\r\n                     <SpeedDial.Action\r\n                         icon={{ name: 'business', color: '#fff' }}\r\n                         title=\"Company\"\r\n"
                 }
             ],
             "date": 1665557710125,

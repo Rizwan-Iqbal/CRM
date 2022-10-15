@@ -16,6 +16,9 @@ import ComingSoonScreen from './src/components/ComingSoonScreen';
 import ClientScreen from './src/components/ClientScreen';
 import SupportScreen from './src/components/SupportScreen';
 import ImagePickerExample from './src/components/ImagePickerExample';
+import SearchScreen from './src/components/SearchScreen';
+import EmptySearchScreen from './src/components/EmptySearchScreen';
+
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -24,8 +27,6 @@ export default function App() {
     'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),
     'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),
     'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),
-
-
   });
 
   useEffect(() => {
@@ -54,11 +55,9 @@ export default function App() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}>
       
       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>
-        <ImagePickerExample />
+        <ClientScreen />
       </View>
 
-   
-      
     </KeyboardAvoidingView>
 
   );

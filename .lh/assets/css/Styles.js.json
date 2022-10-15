@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1173,
+            "activePatchIndex": 1272,
             "patches": [
                 {
                     "date": 1664773148633,
@@ -4700,6 +4700,402 @@
                 {
                     "date": 1665748681419,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -510,9 +510,11 @@\n     },\r\n     supportTopTxt: {\r\n         textAlign: 'left',\r\n         marginTop: 0,\r\n-        fontSize: 12,\r\n+        fontSize: 15,\r\n+        fontFamily: 'Poppins-semibold',\r\n+\r\n     },\r\n \r\n     clentProfile: {\r\n         position: 'absolute',\r\n"
+                },
+                {
+                    "date": 1665825104544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -550,11 +550,16 @@\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n       \r\n-    }\r\n+    },\r\n \r\n+    pickerItems: {\r\n+        color: '#6F6F6F', \r\n+        fontFamily: 'Poppins-regular'\r\n+    },\r\n \r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1665825384570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -554,9 +554,10 @@\n     },\r\n \r\n     pickerItems: {\r\n         color: '#6F6F6F', \r\n-        fontFamily: 'Poppins-regular'\r\n+        fontFamily: 'Poppins-regular',\r\n+        backgroundColor: 'red',\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665825410866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -555,9 +555,9 @@\n \r\n     pickerItems: {\r\n         color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular',\r\n-        backgroundColor: 'red',\r\n+       \r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665825498107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -555,8 +555,22 @@\n \r\n     pickerItems: {\r\n         color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular',\r\n+        borderRadius: 10,\r\n+        // borderWidth: 1,\r\n+        // borderColor: '#bdc3c7',\r\n+        overflow: 'hidden',\r\n+        shadowColor: \"#6F6F6F\",\r\n+\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 12,\r\n+        },\r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n+        elevation: 6,\r\n+        backgroundColor: 'white',\r\n        \r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665825509236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -558,9 +558,9 @@\n         fontFamily: 'Poppins-regular',\r\n         borderRadius: 10,\r\n         // borderWidth: 1,\r\n         // borderColor: '#bdc3c7',\r\n-        overflow: 'hidden',\r\n+        // overflow: 'hidden',\r\n         shadowColor: \"#6F6F6F\",\r\n \r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1665825553400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,9 +553,9 @@\n       \r\n     },\r\n \r\n     pickerItems: {\r\n-        color: '#6F6F6F', \r\n+        // color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular',\r\n         borderRadius: 10,\r\n         // borderWidth: 1,\r\n         // borderColor: '#bdc3c7',\r\n"
+                },
+                {
+                    "date": 1665825592861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,9 +553,8 @@\n       \r\n     },\r\n \r\n     pickerItems: {\r\n-        // color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular',\r\n         borderRadius: 10,\r\n         // borderWidth: 1,\r\n         // borderColor: '#bdc3c7',\r\n@@ -569,8 +568,10 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n+        color: '#6F6F6F', \r\n+\r\n        \r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665825658872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -555,11 +555,11 @@\n \r\n     pickerItems: {\r\n         fontFamily: 'Poppins-regular',\r\n         borderRadius: 10,\r\n-        // borderWidth: 1,\r\n-        // borderColor: '#bdc3c7',\r\n-        // overflow: 'hidden',\r\n+        borderWidth: 1,\r\n+        borderColor: '#bdc3c7',\r\n+        overflow: 'hidden',\r\n         shadowColor: \"#6F6F6F\",\r\n \r\n         shadowOffset: {\r\n             width: 0,\r\n@@ -567,9 +567,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n-        backgroundColor: 'white',\r\n+        // backgroundColor: 'white',\r\n         color: '#6F6F6F', \r\n \r\n        \r\n     },\r\n"
+                },
+                {
+                    "date": 1665825686275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -567,9 +567,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n-        // backgroundColor: 'white',\r\n+        backgroundColor: 'white',\r\n         color: '#6F6F6F', \r\n \r\n        \r\n     },\r\n"
+                },
+                {
+                    "date": 1665825716848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -570,9 +570,8 @@\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n         color: '#6F6F6F', \r\n \r\n-       \r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665826203863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,25 +553,12 @@\n       \r\n     },\r\n \r\n     pickerItems: {\r\n+        color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular',\r\n-        borderRadius: 10,\r\n-        borderWidth: 1,\r\n-        borderColor: '#bdc3c7',\r\n-        overflow: 'hidden',\r\n-        shadowColor: \"#6F6F6F\",\r\n-\r\n-        shadowOffset: {\r\n-            width: 0,\r\n-            height: 12,\r\n-        },\r\n-        shadowOpacity: 0.58,\r\n-        shadowRadius: 16.00,\r\n-        elevation: 6,\r\n-        backgroundColor: 'white',\r\n-        color: '#6F6F6F', \r\n-\r\n+        \r\n+       \r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665826360143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,12 +553,10 @@\n       \r\n     },\r\n \r\n     pickerItems: {\r\n-        color: '#6F6F6F', \r\n-        fontFamily: 'Poppins-regular',\r\n-        \r\n-       \r\n+        // color: '#6F6F6F', \r\n+        fontFamily: 'Poppins-regular', \r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665826507395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -556,8 +556,11 @@\n     pickerItems: {\r\n         // color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular', \r\n     },\r\n+    itemsContainer{ \r\n+        backgroundColor : 'red',\r\n+    }\r\n \r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665826514322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -556,9 +556,9 @@\n     pickerItems: {\r\n         // color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular', \r\n     },\r\n-    itemsContainer{ \r\n+    itemsContainer: { \r\n         backgroundColor : 'red',\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665826522722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -556,8 +556,9 @@\n     pickerItems: {\r\n         // color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular', \r\n     },\r\n+    \r\n     itemsContainer: { \r\n         backgroundColor : 'red',\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665826585967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -555,10 +555,11 @@\n \r\n     pickerItems: {\r\n         // color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular', \r\n+        borderRadius: 100,\r\n     },\r\n-    \r\n+\r\n     itemsContainer: { \r\n         backgroundColor : 'red',\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1665826604620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,11 +553,11 @@\n       \r\n     },\r\n \r\n     pickerItems: {\r\n-        // color: '#6F6F6F', \r\n+        color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular', \r\n-        borderRadius: 100,\r\n+        \r\n     },\r\n \r\n     itemsContainer: { \r\n         backgroundColor : 'red',\r\n"
+                },
+                {
+                    "date": 1665826635668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,9 +553,9 @@\n       \r\n     },\r\n \r\n     pickerItems: {\r\n-        color: '#6F6F6F', \r\n+        // color: '#6F6F6F', \r\n         fontFamily: 'Poppins-regular', \r\n         \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665827715121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -512,8 +512,9 @@\n         textAlign: 'left',\r\n         marginTop: 0,\r\n         fontSize: 15,\r\n         fontFamily: 'Poppins-semibold',\r\n+        marginBottom: 10,\r\n \r\n     },\r\n \r\n     clentProfile: {\r\n"
+                },
+                {
+                    "date": 1665827870846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -532,8 +532,9 @@\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n         margin: 0,\r\n+        textAlignVertical: ''\r\n        \r\n \r\n     },\r\n     drop: {\r\n"
+                },
+                {
+                    "date": 1665827877105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -532,9 +532,9 @@\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n         margin: 0,\r\n-        textAlignVertical: ''\r\n+        textAlignVertical: 'top'\r\n        \r\n \r\n     },\r\n     drop: {\r\n"
+                },
+                {
+                    "date": 1665827906547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -532,10 +532,10 @@\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n         margin: 0,\r\n-        textAlignVertical: 'top'\r\n-       \r\n+        textAlignVertical: 'top',\r\n+        fontFamily: 'Poppins-regular', \r\n \r\n     },\r\n     drop: {\r\n         borderRadius: 10,\r\n"
+                },
+                {
+                    "date": 1665827937027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -512,9 +512,9 @@\n         textAlign: 'left',\r\n         marginTop: 0,\r\n         fontSize: 15,\r\n         fontFamily: 'Poppins-semibold',\r\n-        marginBottom: 10,\r\n+        marginBottom: 7,\r\n \r\n     },\r\n \r\n     clentProfile: {\r\n"
+                },
+                {
+                    "date": 1665827948551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -512,9 +512,9 @@\n         textAlign: 'left',\r\n         marginTop: 0,\r\n         fontSize: 15,\r\n         fontFamily: 'Poppins-semibold',\r\n-        marginBottom: 7,\r\n+        marginBottom: 5,\r\n \r\n     },\r\n \r\n     clentProfile: {\r\n"
+                },
+                {
+                    "date": 1665828000152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -530,9 +530,9 @@\n \r\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n-        paddingLeft: 10,\r\n+        padding: 10,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n         fontFamily: 'Poppins-regular', \r\n \r\n"
+                },
+                {
+                    "date": 1665828005845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -530,9 +530,9 @@\n \r\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n-        padding: 10,\r\n+        paddingLeft: 10,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n         fontFamily: 'Poppins-regular', \r\n \r\n"
+                },
+                {
+                    "date": 1665828012789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -531,8 +531,9 @@\n     },\r\n     textArea: {\r\n         height: 'auto',\r\n         paddingLeft: 10,\r\n+        paddingTop: 5,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n         fontFamily: 'Poppins-regular', \r\n \r\n"
+                },
+                {
+                    "date": 1665828665254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -490,8 +490,13 @@\n     searchInnerContainer: {\r\n         width: '75%',\r\n         flexDirection: 'row',\r\n     },\r\n+\r\n+    sContainer: {\r\n+        width: '100%',\r\n+\r\n+    },\r\n     casesTitle: {\r\n         marginBottom: 0,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665828683725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -493,8 +493,10 @@\n     },\r\n \r\n     sContainer: {\r\n         width: '100%',\r\n+        alignItems: 'center',\r\n+        \r\n \r\n     },\r\n     casesTitle: {\r\n         marginBottom: 0,\r\n"
+                },
+                {
+                    "date": 1665828690222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -494,9 +494,9 @@\n \r\n     sContainer: {\r\n         width: '100%',\r\n         alignItems: 'center',\r\n-        \r\n+        justifyContent: 'center',\r\n \r\n     },\r\n     casesTitle: {\r\n         marginBottom: 0,\r\n"
+                },
+                {
+                    "date": 1665828701894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -495,8 +495,9 @@\n     sContainer: {\r\n         width: '100%',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n+        marginHorizontal: 20,\r\n \r\n     },\r\n     casesTitle: {\r\n         marginBottom: 0,\r\n"
+                },
+                {
+                    "date": 1665828717089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -492,12 +492,12 @@\n         flexDirection: 'row',\r\n     },\r\n \r\n     sContainer: {\r\n-        width: '100%',\r\n+        width: '90%',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n-        marginHorizontal: 20,\r\n+       \r\n \r\n     },\r\n     casesTitle: {\r\n         marginBottom: 0,\r\n"
+                },
+                {
+                    "date": 1665828830631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -466,8 +466,9 @@\n     },\r\n     searchContainer: {\r\n         flexDirection: 'row',\r\n         marginBottom: 40,\r\n+        marginHorizontal: 10,\r\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n"
+                },
+                {
+                    "date": 1665828844114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -466,9 +466,9 @@\n     },\r\n     searchContainer: {\r\n         flexDirection: 'row',\r\n         marginBottom: 40,\r\n-        marginHorizontal: 10,\r\n+        marginHorizontal: 30,\r\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n"
+                },
+                {
+                    "date": 1665828860960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -466,9 +466,8 @@\n     },\r\n     searchContainer: {\r\n         flexDirection: 'row',\r\n         marginBottom: 40,\r\n-        marginHorizontal: 30,\r\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n"
+                },
+                {
+                    "date": 1665828976465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -465,9 +465,9 @@\n         color: '#6F6F6F',\r\n     },\r\n     searchContainer: {\r\n         flexDirection: 'row',\r\n-        marginBottom: 40,\r\n+        // marginBottom: 40,\r\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n"
+                },
+                {
+                    "date": 1665829005404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -465,9 +465,9 @@\n         color: '#6F6F6F',\r\n     },\r\n     searchContainer: {\r\n         flexDirection: 'row',\r\n-        // marginBottom: 40,\r\n+        marginBottom: 40,\r\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n@@ -482,9 +482,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        paddingLeft: 15,\r\n+        // paddingLeft: 15,\r\n         width: '100%',\r\n \r\n     },\r\n     searchInnerContainer: {\r\n"
+                },
+                {
+                    "date": 1665829013625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -482,9 +482,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        // paddingLeft: 15,\r\n+        paddingLeft: 15,\r\n         width: '100%',\r\n \r\n     },\r\n     searchInnerContainer: {\r\n"
+                },
+                {
+                    "date": 1665829031367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -470,8 +470,9 @@\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n+        marginRight: 20,\r\n         height: 50,\r\n         // paddingLeft: 10,\r\n         borderRadius: 25,\r\n         backgroundColor: 'white',\r\n"
+                },
+                {
+                    "date": 1665829038389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -470,9 +470,8 @@\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n-        marginRight: 20,\r\n         height: 50,\r\n         // paddingLeft: 10,\r\n         borderRadius: 25,\r\n         backgroundColor: 'white',\r\n"
+                },
+                {
+                    "date": 1665829162413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -483,9 +483,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         paddingLeft: 15,\r\n-        width: '100%',\r\n+        // width: '100%',\r\n \r\n     },\r\n     searchInnerContainer: {\r\n         width: '75%',\r\n"
+                },
+                {
+                    "date": 1665829181731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -483,9 +483,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         paddingLeft: 15,\r\n-        // width: '100%',\r\n+        width: 'auto',\r\n \r\n     },\r\n     searchInnerContainer: {\r\n         width: '75%',\r\n"
+                },
+                {
+                    "date": 1665829191851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -483,9 +483,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         paddingLeft: 15,\r\n-        width: 'auto',\r\n+        width: '100%',\r\n \r\n     },\r\n     searchInnerContainer: {\r\n         width: '75%',\r\n"
+                },
+                {
+                    "date": 1665829253563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -486,8 +486,12 @@\n         paddingLeft: 15,\r\n         width: '100%',\r\n \r\n     },\r\n+    searchInputUpdate: {\r\n+\r\n+        width:'80%',\r\n+    },\r\n     searchInnerContainer: {\r\n         width: '75%',\r\n         flexDirection: 'row',\r\n     },\r\n"
+                },
+                {
+                    "date": 1665829294860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -466,8 +466,10 @@\n     },\r\n     searchContainer: {\r\n         flexDirection: 'row',\r\n         marginBottom: 40,\r\n+        justifyContent: 'center',\r\n+        alignItems: 'center',\r\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n"
+                },
+                {
+                    "date": 1665829306390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -466,10 +466,9 @@\n     },\r\n     searchContainer: {\r\n         flexDirection: 'row',\r\n         marginBottom: 40,\r\n-        justifyContent: 'center',\r\n-        alignItems: 'center',\r\n+        \r\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n"
+                },
+                {
+                    "date": 1665829345119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -468,8 +468,13 @@\n         flexDirection: 'row',\r\n         marginBottom: 40,\r\n         \r\n     },\r\n+\r\n+    searchContainerUpdate: {\r\n+        justifyContent: 'center',\r\n+        \r\n+    }\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n         height: 50,\r\n"
+                },
+                {
+                    "date": 1665829353428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -472,9 +472,9 @@\n \r\n     searchContainerUpdate: {\r\n         justifyContent: 'center',\r\n         \r\n-    }\r\n+    },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n         height: 50,\r\n"
+                },
+                {
+                    "date": 1665829389876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -494,9 +494,9 @@\n \r\n     },\r\n     searchInputUpdate: {\r\n \r\n-        width:'80%',\r\n+        width:'90%',\r\n     },\r\n     searchInnerContainer: {\r\n         width: '75%',\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1665829428778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -518,8 +518,11 @@\n         marginTop: 30,\r\n     },\r\n     searchIcon: {\r\n         right: 7,\r\n+    },\r\n+    searchIconUpdate: {\r\n+        right: 17,\r\n \r\n     },\r\n     settingIcon: {\r\n \r\n"
+                },
+                {
+                    "date": 1665829436841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -520,9 +520,9 @@\n     searchIcon: {\r\n         right: 7,\r\n     },\r\n     searchIconUpdate: {\r\n-        right: 17,\r\n+        right: 27,\r\n \r\n     },\r\n     settingIcon: {\r\n \r\n"
+                },
+                {
+                    "date": 1665829478764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -355,9 +355,9 @@\n         marginVertical: '10%',\r\n     },\r\n     notiContainer: {\r\n         marginHorizontal: 15,\r\n-        marginVertical: 7,\r\n+        marginVertical: 0,\r\n         height: 'auto',\r\n         // paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n@@ -520,9 +520,9 @@\n     searchIcon: {\r\n         right: 7,\r\n     },\r\n     searchIconUpdate: {\r\n-        right: 27,\r\n+        right: 37,\r\n \r\n     },\r\n     settingIcon: {\r\n \r\n"
+                },
+                {
+                    "date": 1665829484830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -355,9 +355,9 @@\n         marginVertical: '10%',\r\n     },\r\n     notiContainer: {\r\n         marginHorizontal: 15,\r\n-        marginVertical: 0,\r\n+        marginVertical: 7,\r\n         height: 'auto',\r\n         // paddingLeft: 10,\r\n         borderRadius: 10,\r\n         backgroundColor: 'white',\r\n"
+                },
+                {
+                    "date": 1665829496516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -380,9 +380,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 6,\r\n+        marginVertical: 0,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665829505606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -380,9 +380,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 0,\r\n+        marginVertical: 3,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665829513216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -380,9 +380,9 @@\n         },\r\n         shadowOpacity: 0.38,\r\n         shadowRadius: 10.00,\r\n         elevation: 10,\r\n-        marginVertical: 3,\r\n+        marginVertical: 6,\r\n         marginHorizontal: 10,\r\n         padding: 15,\r\n \r\n     },\r\n"
+                },
+                {
+                    "date": 1665829884863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -584,10 +584,13 @@\n     },\r\n \r\n     itemsContainer: { \r\n         backgroundColor : 'red',\r\n-    }\r\n+    },\r\n+    emptySearchContainer: {\r\n \r\n+        width\r\n+    },\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665829899302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,9 +587,10 @@\n         backgroundColor : 'red',\r\n     },\r\n     emptySearchContainer: {\r\n \r\n-        width\r\n+        width: 378,\r\n+        height: \r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665829905285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -588,9 +588,9 @@\n     },\r\n     emptySearchContainer: {\r\n \r\n         width: 378,\r\n-        height: \r\n+        height: 439,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665829922218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,10 +587,10 @@\n         backgroundColor : 'red',\r\n     },\r\n     emptySearchContainer: {\r\n \r\n-        width: 378,\r\n-        height: 439,\r\n+        width: 278,\r\n+        height: 339,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665829934999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -589,8 +589,9 @@\n     emptySearchContainer: {\r\n \r\n         width: 278,\r\n         height: 339,\r\n+        justifyContent: 'center',\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665829947412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,8 +590,9 @@\n \r\n         width: 278,\r\n         height: 339,\r\n         justifyContent: 'center',\r\n+        textAlign: 'center',\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665829957007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -591,8 +591,9 @@\n         width: 278,\r\n         height: 339,\r\n         justifyContent: 'center',\r\n         textAlign: 'center',\r\n+        alignItems: 'center',\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665829964459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -589,11 +589,9 @@\n     emptySearchContainer: {\r\n \r\n         width: 278,\r\n         height: 339,\r\n-        justifyContent: 'center',\r\n-        textAlign: 'center',\r\n-        alignItems: 'center',\r\n+       \r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665829977556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,10 +587,10 @@\n         backgroundColor : 'red',\r\n     },\r\n     emptySearchContainer: {\r\n \r\n-        width: 278,\r\n-        height: 339,\r\n+        width: 300,\r\n+        height: 300,\r\n        \r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665829991544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,10 +587,10 @@\n         backgroundColor : 'red',\r\n     },\r\n     emptySearchContainer: {\r\n \r\n-        width: 300,\r\n-        height: 300,\r\n+        width: 200,\r\n+        height: 270,\r\n        \r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665830009958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,9 +587,9 @@\n         backgroundColor : 'red',\r\n     },\r\n     emptySearchContainer: {\r\n \r\n-        width: 200,\r\n+        width: 300,\r\n         height: 270,\r\n        \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665830018061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -588,9 +588,9 @@\n     },\r\n     emptySearchContainer: {\r\n \r\n         width: 300,\r\n-        height: 270,\r\n+        // height: 270,\r\n        \r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665830025477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,9 +587,9 @@\n         backgroundColor : 'red',\r\n     },\r\n     emptySearchContainer: {\r\n \r\n-        width: 300,\r\n+        width: 100,\r\n         // height: 270,\r\n        \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665830042774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -466,14 +466,14 @@\n     },\r\n     searchContainer: {\r\n         flexDirection: 'row',\r\n         marginBottom: 40,\r\n-        \r\n+\r\n     },\r\n \r\n     searchContainerUpdate: {\r\n         justifyContent: 'center',\r\n-        \r\n+\r\n     },\r\n     searchInput: {\r\n \r\n         margin: 10,\r\n@@ -494,9 +494,9 @@\n \r\n     },\r\n     searchInputUpdate: {\r\n \r\n-        width:'90%',\r\n+        width: '90%',\r\n     },\r\n     searchInnerContainer: {\r\n         width: '75%',\r\n         flexDirection: 'row',\r\n@@ -505,10 +505,10 @@\n     sContainer: {\r\n         width: '90%',\r\n         alignItems: 'center',\r\n         justifyContent: 'center',\r\n-       \r\n \r\n+\r\n     },\r\n     casesTitle: {\r\n         marginBottom: 0,\r\n \r\n@@ -555,9 +555,9 @@\n         paddingLeft: 10,\r\n         paddingTop: 5,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n-        fontFamily: 'Poppins-regular', \r\n+        fontFamily: 'Poppins-regular',\r\n \r\n     },\r\n     drop: {\r\n         borderRadius: 10,\r\n@@ -573,25 +573,24 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n-      \r\n+\r\n     },\r\n \r\n     pickerItems: {\r\n         // color: '#6F6F6F', \r\n-        fontFamily: 'Poppins-regular', \r\n-        \r\n+        fontFamily: 'Poppins-regular',\r\n+\r\n     },\r\n \r\n-    itemsContainer: { \r\n-        backgroundColor : 'red',\r\n+    itemsContainer: {\r\n+        backgroundColor: 'red',\r\n     },\r\n     emptySearchContainer: {\r\n+        width: 200,\r\n+        height: 339,\r\n \r\n-        width: 100,\r\n-        // height: 270,\r\n-       \r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830098479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -588,8 +588,9 @@\n     },\r\n     emptySearchContainer: {\r\n         width: 200,\r\n         height: 339,\r\n+        justifyContent: 'center',\r\n \r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665830107658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,9 +587,9 @@\n         backgroundColor: 'red',\r\n     },\r\n     emptySearchContainer: {\r\n         width: 200,\r\n-        height: 339,\r\n+        height: 239,\r\n         justifyContent: 'center',\r\n \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665830114547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -586,10 +586,10 @@\n     itemsContainer: {\r\n         backgroundColor: 'red',\r\n     },\r\n     emptySearchContainer: {\r\n-        width: 200,\r\n-        height: 239,\r\n+        width: 100,\r\n+        // height: 239,\r\n         justifyContent: 'center',\r\n \r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1665830127727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -586,12 +586,9 @@\n     itemsContainer: {\r\n         backgroundColor: 'red',\r\n     },\r\n     emptySearchContainer: {\r\n-        width: 100,\r\n-        // height: 239,\r\n         justifyContent: 'center',\r\n-\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830180249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -589,8 +589,12 @@\n     emptySearchContainer: {\r\n         justifyContent: 'center',\r\n     },\r\n \r\n+    emptyImages: {\r\n \r\n+    },\r\n+\r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1665830186050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,9 +590,9 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-\r\n+width: \r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830199812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,9 +590,10 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-width: \r\n+width: 378,\r\n+height:\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830208680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,10 +590,10 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-width: 378,\r\n-height:\r\n+        width: 378,\r\n+        height: 439,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830236395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,10 +590,10 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-        width: 378,\r\n-        height: 439,\r\n+        width: 328,\r\n+        height: 390,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830264588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,10 +590,10 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-        width: 328,\r\n-        height: 390,\r\n+        width: 298,\r\n+        height: 360,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830297348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,10 +590,10 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-        width: 298,\r\n-        height: 360,\r\n+        width: 258,\r\n+        height: 330,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830312686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,8 +587,9 @@\n         backgroundColor: 'red',\r\n     },\r\n     emptySearchContainer: {\r\n         justifyContent: 'center',\r\n+        width: '100%',\r\n     },\r\n \r\n     emptyImages: {\r\n         width: 258,\r\n"
+                },
+                {
+                    "date": 1665830325798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -587,14 +587,13 @@\n         backgroundColor: 'red',\r\n     },\r\n     emptySearchContainer: {\r\n         justifyContent: 'center',\r\n-        width: '100%',\r\n     },\r\n \r\n     emptyImages: {\r\n-        width: 258,\r\n-        height: 330,\r\n+        width: 298,\r\n+        height: 360,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830338512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,10 +590,10 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-        width: 298,\r\n-        height: 360,\r\n+        width: 378,\r\n+        height: 439,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830346187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,10 +590,10 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-        width: 378,\r\n-        height: 439,\r\n+        width: 328,\r\n+        height: 390,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830364559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -592,8 +592,9 @@\n \r\n     emptyImages: {\r\n         width: 328,\r\n         height: 390,\r\n+        marginHorizontal: 30,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830393958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -592,9 +592,9 @@\n \r\n     emptyImages: {\r\n         width: 328,\r\n         height: 390,\r\n-        marginHorizontal: 30,\r\n+        // marginHorizontal: 30,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830404640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,10 +590,10 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-        width: 328,\r\n-        height: 390,\r\n+        width: 338,\r\n+        height: 400,\r\n         // marginHorizontal: 30,\r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1665830443424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -592,9 +592,9 @@\n \r\n     emptyImages: {\r\n         width: 338,\r\n         height: 400,\r\n-        // marginHorizontal: 30,\r\n+        marginHorizontal: 10,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830452498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -592,9 +592,9 @@\n \r\n     emptyImages: {\r\n         width: 338,\r\n         height: 400,\r\n-        marginHorizontal: 10,\r\n+        marginLeft: 10,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830553323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,11 +590,11 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-        width: 338,\r\n-        height: 400,\r\n-        marginLeft: 10,\r\n+        // width: 338,\r\n+        // height: 400,\r\n+        // marginLeft: 10,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830652152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -592,9 +592,9 @@\n \r\n     emptyImages: {\r\n         // width: 338,\r\n         // height: 400,\r\n-        // marginLeft: 10,\r\n+        marginLeft: 10,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830663348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -592,9 +592,9 @@\n \r\n     emptyImages: {\r\n         // width: 338,\r\n         // height: 400,\r\n-        marginLeft: 10,\r\n+        marginHorizontal: 20,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830668891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -592,9 +592,9 @@\n \r\n     emptyImages: {\r\n         // width: 338,\r\n         // height: 400,\r\n-        marginHorizontal: 20,\r\n+        marginHorizontal: 22,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830682614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -590,11 +590,9 @@\n         justifyContent: 'center',\r\n     },\r\n \r\n     emptyImages: {\r\n-        // width: 338,\r\n-        // height: 400,\r\n-        marginHorizontal: 22,\r\n+        marginHorizontal: 25,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665830998774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -592,8 +592,11 @@\n \r\n     emptyImages: {\r\n         marginHorizontal: 25,\r\n     },\r\n+    notFound: {\r\n+textAlign: 'center',\r\n+    },\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1665831009987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -594,8 +594,9 @@\n         marginHorizontal: 25,\r\n     },\r\n     notFound: {\r\n textAlign: 'center',\r\n+marginVertical: 30,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665831022285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -595,8 +595,9 @@\n     },\r\n     notFound: {\r\n textAlign: 'center',\r\n marginVertical: 30,\r\n+fontSize: 18,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665831028529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -593,11 +593,11 @@\n     emptyImages: {\r\n         marginHorizontal: 25,\r\n     },\r\n     notFound: {\r\n-textAlign: 'center',\r\n-marginVertical: 30,\r\n-fontSize: 18,\r\n+        textAlign: 'center',\r\n+        marginVertical: 30,\r\n+        fontSize: 18,\r\n     },\r\n \r\n \r\n });\r\n"
                 }
             ],
             "date": 1664773148633,

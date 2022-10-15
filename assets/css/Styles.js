@@ -467,6 +467,12 @@ const styles = StyleSheet.create({
     searchContainer: {
         flexDirection: 'row',
         marginBottom: 40,
+
+    },
+
+    searchContainerUpdate: {
+        justifyContent: 'center',
+
     },
     searchInput: {
 
@@ -487,9 +493,21 @@ const styles = StyleSheet.create({
         width: '100%',
 
     },
+    searchInputUpdate: {
+
+        width: '90%',
+    },
     searchInnerContainer: {
         width: '75%',
         flexDirection: 'row',
+    },
+
+    sContainer: {
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: 'center',
+
+
     },
     casesTitle: {
         marginBottom: 0,
@@ -501,6 +519,9 @@ const styles = StyleSheet.create({
     },
     searchIcon: {
         right: 7,
+    },
+    searchIconUpdate: {
+        right: 37,
 
     },
     settingIcon: {
@@ -513,6 +534,7 @@ const styles = StyleSheet.create({
         marginTop: 0,
         fontSize: 15,
         fontFamily: 'Poppins-semibold',
+        marginBottom: 5,
 
     },
 
@@ -531,8 +553,10 @@ const styles = StyleSheet.create({
     textArea: {
         height: 'auto',
         paddingLeft: 10,
+        paddingTop: 5,
         margin: 0,
-       
+        textAlignVertical: 'top',
+        fontFamily: 'Poppins-regular',
 
     },
     drop: {
@@ -550,9 +574,30 @@ const styles = StyleSheet.create({
         shadowRadius: 16.00,
         elevation: 6,
         backgroundColor: 'white',
-      
-    }
 
+    },
+
+    pickerItems: {
+        // color: '#6F6F6F', 
+        fontFamily: 'Poppins-regular',
+
+    },
+
+    itemsContainer: {
+        backgroundColor: 'red',
+    },
+    emptySearchContainer: {
+        justifyContent: 'center',
+    },
+
+    emptyImages: {
+        marginHorizontal: 25,
+    },
+    notFound: {
+        textAlign: 'center',
+        marginVertical: 30,
+        fontSize: 18,
+    },
 
 
 });

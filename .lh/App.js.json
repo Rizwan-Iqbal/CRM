@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 240,
+            "activePatchIndex": 246,
             "patches": [
                 {
                     "date": 1664454463276,
@@ -968,6 +968,30 @@
                 {
                     "date": 1665754941293,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n import ClientScreen from './src/components/ClientScreen';\r\n import SupportScreen from './src/components/SupportScreen';\r\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n \r\n-\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1665818997541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,8 @@\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n     'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n     'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n     'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n-\r\n-\r\n   });\r\n \r\n   useEffect(() => {\r\n     async function prepare() {\r\n"
+                },
+                {
+                    "date": 1665819234430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,10 +54,8 @@\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n         <ImagePickerExample />\r\n       </View>\r\n \r\n-   \r\n-      \r\n     </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1665824587343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <ImagePickerExample />\r\n+        <SupportScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665828269700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n import ComingSoonScreen from './src/components/ComingSoonScreen';\r\n import ClientScreen from './src/components/ClientScreen';\r\n import SupportScreen from './src/components/SupportScreen';\r\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n+import SearchScreen from './src/components/SearchScreen';\r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n@@ -51,9 +53,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <SupportScreen />\r\n+        <SearchScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665829605286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n import ClientScreen from './src/components/ClientScreen';\r\n import SupportScreen from './src/components/SupportScreen';\r\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n import SearchScreen from './src/components/SearchScreen';\r\n+import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -53,9 +54,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <SearchScreen />\r\n+        <EmptySearchScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665831534694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <EmptySearchScreen />\r\n+        <ClientScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
                 }
             ],
             "date": 1664454463276,

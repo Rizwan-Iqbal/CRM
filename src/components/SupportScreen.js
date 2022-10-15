@@ -45,23 +45,35 @@ const SupportScreen = () => {
                     <View>
                         <View style={styles.form}>
 
-                            <View>
+                            <View >
                                 <View>
                                     <Text style={[styles.otpTxt, styles.supportTopTxt]}>Topic</Text>
                                 </View>
-                                <View style = {styles.drop}>
-                                <Picker
-                                    selectedValue={selectedLanguage}
-                                   
-                                    onValueChange={(itemValue, itemIndex) =>
-                                        setSelectedLanguage(itemValue)
-                                    }>
-                                    <Picker.Item label="Java" value="java" />
-                                    <Picker.Item label="JavaScript" value="js" />
-                                </Picker>
+                                <View style={styles.drop}>
+                                    <Picker
+                                        selectedValue={selectedLanguage}
+
+                                        onValueChange={(itemValue, itemIndex) =>
+                                            setSelectedLanguage(itemValue)
+                                        }>
+                                        <Picker.Item
+                                            value=""
+                                            label="Select An Option"
+                                            enabled={false}
+                                            color='#6F6F6F' 
+                                        />
+                                        <Picker.Item label="Payment issues" value="Payment issues"
+                                            color='#6F6F6F'  />
+                                        <Picker.Item label="App is not working properly" value="App is not working properly" color='#6F6F6F' />
+                                        <Picker.Item label="Spam" value="Spam" color='#6F6F6F' />
+                                        <Picker.Item label="Login Error" value="Login Error"
+                                            color='#6F6F6F'
+                                             />
+
+                                    </Picker>
                                 </View>
                             </View>
-                            <View>
+                            <View style = {{marginVertical: 20,}}> 
                                 <View>
                                     <Text style={[styles.otpTxt, styles.supportTopTxt]}>How we can help you?</Text>
                                 </View>
@@ -70,12 +82,13 @@ const SupportScreen = () => {
                                     numberOfLines={6}
                                     // onChangeText={(text) => setState({ text })}
                                     // value={this.state.text}
-                                    style = {[styles.input , styles.textArea]} />
+                                    placeholder = {'Enter Description'}
+                                    style={[styles.input, styles.textArea]} />
                             </View>
 
                             <View>
                                 <TouchableOpacity style={{ width: '45%', marginLeft: '25%', marginTop: 20, }} disabled={'true'}>
-                                    <Text style={styles.forgetBtn} >Confirm</Text>
+                                    <Text style={styles.forgetBtn} >Send</Text>
                                 </TouchableOpacity>
                             </View>
 
