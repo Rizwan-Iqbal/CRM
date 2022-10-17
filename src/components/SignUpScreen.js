@@ -21,7 +21,7 @@ const SignUpScreen = () => {
                     <View>
                         <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} >
                             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}>
-                            <Icon style = {styles.backIcon} name={'arrow-alt-circle-left'}  color={'white'}  size={30}/>
+                                <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={30} />
                                 <Text style={styles.SignInTitle}> Create an account </Text>
                             </View>
                         </ImageBackground>
@@ -33,40 +33,40 @@ const SignUpScreen = () => {
 
                     <View>
                         <View style={styles.form}>
-                        <View style = {styles.inputEmail}>
+                            <View style={styles.inputEmail}>
                                 <TextInput style={styles.input}
                                     placeholder="Full Name"
                                 />
-                                <Icon style = {styles.emailIcon} name={'user'} solid  size={20}/>
+                                <Icon style={styles.emailIcon} name={'user'} solid size={20} />
                             </View>
-                            <View style = {styles.inputEmail}>
+                            <View style={styles.inputEmail}>
                                 <TextInput style={styles.input}
                                     placeholder="Email"
                                 />
-                                <Icon style = {styles.emailIcon} name={'envelope'} solid  size={20}/>
+                                <Icon style={styles.emailIcon} name={'envelope'} solid size={20} />
                             </View>
-                            <View style = {styles.inputEmail}>
+                            <View style={styles.inputEmail}>
                                 <TextInput style={styles.input}
                                     placeholder="Password" />
-                                <Icon style = {styles.emailIcon} name={'lock'} solid  size={20}/>
-                                <Icon style = {styles.eyeIcon} name={'eye-slash'} solid  size={18}/>
+                                <Icon style={styles.emailIcon} name={'lock'} solid size={20} />
+                                <Icon style={styles.eyeIcon} name={'eye-slash'} solid size={18} />
                             </View>
-                            <View style = {styles.inputEmail}>
+                            <View style={styles.inputEmail}>
                                 <TextInput style={styles.input}
                                     placeholder="Confirm Password" />
-                                <Icon style = {styles.emailIcon} name={'lock'} solid  size={20}/>
-                                <Icon style = {styles.eyeIcon} name={'eye-slash'} solid  size={18}/>
+                                <Icon style={styles.emailIcon} name={'lock'} solid size={20} />
+                                <Icon style={styles.eyeIcon} name={'eye-slash'} solid size={18} />
 
                             </View>
 
-                            <View style = {styles.inputEmail}>
+                            <View style={styles.inputEmail}>
                                 <TextInput style={styles.input}
                                     placeholder="+44" />
-                                <Icon style = {styles.emailIcon} name={'mobile'} solid  size={20}/>
+                                <Icon style={styles.emailIcon} name={'mobile'} solid size={20} />
                             </View>
-                           
+
                             <View style={styles.newUser}>
-                                <Text style={styles.newUserText}>Already have an account?<Text style = {{ color:'black'}}> Sign In </Text></Text>
+                                <Text style={styles.newUserText}>Already have an account?<Text style={{ color: 'black' }}> Sign In </Text></Text>
                             </View>
                             <View>
                                 <TouchableOpacity style={styles.signInBtnContainer}>

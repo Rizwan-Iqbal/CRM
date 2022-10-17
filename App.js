@@ -18,6 +18,10 @@ import SupportScreen from './src/components/SupportScreen';
 import ImagePickerExample from './src/components/ImagePickerExample';
 import SearchScreen from './src/components/SearchScreen';
 import EmptySearchScreen from './src/components/EmptySearchScreen';
+import BookingScreen from './src/components/BookingScreen';
+import AddOppointmentScreen from './src/components/AddOppointmentScreen';
+
+
 
 
 export default function App() {
@@ -55,7 +59,7 @@ export default function App() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}>
       
       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>
-        <ClientScreen />
+        <AddOppointmentScreen />
       </View>
 
     </KeyboardAvoidingView>

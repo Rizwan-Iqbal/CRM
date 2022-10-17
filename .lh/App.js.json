@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 246,
+            "activePatchIndex": 266,
             "patches": [
                 {
                     "date": 1664454463276,
@@ -992,6 +992,86 @@
                 {
                     "date": 1665831534694,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <EmptySearchScreen />\r\n+        <ClientScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665988313473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <ClientScreen />\r\n+        <BookingS />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665988333629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n import SupportScreen from './src/components/SupportScreen';\r\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n+import BookingScreen from './src/components/BookingScreen';\r\n \r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n@@ -54,9 +55,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <BookingS />\r\n+        <BookingScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665988904788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,12 @@\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n+import Example from './src/components/Example';\r\n \r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n@@ -55,9 +57,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <BookingScreen />\r\n+        <Example />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665989331583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <Example />\r\n+        <BookingScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665989355082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,12 @@\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n-import Example from './src/components/Example';\r\n \r\n \r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1665992790789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <BookingScreen />\r\n+        <ThemedCalendar />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1665992810049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,14 @@\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n+import ThemedCalendar from './src/components/ThemedCalendar';\r\n \r\n \r\n \r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1665992827437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,8 @@\n import BookingScreen from './src/components/BookingScreen';\r\n import ThemedCalendar from './src/components/ThemedCalendar';\r\n \r\n \r\n-\r\n-\r\n-\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1665993359451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,11 +18,11 @@\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n-import ThemedCalendar from './src/components/ThemedCalendar';\r\n \r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n@@ -56,9 +56,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <ThemedCalendar />\r\n+        <BookingScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666011185343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n import ImagePickerExample from './src/components/ImagePickerExample';\r\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n+import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n \r\n \r\n \r\n export default function App() {\r\n@@ -56,9 +57,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <BookingScreen />\r\n+        <AddOppointmentScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666011327119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n         <AddOppointmentScreen />\r\n       </View>\r\n \r\n-    </KeyboardAvoidingView>\r\n+    </KeyboardAvoidingView>npm \r\n \r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1666011366253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n         <AddOppointmentScreen />\r\n       </View>\r\n \r\n-    </KeyboardAvoidingView>npm \r\n+    </KeyboardAvoidingView>\r\n \r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1666012736060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <AddOppointmentScreen />\r\n+        <ClientScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666012864068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <ClientScreen />\r\n+        <SearchScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666012869998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <SearchScreen />\r\n+        <SupportScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666012885166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <SupportScreen />\r\n+        <AddOppointmentScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666014126081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,13 @@\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n+import { Picker } from '@react-native-picker/picker';\r\n \r\n \r\n \r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1666014189050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n-import { Picker } from '@react-native-picker/picker';\r\n \r\n \r\n \r\n \r\n@@ -59,9 +58,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <AddOppointmentScreen />\r\n+        <SupportScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666014194536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <SupportScreen />\r\n+        <Supp />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666014211278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <Supp />\r\n+        <AddOppointmentScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
                 }
             ],
             "date": 1664454463276,

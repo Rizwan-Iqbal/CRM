@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1272,
+            "activePatchIndex": 1389,
             "patches": [
                 {
                     "date": 1664773148633,
@@ -5096,6 +5096,474 @@
                 {
                     "date": 1665831028529,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -593,11 +593,11 @@\n     emptyImages: {\r\n         marginHorizontal: 25,\r\n     },\r\n     notFound: {\r\n-textAlign: 'center',\r\n-marginVertical: 30,\r\n-fontSize: 18,\r\n+        textAlign: 'center',\r\n+        marginVertical: 30,\r\n+        fontSize: 18,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665988432397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -521,8 +521,9 @@\n         right: 7,\r\n     },\r\n     searchIconUpdate: {\r\n         right: 37,\r\n+        top: 10,\r\n \r\n     },\r\n     settingIcon: {\r\n \r\n"
+                },
+                {
+                    "date": 1665988438605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -521,9 +521,9 @@\n         right: 7,\r\n     },\r\n     searchIconUpdate: {\r\n         right: 37,\r\n-        top: 10,\r\n+        top: 3,\r\n \r\n     },\r\n     settingIcon: {\r\n \r\n"
+                },
+                {
+                    "date": 1665988447012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -521,9 +521,9 @@\n         right: 7,\r\n     },\r\n     searchIconUpdate: {\r\n         right: 37,\r\n-        top: 3,\r\n+        top: 17,\r\n \r\n     },\r\n     settingIcon: {\r\n \r\n"
+                },
+                {
+                    "date": 1665988458325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -521,9 +521,9 @@\n         right: 7,\r\n     },\r\n     searchIconUpdate: {\r\n         right: 37,\r\n-        top: 17,\r\n+        top: 19,\r\n \r\n     },\r\n     settingIcon: {\r\n \r\n"
+                },
+                {
+                    "date": 1665988466335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -521,9 +521,9 @@\n         right: 7,\r\n     },\r\n     searchIconUpdate: {\r\n         right: 37,\r\n-        top: 19,\r\n+        top: 20,\r\n \r\n     },\r\n     settingIcon: {\r\n \r\n"
+                },
+                {
+                    "date": 1665988621771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,8 +270,9 @@\n         color: '#474747',\r\n         fontWeight: '600',\r\n         fontSize: 16,\r\n         fontFamily: 'Poppins-semibold',\r\n+        textAlign: 'center',\r\n     },\r\n \r\n     clientTopTxt: {\r\n \r\n"
+                },
+                {
+                    "date": 1665988628493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n         color: '#474747',\r\n         fontWeight: '600',\r\n         fontSize: 16,\r\n         fontFamily: 'Poppins-semibold',\r\n-        textAlign: 'center',\r\n+        \r\n     },\r\n \r\n     clientTopTxt: {\r\n \r\n"
+                },
+                {
+                    "date": 1665988683197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -600,8 +600,12 @@\n         marginVertical: 30,\r\n         fontSize: 18,\r\n     },\r\n \r\n+    topTxtAppointment: {\r\n+        textAlign: 'center',\r\n+    }\r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1665988727513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -602,8 +602,9 @@\n     },\r\n \r\n     topTxtAppointment: {\r\n         textAlign: 'center',\r\n+        lineHeight: 20,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665988745568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -602,9 +602,9 @@\n     },\r\n \r\n     topTxtAppointment: {\r\n         textAlign: 'center',\r\n-        lineHeight: 20,\r\n+marginTop: 0,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665988753762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -602,9 +602,9 @@\n     },\r\n \r\n     topTxtAppointment: {\r\n         textAlign: 'center',\r\n-marginTop: 0,\r\n+marginTop: -10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665988769745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -602,9 +602,9 @@\n     },\r\n \r\n     topTxtAppointment: {\r\n         textAlign: 'center',\r\n-marginTop: -10,\r\n+marginTop: -12,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665991070988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,9 +270,9 @@\n         color: '#474747',\r\n         fontWeight: '600',\r\n         fontSize: 16,\r\n         fontFamily: 'Poppins-semibold',\r\n-        \r\n+\r\n     },\r\n \r\n     clientTopTxt: {\r\n \r\n@@ -602,9 +602,12 @@\n     },\r\n \r\n     topTxtAppointment: {\r\n         textAlign: 'center',\r\n-marginTop: -12,\r\n+        marginTop: -12,\r\n+    },\r\n+    selectedDay: {\r\n+        backgroundColor: 'red',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1665991115526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -604,8 +604,9 @@\n     topTxtAppointment: {\r\n         textAlign: 'center',\r\n         marginTop: -12,\r\n     },\r\n+    \r\n     selectedDay: {\r\n         backgroundColor: 'red',\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1666001529347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -603,10 +603,11 @@\n \r\n     topTxtAppointment: {\r\n         textAlign: 'center',\r\n         marginTop: -12,\r\n+        marginBottom: 10,\r\n     },\r\n-    \r\n+\r\n     selectedDay: {\r\n         backgroundColor: 'red',\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1666003083963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -608,8 +608,11 @@\n     },\r\n \r\n     selectedDay: {\r\n         backgroundColor: 'red',\r\n+    },\r\n+    bottomAppointTxt: {\r\n+        textAlign: 'left',\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666003096982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -611,8 +611,9 @@\n         backgroundColor: 'red',\r\n     },\r\n     bottomAppointTxt: {\r\n         textAlign: 'left',\r\n+        margin: 20,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666003113630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -611,9 +611,9 @@\n         backgroundColor: 'red',\r\n     },\r\n     bottomAppointTxt: {\r\n         textAlign: 'left',\r\n-        margin: 20,\r\n+       marginVertical: 10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666003119274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -611,9 +611,9 @@\n         backgroundColor: 'red',\r\n     },\r\n     bottomAppointTxt: {\r\n         textAlign: 'left',\r\n-       marginVertical: 10,\r\n+       marginVertical: 50,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666004453543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -610,9 +610,9 @@\n     selectedDay: {\r\n         backgroundColor: 'red',\r\n     },\r\n     bottomAppointTxt: {\r\n-        textAlign: 'left',\r\n+        textAlign: 'center',\r\n        marginVertical: 50,\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666004464783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -611,9 +611,9 @@\n         backgroundColor: 'red',\r\n     },\r\n     bottomAppointTxt: {\r\n         textAlign: 'center',\r\n-       marginVertical: 50,\r\n+      marginTop: 10,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666004597512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -612,10 +612,22 @@\n     },\r\n     bottomAppointTxt: {\r\n         textAlign: 'center',\r\n       marginTop: 10,\r\n-    }\r\n+    },\r\n \r\n+    appContainer: {\r\n+        backgroundColor: 'white',\r\n+        shadowColor: \"#6F6F6F\",\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 12,\r\n+        },\r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n+        elevation: 16,\r\n+    },\r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1666004612937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -624,8 +624,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n+        height: 'auto',\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666004785179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -625,8 +625,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         height: 'auto',\r\n+        flexDirection: 'row',\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666004802096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -626,8 +626,9 @@\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n+        margin: 20,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666004809604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -626,9 +626,9 @@\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n-        margin: 20,\r\n+        padding: 20,\r\n     },\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666004876686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -628,8 +628,12 @@\n         height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 20,\r\n     },\r\n+    timeTxt: {\r\n+        color: '#6F6F6F',\r\n+        \r\n+    }\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1666004914321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -611,9 +611,9 @@\n         backgroundColor: 'red',\r\n     },\r\n     bottomAppointTxt: {\r\n         textAlign: 'center',\r\n-      marginTop: 10,\r\n+        marginTop: 10,\r\n     },\r\n \r\n     appContainer: {\r\n         backgroundColor: 'white',\r\n@@ -630,9 +630,11 @@\n         padding: 20,\r\n     },\r\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n-        \r\n+        fontFamily: 'Poppins-regular',\r\n+        fontSize: 14,\r\n+\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666004940002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -630,9 +630,9 @@\n         padding: 20,\r\n     },\r\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n-        fontFamily: 'Poppins-regular',\r\n+        fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n \r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1666005010635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -632,9 +632,12 @@\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n+    },\r\n \r\n+    titleTxt: {\r\n+        \r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666005050242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -635,9 +635,10 @@\n         fontSize: 14,\r\n     },\r\n \r\n     titleTxt: {\r\n-        \r\n+        marginLeft: 20,\r\n+\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666006413773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -626,9 +626,9 @@\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n-        padding: 20,\r\n+        padding: 15,\r\n     },\r\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Poppins-semibold',\r\n"
+                },
+                {
+                    "date": 1666006425991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -624,9 +624,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        height: 'auto',\r\n+        height: '20',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n     },\r\n     timeTxt: {\r\n"
+                },
+                {
+                    "date": 1666006439550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -624,9 +624,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        height: '20',\r\n+        height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n     },\r\n     timeTxt: {\r\n"
+                },
+                {
+                    "date": 1666006457620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -621,9 +621,9 @@\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n-        shadowOpacity: 0.58,\r\n+        shadowOpacity: 10.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1666006562156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -619,9 +619,9 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 12,\r\n+            height: 7,\r\n         },\r\n         shadowOpacity: 10.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n"
+                },
+                {
+                    "date": 1666006567719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -619,9 +619,9 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 7,\r\n+            height: 12,\r\n         },\r\n         shadowOpacity: 10.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n"
+                },
+                {
+                    "date": 1666006655982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -636,8 +636,9 @@\n     },\r\n \r\n     titleTxt: {\r\n         marginLeft: 20,\r\n+        color: 'black',\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666006733157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -637,9 +637,11 @@\n \r\n     titleTxt: {\r\n         marginLeft: 20,\r\n         color: 'black',\r\n-\r\n+    },\r\n+    subTxt: {\r\n+        color; ''\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666006773654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -638,11 +638,11 @@\n     titleTxt: {\r\n         marginLeft: 20,\r\n         color: 'black',\r\n     },\r\n-    subTxt: {\r\n-        color; ''\r\n-    }\r\n+    // subTxt: {\r\n+    //     color; ''\r\n+    // }\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1666006797486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -638,11 +638,11 @@\n     titleTxt: {\r\n         marginLeft: 20,\r\n         color: 'black',\r\n     },\r\n-    // subTxt: {\r\n-    //     color; ''\r\n-    // }\r\n+    subTxt: {\r\n+        fontSize: 12,\r\n+    }\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1666006806628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -640,8 +640,10 @@\n         color: 'black',\r\n     },\r\n     subTxt: {\r\n         fontSize: 12,\r\n+        marginLeft: 20,\r\n+\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666006932276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -642,9 +642,14 @@\n     subTxt: {\r\n         fontSize: 12,\r\n         marginLeft: 20,\r\n \r\n-    }\r\n+    },\r\n+    verticleLine: {\r\n+        height: '100%',\r\n+        width: 1,\r\n+        backgroundColor: '#909090',\r\n+      }\r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1666006939913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -646,9 +646,9 @@\n     },\r\n     verticleLine: {\r\n         height: '100%',\r\n         width: 1,\r\n-        backgroundColor: '#909090',\r\n+        backgroundColor: 'red',\r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666006947149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -645,9 +645,9 @@\n \r\n     },\r\n     verticleLine: {\r\n         height: '100%',\r\n-        width: 1,\r\n+        width: 10,\r\n         backgroundColor: 'red',\r\n       }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666006966904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -643,9 +643,9 @@\n         fontSize: 12,\r\n         marginLeft: 20,\r\n \r\n     },\r\n-    verticleLine: {\r\n+    verticalLine: {\r\n         height: '100%',\r\n         width: 10,\r\n         backgroundColor: 'red',\r\n       }\r\n"
+                },
+                {
+                    "date": 1666006976481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -645,9 +645,9 @@\n \r\n     },\r\n     verticalLine: {\r\n         height: '100%',\r\n-        width: 10,\r\n+        width: 2,\r\n         backgroundColor: 'red',\r\n       }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666006993487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -646,9 +646,9 @@\n     },\r\n     verticalLine: {\r\n         height: '100%',\r\n         width: 2,\r\n-        backgroundColor: 'red',\r\n+        backgroundColor: '#6F6F6F',\r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666007016261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -632,8 +632,9 @@\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n+        marginRight: 10,\r\n     },\r\n \r\n     titleTxt: {\r\n         marginLeft: 20,\r\n"
+                },
+                {
+                    "date": 1666007025041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -645,9 +645,9 @@\n         marginLeft: 20,\r\n \r\n     },\r\n     verticalLine: {\r\n-        height: '100%',\r\n+        height: '90%',\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n       }\r\n \r\n"
+                },
+                {
+                    "date": 1666007035236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -645,9 +645,9 @@\n         marginLeft: 20,\r\n \r\n     },\r\n     verticalLine: {\r\n-        height: '90%',\r\n+        height: '80%',\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n       }\r\n \r\n"
+                },
+                {
+                    "date": 1666007057263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -648,8 +648,9 @@\n     verticalLine: {\r\n         height: '80%',\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n+        textAlignVertical: 'center'\r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666007085234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -632,9 +632,9 @@\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n-        marginRight: 10,\r\n+        marginRight: 20,\r\n     },\r\n \r\n     titleTxt: {\r\n         marginLeft: 20,\r\n"
+                },
+                {
+                    "date": 1666007097595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -645,9 +645,9 @@\n         marginLeft: 20,\r\n \r\n     },\r\n     verticalLine: {\r\n-        height: '80%',\r\n+        height: '90%',\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n         textAlignVertical: 'center'\r\n       }\r\n"
+                },
+                {
+                    "date": 1666008067229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -645,9 +645,9 @@\n         marginLeft: 20,\r\n \r\n     },\r\n     verticalLine: {\r\n-        height: '90%',\r\n+        // height: '90%',\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n         textAlignVertical: 'center'\r\n       }\r\n"
+                },
+                {
+                    "date": 1666008081721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -645,9 +645,9 @@\n         marginLeft: 20,\r\n \r\n     },\r\n     verticalLine: {\r\n-        // height: '90%',\r\n+        height: '10%',\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n         textAlignVertical: 'center'\r\n       }\r\n"
+                },
+                {
+                    "date": 1666008091730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -645,9 +645,9 @@\n         marginLeft: 20,\r\n \r\n     },\r\n     verticalLine: {\r\n-        height: '10%',\r\n+        height: 50,\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n         textAlignVertical: 'center'\r\n       }\r\n"
+                },
+                {
+                    "date": 1666008289193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -621,9 +621,9 @@\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n-        shadowOpacity: 10.58,\r\n+        shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1666008305066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -619,11 +619,11 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 12,\r\n+            height: 16,\r\n         },\r\n-        shadowOpacity: 0.58,\r\n+        shadowOpacity: 10.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1666008317649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -619,13 +619,13 @@\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n-            height: 16,\r\n+            height: 12,\r\n         },\r\n         shadowOpacity: 10.58,\r\n-        shadowRadius: 16.00,\r\n-        elevation: 16,\r\n+        shadowRadius: 46.00,\r\n+        elevation: 26,\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n     },\r\n"
+                },
+                {
+                    "date": 1666008329874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -622,10 +622,10 @@\n             width: 0,\r\n             height: 12,\r\n         },\r\n         shadowOpacity: 10.58,\r\n-        shadowRadius: 46.00,\r\n-        elevation: 26,\r\n+        shadowRadius: 16.00,\r\n+        elevation: 16,\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n     },\r\n"
+                },
+                {
+                    "date": 1666008442204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -615,17 +615,19 @@\n         marginTop: 10,\r\n     },\r\n \r\n     appContainer: {\r\n-        backgroundColor: 'white',\r\n+        overflow: 'hidden',\r\n         shadowColor: \"#6F6F6F\",\r\n+\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n-        shadowOpacity: 10.58,\r\n+        shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n-        elevation: 16,\r\n+        elevation: 6,\r\n+        backgroundColor: 'white',\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n     },\r\n"
+                },
+                {
+                    "date": 1666008454154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -615,9 +615,9 @@\n         marginTop: 10,\r\n     },\r\n \r\n     appContainer: {\r\n-        overflow: 'hidden',\r\n+        \r\n         shadowColor: \"#6F6F6F\",\r\n \r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1666008473338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -615,18 +615,16 @@\n         marginTop: 10,\r\n     },\r\n \r\n     appContainer: {\r\n-        \r\n         shadowColor: \"#6F6F6F\",\r\n-\r\n         shadowOffset: {\r\n             width: 0,\r\n             height: 12,\r\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n-        elevation: 6,\r\n+        elevation: 16,\r\n         backgroundColor: 'white',\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n"
+                },
+                {
+                    "date": 1666008515837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -627,8 +627,9 @@\n         backgroundColor: 'white',\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n+        marginVertical: 10,\r\n     },\r\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Poppins-semibold',\r\n"
+                },
+                {
+                    "date": 1666008527214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -627,9 +627,9 @@\n         backgroundColor: 'white',\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n-        marginVertical: 10,\r\n+        marginVertical: 5,\r\n     },\r\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Poppins-semibold',\r\n"
+                },
+                {
+                    "date": 1666008609762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -627,9 +627,9 @@\n         backgroundColor: 'white',\r\n         height: 'auto',\r\n         flexDirection: 'row',\r\n         padding: 15,\r\n-        marginVertical: 5,\r\n+        marginVertical: 3,\r\n     },\r\n     timeTxt: {\r\n         color: '#6F6F6F',\r\n         fontFamily: 'Poppins-semibold',\r\n"
+                },
+                {
+                    "date": 1666008922307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -650,8 +650,12 @@\n         height: 50,\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n         textAlignVertical: 'center'\r\n+      },\r\n+      addAppointment: {\r\n+        position: 'absolute',\r\n+        right: 20,\r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666008934274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -654,8 +654,9 @@\n       },\r\n       addAppointment: {\r\n         position: 'absolute',\r\n         right: 20,\r\n+        bottom: 30,\r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666008942179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -653,10 +653,10 @@\n         textAlignVertical: 'center'\r\n       },\r\n       addAppointment: {\r\n         position: 'absolute',\r\n-        right: 20,\r\n-        bottom: 30,\r\n+        right: 30,\r\n+        bottom: 50,\r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666008960927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -653,9 +653,9 @@\n         textAlignVertical: 'center'\r\n       },\r\n       addAppointment: {\r\n         position: 'absolute',\r\n-        right: 30,\r\n+        right: 40,\r\n         bottom: 50,\r\n       }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666009055852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -655,8 +655,9 @@\n       addAppointment: {\r\n         position: 'absolute',\r\n         right: 40,\r\n         bottom: 50,\r\n+        \r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666011678621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -655,8 +655,11 @@\n       addAppointment: {\r\n         position: 'absolute',\r\n         right: 40,\r\n         bottom: 50,\r\n+      },\r\n+      appointmentTxt: {\r\n+        width: '100%',\r\n         \r\n       }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666011699452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -658,9 +658,10 @@\n         bottom: 50,\r\n       },\r\n       appointmentTxt: {\r\n         width: '100%',\r\n-        \r\n+        textAlign: 'left',\r\n+\r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666011745130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -657,9 +657,9 @@\n         right: 40,\r\n         bottom: 50,\r\n       },\r\n       appointmentTxt: {\r\n-        width: '100%',\r\n+       minWidth: '100%',\r\n         textAlign: 'left',\r\n \r\n       }\r\n \r\n"
+                },
+                {
+                    "date": 1666011814820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -657,10 +657,15 @@\n         right: 40,\r\n         bottom: 50,\r\n       },\r\n       appointmentTxt: {\r\n-       minWidth: '100%',\r\n+        fontSize: 24,\r\n+        fontFamily: 'Poppins-semibold',\r\n         textAlign: 'left',\r\n+        marginTop: 40,\r\n+        marginBottom: 25,\r\n+        color: 'white',\r\n+        width: '100%',\r\n \r\n       }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666011853040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 12,\r\n-        width: '25%',\r\n+        width: '10%',\r\n         marginTop: 12,\r\n         // paddingRight: 60\r\n     },\r\n     clientIcon: {\r\n"
+                },
+                {
+                    "date": 1666011883508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -659,9 +659,9 @@\n       },\r\n       appointmentTxt: {\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n-        textAlign: 'left',\r\n+        textAlign: 'center',\r\n         marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n         width: '100%',\r\n"
+                },
+                {
+                    "date": 1666011969465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 12,\r\n-        width: '10%',\r\n+        width: '5%',\r\n         marginTop: 12,\r\n         // paddingRight: 60\r\n     },\r\n     clientIcon: {\r\n"
+                },
+                {
+                    "date": 1666011974797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     },\r\n     backIcon: {\r\n         marginLeft: 12,\r\n-        width: '5%',\r\n+        width: '10%',\r\n         marginTop: 12,\r\n         // paddingRight: 60\r\n     },\r\n     clientIcon: {\r\n"
+                },
+                {
+                    "date": 1666011987878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -663,9 +663,8 @@\n         textAlign: 'center',\r\n         marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n-        width: '100%',\r\n \r\n       }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666012026011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n-        textAlign: 'left',\r\n+        textAlign: 'center',\r\n         marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n         width: '75%',\r\n"
+                },
+                {
+                    "date": 1666012042054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n-        textAlign: 'center',\r\n+        textAlign: 'left',\r\n         marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n         width: '75%',\r\n"
+                },
+                {
+                    "date": 1666012398874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -659,11 +659,11 @@\n       },\r\n       appointmentTxt: {\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n-        textAlign: 'center',\r\n-        marginTop: 40,\r\n-        marginBottom: 25,\r\n+        textAlign: 'auto',\r\n+        // marginTop: 40,\r\n+        // marginBottom: 25,\r\n         color: 'white',\r\n \r\n       }\r\n \r\n"
+                },
+                {
+                    "date": 1666012405776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -660,10 +660,10 @@\n       appointmentTxt: {\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n         textAlign: 'auto',\r\n-        // marginTop: 40,\r\n-        // marginBottom: 25,\r\n+        marginTop: 40,\r\n+        marginBottom: 25,\r\n         color: 'white',\r\n \r\n       }\r\n \r\n"
+                },
+                {
+                    "date": 1666012423307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -657,11 +657,11 @@\n         right: 40,\r\n         bottom: 50,\r\n       },\r\n       appointmentTxt: {\r\n+        textAlign: 'center',\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n-        textAlign: 'auto',\r\n         marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n \r\n"
+                },
+                {
+                    "date": 1666012499350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -658,8 +658,10 @@\n         bottom: 50,\r\n       },\r\n       appointmentTxt: {\r\n         textAlign: 'center',\r\n+        textAlign: \"center\",\r\n+        flex: 1,\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n         marginTop: 40,\r\n         marginBottom: 25,\r\n"
+                },
+                {
+                    "date": 1666012612659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -662,9 +662,9 @@\n         textAlign: \"center\",\r\n         flex: 1,\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n-        marginTop: 40,\r\n+        marginTop: 50,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n \r\n       }\r\n"
+                },
+                {
+                    "date": 1666012622886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -662,9 +662,9 @@\n         textAlign: \"center\",\r\n         flex: 1,\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n-        marginTop: 50,\r\n+        marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n \r\n       }\r\n"
+                },
+                {
+                    "date": 1666012631202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -515,9 +515,9 @@\n \r\n     },\r\n \r\n     caseBackIcon: {\r\n-        marginTop: 30,\r\n+        marginTop: 20,\r\n     },\r\n     searchIcon: {\r\n         right: 7,\r\n     },\r\n"
+                },
+                {
+                    "date": 1666012637263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -515,9 +515,9 @@\n \r\n     },\r\n \r\n     caseBackIcon: {\r\n-        marginTop: 20,\r\n+        marginTop: 15,\r\n     },\r\n     searchIcon: {\r\n         right: 7,\r\n     },\r\n"
+                },
+                {
+                    "date": 1666012651999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -515,9 +515,9 @@\n \r\n     },\r\n \r\n     caseBackIcon: {\r\n-        marginTop: 15,\r\n+        marginTop: 13,\r\n     },\r\n     searchIcon: {\r\n         right: 7,\r\n     },\r\n"
+                },
+                {
+                    "date": 1666012702202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -657,9 +657,8 @@\n         right: 40,\r\n         bottom: 50,\r\n       },\r\n       appointmentTxt: {\r\n-        textAlign: 'center',\r\n         textAlign: \"center\",\r\n         flex: 1,\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n"
+                },
+                {
+                    "date": 1666012719274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,13 +20,13 @@\n     // Signin Screen Styling\r\n     SignInTitle: {\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n-        textAlign: 'left',\r\n         marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n-        width: '75%',\r\n+        textAlign: \"center\",\r\n+        flex: 1,\r\n \r\n \r\n     },\r\n     backIcon: {\r\n"
+                },
+                {
+                    "date": 1666012772359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -515,9 +515,9 @@\n \r\n     },\r\n \r\n     caseBackIcon: {\r\n-        marginTop: 13,\r\n+        marginTop: 20,\r\n     },\r\n     searchIcon: {\r\n         right: 7,\r\n     },\r\n"
+                },
+                {
+                    "date": 1666012833146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -515,9 +515,9 @@\n \r\n     },\r\n \r\n     caseBackIcon: {\r\n-        marginTop: 20,\r\n+        marginTop: 30,\r\n     },\r\n     searchIcon: {\r\n         right: 7,\r\n     },\r\n@@ -665,8 +665,12 @@\n         marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n \r\n+      },\r\n+     \r\n+      AppointBackIcon: {\r\n+\r\n       }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666012907344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -666,13 +666,10 @@\n         marginBottom: 25,\r\n         color: 'white',\r\n \r\n       },\r\n-     \r\n-      AppointBackIcon: {\r\n+    \r\n \r\n-      }\r\n \r\n-\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1666013591729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     },\r\n \r\n     introTitle: {\r\n         fontSize: 65,\r\n-        fontFamily: 'Segoe-ui-bold',\r\n+        fontFamily: 'Poppins-semibold',\r\n         color: 'white',\r\n     },\r\n \r\n     // Signin Screen Styling\r\n@@ -63,8 +63,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         paddingLeft: 30,\r\n+        fontFamily: 'Poppins-semibold',\r\n     },\r\n     rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n"
+                },
+                {
+                    "date": 1666013598975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         paddingLeft: 30,\r\n-        fontFamily: 'Poppins-semibold',\r\n+        fontFamily: 'Poppins-regular',\r\n     },\r\n     rememberTxt: {\r\n         color: '#6F6F6F',\r\n         fontSize: 10,\r\n"
+                },
+                {
+                    "date": 1666013655083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -667,8 +667,14 @@\n         marginBottom: 25,\r\n         color: 'white',\r\n \r\n       },\r\n+\r\n+      inputLabel: {\r\n+\r\n+        fontFamily: 'Poppins-semibold',\r\n+        fontSize: 12,\r\n+      },\r\n     \r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666013676044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -672,8 +672,9 @@\n       inputLabel: {\r\n \r\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 12,\r\n+        color: '#6F6F6F'\r\n       },\r\n     \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666013685335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -670,9 +670,9 @@\n       },\r\n \r\n       inputLabel: {\r\n \r\n-        fontFamily: 'Poppins-semibold',\r\n+        fontFamily: 'Poppins-regular',\r\n         fontSize: 12,\r\n         color: '#6F6F6F'\r\n       },\r\n     \r\n"
+                },
+                {
+                    "date": 1666013690962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -671,9 +671,9 @@\n \r\n       inputLabel: {\r\n \r\n         fontFamily: 'Poppins-regular',\r\n-        fontSize: 12,\r\n+        fontSize: 14,\r\n         color: '#6F6F6F'\r\n       },\r\n     \r\n \r\n"
+                },
+                {
+                    "date": 1666013755220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -671,9 +671,9 @@\n \r\n       inputLabel: {\r\n \r\n         fontFamily: 'Poppins-regular',\r\n-        fontSize: 14,\r\n+        fontSize: 15,\r\n         color: '#6F6F6F'\r\n       },\r\n     \r\n \r\n"
+                },
+                {
+                    "date": 1666013811430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -671,11 +671,15 @@\n \r\n       inputLabel: {\r\n \r\n         fontFamily: 'Poppins-regular',\r\n-        fontSize: 15,\r\n+        fontSize: 14,\r\n         color: '#6F6F6F'\r\n       },\r\n+\r\n+      inputUpdate: {\r\n+        padding: 10,\r\n+      }\r\n     \r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666013820594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -677,8 +677,9 @@\n       },\r\n \r\n       inputUpdate: {\r\n         padding: 10,\r\n+        marginLeft: 0,\r\n       }\r\n     \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666013866559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -676,10 +676,11 @@\n         color: '#6F6F6F'\r\n       },\r\n \r\n       inputUpdate: {\r\n-        padding: 10,\r\n+        paddingLeft: 10,\r\n         marginLeft: 0,\r\n+\r\n       }\r\n     \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666013873265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -677,9 +677,9 @@\n       },\r\n \r\n       inputUpdate: {\r\n         paddingLeft: 10,\r\n-        marginLeft: 0,\r\n+        \r\n \r\n       }\r\n     \r\n \r\n"
+                },
+                {
+                    "date": 1666013905180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -677,8 +677,9 @@\n       },\r\n \r\n       inputUpdate: {\r\n         paddingLeft: 10,\r\n+        marginTop: 5,\r\n         \r\n \r\n       }\r\n     \r\n"
+                },
+                {
+                    "date": 1666013959797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -677,9 +677,9 @@\n       },\r\n \r\n       inputUpdate: {\r\n         paddingLeft: 10,\r\n-        marginTop: 5,\r\n+        marginTop: 3,\r\n         \r\n \r\n       }\r\n     \r\n"
+                },
+                {
+                    "date": 1666013979045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -672,14 +672,16 @@\n       inputLabel: {\r\n \r\n         fontFamily: 'Poppins-regular',\r\n         fontSize: 14,\r\n-        color: '#6F6F6F'\r\n+        color: '#6F6F6F',\r\n+        marginLeft: 5,\r\n       },\r\n \r\n       inputUpdate: {\r\n         paddingLeft: 10,\r\n-        marginTop: 3,\r\n+        marginTop: 0,\r\n+\r\n         \r\n \r\n       }\r\n     \r\n"
+                },
+                {
+                    "date": 1666013987415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -671,9 +671,9 @@\n \r\n       inputLabel: {\r\n \r\n         fontFamily: 'Poppins-regular',\r\n-        fontSize: 14,\r\n+        fontSize: 16,\r\n         color: '#6F6F6F',\r\n         marginLeft: 5,\r\n       },\r\n \r\n"
+                },
+                {
+                    "date": 1666014359862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -651,41 +651,42 @@\n         height: 50,\r\n         width: 2,\r\n         backgroundColor: '#6F6F6F',\r\n         textAlignVertical: 'center'\r\n-      },\r\n-      addAppointment: {\r\n+    },\r\n+    addAppointment: {\r\n         position: 'absolute',\r\n         right: 40,\r\n         bottom: 50,\r\n-      },\r\n-      appointmentTxt: {\r\n+    },\r\n+    appointmentTxt: {\r\n         textAlign: \"center\",\r\n         flex: 1,\r\n         fontSize: 24,\r\n         fontFamily: 'Poppins-semibold',\r\n         marginTop: 40,\r\n         marginBottom: 25,\r\n         color: 'white',\r\n \r\n-      },\r\n+    },\r\n \r\n-      inputLabel: {\r\n+    inputLabel: {\r\n \r\n         fontFamily: 'Poppins-regular',\r\n         fontSize: 16,\r\n         color: '#6F6F6F',\r\n         marginLeft: 5,\r\n-      },\r\n+    },\r\n \r\n-      inputUpdate: {\r\n+    inputUpdate: {\r\n         paddingLeft: 10,\r\n         marginTop: 0,\r\n \r\n-        \r\n+    },\r\n+    dropUpdate: {\r\n+        margin: 5,\r\n+    },\r\n \r\n-      }\r\n-    \r\n \r\n \r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1666014372607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -682,9 +682,9 @@\n         marginTop: 0,\r\n \r\n     },\r\n     dropUpdate: {\r\n-        margin: 5,\r\n+        margin: 0,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666014404067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -679,13 +679,12 @@\n \r\n     inputUpdate: {\r\n         paddingLeft: 10,\r\n         marginTop: 0,\r\n+        marginHorizontal; 10,\r\n \r\n     },\r\n-    dropUpdate: {\r\n-        margin: 0,\r\n-    },\r\n+    \r\n \r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666014414430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -679,9 +679,9 @@\n \r\n     inputUpdate: {\r\n         paddingLeft: 10,\r\n         marginTop: 0,\r\n-        marginHorizontal; 10,\r\n+        marginHorizontal: -10,\r\n \r\n     },\r\n     \r\n \r\n"
+                },
+                {
+                    "date": 1666014480710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -679,12 +679,13 @@\n \r\n     inputUpdate: {\r\n         paddingLeft: 10,\r\n         marginTop: 0,\r\n-        marginHorizontal: -10,\r\n+        marginHorizontal: 0,\r\n \r\n     },\r\n     \r\n+    \r\n \r\n \r\n \r\n });\r\n"
                 }
             ],
             "date": 1664773148633,

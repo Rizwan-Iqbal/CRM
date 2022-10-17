@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 
     introTitle: {
         fontSize: 65,
-        fontFamily: 'Segoe-ui-bold',
+        fontFamily: 'Poppins-semibold',
         color: 'white',
     },
 
@@ -21,17 +21,17 @@ const styles = StyleSheet.create({
     SignInTitle: {
         fontSize: 24,
         fontFamily: 'Poppins-semibold',
-        textAlign: 'left',
         marginTop: 40,
         marginBottom: 25,
         color: 'white',
-        width: '75%',
+        textAlign: "center",
+        flex: 1,
 
 
     },
     backIcon: {
         marginLeft: 12,
-        width: '25%',
+        width: '10%',
         marginTop: 12,
         // paddingRight: 60
     },
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
         shadowRadius: 16.00,
         elevation: 16,
         paddingLeft: 30,
+        fontFamily: 'Poppins-regular',
     },
     rememberTxt: {
         color: '#6F6F6F',
@@ -271,6 +272,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         fontSize: 16,
         fontFamily: 'Poppins-semibold',
+
     },
 
     clientTopTxt: {
@@ -522,6 +524,7 @@ const styles = StyleSheet.create({
     },
     searchIconUpdate: {
         right: 37,
+        top: 20,
 
     },
     settingIcon: {
@@ -598,6 +601,91 @@ const styles = StyleSheet.create({
         marginVertical: 30,
         fontSize: 18,
     },
+
+    topTxtAppointment: {
+        textAlign: 'center',
+        marginTop: -12,
+        marginBottom: 10,
+    },
+
+    selectedDay: {
+        backgroundColor: 'red',
+    },
+    bottomAppointTxt: {
+        textAlign: 'center',
+        marginTop: 10,
+    },
+
+    appContainer: {
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        backgroundColor: 'white',
+        height: 'auto',
+        flexDirection: 'row',
+        padding: 15,
+        marginVertical: 3,
+    },
+    timeTxt: {
+        color: '#6F6F6F',
+        fontFamily: 'Poppins-semibold',
+        fontSize: 14,
+        marginRight: 20,
+    },
+
+    titleTxt: {
+        marginLeft: 20,
+        color: 'black',
+    },
+    subTxt: {
+        fontSize: 12,
+        marginLeft: 20,
+
+    },
+    verticalLine: {
+        height: 50,
+        width: 2,
+        backgroundColor: '#6F6F6F',
+        textAlignVertical: 'center'
+    },
+    addAppointment: {
+        position: 'absolute',
+        right: 40,
+        bottom: 50,
+    },
+    appointmentTxt: {
+        textAlign: "center",
+        flex: 1,
+        fontSize: 24,
+        fontFamily: 'Poppins-semibold',
+        marginTop: 40,
+        marginBottom: 25,
+        color: 'white',
+
+    },
+
+    inputLabel: {
+
+        fontFamily: 'Poppins-regular',
+        fontSize: 16,
+        color: '#6F6F6F',
+        marginLeft: 5,
+    },
+
+    inputUpdate: {
+        paddingLeft: 10,
+        marginTop: 0,
+        marginHorizontal: 0,
+
+    },
+    
+    
+
 
 
 });

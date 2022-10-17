@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/components/ThemedCalendar.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1665992769717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1665992908625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     />\r\n   );\r\n };\r\n \r\n- CustomTheme: Theme = {\r\n+const CustomTheme: Theme = {\r\n   ...DefaultTheme,\r\n   extraDayText: {\r\n     color: 'orange',\r\n   },\r\n"
+                },
+                {
+                    "date": 1665992928632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import { DateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar';\r\n \r\n+\r\n const ThemedCalendar = () => {\r\n   const [selectedDate, setSelectedDate] = React.useState('2020-02-01');\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1665992936022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { DateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar';\r\n+import React, { useState } from 'react';\r\n \r\n-\r\n const ThemedCalendar = () => {\r\n   const [selectedDate, setSelectedDate] = React.useState('2020-02-01');\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1665993056337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n };\r\n \r\n const CustomTheme: Theme = {\r\n   ...DefaultTheme,\r\n-  extraDayText: {\r\n+  selectedDayText: {\r\n     color: 'orange',\r\n   },\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1665993064480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n };\r\n \r\n const CustomTheme: Theme = {\r\n   ...DefaultTheme,\r\n-  selectedDayText: {\r\n+  selectedDay: {\r\n     color: 'orange',\r\n   },\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1665993087675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n const CustomTheme: Theme = {\r\n   ...DefaultTheme,\r\n   selectedDay: {\r\n-    color: 'orange',\r\n+    background: 'red',\r\n   },\r\n };\r\n \r\n export default ThemedCalendar;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665993093903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n const CustomTheme: Theme = {\r\n   ...DefaultTheme,\r\n   selectedDay: {\r\n-    background: 'red',\r\n+    backgroundColor: 'red',\r\n   },\r\n };\r\n \r\n export default ThemedCalendar;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1665993179200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n };\r\n \r\n const CustomTheme: Theme = {\r\n   ...DefaultTheme,\r\n-  selectedDay: {\r\n+  selectedDayContainer: {\r\n     backgroundColor: 'red',\r\n   },\r\n };\r\n \r\n"
+                }
+            ],
+            "date": 1665992769717,
+            "name": "Commit-0",
+            "content": "import { DateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar';\r\n\r\nconst ThemedCalendar = () => {\r\n  const [selectedDate, setSelectedDate] = React.useState('2020-02-01');\r\n\r\n  return (\r\n    <DateSelectionCalendar\r\n      theme={CustomTheme}\r\n      onSelectDate={setSelectedDate}\r\n      selectedDate={selectedDate}\r\n    />\r\n  );\r\n};\r\n\r\n CustomTheme: Theme = {\r\n  ...DefaultTheme,\r\n  extraDayText: {\r\n    color: 'orange',\r\n  },\r\n};\r\n\r\nexport default ThemedCalendar;"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Example.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1665988870539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1665988870539,
+            "name": "Commit-0",
+            "content": "import { MultiDateSelectionCalendar, DefaultTheme } from 'react-native-easy-calendar'\r\nimport frenchLocale from 'dayjs/locale/fr';\r\n\r\nconst Example = () => {\r\n  const [selectedDates, setSelectedDates] = React.useState<string[]>([]);\r\n  const [selectedDates, setSelectedDates] = React.useState<string[]>(['2020-01-01']); // Also possible\r\n\r\n\r\n  const setMaxNumberOfSelectedDates = React.useCallback((_selectedDates: string[]) => {\r\n    const MAX_DATES = 3;\r\n    if (_selectedDates.length <= MAX_DATES) {\r\n      setSelectedDates(_selectedDates)\r\n    }\r\n  })\r\n\r\n  return (\r\n    <MultiDateSelectionCalendar\r\n      {/* The following props are optional */}\r\n      disabledDates={['2020-01-01', '2020-03-04']}\r\n      initVisibleDate={'2020-02-10'} // defaults to current date\r\n      minDate={'2020-01-10'};\r\n      maxDate={'2020-04-10'};\r\n      allowYearView={true};\r\n      showExtraDates={false};\r\n      testID={'my-calendar-component'};\r\n      locale={frenchLocale}; // defaults to en-CA\r\n      theme={DefaultTheme};\r\n      {/* The following props are required */}\r\n      onSelectDates={setMaxNumberOfSelectedDates}\r\n      selectedDates={selectedDates}\r\n    />\r\n  );\r\n};"
+        }
+    ]
+}
