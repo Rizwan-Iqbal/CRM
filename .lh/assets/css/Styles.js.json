@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1389,
+            "activePatchIndex": 1455,
             "patches": [
                 {
                     "date": 1664773148633,
@@ -5564,6 +5564,270 @@
                 {
                     "date": 1666014480710,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -679,12 +679,13 @@\n \r\n     inputUpdate: {\r\n         paddingLeft: 10,\r\n         marginTop: 0,\r\n-        marginHorizontal: -10,\r\n+        marginHorizontal: 0,\r\n \r\n     },\r\n     \r\n+    \r\n \r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666068075358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -673,9 +673,9 @@\n \r\n         fontFamily: 'Poppins-regular',\r\n         fontSize: 16,\r\n         color: '#6F6F6F',\r\n-        marginLeft: 5,\r\n+        marginLeft: 2,\r\n     },\r\n \r\n     inputUpdate: {\r\n         paddingLeft: 10,\r\n@@ -683,11 +683,9 @@\n         marginHorizontal: 0,\r\n \r\n     },\r\n     \r\n-    \r\n \r\n \r\n-\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1666068080863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -673,9 +673,9 @@\n \r\n         fontFamily: 'Poppins-regular',\r\n         fontSize: 16,\r\n         color: '#6F6F6F',\r\n-        marginLeft: 2,\r\n+        marginLeft: 0,\r\n     },\r\n \r\n     inputUpdate: {\r\n         paddingLeft: 10,\r\n"
+                },
+                {
+                    "date": 1666068086736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -673,9 +673,9 @@\n \r\n         fontFamily: 'Poppins-regular',\r\n         fontSize: 16,\r\n         color: '#6F6F6F',\r\n-        marginLeft: 0,\r\n+        marginLeft: 2,\r\n     },\r\n \r\n     inputUpdate: {\r\n         paddingLeft: 10,\r\n"
+                },
+                {
+                    "date": 1666068232367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -684,8 +684,12 @@\n \r\n     },\r\n     \r\n \r\n+    selectOpt: {\r\n+        opacity: 0.5,\r\n+    }\r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1666068242086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -685,9 +685,9 @@\n     },\r\n     \r\n \r\n     selectOpt: {\r\n-        opacity: 0.5,\r\n+        // opacity: 0.5,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666068252326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -685,9 +685,9 @@\n     },\r\n     \r\n \r\n     selectOpt: {\r\n-        // opacity: 0.5,\r\n+        opacity: 0,\r\n     }\r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666068452497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -684,12 +684,10 @@\n \r\n     },\r\n     \r\n \r\n-    selectOpt: {\r\n-        opacity: 0,\r\n-    }\r\n \r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1666068534033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -671,9 +671,9 @@\n \r\n     inputLabel: {\r\n \r\n         fontFamily: 'Poppins-regular',\r\n-        fontSize: 16,\r\n+        fontSize: 14,\r\n         color: '#6F6F6F',\r\n         marginLeft: 2,\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1666068608205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -680,8 +680,9 @@\n     inputUpdate: {\r\n         paddingLeft: 10,\r\n         marginTop: 0,\r\n         marginHorizontal: 0,\r\n+        marginVertical: 10,\r\n \r\n     },\r\n     \r\n \r\n"
+                },
+                {
+                    "date": 1666068831819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -576,8 +576,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n+        fontSize: 3,\r\n \r\n     },\r\n \r\n     pickerItems: {\r\n"
+                },
+                {
+                    "date": 1666068842712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -576,9 +576,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n         backgroundColor: 'white',\r\n-        fontSize: 3,\r\n+        \r\n \r\n     },\r\n \r\n     pickerItems: {\r\n"
+                },
+                {
+                    "date": 1666069950235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -575,10 +575,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n-        backgroundColor: 'white',\r\n-        \r\n+        backgroundColor: 'white',     \r\n \r\n     },\r\n \r\n     pickerItems: {\r\n"
+                },
+                {
+                    "date": 1666078978642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -683,8 +683,11 @@\n         marginHorizontal: 0,\r\n         marginVertical: 10,\r\n \r\n     },\r\n+    inputLabelUpdate: {\r\n+marginTop: 10,\r\n+    },\r\n     \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666078988183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -575,9 +575,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 6,\r\n-        backgroundColor: 'white',     \r\n+        backgroundColor: 'white',\r\n \r\n     },\r\n \r\n     pickerItems: {\r\n@@ -683,15 +683,16 @@\n         marginHorizontal: 0,\r\n         marginVertical: 10,\r\n \r\n     },\r\n+    \r\n     inputLabelUpdate: {\r\n-marginTop: 10,\r\n+        marginTop: 10,\r\n     },\r\n-    \r\n \r\n \r\n \r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1666078998759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -683,11 +683,11 @@\n         marginHorizontal: 0,\r\n         marginVertical: 10,\r\n \r\n     },\r\n-    \r\n+\r\n     inputLabelUpdate: {\r\n-        marginTop: 10,\r\n+        marginTop: 20,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666079007555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -685,9 +685,9 @@\n \r\n     },\r\n \r\n     inputLabelUpdate: {\r\n-        marginTop: 20,\r\n+        marginTop: 15,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666079220072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -685,14 +685,18 @@\n \r\n     },\r\n \r\n     inputLabelUpdate: {\r\n-        marginTop: 15,\r\n+        marginTop: 12,\r\n     },\r\n \r\n+    topTxtUp: {\r\n+        textAlign: 'center',\r\n+    },\r\n \r\n \r\n \r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1666079241495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -690,8 +690,9 @@\n     },\r\n \r\n     topTxtUp: {\r\n         textAlign: 'center',\r\n+        marginTop: 15,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666083687713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -692,8 +692,11 @@\n     topTxtUp: {\r\n         textAlign: 'center',\r\n         marginTop: 15,\r\n     },\r\n+    date: {\r\n+        \r\n+    }\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666083694785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -693,9 +693,18 @@\n         textAlign: 'center',\r\n         marginTop: 15,\r\n     },\r\n     date: {\r\n-        \r\n+        shadowColor: \"#6F6F6F\",\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 12,\r\n+        },\r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n+        elevation: 16,\r\n+        backgroundColor: 'white',\r\n+\r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666083705887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -692,8 +692,9 @@\n     topTxtUp: {\r\n         textAlign: 'center',\r\n         marginTop: 15,\r\n     },\r\n+    \r\n     date: {\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1666083844469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -692,9 +692,9 @@\n     topTxtUp: {\r\n         textAlign: 'center',\r\n         marginTop: 15,\r\n     },\r\n-    \r\n+\r\n     date: {\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n@@ -703,8 +703,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         backgroundColor: 'white',\r\n+        color: 'black',\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666085289116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -704,8 +704,10 @@\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         backgroundColor: 'white',\r\n         color: 'black',\r\n+        width: '100%',\r\n+        height: 50,\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666085354436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -706,8 +706,9 @@\n         backgroundColor: 'white',\r\n         color: 'black',\r\n         width: '100%',\r\n         height: 50,\r\n+        borderRadius: 10,\r\n \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666085441858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -703,9 +703,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         backgroundColor: 'white',\r\n-        color: 'black',\r\n+        color: '#6f6f6fb3',\r\n         width: '100%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n \r\n"
+                },
+                {
+                    "date": 1666085451105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -703,9 +703,8 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         backgroundColor: 'white',\r\n-        color: '#6f6f6fb3',\r\n         width: '100%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n \r\n"
+                },
+                {
+                    "date": 1666085727161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -707,9 +707,12 @@\n         width: '100%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n \r\n-    }\r\n+    },\r\n+    dateIcon: {\r\n+        position\r\n+    },\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666085757129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -706,12 +706,14 @@\n         backgroundColor: 'white',\r\n         width: '100%',\r\n         height: 50,\r\n         borderRadius: 10,\r\n+        position: 'relative',\r\n \r\n     },\r\n     dateIcon: {\r\n-        position\r\n+        position: 'absolute',\r\n+        \r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666085766914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -711,9 +711,9 @@\n \r\n     },\r\n     dateIcon: {\r\n         position: 'absolute',\r\n-        \r\n+        right: 20,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666085776991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -712,8 +712,9 @@\n     },\r\n     dateIcon: {\r\n         position: 'absolute',\r\n         right: 20,\r\n+        top: 10,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666085814800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -712,9 +712,9 @@\n     },\r\n     dateIcon: {\r\n         position: 'absolute',\r\n         right: 20,\r\n-        top: 10,\r\n+        top: 40,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666085820226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -712,9 +712,9 @@\n     },\r\n     dateIcon: {\r\n         position: 'absolute',\r\n         right: 20,\r\n-        top: 40,\r\n+        top: 35,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666086680639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -712,9 +712,9 @@\n     },\r\n     dateIcon: {\r\n         position: 'absolute',\r\n         right: 20,\r\n-        top: 35,\r\n+        top: 38,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666086792465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,9 +553,9 @@\n         bottom: 70,\r\n \r\n     },\r\n     textArea: {\r\n-        height: 'auto',\r\n+        height: '50',\r\n         paddingLeft: 10,\r\n         paddingTop: 5,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n"
+                },
+                {
+                    "date": 1666086880607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -559,9 +559,8 @@\n         paddingTop: 5,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n         fontFamily: 'Poppins-regular',\r\n-\r\n     },\r\n     drop: {\r\n         borderRadius: 10,\r\n         // borderWidth: 1,\r\n"
+                },
+                {
+                    "date": 1666086918319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,14 +553,15 @@\n         bottom: 70,\r\n \r\n     },\r\n     textArea: {\r\n-        height: '50',\r\n+        height: 'auto',\r\n         paddingLeft: 10,\r\n         paddingTop: 5,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n         fontFamily: 'Poppins-regular',\r\n+\r\n     },\r\n     drop: {\r\n         borderRadius: 10,\r\n         // borderWidth: 1,\r\n"
+                },
+                {
+                    "date": 1666086983824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,9 +553,9 @@\n         bottom: 70,\r\n \r\n     },\r\n     textArea: {\r\n-        height: 'auto',\r\n+        height: 50,\r\n         paddingLeft: 10,\r\n         paddingTop: 5,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n"
+                },
+                {
+                    "date": 1666087030724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -555,9 +555,9 @@\n     },\r\n     textArea: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n-        paddingTop: 5,\r\n+        paddingTop: 15,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n         fontFamily: 'Poppins-regular',\r\n \r\n"
+                },
+                {
+                    "date": 1666087036469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -555,9 +555,9 @@\n     },\r\n     textArea: {\r\n         height: 50,\r\n         paddingLeft: 10,\r\n-        paddingTop: 15,\r\n+        paddingTop: 10,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n         fontFamily: 'Poppins-regular',\r\n \r\n"
+                },
+                {
+                    "date": 1666095538076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,9 +553,9 @@\n         bottom: 70,\r\n \r\n     },\r\n     textArea: {\r\n-        height: 50,\r\n+        height: 'auto',\r\n         paddingLeft: 10,\r\n         paddingTop: 10,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n"
+                },
+                {
+                    "date": 1666095788971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -553,9 +553,9 @@\n         bottom: 70,\r\n \r\n     },\r\n     textArea: {\r\n-        height: 'auto',\r\n+        height: 'auto' ,\r\n         paddingLeft: 10,\r\n         paddingTop: 10,\r\n         margin: 0,\r\n         textAlignVertical: 'top',\r\n"
+                },
+                {
+                    "date": 1666097873075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -252,9 +252,9 @@\n     },\r\n \r\n     userDetail: {\r\n         flexDirection: 'column',\r\n-        margin: 7,\r\n+        // margin: 7,\r\n     },\r\n \r\n     userName: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666097892221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -233,10 +233,10 @@\n         marginTop: 30,\r\n \r\n     },\r\n     profile: {\r\n-        width: 60,\r\n-        height: 60,\r\n+        // width: 60,\r\n+        // height: 60,\r\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n@@ -252,9 +252,9 @@\n     },\r\n \r\n     userDetail: {\r\n         flexDirection: 'column',\r\n-        // margin: 7,\r\n+        margin: 7,\r\n     },\r\n \r\n     userName: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666097901804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -233,10 +233,10 @@\n         marginTop: 30,\r\n \r\n     },\r\n     profile: {\r\n-        // width: 60,\r\n-        // height: 60,\r\n+        width: 30,\r\n+        height: 30,\r\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1666097908626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -233,10 +233,10 @@\n         marginTop: 30,\r\n \r\n     },\r\n     profile: {\r\n-        width: 30,\r\n-        height: 30,\r\n+        width: 60,\r\n+        height: 60,\r\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1666097921126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        marginBottom: 15,\r\n+        // marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666097929007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -239,9 +239,9 @@\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n-        margin: 10,\r\n+        // margin: 10,\r\n         // marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n"
+                },
+                {
+                    "date": 1666097950900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -239,10 +239,10 @@\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n-        // margin: 10,\r\n-        // marginBottom: 15,\r\n+        margin: 10,\r\n+        marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666097984991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        marginBottom: 15,\r\n+        // marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666097999203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        // marginBottom: 15,\r\n+        marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098005128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        marginBottom: 15,\r\n+        // marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098014521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        // marginBottom: 15,\r\n+        marginBottom: -5,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098027543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        marginBottom: -5,\r\n+        marginBottom: -7,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098039781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        marginBottom: -7,\r\n+        marginBottom: -5,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098045970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        marginBottom: -5,\r\n+        marginBottom: 0,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098111434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         margin: 10,\r\n-        marginBottom: 0,\r\n+        marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098136596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -239,10 +239,10 @@\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n-        margin: 10,\r\n-        marginBottom: 15,\r\n+        // margin: 10,\r\n+        // marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098211516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -235,8 +235,9 @@\n     },\r\n     profile: {\r\n         width: 60,\r\n         height: 60,\r\n+        margin: 10,\r\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1666098242734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -235,9 +235,8 @@\n     },\r\n     profile: {\r\n         width: 60,\r\n         height: 60,\r\n-        margin: 10,\r\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1666098370272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -233,10 +233,10 @@\n         marginTop: 30,\r\n \r\n     },\r\n     profile: {\r\n-        width: 60,\r\n-        height: 60,\r\n+        width: 50,\r\n+        height: 50,\r\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n"
+                },
+                {
+                    "date": 1666098398097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -239,9 +239,9 @@\n     },\r\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n-        // margin: 10,\r\n+        marginLeft: 10,\r\n         // marginBottom: 15,\r\n     },\r\n \r\n     userWelcome: {\r\n"
+                },
+                {
+                    "date": 1666098460810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,9 +263,9 @@\n     },\r\n \r\n     homeContainer: {\r\n         marginHorizontal: 15,\r\n-        marginTop: -5,\r\n+        // marginTop: -5,\r\n \r\n     },\r\n     topTxt: {\r\n         color: '#474747',\r\n"
+                },
+                {
+                    "date": 1666098489416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -264,8 +264,9 @@\n \r\n     homeContainer: {\r\n         marginHorizontal: 15,\r\n         // marginTop: -5,\r\n+        marginVertical: 10,\r\n \r\n     },\r\n     topTxt: {\r\n         color: '#474747',\r\n"
+                },
+                {
+                    "date": 1666098693706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         marginLeft: 10,\r\n-        // marginBottom: 15,\r\n+        marginBottom: -2,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098699465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         marginLeft: 10,\r\n-        marginBottom: -2,\r\n+        marginBottom: -3,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
+                },
+                {
+                    "date": 1666098722243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -240,9 +240,9 @@\n \r\n     profileContainer: {\r\n         flexDirection: 'row',\r\n         marginLeft: 10,\r\n-        marginBottom: -3,\r\n+        // marginBottom: -3,\r\n     },\r\n \r\n     userWelcome: {\r\n         color: 'white',\r\n"
                 }
             ],
             "date": 1664773148633,

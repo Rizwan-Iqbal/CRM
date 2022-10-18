@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 266,
+            "activePatchIndex": 293,
             "patches": [
                 {
                     "date": 1664454463276,
@@ -1072,6 +1072,114 @@
                 {
                     "date": 1666014211278,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <Supp />\r\n+        <AddOppointmentScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666076262870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n+import DatePickerApp from './src/components/DatePickerApp';\r\n \r\n \r\n \r\n \r\n@@ -58,9 +59,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <AddOppointmentScreen />\r\n+        <DatePickerApp />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666078471870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <DatePickerApp />\r\n+        <AddOppointmentScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666078504848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n-import DatePickerApp from './src/components/DatePickerApp';\r\n+// import DatePickerApp from './src/components/DatePickerApp';\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666080521763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n import SearchScreen from './src/components/SearchScreen';\r\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n-// import DatePickerApp from './src/components/DatePickerApp';\r\n+import DatePickerApp from './src/components/DatePickerApp';\r\n \r\n \r\n \r\n \r\n@@ -59,9 +59,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <AddOppointmentScreen />\r\n+        <DatePickerApp />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666081358336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n       \r\n       <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <DatePickerApp />\r\n+        <AddOppointmentScreen />\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666082889323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,8 @@\n import BookingScreen from './src/components/BookingScreen';\r\n import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n import DatePickerApp from './src/components/DatePickerApp';\r\n \r\n-\r\n-\r\n-\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1666089499825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,11 @@\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n import DatePickerApp from './src/components/DatePickerApp';\r\n+import { Ionicons } from '@expo/vector-icons';\r\n+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n+import { NavigationContainer } from '@react-navigation/native';\r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n"
+                },
+                {
+                    "date": 1666089564916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,11 +57,37 @@\n     // </View>\r\n \r\n     <KeyboardAvoidingView\r\n       behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"}>\r\n-      \r\n-      <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>\r\n-        <AddOppointmentScreen />\r\n+\r\n+      <View style={{ height: '100%' }} onLayout={onLayoutRootView}>\r\n+        {/* <AddOppointmentScreen /> */}\r\n+\r\n+        <NavigationContainer>\r\n+          <Tab.Navigator\r\n+            screenOptions={({ route }) => ({\r\n+              tabBarIcon: ({ focused, color, size }) => {\r\n+                let iconName;\r\n+\r\n+                if (route.name === 'Home') {\r\n+                  iconName = focused\r\n+                    ? 'ios-information-circle'\r\n+                    : 'ios-information-circle-outline';\r\n+                } else if (route.name === 'Settings') {\r\n+                  iconName = focused ? 'ios-list-box' : 'ios-list';\r\n+                }\r\n+\r\n+                // You can return any component that you like here!\r\n+                return <Ionicons name={iconName} size={size} color={color} />;\r\n+              },\r\n+              tabBarActiveTintColor: 'tomato',\r\n+              tabBarInactiveTintColor: 'gray',\r\n+            })}\r\n+          >\r\n+            <Tab.Screen name=\"Home\" component={HomeScreen} />\r\n+            <Tab.Screen name=\"Settings\" component={SettingsScreen} />\r\n+          </Tab.Navigator>\r\n+        </NavigationContainer>\r\n       </View>\r\n \r\n     </KeyboardAvoidingView>\r\n \r\n"
+                },
+                {
+                    "date": 1666090906798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,10 @@\n import { Ionicons } from '@expo/vector-icons';\r\n import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n \r\n+const Tab = createBottomTabNavigator();\r\n+\r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n     'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),\r\n     'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),\r\n"
+                },
+                {
+                    "date": 1666090991281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,13 +69,13 @@\n             screenOptions={({ route }) => ({\r\n               tabBarIcon: ({ focused, color, size }) => {\r\n                 let iconName;\r\n \r\n-                if (route.name === 'Home') {\r\n+                if (route.name === 'Add Oppointment') {\r\n                   iconName = focused\r\n                     ? 'ios-information-circle'\r\n                     : 'ios-information-circle-outline';\r\n-                } else if (route.name === 'Settings') {\r\n+                } else if (route.name === 'Client') {\r\n                   iconName = focused ? 'ios-list-box' : 'ios-list';\r\n                 }\r\n \r\n                 // You can return any component that you like here!\r\n@@ -84,10 +84,10 @@\n               tabBarActiveTintColor: 'tomato',\r\n               tabBarInactiveTintColor: 'gray',\r\n             })}\r\n           >\r\n-            <Tab.Screen name=\"Home\" component={HomeScreen} />\r\n-            <Tab.Screen name=\"Settings\" component={SettingsScreen} />\r\n+            <Tab.Screen name=\"Add Oppointment\" component={AddOppointmentScreen} />\r\n+            <Tab.Screen name=\"Client\" component={ClientScreen} />\r\n           </Tab.Navigator>\r\n         </NavigationContainer>\r\n       </View>\r\n \r\n"
+                },
+                {
+                    "date": 1666092927279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n               tabBarActiveTintColor: 'tomato',\r\n               tabBarInactiveTintColor: 'gray',\r\n             })}\r\n           >\r\n-            <Tab.Screen name=\"Add Oppointment\" component={AddOppointmentScreen} />\r\n+            <Tab.Screen name=\"Home\" component={HomeScreen} />\r\n             <Tab.Screen name=\"Client\" component={ClientScreen} />\r\n           </Tab.Navigator>\r\n         </NavigationContainer>\r\n       </View>\r\n"
+                },
+                {
+                    "date": 1666092937189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n               tabBarInactiveTintColor: 'gray',\r\n             })}\r\n           >\r\n             <Tab.Screen name=\"Home\" component={HomeScreen} />\r\n-            <Tab.Screen name=\"Client\" component={ClientScreen} />\r\n+            <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n           </Tab.Navigator>\r\n         </NavigationContainer>\r\n       </View>\r\n \r\n"
+                },
+                {
+                    "date": 1666093046941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,13 +69,13 @@\n             screenOptions={({ route }) => ({\r\n               tabBarIcon: ({ focused, color, size }) => {\r\n                 let iconName;\r\n \r\n-                if (route.name === 'Add Oppointment') {\r\n+                if (route.name === 'Home') {\r\n                   iconName = focused\r\n                     ? 'ios-information-circle'\r\n                     : 'ios-information-circle-outline';\r\n-                } else if (route.name === 'Client') {\r\n+                } else if (route.name === 'Clients') {\r\n                   iconName = focused ? 'ios-list-box' : 'ios-list';\r\n                 }\r\n \r\n                 // You can return any component that you like here!\r\n"
+                },
+                {
+                    "date": 1666093680252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,11 @@\n import DatePickerApp from './src/components/DatePickerApp';\r\n import { Ionicons } from '@expo/vector-icons';\r\n import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n+import Ionicons from 'react-native-vector-icons/Ionicons';\r\n \r\n+\r\n const Tab = createBottomTabNavigator();\r\n \r\n export default function App() {\r\n   const [fontsLoaded] = useFonts({\r\n"
+                },
+                {
+                    "date": 1666093712232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n import EmptySearchScreen from './src/components/EmptySearchScreen';\r\n import BookingScreen from './src/components/BookingScreen';\r\n import AddOppointmentScreen from './src/components/AddOppointmentScreen';\r\n import DatePickerApp from './src/components/DatePickerApp';\r\n-import { Ionicons } from '@expo/vector-icons';\r\n import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n import Ionicons from 'react-native-vector-icons/Ionicons';\r\n \r\n"
+                },
+                {
+                    "date": 1666093918215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,10 +72,10 @@\n                 let iconName;\r\n \r\n                 if (route.name === 'Home') {\r\n                   iconName = focused\r\n-                    ? 'ios-information-circle'\r\n-                    : 'ios-information-circle-outline';\r\n+                    ? 'home'\r\n+                    : 'home';\r\n                 } else if (route.name === 'Clients') {\r\n                   iconName = focused ? 'ios-list-box' : 'ios-list';\r\n                 }\r\n \r\n"
+                },
+                {
+                    "date": 1666093941137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n                   iconName = focused\r\n                     ? 'home'\r\n                     : 'home';\r\n                 } else if (route.name === 'Clients') {\r\n-                  iconName = focused ? 'ios-list-box' : 'ios-list';\r\n+                  iconName = focused ? 'users' : 'user';\r\n                 }\r\n \r\n                 // You can return any component that you like here!\r\n                 return <Ionicons name={iconName} size={size} color={color} />;\r\n"
+                },
+                {
+                    "date": 1666093950671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n                   iconName = focused\r\n                     ? 'home'\r\n                     : 'home';\r\n                 } else if (route.name === 'Clients') {\r\n-                  iconName = focused ? 'users' : 'user';\r\n+                  iconName = focused ? 'users' : 'users';\r\n                 }\r\n \r\n                 // You can return any component that you like here!\r\n                 return <Ionicons name={iconName} size={size} color={color} />;\r\n"
+                },
+                {
+                    "date": 1666093966574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n                   iconName = focused\r\n                     ? 'home'\r\n                     : 'home';\r\n                 } else if (route.name === 'Clients') {\r\n-                  iconName = focused ? 'users' : 'users';\r\n+                  iconName = focused ? 'person' : 'person';\r\n                 }\r\n \r\n                 // You can return any component that you like here!\r\n                 return <Ionicons name={iconName} size={size} color={color} />;\r\n"
+                },
+                {
+                    "date": 1666093972662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n                   iconName = focused\r\n                     ? 'home'\r\n                     : 'home';\r\n                 } else if (route.name === 'Clients') {\r\n-                  iconName = focused ? 'person' : 'person';\r\n+                  iconName = focused ? 'persons' : 'persons';\r\n                 }\r\n \r\n                 // You can return any component that you like here!\r\n                 return <Ionicons name={iconName} size={size} color={color} />;\r\n"
+                },
+                {
+                    "date": 1666094006456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n                   iconName = focused\r\n                     ? 'home'\r\n                     : 'home';\r\n                 } else if (route.name === 'Clients') {\r\n-                  iconName = focused ? 'persons' : 'persons';\r\n+                  iconName = focused ? 'person' : 'person';\r\n                 }\r\n \r\n                 // You can return any component that you like here!\r\n                 return <Ionicons name={iconName} size={size} color={color} />;\r\n@@ -87,8 +87,11 @@\n             })}\r\n           >\r\n             <Tab.Screen name=\"Home\" component={HomeScreen} />\r\n             <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n+            <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n+            <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n+            <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n           </Tab.Navigator>\r\n         </NavigationContainer>\r\n       </View>\r\n \r\n"
+                },
+                {
+                    "date": 1666094077529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,11 +87,11 @@\n             })}\r\n           >\r\n             <Tab.Screen name=\"Home\" component={HomeScreen} />\r\n             <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n-            <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n-            <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n-            <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n+            <Tab.Screen name=\"Booking\" component={BookingScreen} />\r\n+            <Tab.Screen name=\"Support\" component={SupportScreen} />\r\n+            <Tab.Screen name=\"Notification\" component={NotificationScreen} />\r\n           </Tab.Navigator>\r\n         </NavigationContainer>\r\n       </View>\r\n \r\n"
+                },
+                {
+                    "date": 1666094132967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,20 @@\n                 } else if (route.name === 'Clients') {\r\n                   iconName = focused ? 'person' : 'person';\r\n                 }\r\n \r\n+                else if (route.name === 'Booking') {\r\n+                  iconName = focused ? 'person' : 'person';\r\n+                }\r\n+\r\n+                else if (route.name === 'Support') {\r\n+                  iconName = focused ? 'person' : 'person';\r\n+                }\r\n+\r\n+                else if (route.name === 'Notification') {\r\n+                  iconName = focused ? 'person' : 'person';\r\n+                }\r\n+\r\n                 // You can return any component that you like here!\r\n                 return <Ionicons name={iconName} size={size} color={color} />;\r\n               },\r\n               tabBarActiveTintColor: 'tomato',\r\n"
+                },
+                {
+                    "date": 1666094270450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n                 return <Ionicons name={iconName} size={size} color={color} />;\r\n               },\r\n               tabBarActiveTintColor: 'tomato',\r\n               tabBarInactiveTintColor: 'gray',\r\n+              headerShown = {'false'},\r\n             })}\r\n           >\r\n             <Tab.Screen name=\"Home\" component={HomeScreen} />\r\n             <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n"
+                },
+                {
+                    "date": 1666094282852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n                 return <Ionicons name={iconName} size={size} color={color} />;\r\n               },\r\n               tabBarActiveTintColor: 'tomato',\r\n               tabBarInactiveTintColor: 'gray',\r\n-              headerShown = {'false'},\r\n+              headerShown: false\r\n             })}\r\n           >\r\n             <Tab.Screen name=\"Home\" component={HomeScreen} />\r\n             <Tab.Screen name=\"Clients\" component={ClientScreen} />\r\n"
+                },
+                {
+                    "date": 1666094447692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n                   iconName = focused ? 'person' : 'person';\r\n                 }\r\n \r\n                 else if (route.name === 'Support') {\r\n-                  iconName = focused ? 'person' : 'person';\r\n+                  iconName = focused ? 'leftcircle' : 'leftcircle';\r\n                 }\r\n \r\n                 else if (route.name === 'Notification') {\r\n                   iconName = focused ? 'person' : 'person';\r\n"
+                },
+                {
+                    "date": 1666094741672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n                   iconName = focused ? 'person' : 'person';\r\n                 }\r\n \r\n                 else if (route.name === 'Support') {\r\n-                  iconName = focused ? 'leftcircle' : 'leftcircle';\r\n+                  iconName = focused ? 'finger-print-outline' : 'finger-print-outline';\r\n                 }\r\n \r\n                 else if (route.name === 'Notification') {\r\n                   iconName = focused ? 'person' : 'person';\r\n"
                 }
             ],
             "date": 1664454463276,

@@ -234,14 +234,14 @@ const styles = StyleSheet.create({
 
     },
     profile: {
-        width: 60,
-        height: 60,
+        width: 50,
+        height: 50,
     },
 
     profileContainer: {
         flexDirection: 'row',
-        margin: 10,
-        marginBottom: 15,
+        marginLeft: 10,
+        // marginBottom: -3,
     },
 
     userWelcome: {
@@ -264,7 +264,8 @@ const styles = StyleSheet.create({
 
     homeContainer: {
         marginHorizontal: 15,
-        marginTop: -5,
+        // marginTop: -5,
+        marginVertical: 10,
 
     },
     topTxt: {
@@ -554,9 +555,9 @@ const styles = StyleSheet.create({
 
     },
     textArea: {
-        height: 'auto',
+        height: 'auto' ,
         paddingLeft: 10,
-        paddingTop: 5,
+        paddingTop: 10,
         margin: 0,
         textAlignVertical: 'top',
         fontFamily: 'Poppins-regular',
@@ -672,19 +673,51 @@ const styles = StyleSheet.create({
     inputLabel: {
 
         fontFamily: 'Poppins-regular',
-        fontSize: 16,
+        fontSize: 14,
         color: '#6F6F6F',
-        marginLeft: 5,
+        marginLeft: 2,
     },
 
     inputUpdate: {
         paddingLeft: 10,
         marginTop: 0,
         marginHorizontal: 0,
+        marginVertical: 10,
 
     },
-    
-    
+
+    inputLabelUpdate: {
+        marginTop: 12,
+    },
+
+    topTxtUp: {
+        textAlign: 'center',
+        marginTop: 15,
+    },
+
+    date: {
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        backgroundColor: 'white',
+        width: '100%',
+        height: 50,
+        borderRadius: 10,
+        position: 'relative',
+
+    },
+    dateIcon: {
+        position: 'absolute',
+        right: 20,
+        top: 38,
+    },
+
+
 
 
 

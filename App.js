@@ -20,9 +20,13 @@ import SearchScreen from './src/components/SearchScreen';
 import EmptySearchScreen from './src/components/EmptySearchScreen';
 import BookingScreen from './src/components/BookingScreen';
 import AddOppointmentScreen from './src/components/AddOppointmentScreen';
+import DatePickerApp from './src/components/DatePickerApp';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
-
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -57,9 +61,51 @@ export default function App() {
 
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}>
-      
-      <View style ={{ height: '100%'}} onLayout={onLayoutRootView}>
-        <AddOppointmentScreen />
+
+      <View style={{ height: '100%' }} onLayout={onLayoutRootView}>
+        {/* <AddOppointmentScreen /> */}
+
+        <NavigationContainer>
+          <Tab.Navigator
+            screenOptions={({ route }) => ({
+              tabBarIcon: ({ focused, color, size }) => {
+                let iconName;
+
+                if (route.name === 'Home') {
+                  iconName = focused
+                    ? 'home'
+                    : 'home';
+                } else if (route.name === 'Clients') {
+                  iconName = focused ? 'person' : 'person';
+                }
+
+                else if (route.name === 'Booking') {
+                  iconName = focused ? 'person' : 'person';
+                }
+
+                else if (route.name === 'Support') {
+                  iconName = focused ? 'finger-print-outline' : 'finger-print-outline';
+                }
+
+                else if (route.name === 'Notification') {
+                  iconName = focused ? 'person' : 'person';
+                }
+
+                // You can return any component that you like here!
+                return <Ionicons name={iconName} size={size} color={color} />;
+              },
+              tabBarActiveTintColor: 'tomato',
+              tabBarInactiveTintColor: 'gray',
+              headerShown: false
+            })}
+          >
+            <Tab.Screen name="Home" component={HomeScreen} />
+            <Tab.Screen name="Clients" component={ClientScreen} />
+            <Tab.Screen name="Booking" component={BookingScreen} />
+            <Tab.Screen name="Support" component={SupportScreen} />
+            <Tab.Screen name="Notification" component={NotificationScreen} />
+          </Tab.Navigator>
+        </NavigationContainer>
       </View>
 
     </KeyboardAvoidingView>

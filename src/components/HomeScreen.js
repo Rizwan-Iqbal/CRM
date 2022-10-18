@@ -1,49 +1,46 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, Image, KeyboardAvoidingView, ScrollView, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
 import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import OTPInputView from '@twotalltotems/react-native-otp-input';
-import RnOtpTimer from 'rn-otp-timer';
+// import OTPInputView from '@twotalltotems/react-native-otp-input';
+// import RnOtpTimer from 'rn-otp-timer';
 
 const HomeScreen = () => {
-    const [isSelected, setSelection] = useState(false);
-
-
-    // const email = <FontAwesome5 name={'email'} />;
+    // const [isSelected, setSelection] = useState(false);
 
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >
-            <ScrollView>
 
-                <View>
-                    <View>
-                        <ImageBackground source={require('../../assets/images/homeHeader.png')} resizeMode={'cover'} style={styles.image} >
-                            <View style={{ flexDirection: 'row' }}>
-                                <View>
-                                    <Text style={styles.HomeTitle}> Law Case </Text>
-                                </View>
-                                <View style={styles.headerRight}>
-                                    <Icon name={'question-circle'} color={'white'} size={25} />
-                                    <Icon name={'bell'} color={'white'} size={25} style={{ paddingHorizontal: 15, }}   />
-                                </View>
-                            </View>
-                            <View style={styles.profileContainer}>
-                                <View>
-                                    <Image style={styles.profile}
-                                        source={require('../../assets/images/profile.png')} />
-                                </View>
-                                <View style={styles.userDetail}>
-                                    <Text style={styles.userWelcome}>Welcome</Text>
-                                    <Text style={styles.userName}>John Smith</Text>
-                                </View>
-                            </View>
-                        </ImageBackground>
+            <View>
+                <ImageBackground source={require('../../assets/images/homeHeader.png')} resizeMode={'cover'} style = {{height: 'auto'}} >
+                    <View style={{ flexDirection: 'row' }}>
+                        <View>
+                            <Text style={styles.HomeTitle}> Law Case </Text>
+                        </View>
+                        <View style={styles.headerRight}>
+                            <Icon name={'question-circle'} color={'white'} size={25} />
+                            <Icon name={'bell'} color={'white'} size={25} style={{ paddingHorizontal: 15, }} />
+                        </View>
                     </View>
+                    <View style={styles.profileContainer}>
+                        <View>
+                            <Image style={styles.profile}
+                                source={require('../../assets/images/profile.png')} />
+                        </View>
+                        <View style={styles.userDetail}>
+                            <Text style={styles.userWelcome}>Welcome</Text>
+                            <Text style={styles.userName}>John Smith</Text>
+                        </View>
+                    </View>
+                </ImageBackground>
+            </View>
+            <ScrollView>
+                <View>
 
                     <View style={styles.homeContainer}>
                         <View>
@@ -58,7 +55,7 @@ const HomeScreen = () => {
                                 <View style={styles.singleItem}>
                                     <ImageBackground source={require('../../assets/images/clients.png')} resizeMode={'cover'} style={styles.clientsBackImg} >
                                         <View style={styles.clientsIcon}>
-                                        <Image source={require('../../assets/images/client.png')}
+                                            <Image source={require('../../assets/images/client.png')}
                                                 style={{
                                                     width: 123,
                                                     height: 87,
@@ -75,7 +72,7 @@ const HomeScreen = () => {
                                 <View style={styles.singleItem}>
                                     <ImageBackground source={require('../../assets/images/appointment.png')} resizeMode={'cover'} style={styles.clientsBackImg} >
                                         <View style={styles.clientsIcon}>
-                                        <Image source={require('../../assets/images/oppIcon.png')}
+                                            <Image source={require('../../assets/images/oppIcon.png')}
                                                 style={{
                                                     width: 75,
                                                     height: 75,
@@ -92,7 +89,7 @@ const HomeScreen = () => {
                                 <View>
                                     <ImageBackground source={require('../../assets/images/prof.png')} resizeMode={'cover'} style={styles.casesBackImg} >
                                         <View style={styles.casesIcon}>
-                                        <Image source={require('../../assets/images/profile1.png')}
+                                            <Image source={require('../../assets/images/profile1.png')}
                                                 style={{
                                                     width: 45,
                                                     height: 45,
@@ -108,7 +105,7 @@ const HomeScreen = () => {
                                 <View style={styles.singleItem}>
                                     <ImageBackground source={require('../../assets/images/setting.png')} resizeMode={'cover'} style={styles.clientsBackImg} >
                                         <View style={styles.clientsIcon}>
-                                        <Image source={require('../../assets/images/setIcon.png')}
+                                            <Image source={require('../../assets/images/setIcon.png')}
                                                 style={{
                                                     width: 80,
                                                     height: 80,
@@ -163,7 +160,7 @@ const HomeScreen = () => {
                                 <View style={styles.singleItem}>
                                     <ImageBackground source={require('../../assets/images/marketing.png')} resizeMode={'cover'} style={styles.clientsBackImg} >
                                         <View style={styles.clientsIcon}>
-                                        <Image source={require('../../assets/images/markIcon.png')}
+                                            <Image source={require('../../assets/images/markIcon.png')}
                                                 style={{
                                                     width: 106,
                                                     height: 88,
@@ -176,7 +173,7 @@ const HomeScreen = () => {
                                 </View>
                             </TouchableOpacity>
 
-
+                            <View style={{ marginVertical: 200, }}></View>
 
                         </View>
 

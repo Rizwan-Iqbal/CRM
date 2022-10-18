@@ -1,4 +1,4 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity, Platform } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
 import { ImageBackground } from 'react-native';
@@ -14,6 +14,8 @@ import { FAB } from '@rneui/themed';
 import { MultiDateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar'
 import englishLocale from 'dayjs/locale/en';
 import { Picker } from '@react-native-picker/picker';
+import DateTimePicker from '@react-native-community/datetimepicker';
+
 
 
 const AddOppointmentScreen = () => {
@@ -22,6 +24,9 @@ const AddOppointmentScreen = () => {
     const [visible, setVisible] = React.useState(true);
     const [selectedDates, setSelectedDates] = React.useState([]);
     const [selectedLanguage, setSelectedLanguage] = useState();
+    const [date, setDate] = useState(new Date(1598051730000));
+    const [mode, setMode] = useState('date');
+    const [show, setShow] = useState(false);
 
 
     // const setMaxNumberOfSelectedDates = React.useCallback((_selectedDates) => {
@@ -30,6 +35,25 @@ const AddOppointmentScreen = () => {
     //         setSelectedDates(_selectedDates)
     //     }
     // })
+
+    const onChange = (event, selectedDate) => {
+        const currentDate = selectedDate || date;
+        setShow(Platform.OS === 'ios');
+        setDate(currentDate);
+    };
+
+    const showMode = currentMode => {
+        setShow(true);
+        setMode(currentMode);
+    };
+
+    const showDatepicker = () => {
+        showMode('date');
+    };
+
+    const showTimepicker = () => {
+        showMode('time');
+    };
 
     return (
 
@@ -47,6 +71,9 @@ const AddOppointmentScreen = () => {
 
             <ScrollView>
 
+                <View>
+                    <Text style={[styles.topTxt, styles.topTxtUp]}>Add Details</Text>
+                </View>
                 <View style={styles.form}>
                     <View style={styles.inputEmail}>
                         <Text style={styles.inputLabel}>Title</Text>
@@ -54,76 +81,125 @@ const AddOppointmentScreen = () => {
                             placeholder="Full Name" />
 
                     </View>
+                    <Text style={styles.inputLabel}>Client</Text>
 
-                    <View style={[styles.drop , styles.dropUpdate]}>
+                    <View style={[styles.drop, styles.dropUpdate]}>
                         <Picker
                             selectedValue={selectedLanguage}
 
                             onValueChange={(itemValue, itemIndex) =>
                                 setSelectedLanguage(itemValue)
-                            }>
+                            }       >
                             <Picker.Item
                                 value=""
                                 label="Select An Option"
                                 enabled={false}
-                                color='#6F6F6F'
+                                color='#6f6f6fb3'
+                                style={{ fontSize: 14.5, fontFamily: 'Poppins-semibold' }}
+
+
                             />
                             <Picker.Item label="Payment issues" value="Payment issues"
-                                color='#6F6F6F' />
+                                color='#6F6F6F'
+                            />
                             <Picker.Item label="App is not working properly" value="App is not working properly" color='#6F6F6F' />
                             <Picker.Item label="Spam" value="Spam" color='#6F6F6F' />
                             <Picker.Item label="Login Error" value="Login Error"
                                 color='#6F6F6F'
+
                             />
 
                         </Picker>
                     </View>
-                    <View style={styles.inputEmail}>
-                        <TextInput style={styles.input}
-                            placeholder="Email"
-                        />
-                        <Icon style={styles.emailIcon} name={'envelope'} solid size={20} />
-                    </View>
-                    <View style={styles.inputEmail}>
-                        <TextInput style={styles.input}
-                            placeholder="Password" />
-                        <Icon style={styles.emailIcon} name={'lock'} solid size={20} />
-                        <Icon style={styles.eyeIcon} name={'eye-slash'} solid size={18} />
-                    </View>
-                    <View style={styles.inputEmail}>
-                        <TextInput style={styles.input}
-                            placeholder="Confirm Password" />
-                        <Icon style={styles.emailIcon} name={'lock'} solid size={20} />
-                        <Icon style={styles.eyeIcon} name={'eye-slash'} solid size={18} />
+
+                    <View style={{ marginTop: 10, }}>
+                        <Text style={styles.inputLabel}>Case Type</Text>
+                        <TextInput style={[styles.input, styles.inputUpdate]}
+                            placeholder="Divorce Case" />
 
                     </View>
+                   
+                    <View style = {{marginTop: 3 , marginBottom: 10,}}>
+                        <View>
+                        <Text style={styles.inputLabel}>Date</Text>
 
-                    <View style={styles.inputEmail}>
-                        <TextInput style={styles.input}
-                            placeholder="+44" />
-                        <Icon style={styles.emailIcon} name={'mobile'} solid size={20} />
+                            <Pressable onPress={showDatepicker}  style = {styles.date} > 
+                                <Text style = {{color: '#6f6f6fb3', margin: 10, fontSize: 14,  fontFamily: 'Poppins-regular', marginTop: 13,}}>MM/DD/YYYY</Text>
+                            </Pressable>
+                            <Icon style={[styles.dateIcon]} name={'calendar-alt'} color={'#6f6f6fb3'} size={25} onPress={showDatepicker} />
+
+                        </View>
+                        {/* <View>
+                            <Button onPress={showTimepicker} title="Show time picker!" />
+                        </View> */}
+                        {show && (
+                            <DateTimePicker
+                                testID="dateTimePicker"
+                                timeZoneOffsetInMinutes={0}
+                                value={date}
+                                mode={mode}
+                                is24Hour={true}
+                                display="default"
+                                onChange={onChange}
+                            />
+                        )}
                     </View>
 
-                    <View style={styles.newUser}>
-                        <Text style={styles.newUserText}>Already have an account?<Text style={{ color: 'black' }}> Sign In </Text></Text>
+                    <View style = {{marginTop: 3 , marginBottom: 10,}}>
+                        <View>
+                        <Text style={styles.inputLabel}>Time</Text>
+
+                            <Pressable onPress={showTimepicker}  style = {styles.date} > 
+                                <Text style = {{color: '#6f6f6fb3', margin: 10, fontSize: 14, marginLeft: 4, fontFamily: 'Poppins-regular', marginTop: 13,}}>	HH:MM</Text>
+                            </Pressable>
+                            <Icon style={[styles.dateIcon]} name={'clock'} color={'#6f6f6fb3'} size={25} onPress={showTimepicker} />
+
+                        </View>
+                        {/* <View>
+                            <Button onPress={showTimepicker} title="Show time picker!" />
+                        </View> */}
+                        {show && (
+                            <DateTimePicker
+                                testID="dateTimePicker"
+                                timeZoneOffsetInMinutes={0}
+                                value={date}
+                                mode={mode}
+                                is24Hour={true}
+                                display="default"
+                                onChange={onChange}
+                            />
+                        )}
                     </View>
+
+                    <Text style={styles.inputLabel}>Meeting Agenda</Text>
+
+                    <TextInput
+                        multiline={true}
+                        numberOfLines={6}
+                        // onChangeText={(text) => setState({ text })}
+                        // value={this.state.text}
+                        placeholder={'Meeting Agenda'}
+                        style={[styles.input, styles.textArea]} />
+
+                    <Text style={[styles.inputLabel, styles.inputLabelUpdate]}>Notes</Text>
+
+                    <TextInput
+                        multiline={true}
+                        numberOfLines={6}
+                        placeholder={'Notes'}
+                        style={[styles.input, styles.textArea]} />
+
+
+
                     <View>
-                        <TouchableOpacity style={styles.signInBtnContainer}>
-                            <Text style={styles.signInBtn}>Sign Up</Text>
+                        <TouchableOpacity style={{ width: '45%', marginLeft: '25%', marginTop: 20, }} disabled={'true'}>
+                            <Text style={styles.forgetBtn} >Send</Text>
                         </TouchableOpacity>
                     </View>
 
                 </View>
 
             </ScrollView>
-
-            <View style={styles.addAppointment}>
-                <FAB
-                    visible={visible}
-                    icon={{ name: 'add', color: 'white' }}
-                    color="#6F6F6F"
-                />
-            </View>
 
         </View>
 
