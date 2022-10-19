@@ -14,7 +14,7 @@ import { FAB } from '@rneui/themed';
 import { SpeedDial } from '@rneui/themed';
 
 
-const ClientScreen = () => {
+const CasesScreen = () => {
     const [isSelected, setSelection] = useState(false);
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = React.useState(true);
@@ -26,13 +26,12 @@ const ClientScreen = () => {
     return (
 
         <View style={{ height: '100%' }}>
-                        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>
-
+            <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>
                 {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   > */}
                     <View style={{ flexDirection: 'row', alignItems: 'center', }}>
 
                         <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />
-                        <Text style={[styles.SignInTitle, styles.casesTitle]}> Clients </Text>
+                        <Text style={[styles.SignInTitle, styles.casesTitle]}> Cases </Text>
                     </View>
                     <View style={styles.searchContainer}>
 
@@ -56,7 +55,7 @@ const ClientScreen = () => {
 
             <View style={styles.homeContainer}>
                 <View>
-                    <Text style={[styles.topTxt, styles.clientTopTxt]}>Contact Book</Text>
+                    <Text style={[styles.topTxt, styles.clientTopTxt]}>Case Book</Text>
                 </View>
                 {/* <View style={styles.line} /> */}
 
@@ -80,7 +79,7 @@ const ClientScreen = () => {
                     variant="primary" >
                     <Tab.Item
 
-                        title="Personal"
+                        title="On-Going"
 
                         titleStyle={(active) => ({
                             color: active ? 'white' : "#474747",
@@ -97,7 +96,7 @@ const ClientScreen = () => {
                         })}
                     />
                     <Tab.Item
-                        title="Company"
+                        title="Completed"
 
                         titleStyle={(active) => ({
                             color: active ? 'white' : '#474747',
@@ -123,22 +122,22 @@ const ClientScreen = () => {
                                 <View style={[styles.containerInside, styles.clientMainContainer]} >
 
                                     <View style={styles.notiDetail}>
-                                        <Text style={styles.clientID}>ID: 78651293</Text>
+                                        <Text style={styles.clientID}>CASE ID: 462</Text>
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'user'} color={'#474747'} size={16} />
-                                            <Text style={[styles.notiTxt, styles.clientDetail]}>John Smith</Text>
+                                            <Text style={[styles.notiTxt, styles.clientDetail]}>Lloyds pr</Text>
+
+                                        </View>
+
+                                        <View style={{ flexDirection: 'row', alignItems: 'center', }}>
+                                            <Icon style={styles.clientIcon} name={'file-alt'} color={'#474747'} size={16} />
+                                            <Text style={[styles.notiTxt, styles.clientDetail]}>Divorce case</Text>
 
                                         </View>
 
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'envelope'} color={'#474747'} size={16} />
                                             <Text style={[styles.notiTxt, styles.clientDetail]}>info@lloyds.com</Text>
-
-                                        </View>
-
-                                        <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-                                            <Icon style={styles.clientIcon} name={'globe'} color={'#474747'} size={16} />
-                                            <Text style={[styles.notiTxt, styles.clientDetail]}>www.lloyds.com</Text>
 
                                         </View>
 
@@ -162,26 +161,26 @@ const ClientScreen = () => {
                     <TabView.Item style={{ width: '100%', marginTop: 8, }}>
                         <ScrollView>
 
-                            <View style={[styles.notiContainer, styles.clientContainer]}>
+                        <View style={[styles.notiContainer, styles.clientContainer]}>
                                 <View style={[styles.containerInside, styles.clientMainContainer]} >
 
                                     <View style={styles.notiDetail}>
-                                        <Text style={styles.clientID}>ID: 78651293</Text>
+                                        <Text style={styles.clientID}>CASE ID: 462</Text>
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'user'} color={'#474747'} size={16} />
-                                            <Text style={[styles.notiTxt, styles.clientDetail]}>LLOYDS PR</Text>
+                                            <Text style={[styles.notiTxt, styles.clientDetail]}>Lloyds pr</Text>
+
+                                        </View>
+
+                                        <View style={{ flexDirection: 'row', alignItems: 'center', }}>
+                                            <Icon style={styles.clientIcon} name={'file-alt'} color={'#474747'} size={16} />
+                                            <Text style={[styles.notiTxt, styles.clientDetail]}>Divorce case</Text>
 
                                         </View>
 
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'envelope'} color={'#474747'} size={16} />
                                             <Text style={[styles.notiTxt, styles.clientDetail]}>info@lloyds.com</Text>
-
-                                        </View>
-
-                                        <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-                                            <Icon style={styles.clientIcon} name={'globe'} color={'#474747'} size={16} />
-                                            <Text style={[styles.notiTxt, styles.clientDetail]}>www.lloyds.com</Text>
 
                                         </View>
 
@@ -207,41 +206,18 @@ const ClientScreen = () => {
                 </TabView>
 
             </View>
-
-           
-                {/* <FAB
+            <View style = { styles.addItem}>
+                <FAB
                     visible={visible}
                     icon={{ name: 'add', color: 'white' }}
                     color="#6F6F6F"
-                /> */}
+                />
 
-                <SpeedDial
-                    isOpen={open}
-                    icon={{ name: 'add', color: '#fff' }}
-                    openIcon={{ name: 'close', color: '#fff' }}
-                    onOpen={() => setOpen(!open)}
-                    onClose={() => setOpen(!open)}>
-                    
-                    <SpeedDial.Action
-                        icon={{ name: 'person', color: '#fff' }}
-                        title="Personal"
-                        onPress={() => console.log('Add Something')}
-                        style = {{backgroundColor: 'red'
-                    
-                    
-                    }}
-                    />
-                    <SpeedDial.Action
-                        icon={{ name: 'business', color: '#fff' }}
-                        title="Company"
-                        onPress={() => console.log('Add Something')}
-                    />
-                </SpeedDial>
-            
+            </View>
 
         </View>
 
     )
 }
 
-export default ClientScreen
+export default CasesScreen

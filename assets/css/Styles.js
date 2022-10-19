@@ -234,13 +234,14 @@ const styles = StyleSheet.create({
 
     },
     profile: {
-        width: 50,
-        height: 50,
+        width: 60,
+        height: 60,
+        // marginTop: 5,
     },
 
     profileContainer: {
         flexDirection: 'row',
-        marginLeft: 10,
+        margin: 10,
         // marginBottom: -3,
     },
 
@@ -265,9 +266,14 @@ const styles = StyleSheet.create({
     homeContainer: {
         marginHorizontal: 15,
         // marginTop: -5,
-        marginVertical: 10,
+        marginTop: 17,
 
     },
+
+    homeCont: {
+        marginVertical: 10,
+    },
+
     topTxt: {
         color: '#474747',
         fontWeight: '600',
@@ -469,7 +475,7 @@ const styles = StyleSheet.create({
     },
     searchContainer: {
         flexDirection: 'row',
-        marginBottom: 40,
+        marginBottom: 10,
 
     },
 
@@ -555,7 +561,7 @@ const styles = StyleSheet.create({
 
     },
     textArea: {
-        height: 'auto' ,
+        height: 'auto',
         paddingLeft: 10,
         paddingTop: 10,
         margin: 0,
@@ -605,7 +611,7 @@ const styles = StyleSheet.create({
 
     topTxtAppointment: {
         textAlign: 'center',
-        marginTop: -12,
+        marginTop: 10,
         marginBottom: 10,
     },
 
@@ -614,7 +620,7 @@ const styles = StyleSheet.create({
     },
     bottomAppointTxt: {
         textAlign: 'center',
-        marginTop: 10,
+        marginTop: -4,
     },
 
     appContainer: {
@@ -631,6 +637,20 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: 15,
         marginVertical: 3,
+    },
+
+    Test: {
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        backgroundColor: 'white',
+        margin: 6,
+        borderTopEndRadius: 20,
     },
     timeTxt: {
         color: '#6F6F6F',

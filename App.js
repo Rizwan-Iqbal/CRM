@@ -1,30 +1,13 @@
 import { useEffect, useCallback } from 'react';
-import { Text, View, StyleSheet, KeyboardAvoidingView } from 'react-native';
+import { Text, View, StyleSheet, KeyboardAvoidingView, Image } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
-import IntroScreen from './src/components/IntroScreen';
-import SignInScreen from './src/components/SignInScreen';
-import SignUpScreen from './src/components/SignUpScreen';
-import ForgetPasswordScreen from './src/components/ForgetPasswordScreen';
-import ResetPasswordScreen from './src/components/ResetPasswordScreen';
-import OtpVarification from './src/components/OtpVarification';
 import HomeScreen from './src/components/HomeScreen';
-import NoNotificationScreen from './src/components/NoNotificationScreen';
-import NotificationScreen from './src/components/NotificationScreen';
-import NotificationSettingScreen from './src/components/NotificationSettingScreen';
-import ComingSoonScreen from './src/components/ComingSoonScreen';
 import ClientScreen from './src/components/ClientScreen';
-import SupportScreen from './src/components/SupportScreen';
-import ImagePickerExample from './src/components/ImagePickerExample';
-import SearchScreen from './src/components/SearchScreen';
-import EmptySearchScreen from './src/components/EmptySearchScreen';
 import BookingScreen from './src/components/BookingScreen';
-import AddOppointmentScreen from './src/components/AddOppointmentScreen';
-import DatePickerApp from './src/components/DatePickerApp';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import CasesScreen from './src/components/CasesScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -66,44 +49,69 @@ export default function App() {
         {/* <AddOppointmentScreen /> */}
 
         <NavigationContainer>
-          <Tab.Navigator
-            screenOptions={({ route }) => ({
-              tabBarIcon: ({ focused, color, size }) => {
-                let iconName;
+          <Tab.Navigator screenOptions={{
+            tabBarShowLabel: true,
+            headerShown: false,
+            tabBarStyle: { backgroundColor: '#000000', borderTopEndRadius: 20, borderTopStartRadius: 20, height: 55,},
+            tabBarInactiveTintColor: "#A9A9A9",
+            // tabBarInactiveBackgroundColor: '',
+            tabBarActiveTintColor: "white",
+            // tabBarActiveBackgroundColor: 'black',
+            tabBarHideOnKeyboard: true,
+            showIcon: true,
 
-                if (route.name === 'Home') {
-                  iconName = focused
-                    ? 'home'
-                    : 'home';
-                } else if (route.name === 'Clients') {
-                  iconName = focused ? 'person' : 'person';
-                }
 
-                else if (route.name === 'Booking') {
-                  iconName = focused ? 'person' : 'person';
-                }
-
-                else if (route.name === 'Support') {
-                  iconName = focused ? 'finger-print-outline' : 'finger-print-outline';
-                }
-
-                else if (route.name === 'Notification') {
-                  iconName = focused ? 'person' : 'person';
-                }
-
-                // You can return any component that you like here!
-                return <Ionicons name={iconName} size={size} color={color} />;
-              },
-              tabBarActiveTintColor: 'tomato',
-              tabBarInactiveTintColor: 'gray',
-              headerShown: false
-            })}
+          }}
           >
-            <Tab.Screen name="Home" component={HomeScreen} />
-            <Tab.Screen name="Clients" component={ClientScreen} />
-            <Tab.Screen name="Booking" component={BookingScreen} />
-            <Tab.Screen name="Support" component={SupportScreen} />
-            <Tab.Screen name="Notification" component={NotificationScreen} />
+            <Tab.Screen name="Home" component={HomeScreen} options={{
+              tabBarIcon: ({ size, color }) => (
+                <Image source={require('./assets/images/home.png')}
+             
+                  style={{
+                    color: 'red',
+                    width: 30,
+                    height: 24, 
+                    color: color
+                  }} 
+                  color = {color}
+                 
+                  />
+              ),
+            }} />
+            <Tab.Screen name="Clients" component={ClientScreen} options={{
+              tabBarIcon: ({ size, color }) => (
+                <Image source={require('./assets/images/client.png')}
+                style={{
+                  width: 35,
+                  height: 24,
+                  color: {color}
+                }} />
+              )
+            }} />
+
+            <Tab.Screen name="Cases" component={CasesScreen} options={{
+              tabBarIcon: ({ size, color }) => (
+                <Image source={require('./assets/images/casesicon.png')}
+                style={{
+                  width: 34,
+                  height: 31,
+                  color: {color}
+                }} />
+              )
+            }} />
+
+              <Tab.Screen name="Appionments" component={BookingScreen} options={{
+              tabBarIcon: ({ size, color }) => (
+                <Image source={require('./assets/images/app.png')}
+                style={{
+                  width: 28,
+                  height: 28,
+                  
+                  color: {color}
+                }} />
+              )
+            }} />
+
           </Tab.Navigator>
         </NavigationContainer>
       </View>

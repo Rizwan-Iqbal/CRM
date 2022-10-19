@@ -16,8 +16,8 @@ const HomeScreen = () => {
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >
 
-            <View>
-                <ImageBackground source={require('../../assets/images/homeHeader.png')} resizeMode={'cover'} style = {{height: 'auto'}} >
+            <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>
+                {/* <ImageBackground source={require('../../assets/images/homeHeader.png')} resizeMode={'cover'} style = {{height: 'auto'}} > */}
                     <View style={{ flexDirection: 'row' }}>
                         <View>
                             <Text style={styles.HomeTitle}> Law Case </Text>
@@ -37,15 +37,16 @@ const HomeScreen = () => {
                             <Text style={styles.userName}>John Smith</Text>
                         </View>
                     </View>
-                </ImageBackground>
+                {/* </ImageBackground> */}
             </View>
             <ScrollView>
                 <View>
 
-                    <View style={styles.homeContainer}>
+                    <View style={[styles.homeContainer , styles.homeCont]}>
                         <View>
                             <Text style={styles.topTxt}>Select the Option</Text>
                         </View>
+                        
                         <View style={styles.line} />
 
                     </View>

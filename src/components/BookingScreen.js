@@ -1,5 +1,6 @@
 import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
+import { Link } from '@react-navigation/native';
 import { styles } from '../../assets/css/Styles';
 import { ImageBackground } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,8 +14,12 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { FAB } from '@rneui/themed';
 import { MultiDateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar'
 import englishLocale from 'dayjs/locale/en';
+import AddOppointmentScreen from './AddOppointmentScreen';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
 
-const BookingScreen = () => {
+
+const BookingScreen = ({route , navigation}) => {
     const [isSelected, setSelection] = useState(false);
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = React.useState(true);
@@ -31,30 +36,30 @@ const BookingScreen = () => {
     return (
 
         <View style={{ height: '100%' }}>
-            <View>
-                <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   >
-                    <View style={{ flexDirection: 'row', alignItems: 'center', }}>
+            <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>
+                {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'} style = {{height: 200,}}  > */}
+                <View style={{ flexDirection: 'row', alignItems: 'center', }}>
 
-                        <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />
-                        <Text style={[styles.SignInTitle, styles.casesTitle]}> Appointments </Text>
-                    </View>
-                    <View style={[styles.searchContainer, styles.searchContainerUpdate]}>
+                    <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />
+                    <Text style={[styles.SignInTitle, styles.casesTitle]}> Appointments </Text>
+                </View>
+                <View style={[styles.searchContainer, styles.searchContainerUpdate]}>
 
-                        <TextInput style={[styles.searchInput, styles.searchInputUpdate]}
-                            placeholder="Search" />
-                        <Icon style={[styles.eyeIcon, styles.searchIconUpdate]} name={'search'} color={'#474747'} size={26} />
+                    <TextInput style={[styles.searchInput, styles.searchInputUpdate]}
+                        placeholder="Search" />
+                    <Icon style={[styles.eyeIcon, styles.searchIconUpdate]} name={'search'} color={'#474747'} size={26} />
 
-                    </View>
-                </ImageBackground>
+                </View>
+
+                {/* </ImageBackground> */}
             </View>
             <ScrollView>
 
                 <View>
 
-
-                    {/* <View>
-                    <Text style={[styles.topTxt, styles.topTxtAppointment]}>Appointment Book</Text>
-                </View> */}
+                    <View>
+                        <Text style={[styles.topTxt, styles.topTxtAppointment]}>Appointment Book</Text>
+                    </View>
                     <View style={{ height: '45%' }}>
                         <MultiDateSelectionCalendar
                             // disabledDates={['2020-01-01', '2020-03-04']}
@@ -147,7 +152,12 @@ const BookingScreen = () => {
                     visible={visible}
                     icon={{ name: 'add', color: 'white' }}
                     color="#6F6F6F"
+                    onPress={()=> navigation.navigate()}
                 />
+
+               
+
+            
             </View>
 
         </View>
