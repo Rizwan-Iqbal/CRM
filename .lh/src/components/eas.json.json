@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/eas.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1666248511901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1666248511901,
+            "name": "Commit-0",
+            "content": "{\r\n    \"build\": {\r\n      \"preview\": {\r\n        \"android\": {\r\n          \"buildType\": \"apk\"\r\n        }\r\n      },\r\n      \"preview2\": {\r\n        \"android\": {\r\n          \"gradleCommand\": \":app:assembleRelease\"\r\n        }\r\n      },\r\n      \"preview3\": {\r\n        \"developmentClient\": true\r\n      },\r\n      \"production\": {}\r\n    }\r\n  }"
+        }
+    ]
+}

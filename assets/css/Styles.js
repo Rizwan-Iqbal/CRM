@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+// import { white } from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
 const styles = StyleSheet.create({
 
     // Intro Screen Styling
@@ -35,9 +36,7 @@ const styles = StyleSheet.create({
         marginTop: 12,
         // paddingRight: 60
     },
-    clientIcon: {
 
-    },
     signInImg: {
         width: 300,
         height: 300,
@@ -455,12 +454,9 @@ const styles = StyleSheet.create({
         marginLeft: 7,
         marginTop: 3,
         lineHeight: 18,
-
-
     },
 
     notiDate: {
-
         fontFamily: 'Poppins-semibold',
         fontSize: 10,
         position: 'absolute',
@@ -737,6 +733,127 @@ const styles = StyleSheet.create({
         top: 38,
     },
 
+    AppInnCon: {
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        backgroundColor: 'white',
+        height: 'auto',
+    },
+
+    AppTopCon: {
+        width: '100%',
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        backgroundColor: '#6F6F6F',
+        height: 'auto',
+        borderRadius: 15,
+    },
+
+    AppDetailCon: {
+        backgroundColor: '#6F6F6F',
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        marginVertical: 6,
+        marginHorizontal: 10,
+        padding: 15,
+        borderRadius: 10,
+    },
+
+    AppTitle: {
+        fontFamily: 'Poppins-semibold',
+        fontSize: 14,
+        color: 'white',
+        lineHeight: 20,
+    },
+
+    AppTxt: {
+        fontFamily: 'Poppins-regular',
+        fontSize: 14,
+        color: 'white',
+
+    },
+
+    AppDetailConUpdate: {
+        backgroundColor: 'white',
+    },
+
+    AppTitleUpdate: {
+        color: 'black',
+    },
+
+    AppTxtUpdate: {
+        color: '#6F6F6F',
+    },
+    welcome: {
+
+        color: '#474747',
+        fontFamily: 'Poppins-Medium',
+        fontSize: 12,
+        lineHeight: 22,
+
+    },
+
+    welcomeTitle: {
+        fontSize: 14,
+
+    },
+
+    name: {
+        color: 'black',
+        fontFamily: 'Poppins-Bold',
+        fontSize: 22,
+        lineHeight: 25,
+    },
+
+    SettingTopTxt: {
+        color: 'black',
+        fontFamily: 'Poppins-Bold',
+        fontSize: 16,
+        margin: 10,
+        marginVertical: 3,
+    },
+
+    settingInnerCon: {
+        flexDirection: 'row',
+        backgroundColor: 'white',
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        marginHorizontal: 10,
+        borderRadius: 10,
+        padding: 12,
+        marginVertical: 5,
+        marginTop: 0,
+
+    },
+    settingItems: {
+        fontFamily: 'Poppins-semibold',
+        fontSize: 14,
+        color: '#6F6F6F',
+        marginLeft: 10,
+    },
 
 
 

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 338,
+            "activePatchIndex": 348,
             "patches": [
                 {
                     "date": 1665988327180,
@@ -1360,6 +1360,46 @@
                 {
                     "date": 1666186921123,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,10 @@\n import englishLocale from 'dayjs/locale/en';\r\n import AddOppointmentScreen from './AddOppointmentScreen';\r\n import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n-import { Link } from '@react-navigation/native';\r\n \r\n+\r\n const BookingScreen = ({route , navigation}) => {\r\n     const [isSelected, setSelection] = useState(false);\r\n     const [index, setIndex] = useState(0);\r\n     const [visible, setVisible] = React.useState(true);\r\n@@ -151,12 +151,14 @@\n                 <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                   \r\n+                    onPress={()=> navigation.navigate()}\r\n                 />\r\n+\r\n+               \r\n+\r\n             \r\n-            \r\n             </View>\r\n \r\n         </View>\r\n \r\n"
+                },
+                {
+                    "date": 1666241672052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n                 <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                    onPress={()=> navigation.navigate()}\r\n+                    onPress={()=> navigation.navigate(screen: '')}\r\n                 />\r\n \r\n                \r\n \r\n"
+                },
+                {
+                    "date": 1666241899103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n                 <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                    onPress={()=> navigation.navigate(screen: '')}\r\n+                    onPress={() => navigation.navigate('AddOppointmentScreen')} \r\n                 />\r\n \r\n                \r\n \r\n"
+                },
+                {
+                    "date": 1666242159565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n                 <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                    onPress={() => navigation.navigate('AddOppointmentScreen')} \r\n+                    onPress={() => navigation.navigate('Cases')} \r\n                 />\r\n \r\n                \r\n \r\n"
+                },
+                {
+                    "date": 1666242847230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n import { SafeAreaProvider } from 'react-native-safe-area-context';\r\n import { FAB } from '@rneui/themed';\r\n import { MultiDateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar'\r\n import englishLocale from 'dayjs/locale/en';\r\n-import AddOppointmentScreen from './AddOppointmentScreen';\r\n+import AddOppointmentScreen from './AddAppointmentScreen';\r\n import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666244410372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n                 <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                    onPress={() => navigation.navigate('Cases')} \r\n+                    onPress={() => navigation.navigate('SignUp' , {screen: 'SignUpScreen'})} \r\n                 />\r\n \r\n                \r\n \r\n"
+                },
+                {
+                    "date": 1666244609640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n \r\n \r\n-const BookingScreen = ({route , navigation}) => {\r\n+const BookingScreen = ({navigation}) => {\r\n     const [isSelected, setSelection] = useState(false);\r\n     const [index, setIndex] = useState(0);\r\n     const [visible, setVisible] = React.useState(true);\r\n     const [selectedDates, setSelectedDates] = React.useState([]);\r\n"
+                },
+                {
+                    "date": 1666244718930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n import AddOppointmentScreen from './AddAppointmentScreen';\r\n import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n \r\n-\r\n const BookingScreen = ({navigation}) => {\r\n     const [isSelected, setSelection] = useState(false);\r\n     const [index, setIndex] = useState(0);\r\n     const [visible, setVisible] = React.useState(true);\r\n@@ -151,9 +150,9 @@\n                 <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                    onPress={() => navigation.navigate('SignUp' , {screen: 'SignUpScreen'})} \r\n+                    onPress={() => navigation.navigate('AddAppointmentScreen' , {screen: 'AddAppointmentScreen'})} \r\n                 />\r\n \r\n                \r\n \r\n"
+                },
+                {
+                    "date": 1666246388488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,9 +150,9 @@\n                 <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                    onPress={() => navigation.navigate('AddAppointmentScreen' , {screen: 'AddAppointmentScreen'})} \r\n+                    onPress={() => navigation.navigate('AddAppointmentScreen')} \r\n                 />\r\n \r\n                \r\n \r\n"
+                },
+                {
+                    "date": 1666246426672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n import { SafeAreaProvider } from 'react-native-safe-area-context';\r\n import { FAB } from '@rneui/themed';\r\n import { MultiDateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar'\r\n import englishLocale from 'dayjs/locale/en';\r\n-import AddOppointmentScreen from './AddAppointmentScreen';\r\n+import AddAppointmentScreen from './AddAppointmentScreen';\r\n import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n \r\n const BookingScreen = ({navigation}) => {\r\n"
+                },
+                {
+                    "date": 1666246477445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,9 +150,9 @@\n                 <FAB\r\n                     visible={visible}\r\n                     icon={{ name: 'add', color: 'white' }}\r\n                     color=\"#6F6F6F\"\r\n-                    onPress={() => navigation.navigate('AddAppointmentScreen')} \r\n+                    onPress={() => navigation.navigate('AddAppionments')} \r\n                 />\r\n \r\n                \r\n \r\n"
                 }
             ],
             "date": 1665988327180,

@@ -14,12 +14,11 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { FAB } from '@rneui/themed';
 import { MultiDateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar'
 import englishLocale from 'dayjs/locale/en';
-import AddOppointmentScreen from './AddOppointmentScreen';
+import AddAppointmentScreen from './AddAppointmentScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 
-
-const BookingScreen = ({route , navigation}) => {
+const BookingScreen = ({navigation}) => {
     const [isSelected, setSelection] = useState(false);
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = React.useState(true);
@@ -152,7 +151,7 @@ const BookingScreen = ({route , navigation}) => {
                     visible={visible}
                     icon={{ name: 'add', color: 'white' }}
                     color="#6F6F6F"
-                    onPress={()=> navigation.navigate()}
+                    onPress={() => navigation.navigate('AddAppionments')} 
                 />
 
                

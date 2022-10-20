@@ -8,6 +8,8 @@ import BookingScreen from './src/components/BookingScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import CasesScreen from './src/components/CasesScreen';
+import AppointmentDetailScreen from './src/components/AppointmentDetailScreen';
+import SettingScreen from './src/components/SettingScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,6 +20,8 @@ export default function App() {
     'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),
     'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),
     'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),
+    'Poppins-Medium': require('./assets/fonts/Poppins-Medium.ttf'),
+    'Poppins-Bold': require('./assets/fonts/Poppins-Bold.ttf'),
   });
 
   useEffect(() => {
@@ -52,7 +56,7 @@ export default function App() {
           <Tab.Navigator screenOptions={{
             tabBarShowLabel: true,
             headerShown: false,
-            tabBarStyle: { backgroundColor: '#000000', borderTopEndRadius: 20, borderTopStartRadius: 20, height: 55,},
+            tabBarStyle: { backgroundColor: '#000000', borderTopEndRadius: 20, borderTopStartRadius: 20, height: 55, },
             tabBarInactiveTintColor: "#A9A9A9",
             // tabBarInactiveBackgroundColor: '',
             tabBarActiveTintColor: "white",
@@ -66,49 +70,61 @@ export default function App() {
             <Tab.Screen name="Home" component={HomeScreen} options={{
               tabBarIcon: ({ size, color }) => (
                 <Image source={require('./assets/images/home.png')}
-             
+
                   style={{
                     color: 'red',
                     width: 30,
-                    height: 24, 
+                    height: 24,
                     color: color
-                  }} 
-                  color = {color}
-                 
-                  />
+                  }}
+                  color={color}
+
+                />
               ),
             }} />
             <Tab.Screen name="Clients" component={ClientScreen} options={{
               tabBarIcon: ({ size, color }) => (
                 <Image source={require('./assets/images/client.png')}
-                style={{
-                  width: 35,
-                  height: 24,
-                  color: {color}
-                }} />
+                  style={{
+                    width: 35,
+                    height: 24,
+                    color: { color }
+                  }} />
               )
             }} />
 
             <Tab.Screen name="Cases" component={CasesScreen} options={{
               tabBarIcon: ({ size, color }) => (
                 <Image source={require('./assets/images/casesicon.png')}
-                style={{
-                  width: 34,
-                  height: 31,
-                  color: {color}
-                }} />
+                  style={{
+                    width: 34,
+                    height: 31,
+                    color: { color }
+                  }} />
               )
             }} />
 
-              <Tab.Screen name="Appionments" component={BookingScreen} options={{
+            <Tab.Screen name="Appointnments" component={BookingScreen} options={{
               tabBarIcon: ({ size, color }) => (
                 <Image source={require('./assets/images/app.png')}
-                style={{
-                  width: 28,
-                  height: 28,
-                  
-                  color: {color}
-                }} />
+                  style={{
+                    width: 28,
+                    height: 28,
+
+                    color: { color }
+                  }} />
+              )
+            }} />
+
+            <Tab.Screen name="Setting" component={SettingScreen} options={{
+              tabBarIcon: ({ size, color }) => (
+                <Image source={require('./assets/images/app.png')}
+                  style={{
+                    width: 28,
+                    height: 28,
+
+                    color: { color }
+                  }} />
               )
             }} />
 

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1665755287223,
@@ -12,6 +12,10 @@
                 {
                     "date": 1665755386620,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,15 +27,8 @@\n       }\n     },\n     \"web\": {\n       \"favicon\": \"./assets/favicon.png\"\n-    },\n-    \"plugins\": [\n-      [\n-        \"expo-image-picker\",\n-        {\n-          \"photosPermission\": \"The app accesses your photos to let you share them with your friends.\"\n-        }\n-      ]\n-    ]\n+    }\n+    \n   }\n }\n"
+                },
+                {
+                    "date": 1666249434572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,34 +1,37 @@\n-{\n-  \"expo\": {\n-    \"name\": \"CRM\",\n-    \"slug\": \"CRM\",\n-    \"version\": \"1.0.0\",\n-    \"orientation\": \"portrait\",\n-    \"icon\": \"./assets/icon.png\",\n-    \"userInterfaceStyle\": \"light\",\n-    \"splash\": {\n-      \"image\": \"./assets/splash.png\",\n-      \"resizeMode\": \"contain\",\n-      \"backgroundColor\": \"#ffffff\"\n-    },\n-    \"updates\": {\n-      \"fallbackToCacheTimeout\": 0\n-    },\n-    \"assetBundlePatterns\": [\n-      \"**/*\"\n-    ],\n-    \"ios\": {\n-      \"supportsTablet\": true\n-    },\n-    \"android\": {\n-      \"adaptiveIcon\": {\n-        \"foregroundImage\": \"./assets/adaptive-icon.png\",\n-        \"backgroundColor\": \"#FFFFFF\"\n-      }\n-    },\n-    \"web\": {\n-      \"favicon\": \"./assets/favicon.png\"\n-    }\n-    \n-  }\n-}\n+{\r\n+  \"expo\": {\r\n+    \"name\": \"CRM\",\r\n+    \"slug\": \"CRM\",\r\n+    \"version\": \"1.0.0\",\r\n+    \"orientation\": \"portrait\",\r\n+    \"icon\": \"./assets/icon.png\",\r\n+    \"userInterfaceStyle\": \"light\",\r\n+    \"splash\": {\r\n+      \"image\": \"./assets/splash.png\",\r\n+      \"resizeMode\": \"contain\",\r\n+      \"backgroundColor\": \"#ffffff\"\r\n+    },\r\n+    \"updates\": {\r\n+      \"fallbackToCacheTimeout\": 0\r\n+    },\r\n+    \"assetBundlePatterns\": [\r\n+      \"**/*\"\r\n+    ],\r\n+    \"ios\": {\r\n+      \"supportsTablet\": true\r\n+    },\r\n+    \"android\": {\r\n+      \"adaptiveIcon\": {\r\n+        \"foregroundImage\": \"./assets/adaptive-icon.png\",\r\n+        \"backgroundColor\": \"#FFFFFF\"\r\n+      },\r\n+\r\n+      \"package\": \"com.yourcompany.yourappname\"\r\n+\r\n+    },\r\n+    \"web\": {\r\n+      \"favicon\": \"./assets/favicon.png\"\r\n+    }\r\n+    \r\n+  }\r\n+}\r\n"
                 }
             ],
             "date": 1665755287223,
