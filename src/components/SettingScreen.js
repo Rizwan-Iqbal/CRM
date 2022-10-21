@@ -22,7 +22,7 @@ const SettingScreen = () => {
                         <View style={{ marginTop: 20, }}>
                             <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'#6F6F6F'} size={30} />
                             <View style={{ alignItems: 'center' }}>
-                                <Image source={require('../../assets/images/profile.png')}
+                                <Image source={require('../../assets/images/account.png')}
 
                                     style={{
                                         width: 100,
@@ -30,10 +30,12 @@ const SettingScreen = () => {
 
                                     }}
                                 />
-                                <Text style={[styles.welcome, styles.welcomeTitle]}>welcome</Text>
-                                <Text style={styles.name}>John Smith</Text>
+                                <View style = {{marginTop: 10, alignItems: 'center' }}>
+                                    <Text style={[styles.welcome, styles.welcomeTitle]}>welcome</Text>
+                                    <Text style={styles.name}>John Smith</Text>
 
-                                <Text style={styles.welcome}>Johnsmith@gmail.com</Text>
+                                    <Text style={styles.welcome}>Johnsmith@gmail.com</Text>
+                                </View>
 
                             </View>
                         </View>
@@ -83,14 +85,9 @@ const SettingScreen = () => {
 
                         </View>
                         <View style={styles.settingInnerCon}>
-                            <Image source={require('../../assets/images/contactlesspayment.png')}
-
-                                style={{
-                                    width: 33,
-                                    height: 19,
-
-                                }}
+                            <Icon style={{ marginRight: 7, }} name={'dollar-sign'} color={'#6F6F6F'} size={25}
                             />
+
 
                             <Text style={styles.settingItems}>Payments</Text>
 
@@ -110,8 +107,8 @@ const SettingScreen = () => {
 
                         </View>
                         <View style={styles.settingInnerCon}>
-                        <Icon style={{}} name={'sign-out-alt'} color={'#6F6F6F'} size={25} />
-                            
+                            <Icon style={{}} name={'sign-out-alt'} color={'#6F6F6F'} size={25} />
+
 
                             <Text style={styles.settingItems}>Sign Out</Text>
 

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/CaseForm.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1666349859421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1666349859421,
+            "name": "Commit-0",
+            "content": "import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';\r\nimport React, { useState } from 'react';\r\nimport { styles } from '../../assets/css/Styles';\r\nimport { ImageBackground } from 'react-native';\r\nimport { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\nimport { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\nimport Checkbox from 'expo-checkbox';\r\nimport Icon from 'react-native-vector-icons/FontAwesome5';\r\nconst CaseFormScreen = () => {\r\n    const [isSelected, setSelection] = useState(false);\r\n\r\n\r\n    // const email = <FontAwesome5 name={'email'} />;\r\n\r\n    return (\r\n        <KeyboardAvoidingView\r\n            behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"} >\r\n            <ScrollView>\r\n\r\n                <View style={styles.container}>\r\n                    <View>\r\n                        <ImageBackground source={require('../../assets/images/headerBack.png')} resizeMode={'cover'} style={styles.SignInScreenImage}>\r\n                            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n                                {/* <Image source={require('../../assets/images/back.png')} style={styles.backIcon} /> */}\r\n                                <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                                <Text style={styles.SignInTitle}> Coming Soon </Text>\r\n                            </View>\r\n                        </ImageBackground>\r\n                    </View>\r\n\r\n                    <View style={{ alignItems: 'center', }}>\r\n                        <Image source={require('../../assets/images/coming.png')} heigh style={styles.notiImg}></Image>\r\n                    </View>\r\n\r\n                    <View>\r\n                        <View style={styles.form}>\r\n                            <View style={styles.newUser}>\r\n                                <Text style={styles.noNotiTxt}>Coming Soon {'\\n'}Stay Connected!</Text>\r\n\r\n                            </View>\r\n                            <View>\r\n                                <TouchableOpacity style = {{ width: '45%', marginLeft: '25%',}} disabled = {'true'}>\r\n                                    <Text style={styles.forgetBtn} >Back</Text>\r\n                                </TouchableOpacity>\r\n                            </View>\r\n\r\n\r\n                        </View>\r\n\r\n                    </View>\r\n\r\n                </View>\r\n            </ScrollView>\r\n        </KeyboardAvoidingView>\r\n    )\r\n}\r\n\r\nexport default CaseFormScreen"
+        }
+    ]
+}

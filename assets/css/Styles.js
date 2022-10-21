@@ -683,13 +683,12 @@ const styles = StyleSheet.create({
         marginTop: 40,
         marginBottom: 25,
         color: 'white',
-
     },
 
     inputLabel: {
 
         fontFamily: 'Poppins-regular',
-        fontSize: 14,
+        fontSize: 13,
         color: '#6F6F6F',
         marginLeft: 2,
     },
@@ -699,6 +698,13 @@ const styles = StyleSheet.create({
         marginTop: 0,
         marginHorizontal: 0,
         marginVertical: 10,
+
+
+    },
+
+    inputFont: {
+        fontSize: 13,
+        fontFamily: 'Poppins-regular',
 
     },
 
@@ -806,12 +812,12 @@ const styles = StyleSheet.create({
         color: '#474747',
         fontFamily: 'Poppins-Medium',
         fontSize: 12,
-        lineHeight: 22,
+        lineHeight: 20,
 
     },
 
     welcomeTitle: {
-        fontSize: 14,
+        fontSize: 15,
 
     },
 
@@ -828,6 +834,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         margin: 10,
         marginVertical: 3,
+        marginLeft: 15,
     },
 
     settingInnerCon: {
@@ -841,7 +848,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.58,
         shadowRadius: 16.00,
         elevation: 16,
-        marginHorizontal: 10,
+        marginHorizontal: 15,
         borderRadius: 10,
         padding: 12,
         marginVertical: 5,
@@ -853,6 +860,13 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: '#6F6F6F',
         marginLeft: 10,
+    },
+
+    cameraIcon: {
+        position: 'absolute',
+
+        bottom: 0,
+        left:60,
     },
 
 

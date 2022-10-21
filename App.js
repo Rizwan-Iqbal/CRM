@@ -10,6 +10,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import CasesScreen from './src/components/CasesScreen';
 import AppointmentDetailScreen from './src/components/AppointmentDetailScreen';
 import SettingScreen from './src/components/SettingScreen';
+import EditProfileScreen from './src/components/EditProfileScreen';
+import CaseFormScreen from './src/components/CaseFormScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -116,7 +118,7 @@ export default function App() {
               )
             }} />
 
-            <Tab.Screen name="Setting" component={SettingScreen} options={{
+            <Tab.Screen name="CaseForm" component={CaseFormScreen} options={{
               tabBarIcon: ({ size, color }) => (
                 <Image source={require('./assets/images/app.png')}
                   style={{
