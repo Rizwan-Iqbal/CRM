@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
         elevation: 16,
         paddingLeft: 30,
         fontFamily: 'Poppins-regular',
+
     },
     rememberTxt: {
         color: '#6F6F6F',
@@ -292,6 +293,15 @@ const styles = StyleSheet.create({
         borderBottomWidth: 0.5,
         marginVertical: 2,
     },
+
+    hr: {
+        borderBottomColor: '#707070',
+        borderTopWidth: 0.5,
+        width: '50%',
+        marginTop: 12,
+        
+
+    },
     clientsIcon: {
         alignItems: 'center',
         // marginVertical: 30,
@@ -474,6 +484,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
 
     },
+    container: { height: '100%' },
 
     searchContainerUpdate: {
         justifyContent: 'center',
@@ -866,9 +877,12 @@ const styles = StyleSheet.create({
         position: 'absolute',
 
         bottom: 0,
-        left:60,
+        left: 60,
     },
 
+    formContainer: {
+        marginHorizontal: 15,
+    },
 
 
 

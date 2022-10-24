@@ -12,6 +12,7 @@ import AppointmentDetailScreen from './src/components/AppointmentDetailScreen';
 import SettingScreen from './src/components/SettingScreen';
 import EditProfileScreen from './src/components/EditProfileScreen';
 import CaseFormScreen from './src/components/CaseFormScreen';
+import PersonalRegScreen from './src/components/PersonalRegScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -118,7 +119,7 @@ export default function App() {
               )
             }} />
 
-            <Tab.Screen name="CaseForm" component={CaseFormScreen} options={{
+            <Tab.Screen name="Registration" component={PersonalRegScreen} options={{
               tabBarIcon: ({ size, color }) => (
                 <Image source={require('./assets/images/app.png')}
                   style={{

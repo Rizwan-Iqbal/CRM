@@ -40,6 +40,7 @@
     "react-native": "0.69.6",
     "react-native-base": "^1.1.0",
     "react-native-datepicker": "^1.7.2",
+    "react-native-document-picker": "^8.1.2",
     "react-native-easy-calendar": "^0.3.0",
     "react-native-image-crop-picker": "^0.38.0",
     "react-native-paper": "^5.0.0-rc.6",

@@ -60,20 +60,20 @@ const SupportScreen = () => {
                                             value=""
                                             label="Select An Option"
                                             enabled={false}
-                                            color='#6F6F6F' 
+                                            color='#6F6F6F'
                                         />
                                         <Picker.Item label="Payment issues" value="Payment issues"
-                                            color='#6F6F6F'  />
+                                            color='#6F6F6F' />
                                         <Picker.Item label="App is not working properly" value="App is not working properly" color='#6F6F6F' />
                                         <Picker.Item label="Spam" value="Spam" color='#6F6F6F' />
                                         <Picker.Item label="Login Error" value="Login Error"
                                             color='#6F6F6F'
-                                             />
+                                        />
 
                                     </Picker>
                                 </View>
                             </View>
-                            <View style = {{marginVertical: 20,}}> 
+                            <View style={{ marginVertical: 20, }}>
                                 <View>
                                     <Text style={[styles.otpTxt, styles.supportTopTxt]}>How we can help you?</Text>
                                 </View>
@@ -82,7 +82,7 @@ const SupportScreen = () => {
                                     numberOfLines={6}
                                     // onChangeText={(text) => setState({ text })}
                                     // value={this.state.text}
-                                    placeholder = {'Enter Description'}
+                                    placeholder={'Enter Description'}
                                     style={[styles.input, styles.textArea]} />
                             </View>
 

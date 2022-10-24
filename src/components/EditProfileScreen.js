@@ -45,10 +45,6 @@ const EditProfileScreen = () => {
     };
 
 
-
-
-    // const email = <FontAwesome5 name={'email'} />;
-
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 154,
+            "activePatchIndex": 155,
             "patches": [
                 {
                     "date": 1665642948680,
@@ -624,6 +624,10 @@
                 {
                     "date": 1665827762746,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,8 +81,9 @@\n                                     multiline={true}\r\n                                     numberOfLines={6}\r\n                                     // onChangeText={(text) => setState({ text })}\r\n                                     // value={this.state.text}\r\n+                                    placeholder = {'Enter Description'}\r\n                                     style={[styles.input, styles.textArea]} />\r\n                             </View>\r\n \r\n                             <View>\r\n"
+                },
+                {
+                    "date": 1666609384802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,31 +59,31 @@\n                                         <Picker.Item\r\n                                             value=\"\"\r\n                                             label=\"Select An Option\"\r\n                                             enabled={false}\r\n-                                            color='#6F6F6F' \r\n+                                            color='#6F6F6F'\r\n                                         />\r\n                                         <Picker.Item label=\"Payment issues\" value=\"Payment issues\"\r\n-                                            color='#6F6F6F'  />\r\n+                                            color='#6F6F6F' />\r\n                                         <Picker.Item label=\"App is not working properly\" value=\"App is not working properly\" color='#6F6F6F' />\r\n                                         <Picker.Item label=\"Spam\" value=\"Spam\" color='#6F6F6F' />\r\n                                         <Picker.Item label=\"Login Error\" value=\"Login Error\"\r\n                                             color='#6F6F6F'\r\n-                                             />\r\n+                                        />\r\n \r\n                                     </Picker>\r\n                                 </View>\r\n                             </View>\r\n-                            <View style = {{marginVertical: 20,}}> \r\n+                            <View style={{ marginVertical: 20, }}>\r\n                                 <View>\r\n                                     <Text style={[styles.otpTxt, styles.supportTopTxt]}>How we can help you?</Text>\r\n                                 </View>\r\n                                 <TextInput\r\n                                     multiline={true}\r\n                                     numberOfLines={6}\r\n                                     // onChangeText={(text) => setState({ text })}\r\n                                     // value={this.state.text}\r\n-                                    placeholder = {'Enter Description'}\r\n+                                    placeholder={'Enter Description'}\r\n                                     style={[styles.input, styles.textArea]} />\r\n                             </View>\r\n \r\n                             <View>\r\n"
                 }
             ],
             "date": 1665642948680,
