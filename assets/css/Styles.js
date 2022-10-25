@@ -50,8 +50,25 @@ const styles = StyleSheet.create({
     AppointBackIcon: {
         right: 8,
     },
-    input: {
+    menuContainer: {
+        height: 50,
+        marginHorizontal: 15,
+        marginVertical: 10,
+        backgroundColor: 'white',
+        shadowColor: "#6F6F6F",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 16,
+        borderRadius: 10,
+        paddingHorizontal: 2,
+        
+    },
 
+    input: {
         margin: 9,
         height: 50,
         paddingLeft: 10,
@@ -825,7 +842,7 @@ const styles = StyleSheet.create({
     AppTitleUpdate: {
         color: 'black',
     },
-    
+
 
     AppTxtUpdate: {
         color: '#6F6F6F',
@@ -894,6 +911,16 @@ const styles = StyleSheet.create({
 
     formContainer: {
         marginHorizontal: 15,
+    },
+
+    scrollItem: {
+        marginHorizontal: 2,
+        fontFamily: 'Poppins-semibold',
+        fontSize: 14,
+        textAlignVertical: 'center',
+    },
+    LineColor: {
+        color: '#6f6f6fc4'
     },
 
 

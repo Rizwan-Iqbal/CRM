@@ -13,7 +13,7 @@ import AddOppointmentScreen from './src/Screens/AddAppointmentScreen';
 import NotificationScreen from './src/Screens/NotificationScreen';
 import CompanyRegScreen from './src/Screens/CompanyRegScreen';
 import PersonalDetailScreen from './src/Screens/PersonalDetailScreen';
-import CompanyDetailScreen from './src/Screens/CompanyDetailScreen';
+import CaseDetailScreen from './src/Screens/CaseDetailScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -149,7 +149,7 @@ export default function App() {
 
             />
 
-            <Tab.Screen name="CompanyDetailScreen" component={CompanyDetailScreen} options={{
+            <Tab.Screen name="CaseDetailScreen" component={CaseDetailScreen} options={{
               tabBarIcon: ({ size, color }) => (
                 <Image source={require('./assets/images/app.png')}
                   style={{

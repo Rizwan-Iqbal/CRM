@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1753,
+            "activePatchIndex": 1787,
             "patches": [
                 {
                     "date": 1664773148633,
@@ -7020,6 +7020,142 @@
                 {
                     "date": 1666700178312,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         marginVertical: 10,\r\n \r\n     },\r\n     AppointBackIcon: {\r\n-        right: 5,\r\n+        right: 8,\r\n     },\r\n     input: {\r\n \r\n         margin: 9,\r\n"
+                },
+                {
+                    "date": 1666703094922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,11 @@\n     },\r\n     AppointBackIcon: {\r\n         right: 8,\r\n     },\r\n+    menuContainer: {\r\n+    marginHorizontal: 10,\r\n+    },\r\n     input: {\r\n \r\n         margin: 9,\r\n         height: 50,\r\n@@ -824,10 +827,10 @@\n \r\n     AppTitleUpdate: {\r\n         color: 'black',\r\n     },\r\n-    \r\n \r\n+\r\n     AppTxtUpdate: {\r\n         color: '#6F6F6F',\r\n     },\r\n     welcome: {\r\n"
+                },
+                {
+                    "date": 1666703108540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     AppointBackIcon: {\r\n         right: 8,\r\n     },\r\n     menuContainer: {\r\n-    marginHorizontal: 10,\r\n+    marginHorizontal: 15,\r\n     },\r\n     input: {\r\n \r\n         margin: 9,\r\n"
+                },
+                {
+                    "date": 1666703119663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n         right: 8,\r\n     },\r\n     menuContainer: {\r\n     marginHorizontal: 15,\r\n+    marginVertical: 20,\r\n     },\r\n     input: {\r\n \r\n         margin: 9,\r\n"
+                },
+                {
+                    "date": 1666703138878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         right: 8,\r\n     },\r\n     menuContainer: {\r\n     marginHorizontal: 15,\r\n-    marginVertical: 20,\r\n+    marginVertical: 18,\r\n     },\r\n     input: {\r\n \r\n         margin: 9,\r\n"
+                },
+                {
+                    "date": 1666703339654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -899,9 +899,13 @@\n     formContainer: {\r\n         marginHorizontal: 15,\r\n     },\r\n \r\n+    scrollItem: {\r\n+marginHorizontal: 10,\r\n+    },\r\n \r\n \r\n+\r\n });\r\n \r\n export { styles }\r\n"
+                },
+                {
+                    "date": 1666703370389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -900,9 +900,9 @@\n         marginHorizontal: 15,\r\n     },\r\n \r\n     scrollItem: {\r\n-marginHorizontal: 10,\r\n+marginHorizontal: 5,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703378716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -900,9 +900,9 @@\n         marginHorizontal: 15,\r\n     },\r\n \r\n     scrollItem: {\r\n-marginHorizontal: 5,\r\n+marginHorizontal: 2,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703423936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,10 @@\n     AppointBackIcon: {\r\n         right: 8,\r\n     },\r\n     menuContainer: {\r\n-    marginHorizontal: 15,\r\n-    marginVertical: 18,\r\n+        marginHorizontal: 15,\r\n+        marginVertical: 18,\r\n     },\r\n     input: {\r\n \r\n         margin: 9,\r\n@@ -900,9 +900,11 @@\n         marginHorizontal: 15,\r\n     },\r\n \r\n     scrollItem: {\r\n-marginHorizontal: 2,\r\n+        marginHorizontal: 2,\r\n+        fontFamily: 'Poppins-semibold',\r\n+\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703437505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -902,9 +902,9 @@\n \r\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-semibold',\r\n-\r\n+        fontSize: 12,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703459405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -902,9 +902,9 @@\n \r\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-semibold',\r\n-        fontSize: 12,\r\n+        fontSize: 14,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703497444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -902,9 +902,9 @@\n \r\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-semibold',\r\n-        fontSize: 14,\r\n+        fontSize: 15,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703505678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -902,9 +902,9 @@\n \r\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-semibold',\r\n-        fontSize: 15,\r\n+        fontSize: 14,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703565972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     AppointBackIcon: {\r\n         right: 8,\r\n     },\r\n     menuContainer: {\r\n-        marginHorizontal: 15,\r\n+        marginHorizontal: 12,\r\n         marginVertical: 18,\r\n     },\r\n     input: {\r\n \r\n"
+                },
+                {
+                    "date": 1666703573018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     AppointBackIcon: {\r\n         right: 8,\r\n     },\r\n     menuContainer: {\r\n-        marginHorizontal: 12,\r\n+        marginHorizontal: 10,\r\n         marginVertical: 18,\r\n     },\r\n     input: {\r\n \r\n"
+                },
+                {
+                    "date": 1666703603703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -901,10 +901,10 @@\n     },\r\n \r\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n-        fontFamily: 'Poppins-semibold',\r\n-        fontSize: 14,\r\n+        fontFamily: 'Poppins-regular',\r\n+        fontSize: 16,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703609898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -902,9 +902,9 @@\n \r\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-regular',\r\n-        fontSize: 16,\r\n+        fontSize: 15,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703616704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -901,10 +901,10 @@\n     },\r\n \r\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n-        fontFamily: 'Poppins-regular',\r\n-        fontSize: 15,\r\n+        fontFamily: 'Poppins-semibold',\r\n+        fontSize: 14,\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703761888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,11 +52,20 @@\n     },\r\n     menuContainer: {\r\n         marginHorizontal: 10,\r\n         marginVertical: 18,\r\n+        backgroundColor: 'white',\r\n+        shadowColor: \"#6F6F6F\",\r\n+        shadowOffset: {\r\n+            width: 0,\r\n+            height: 12,\r\n+        },\r\n+        shadowOpacity: 0.58,\r\n+        shadowRadius: 16.00,\r\n+        elevation: 16,\r\n     },\r\n+\r\n     input: {\r\n-\r\n         margin: 9,\r\n         height: 50,\r\n         paddingLeft: 10,\r\n         borderRadius: 10,\r\n"
+                },
+                {
+                    "date": 1666703778012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n+        borderRadius: 15,\r\n     },\r\n \r\n     input: {\r\n         margin: 9,\r\n"
+                },
+                {
+                    "date": 1666703849104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,9 @@\n     AppointBackIcon: {\r\n         right: 8,\r\n     },\r\n     menuContainer: {\r\n+        height: 50,\r\n         marginHorizontal: 10,\r\n         marginVertical: 18,\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n@@ -61,9 +62,10 @@\n         },\r\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n-        borderRadius: 15,\r\n+        borderRadius: 10,\r\n+        \r\n     },\r\n \r\n     input: {\r\n         margin: 9,\r\n"
+                },
+                {
+                    "date": 1666703874419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     },\r\n     menuContainer: {\r\n         height: 50,\r\n         marginHorizontal: 10,\r\n-        marginVertical: 18,\r\n+        // marginVertical: 18,\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1666703886531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     },\r\n     menuContainer: {\r\n         height: 50,\r\n         marginHorizontal: 10,\r\n-        // marginVertical: 18,\r\n+        marginVertical: 10,\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n             width: 0,\r\n"
+                },
+                {
+                    "date": 1666703916543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -915,8 +915,9 @@\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n+        justifyContent: 'center',\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703927558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -916,8 +916,9 @@\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n         justifyContent: 'center',\r\n+        alignItems: 'center'\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703945813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -916,9 +916,10 @@\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n         justifyContent: 'center',\r\n-        alignItems: 'center'\r\n+        alignItems: 'center',\r\n+        textAlignVertical: 'bottom',\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703951547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -917,9 +917,9 @@\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n         justifyContent: 'center',\r\n         alignItems: 'center',\r\n-        textAlignVertical: 'bottom',\r\n+        textAlignVertical: 'center',\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666703962233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -915,10 +915,8 @@\n     scrollItem: {\r\n         marginHorizontal: 2,\r\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n-        justifyContent: 'center',\r\n-        alignItems: 'center',\r\n         textAlignVertical: 'center',\r\n     },\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666704007702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         right: 8,\r\n     },\r\n     menuContainer: {\r\n         height: 50,\r\n-        marginHorizontal: 10,\r\n+        marginHorizontal: 15,\r\n         marginVertical: 10,\r\n         backgroundColor: 'white',\r\n         shadowColor: \"#6F6F6F\",\r\n         shadowOffset: {\r\n"
+                },
+                {
+                    "date": 1666704024906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         borderRadius: 10,\r\n+        paddingHorizontal: 5,\r\n         \r\n     },\r\n \r\n     input: {\r\n"
+                },
+                {
+                    "date": 1666705208737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -918,8 +918,11 @@\n         fontFamily: 'Poppins-semibold',\r\n         fontSize: 14,\r\n         textAlignVertical: 'center',\r\n     },\r\n+    LineColor: {\r\n+        color: '#6F6F6F'\r\n+    },\r\n \r\n \r\n \r\n });\r\n"
+                },
+                {
+                    "date": 1666705262296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -919,9 +919,9 @@\n         fontSize: 14,\r\n         textAlignVertical: 'center',\r\n     },\r\n     LineColor: {\r\n-        color: '#6F6F6F'\r\n+        color: '#6f6f6f57'\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666705281197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -919,9 +919,9 @@\n         fontSize: 14,\r\n         textAlignVertical: 'center',\r\n     },\r\n     LineColor: {\r\n-        color: '#6f6f6f57'\r\n+        color: '#6f6f6f85'\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666705311343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -919,9 +919,9 @@\n         fontSize: 14,\r\n         textAlignVertical: 'center',\r\n     },\r\n     LineColor: {\r\n-        color: '#6f6f6f85'\r\n+        color: '#6f6f6fc4'\r\n     },\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666705349703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n         shadowOpacity: 0.58,\r\n         shadowRadius: 16.00,\r\n         elevation: 16,\r\n         borderRadius: 10,\r\n-        paddingHorizontal: 5,\r\n+        paddingHorizontal: 2,\r\n         \r\n     },\r\n \r\n     input: {\r\n"
                 }
             ],
             "date": 1664773148633,
