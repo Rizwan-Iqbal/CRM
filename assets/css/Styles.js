@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
     },
     backIcon: {
         marginLeft: 12,
-        width: '10%',
-        marginTop: 12,
+        // width: '10%',
+        marginTop: 10,
         // paddingRight: 60
     },
 
@@ -46,6 +46,9 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         marginVertical: 10,
 
+    },
+    AppointBackIcon: {
+        right: 8,
     },
     input: {
 
@@ -299,7 +302,7 @@ const styles = StyleSheet.create({
         borderTopWidth: 0.5,
         width: '50%',
         marginTop: 12,
-        
+
 
     },
     clientsIcon: {
@@ -555,6 +558,10 @@ const styles = StyleSheet.create({
 
     },
 
+    underlineTxt: {
+        textDecorationLine: 'underline',
+    },
+
     clentProfile: {
         position: 'absolute',
         right: 10,
@@ -747,7 +754,7 @@ const styles = StyleSheet.create({
     dateIcon: {
         position: 'absolute',
         right: 20,
-        top: 38,
+        top: 35,
     },
 
     AppInnCon: {
@@ -787,7 +794,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.58,
         shadowRadius: 16.00,
         elevation: 16,
-        marginVertical: 6,
+        marginVertical: 3,
         marginHorizontal: 10,
         padding: 15,
         borderRadius: 10,
@@ -795,14 +802,18 @@ const styles = StyleSheet.create({
 
     AppTitle: {
         fontFamily: 'Poppins-semibold',
-        fontSize: 14,
+        fontSize: 12,
         color: 'white',
         lineHeight: 20,
     },
 
+    AppMainTitle: {
+        fontSize: 14,
+    },
+
     AppTxt: {
         fontFamily: 'Poppins-regular',
-        fontSize: 14,
+        fontSize: 12,
         color: 'white',
 
     },
@@ -814,6 +825,7 @@ const styles = StyleSheet.create({
     AppTitleUpdate: {
         color: 'black',
     },
+    
 
     AppTxtUpdate: {
         color: '#6F6F6F',

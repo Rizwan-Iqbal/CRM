@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/Screens/NoNotificationScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1666679758041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1666679790437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n import { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\n import Checkbox from 'expo-checkbox';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n+import Header from '../components/Header';\r\n const NoNotificationScreen = () => {\r\n     const [isSelected, setSelection] = useState(false);\r\n \r\n \r\n"
+                }
+            ],
+            "date": 1666679758041,
+            "name": "Commit-0",
+            "content": "import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';\r\nimport React, { useState } from 'react';\r\nimport { styles } from '../../assets/css/Styles';\r\nimport { ImageBackground } from 'react-native';\r\nimport { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\nimport { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\nimport Checkbox from 'expo-checkbox';\r\nimport Icon from 'react-native-vector-icons/FontAwesome5';\r\nconst NoNotificationScreen = () => {\r\n    const [isSelected, setSelection] = useState(false);\r\n\r\n\r\n    // const email = <FontAwesome5 name={'email'} />;\r\n\r\n    return (\r\n        <KeyboardAvoidingView\r\n            behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"} >\r\n            <ScrollView>\r\n\r\n                <View style={styles.container}>\r\n                <Header title = 'Notification' />\r\n\r\n\r\n                    <View style={{ alignItems: 'center', }}>\r\n                        <Image source={require('../../assets/images/no.png')} heigh style={styles.notiImg}></Image>\r\n                    </View>\r\n\r\n                    <View>\r\n                        <View style={styles.form}>\r\n                            <View style={styles.newUser}>\r\n                            <Text style={styles.noNotiTxt}>No Notifications</Text>\r\n\r\n                            </View>\r\n                           \r\n\r\n                        </View>\r\n                        \r\n                    </View>\r\n\r\n                </View>\r\n            </ScrollView>\r\n        </KeyboardAvoidingView>\r\n    )\r\n}\r\n\r\nexport default NoNotificationScreen"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/HeaderWithSearch.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1666678431311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1666678444581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n-import { View, Text } from 'react-native'\r\n-import React from 'react'\r\n+import { View, Text,TextInput } from 'react-native';\r\n+import React from 'react';\r\n+import Icon from 'react-native-vector-icons/FontAwesome5';\r\n+import { styles } from '../../assets/css/Styles';\r\n \r\n const HeaderWithSearch = () => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n"
+                },
+                {
+                    "date": 1666678508556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { View, Text,TextInput } from 'react-native';\r\n+import { View, Text,TextInput, Image } from 'react-native';\r\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n \r\n"
+                },
+                {
+                    "date": 1666678698260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,17 +2,17 @@\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n \r\n-const HeaderWithSearch = () => {\r\n+const HeaderWithSearch = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n \r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   > */}\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.SignInTitle, styles.casesTitle]}> Clients </Text>\r\n+                <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n             </View>\r\n             <View style={styles.searchContainer}>\r\n \r\n                 <View style={styles.searchInnerContainer}>\r\n"
+                }
+            ],
+            "date": 1666678431311,
+            "name": "Commit-0",
+            "content": "import { View, Text } from 'react-native'\r\nimport React from 'react'\r\n\r\nconst HeaderWithSearch = () => {\r\n    return (\r\n        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n\r\n            {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   > */}\r\n            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n\r\n                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                <Text style={[styles.SignInTitle, styles.casesTitle]}> Clients </Text>\r\n            </View>\r\n            <View style={styles.searchContainer}>\r\n\r\n                <View style={styles.searchInnerContainer}>\r\n                    <TextInput style={styles.searchInput}\r\n                        placeholder=\"Search\" />\r\n                    <Icon style={[styles.eyeIcon, styles.searchIcon]} name={'search'} color={'#474747'} size={26} />\r\n\r\n                </View>\r\n\r\n                <View style={styles.settingIcon}>\r\n                    <Image source={require('../../assets/images/set.png')}\r\n                        style={{\r\n                            width: 68,\r\n                            height: 68,\r\n                        }} />\r\n                </View>\r\n            </View>\r\n            {/* </ImageBackground> */}\r\n        </View>\r\n    )\r\n}\r\n\r\nexport default HeaderWithSearch"
+        }
+    ]
+}

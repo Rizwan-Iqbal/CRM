@@ -2,17 +2,18 @@ import { useEffect, useCallback } from 'react';
 import { Text, View, StyleSheet, KeyboardAvoidingView, Image } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
-import HomeScreen from './src/components/HomeScreen';
-import ClientScreen from './src/components/ClientScreen';
-import BookingScreen from './src/components/BookingScreen';
+import HomeScreen from './src/Screens/HomeScreen';
+import ClientScreen from './src/Screens/ClientScreen';
+import BookingScreen from './src/Screens/BookingScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import CasesScreen from './src/components/CasesScreen';
-import AppointmentDetailScreen from './src/components/AppointmentDetailScreen';
-import SettingScreen from './src/components/SettingScreen';
-import EditProfileScreen from './src/components/EditProfileScreen';
-import CaseFormScreen from './src/components/CaseFormScreen';
-import PersonalRegScreen from './src/components/PersonalRegScreen';
+import CasesScreen from './src/Screens/CasesScreen';
+import SupportScreen from './src/Screens/SupportScreen';
+import AddOppointmentScreen from './src/Screens/AddAppointmentScreen'; 
+import NotificationScreen from './src/Screens/NotificationScreen';
+import CompanyRegScreen from './src/Screens/CompanyRegScreen';
+import PersonalDetailScreen from './src/Screens/PersonalDetailScreen';
+import CompanyDetailScreen from './src/Screens/CompanyDetailScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -119,7 +120,7 @@ export default function App() {
               )
             }} />
 
-            <Tab.Screen name="Registration" component={PersonalRegScreen} options={{
+            <Tab.Screen name="Add Appointment" component={AddOppointmentScreen} options={{
               tabBarIcon: ({ size, color }) => (
                 <Image source={require('./assets/images/app.png')}
                   style={{
@@ -129,8 +130,38 @@ export default function App() {
                     color: { color }
                   }} />
               )
-            }} />
+            }}
 
+            />
+
+
+            <Tab.Screen name="SupportScreen" component={SupportScreen} options={{
+              tabBarIcon: ({ size, color }) => (
+                <Image source={require('./assets/images/app.png')}
+                  style={{
+                    width: 28,
+                    height: 28,
+
+                    color: { color }
+                  }} />
+              )
+            }}
+
+            />
+
+            <Tab.Screen name="CompanyDetailScreen" component={CompanyDetailScreen} options={{
+              tabBarIcon: ({ size, color }) => (
+                <Image source={require('./assets/images/app.png')}
+                  style={{
+                    width: 28,
+                    height: 28,
+
+                    color: { color }
+                  }} />
+              )
+            }}
+
+            />
           </Tab.Navigator>
         </NavigationContainer>
       </View>

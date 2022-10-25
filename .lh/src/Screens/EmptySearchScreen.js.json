@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Screens/EmptySearchScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1666679077754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1666679077754,
+            "name": "Commit-0",
+            "content": "import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';\r\nimport React, { useState } from 'react';\r\nimport { styles } from '../../assets/css/Styles';\r\nimport { ImageBackground } from 'react-native';\r\nimport { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\nimport { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\nimport Checkbox from 'expo-checkbox';\r\nimport Icon from 'react-native-vector-icons/FontAwesome5';\r\nimport OTPInputView from '@twotalltotems/react-native-otp-input';\r\nimport RnOtpTimer from 'rn-otp-timer';\r\nimport { Tab, TabView } from '@rneui/themed';\r\nimport { SafeAreaProvider } from 'react-native-safe-area-context';\r\nimport { FAB } from '@rneui/themed';\r\nimport Header from '../components/Header';\r\n\r\nconst EmptySearchScreen = () => {\r\n    const [isSelected, setSelection] = useState(false);\r\n    const [index, setIndex] = useState(0);\r\n    const [visible, setVisible] = React.useState(true);\r\n\r\n\r\n    // const email = <FontAwesome5 name={'email'} />;\r\n\r\n    return (\r\n\r\n        <View style={{ height: '100%' }}>\r\n            <View>\r\n                <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   >\r\n                    <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n\r\n                        <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                        <Text style={[styles.SignInTitle, styles.casesTitle]}> Search </Text>\r\n                    </View>\r\n                    <View style={[styles.searchContainer, styles.searchContainerUpdate]}>\r\n\r\n                        <TextInput style={[styles.searchInput, styles.searchInputUpdate]}\r\n                            placeholder=\"Search\" />\r\n                        <Icon style={[styles.eyeIcon, styles.searchIconUpdate]} name={'search'} color={'#474747'} size={26} />\r\n\r\n                    </View>\r\n                </ImageBackground>\r\n            </View>\r\n\r\n            <View>\r\n\r\n                <View style= {styles.emptySearchContainer}>\r\n\r\n                    <Image \r\n                        source={require('../../assets/images/empty.png')} \r\n                        style = {styles.emptyImages} />\r\n                </View>\r\n\r\n                <View>\r\n                    <Text style = {[styles.topTxt , styles.notFound]}>Not Found!</Text>\r\n                </View>\r\n\r\n\r\n\r\n\r\n            </View>\r\n\r\n\r\n\r\n        </View>\r\n\r\n    )\r\n}\r\n\r\nexport default EmptySearchScreen"
+        }
+    ]
+}

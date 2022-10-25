@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/components/HeaderWithOption.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1666697411967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1666697419464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,8 @@\n                 <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'ellipsis-v'} color={'white'} size={20} />\r\n \r\n             </View>\r\n \r\n-            {/* </ImageBackground> */}\r\n         </View>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1666697461858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n \r\n-const HeaderWithOption = () => {\r\n+const HeaderWithOption = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n-         \r\n+\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.appointmentTxt]}>Appointment Details </Text>\r\n+                <Text style={[styles.appointmentTxt]}>{props.title} </Text>\r\n                 <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'ellipsis-v'} color={'white'} size={20} />\r\n \r\n             </View>\r\n \r\n"
+                },
+                {
+                    "date": 1666697558639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n+import Icon from 'react-native-vector-icons/FontAwesome5'\r\n \r\n const HeaderWithOption = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n"
+                },
+                {
+                    "date": 1666697583735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n import Icon from 'react-native-vector-icons/FontAwesome5'\r\n+import { styles } from '../../assets/css/Styles';\r\n \r\n+\r\n const HeaderWithOption = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n \r\n"
+                }
+            ],
+            "date": 1666697411967,
+            "name": "Commit-0",
+            "content": "import { View, Text } from 'react-native'\r\nimport React from 'react'\r\n\r\nconst HeaderWithOption = () => {\r\n    return (\r\n        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n         \r\n            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n\r\n                <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                <Text style={[styles.appointmentTxt]}>Appointment Details </Text>\r\n                <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'ellipsis-v'} color={'white'} size={20} />\r\n\r\n            </View>\r\n\r\n            {/* </ImageBackground> */}\r\n        </View>\r\n    )\r\n}\r\n\r\nexport default HeaderWithOption"
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "sourceFile": "src/components/Header.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1666677249149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1666677446780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import { View, Text } from 'react-native'\r\n+import React from 'react'\r\n+\r\n+const Header = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text>Header</Text>\r\n+    </View>\r\n+  )\r\n+}\r\n+\r\n+export default Header\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666677482556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,26 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n \r\n const Header = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Header</Text>\r\n-    </View>\r\n-  )\r\n+    return (\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n+            {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'} style = {{height: 200,}}  > */}\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n+\r\n+                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n+                <Text style={[styles.SignInTitle, styles.casesTitle]}> Appointments </Text>\r\n+            </View>\r\n+            <View style={[styles.searchContainer, styles.searchContainerUpdate]}>\r\n+\r\n+                <TextInput style={[styles.searchInput, styles.searchInputUpdate]}\r\n+                    placeholder=\"Search\" />\r\n+                <Icon style={[styles.eyeIcon, styles.searchIconUpdate]} name={'search'} color={'#474747'} size={26} />\r\n+\r\n+            </View>\r\n+\r\n+            {/* </ImageBackground> */}\r\n+        </View>\r\n+    )\r\n }\r\n \r\n export default Header\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666677606654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n \r\n-const Header = () => {\r\n+const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'} style = {{height: 200,}}  > */}\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.SignInTitle, styles.casesTitle]}> Appointments </Text>\r\n+                <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n             </View>\r\n             <View style={[styles.searchContainer, styles.searchContainerUpdate]}>\r\n \r\n                 <TextInput style={[styles.searchInput, styles.searchInputUpdate]}\r\n"
+                },
+                {
+                    "date": 1666677746857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n-import { View, Text } from 'react-native'\r\n-import React from 'react'\r\n+import { View, Text } from 'react-native';\r\n+import React from 'react';\r\n+import Icon from 'react-native-vector-icons/FontAwesome5';\r\n \r\n+\r\n const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'} style = {{height: 200,}}  > */}\r\n"
+                },
+                {
+                    "date": 1666677775716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import { View, Text } from 'react-native';\r\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n+import { styles } from '../../assets/css/Styles';\r\n \r\n \r\n const Header = (props) => {\r\n     return (\r\n"
+                },
+                {
+                    "date": 1666677791802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { View, Text } from 'react-native';\r\n+import { View, Text,TextInput } from 'react-native';\r\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n \r\n"
+                },
+                {
+                    "date": 1666678438647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n \r\n-\r\n const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'} style = {{height: 200,}}  > */}\r\n"
+                },
+                {
+                    "date": 1666679373484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,12 @@\n-import { View, Text,TextInput } from 'react-native';\r\n-import React from 'react';\r\n-import Icon from 'react-native-vector-icons/FontAwesome5';\r\n-import { styles } from '../../assets/css/Styles';\r\n+import { View, Text } from 'react-native'\r\n+import React from 'react'\r\n \r\n-const Header = (props) => {\r\n-    return (\r\n-        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n-            {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'} style = {{height: 200,}}  > */}\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n-\r\n-                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n-            </View>\r\n-            <View style={[styles.searchContainer, styles.searchContainerUpdate]}>\r\n-\r\n-                <TextInput style={[styles.searchInput, styles.searchInputUpdate]}\r\n-                    placeholder=\"Search\" />\r\n-                <Icon style={[styles.eyeIcon, styles.searchIconUpdate]} name={'search'} color={'#474747'} size={26} />\r\n-\r\n-            </View>\r\n-\r\n-            {/* </ImageBackground> */}\r\n-        </View>\r\n-    )\r\n+const Header = () => {\r\n+  return (\r\n+    <View>\r\n+      <Text>Header</Text>\r\n+    </View>\r\n+  )\r\n }\r\n \r\n export default Header\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666679522005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,16 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n \r\n const Header = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Header</Text>\r\n-    </View>\r\n-  )\r\n+    return (\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n+\r\n+                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n+                <Text style={[styles.SignInTitle, styles.casesTitle]}> Appointments </Text>\r\n+            </View>\r\n+        </View>\r\n+    )\r\n }\r\n \r\n export default Header\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666679561384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n-import { View, Text } from 'react-native'\r\n-import React from 'react'\r\n+import { View, Text,TextInput, Image } from 'react-native';\r\n+import React from 'react';\r\n+import Icon from 'react-native-vector-icons/FontAwesome5';\r\n+import { styles } from '../../assets/css/Styles';\r\n \r\n const Header = () => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n"
+                },
+                {
+                    "date": 1666679599373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,15 +2,15 @@\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n \r\n-const Header = () => {\r\n+const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.SignInTitle, styles.casesTitle]}> Appointments </Text>\r\n+                <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n             </View>\r\n         </View>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1666691490610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import { View, Text,TextInput, Image } from 'react-native';\r\n+import React from 'react';\r\n+import Icon from 'react-native-vector-icons/FontAwesome5';\r\n+import { styles } from '../../assets/css/Styles';\r\n+\r\n+const Header = (props) => {\r\n+    return (\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n+\r\n+                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n+                <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n+            </View>\r\n+        </View>\r\n+    )\r\n+}\r\n+\r\n+export default Header\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666692026683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { styles } from '../../assets/css/Styles';\r\n \r\n const Header = (props) => {\r\n     return (\r\n-        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 50,}}>\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n@@ -14,23 +14,5 @@\n         </View>\r\n     )\r\n }\r\n \r\n-export default Header\n-import { View, Text,TextInput, Image } from 'react-native';\r\n-import React from 'react';\r\n-import Icon from 'react-native-vector-icons/FontAwesome5';\r\n-import { styles } from '../../assets/css/Styles';\r\n-\r\n-const Header = (props) => {\r\n-    return (\r\n-        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n-\r\n-                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n-            </View>\r\n-        </View>\r\n-    )\r\n-}\r\n-\r\n export default Header\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666692033807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { styles } from '../../assets/css/Styles';\r\n \r\n const Header = (props) => {\r\n     return (\r\n-        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 50,}}>\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 100,}}>\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n"
+                },
+                {
+                    "date": 1666692046373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { styles } from '../../assets/css/Styles';\r\n \r\n const Header = (props) => {\r\n     return (\r\n-        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 100,}}>\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 80,}}>\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n"
+                },
+                {
+                    "date": 1666692066179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n import { styles } from '../../assets/css/Styles';\r\n \r\n const Header = (props) => {\r\n     return (\r\n-        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 80,}}>\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 90,}}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n             </View>\r\n"
+                },
+                {
+                    "date": 1666692110536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 90,}}>\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n             </View>\r\n"
+                },
+                {
+                    "date": 1666692243841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 90,}}>\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent:'center'}}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n             </View>\r\n"
+                },
+                {
+                    "date": 1666692263236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 90,}}>\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent:'center'}}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20,}}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n             </View>\r\n"
+                },
+                {
+                    "date": 1666692340830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 90,}}>\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20,}}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 20,}}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n             </View>\r\n"
+                },
+                {
+                    "date": 1666692407223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { styles } from '../../assets/css/Styles';\r\n \r\n const Header = (props) => {\r\n     return (\r\n-        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, height: 90,}}>\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20,}}>\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 20,}}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n"
+                },
+                {
+                    "date": 1666692425041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n const Header = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20,}}>\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 20,}}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 25,}}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n             </View>\r\n"
+                },
+                {
+                    "date": 1666692506757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n import { styles } from '../../assets/css/Styles';\r\n \r\n const Header = (props) => {\r\n     return (\r\n-        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20,}}>\r\n-            <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 25,}}>\r\n+        <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n+            <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n             </View>\r\n"
+                },
+                {
+                    "date": 1666692521918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.SignInTitle]}> {props.title} </Text>\r\n+                <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n             </View>\r\n         </View>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1666692539868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n+                <Text style={[styles.SignInTitle, ]}> {props.title} </Text>\r\n             </View>\r\n         </View>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1666692762014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n-                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n+                <Icon style={[styles.backIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n                 <Text style={[styles.SignInTitle, ]}> {props.title} </Text>\r\n             </View>\r\n         </View>\r\n     )\r\n"
+                }
+            ],
+            "date": 1666677249149,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}
