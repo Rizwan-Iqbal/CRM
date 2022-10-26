@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1666678431311,
@@ -20,6 +20,34 @@
                 {
                     "date": 1666678698260,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,17 +2,17 @@\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n \r\n-const HeaderWithSearch = () => {\r\n+const HeaderWithSearch = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n \r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   > */}\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n                 <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n-                <Text style={[styles.SignInTitle, styles.casesTitle]}> Clients </Text>\r\n+                <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n             </View>\r\n             <View style={styles.searchContainer}>\r\n \r\n                 <View style={styles.searchInnerContainer}>\r\n"
+                },
+                {
+                    "date": 1666775042902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   > */}\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n-                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n+                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} onPress={Navigation.GoBack()} />\r\n                 <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n             </View>\r\n             <View style={styles.searchContainer}>\r\n \r\n"
+                },
+                {
+                    "date": 1666775070759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { View, Text,TextInput, Image } from 'react-native';\r\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n+import { NavigationContainer } from '@react-navigation/native';\r\n \r\n const HeaderWithSearch = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n"
+                },
+                {
+                    "date": 1666775083325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import { styles } from '../../assets/css/Styles';\r\n import { NavigationContainer } from '@react-navigation/native';\r\n \r\n const HeaderWithSearch = (props) => {\r\n+    const navigation = useNavigation();\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n \r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   > */}\r\n"
+                },
+                {
+                    "date": 1666775100915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import { View, Text,TextInput, Image } from 'react-native';\r\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n-import { NavigationContainer } from '@react-navigation/native';\r\n \r\n+\r\n const HeaderWithSearch = (props) => {\r\n     const navigation = useNavigation();\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n"
+                },
+                {
+                    "date": 1666775106375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import { View, Text,TextInput, Image } from 'react-native';\r\n import React from 'react';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import { styles } from '../../assets/css/Styles';\r\n+import { useNavigation } from '@react-navigation/native';\r\n \r\n-\r\n const HeaderWithSearch = (props) => {\r\n     const navigation = useNavigation();\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n"
+                },
+                {
+                    "date": 1666775142832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   > */}\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n-                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} onPress={Navigation.GoBack()} />\r\n+                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} onPress={navigation.goBack()} />\r\n                 <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n             </View>\r\n             <View style={styles.searchContainer}>\r\n \r\n"
+                },
+                {
+                    "date": 1666775235591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n             {/* <ImageBackground source={require('../../assets/images/clientHeader.png')} resizeMode={'cover'}   > */}\r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n-                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} onPress={navigation.goBack()} />\r\n+                <Icon style={[styles.backIcon, styles.caseBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} onPress={()=> navigation.goBack()} />\r\n                 <Text style={[styles.SignInTitle, styles.casesTitle]}> {props.title} </Text>\r\n             </View>\r\n             <View style={styles.searchContainer}>\r\n \r\n"
                 }
             ],
             "date": 1666678431311,

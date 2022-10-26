@@ -1,41 +1,16 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity, Platform } from 'react-native';
+import { View, Text, TextInput, ScrollView, Pressable, TouchableOpacity, Platform } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import OTPInputView from '@twotalltotems/react-native-otp-input';
-import RnOtpTimer from 'rn-otp-timer';
-import { Tab, TabView } from '@rneui/themed';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { FAB } from '@rneui/themed';
-import { MultiDateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar'
-import englishLocale from 'dayjs/locale/en';
 import { Picker } from '@react-native-picker/picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import Header from '../components/Header';
 
-
-
 const AddOppointmentScreen = () => {
-    const [isSelected, setSelection] = useState(false);
-    const [index, setIndex] = useState(0);
-    const [visible, setVisible] = React.useState(true);
-    const [selectedDates, setSelectedDates] = React.useState([]);
     const [selectedLanguage, setSelectedLanguage] = useState();
     const [date, setDate] = useState(new Date(1598051730000));
     const [mode, setMode] = useState('date');
     const [show, setShow] = useState(false);
-
-
-    // const setMaxNumberOfSelectedDates = React.useCallback((_selectedDates) => {
-    //     const MAX_DATES = 10;
-    //     if (_selectedDates.length <= MAX_DATES) {
-    //         setSelectedDates(_selectedDates)
-    //     }
-    // })
 
     const onChange = (event, selectedDate) => {
         const currentDate = selectedDate || date;
@@ -59,8 +34,7 @@ const AddOppointmentScreen = () => {
     return (
 
         <View style={{ height: '100%' }}>
-            <Header title = 'Add Appointment' />
-            
+            <Header title='Add Appointment' />
 
             <ScrollView>
 
@@ -89,8 +63,6 @@ const AddOppointmentScreen = () => {
                                 enabled={false}
                                 color='#6f6f6fb3'
                                 style={{ fontSize: 14.5, fontFamily: 'Poppins-semibold' }}
-
-
                             />
                             <Picker.Item label="Payment issues" value="Payment issues"
                                 color='#6F6F6F'
@@ -99,7 +71,6 @@ const AddOppointmentScreen = () => {
                             <Picker.Item label="Spam" value="Spam" color='#6F6F6F' />
                             <Picker.Item label="Login Error" value="Login Error"
                                 color='#6F6F6F'
-
                             />
 
                         </Picker>
@@ -111,20 +82,18 @@ const AddOppointmentScreen = () => {
                             placeholder="Divorce Case" />
 
                     </View>
-                   
-                    <View style = {{marginTop: 3 , marginBottom: 10,}}>
-                        <View>
-                        <Text style={styles.inputLabel}>Date</Text>
 
-                            <Pressable onPress={showDatepicker}  style = {styles.date} > 
-                                <Text style = {{color: '#6f6f6fb3', margin: 10, fontSize: 14,  fontFamily: 'Poppins-regular', marginTop: 13,}}>MM/DD/YYYY</Text>
+                    <View style={{ marginTop: 3, marginBottom: 10, }}>
+                        <View>
+                            <Text style={styles.inputLabel}>Date</Text>
+
+                            <Pressable onPress={showDatepicker} style={styles.date} >
+                                <Text style={{ color: '#6f6f6fb3', margin: 10, fontSize: 14, fontFamily: 'Poppins-regular', marginTop: 13, }}>MM/DD/YYYY</Text>
                             </Pressable>
                             <Icon style={[styles.dateIcon]} name={'calendar-alt'} color={'#6f6f6fb3'} size={25} onPress={showDatepicker} />
 
                         </View>
-                        {/* <View>
-                            <Button onPress={showTimepicker} title="Show time picker!" />
-                        </View> */}
+
                         {show && (
                             <DateTimePicker
                                 testID="dateTimePicker"
@@ -138,19 +107,17 @@ const AddOppointmentScreen = () => {
                         )}
                     </View>
 
-                    <View style = {{marginTop: 3 , marginBottom: 10,}}>
+                    <View style={{ marginTop: 3, marginBottom: 10, }}>
                         <View>
-                        <Text style={styles.inputLabel}>Time</Text>
+                            <Text style={styles.inputLabel}>Time</Text>
 
-                            <Pressable onPress={showTimepicker}  style = {styles.date} > 
-                                <Text style = {{color: '#6f6f6fb3', margin: 10, fontSize: 14, marginLeft: 4, fontFamily: 'Poppins-regular', marginTop: 13,}}>	HH:MM</Text>
+                            <Pressable onPress={showTimepicker} style={styles.date} >
+                                <Text style={{ color: '#6f6f6fb3', margin: 10, fontSize: 14, marginLeft: 4, fontFamily: 'Poppins-regular', marginTop: 13, }}>	HH:MM</Text>
                             </Pressable>
                             <Icon style={[styles.dateIcon]} name={'clock'} color={'#6f6f6fb3'} size={25} onPress={showTimepicker} />
 
                         </View>
-                        {/* <View>
-                            <Button onPress={showTimepicker} title="Show time picker!" />
-                        </View> */}
+
                         {show && (
                             <DateTimePicker
                                 testID="dateTimePicker"
@@ -169,8 +136,7 @@ const AddOppointmentScreen = () => {
                     <TextInput
                         multiline={true}
                         numberOfLines={6}
-                        // onChangeText={(text) => setState({ text })}
-                        // value={this.state.text}
+
                         placeholder={'Meeting Agenda'}
                         style={[styles.input, styles.textArea]} />
 
@@ -181,8 +147,6 @@ const AddOppointmentScreen = () => {
                         numberOfLines={6}
                         placeholder={'Notes'}
                         style={[styles.input, styles.textArea]} />
-
-
 
                     <View>
                         <TouchableOpacity style={{ width: '45%', marginLeft: '25%', marginTop: 20, }} disabled={'true'}>
@@ -198,64 +162,5 @@ const AddOppointmentScreen = () => {
 
     )
 }
-
-const CustomTheme: Theme = {
-    ...DefaultTheme,
-    selectedDayContainer: {
-        backgroundColor: '#6F6F6F',
-        width: 28,
-        height: 28,
-        borderRadius: 50,
-        paddingRight: 5,
-        paddingTop: 2,
-        marginTop: 5,
-        marginLeft: 13,
-
-    },
-
-    selectedDayText: {
-        color: 'white',
-        // fontFamily: 'Poppins-regular',
-    },
-
-    titleText: {
-        fontFamily: 'Poppins-semibold',
-    },
-
-    normalDayText: {
-        fontFamily: 'Poppins-regular',
-    },
-
-    // normalMonthText: {
-    //     fontFamily: 'Poppins-semibold',
-    //     marginLeft: '35%',
-    // },
-
-    normalArrowImage: {
-        color: 'black',
-
-    },
-    selectedMonthText: {
-        color: 'black',
-    },
-
-    // calendarContainer: {
-    //     backgroundColor: 'white',
-    //     shadowColor: "#6F6F6F",
-    //     shadowOffset: {
-    //         width: 0,
-    //         height: 12,
-    //     },
-    //     shadowOpacity: 0.58,
-    //     shadowRadius: 16.00,
-    //     elevation: 16,
-    //     height: 400,
-    //     // marginHorizontal: 10,
-    // },
-
-
-
-};
-
 
 export default AddOppointmentScreen

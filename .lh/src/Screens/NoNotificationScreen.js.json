@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1666679758041,
@@ -12,6 +12,10 @@
                 {
                     "date": 1666679790437,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n import { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\n import Checkbox from 'expo-checkbox';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n+import Header from '../components/Header';\r\n const NoNotificationScreen = () => {\r\n     const [isSelected, setSelection] = useState(false);\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1666762718992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,9 @@\n-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';\r\n+import { View, Text, Image, KeyboardAvoidingView, ScrollView, Pressable, TouchableOpacity } from 'react-native';\r\n import React, { useState } from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n-import { ImageBackground } from 'react-native';\r\n-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\n-import Checkbox from 'expo-checkbox';\r\n-import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import Header from '../components/Header';\r\n const NoNotificationScreen = () => {\r\n-    const [isSelected, setSelection] = useState(false);\r\n-\r\n-\r\n-    // const email = <FontAwesome5 name={'email'} />;\r\n-\r\n     return (\r\n         <KeyboardAvoidingView\r\n             behavior={Platform.OS === \"ios\" ? \"padding\" : \"height\"} >\r\n             <ScrollView>\r\n@@ -31,10 +21,8 @@\n                             <View style={styles.newUser}>\r\n                             <Text style={styles.noNotiTxt}>No Notifications</Text>\r\n \r\n                             </View>\r\n-                           \r\n-\r\n                         </View>\r\n                         \r\n                     </View>\r\n \r\n"
                 }
             ],
             "date": 1666679758041,

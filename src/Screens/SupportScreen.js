@@ -1,14 +1,10 @@
 import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import Checkbox from 'expo-checkbox';
-import Icon from 'react-native-vector-icons/FontAwesome5';
 import { Picker } from '@react-native-picker/picker';
 import Header from '../components/Header';
 
 const SupportScreen = () => {
-    const [isSelected, setSelection] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState();
     return (
         <KeyboardAvoidingView

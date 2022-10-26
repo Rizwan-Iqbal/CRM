@@ -10,7 +10,7 @@ const HeaderWithOption = (props) => {
 
             <View style={{ flexDirection: 'row', alignItems: 'center', }}>
 
-                <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />
+                <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} onPress={()=> navigation.goBack()} />
                 <Text style={[styles.appointmentTxt]}>{props.title} </Text>
                 <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'ellipsis-v'} color={'white'} size={20} />
 

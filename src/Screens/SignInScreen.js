@@ -1,25 +1,22 @@
 import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Header from '../components/Header';
+import { useNavigation } from '@react-navigation/native';
+
 const SignInScreen = () => {
+    
+    const navigation = useNavigation();
     const [isSelected, setSelection] = useState(false);
-
-
-    // const email = <FontAwesome5 name={'email'} />;
-
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >
             <ScrollView>
 
                 <View style={styles.container}>
-                <Header title = 'Welcome Back!' />
+                    <Header title='Welcome Back!' />
 
 
                     <View style={{ alignItems: 'center', }}>
@@ -28,16 +25,16 @@ const SignInScreen = () => {
 
                     <View>
                         <View style={styles.form}>
-                            <View style = {styles.inputEmail}>
+                            <View style={styles.inputEmail}>
                                 <TextInput style={styles.input}
                                     placeholder="Email"
                                 />
-                                <Icon style = {styles.emailIcon} name={'envelope'} solid  size={20}/>
+                                <Icon style={styles.emailIcon} name={'envelope'} solid size={20} />
                             </View>
-                            <View style = {styles.inputEmail}>
+                            <View style={styles.inputEmail}>
                                 <TextInput style={styles.input}
                                     placeholder="Password" />
-                                <Icon style = {styles.emailIcon} name={'lock'} solid  size={20}/>
+                                <Icon style={styles.emailIcon} name={'lock'} solid size={20} />
                             </View>
                             <View style={styles.AfterFormContainer}>
                                 <View style={styles.rememberContainer}>
@@ -50,15 +47,17 @@ const SignInScreen = () => {
 
                                 </View>
                                 <View>
-                                    <Text style={styles.forgetTxt}>Forgot Password?</Text>
+                                    <TouchableOpacity onPress={()=> navigation.navigate('Forget Password')}>
+                                        <Text style={styles.forgetTxt}>Forgot Password?</Text>
+                                    </TouchableOpacity>
                                 </View>
                             </View>
                             <View style={styles.newUser}>
-                            <Text style={styles.newUserText}>New User?<Text style = {{ color: 'black'}}> Sign Up </Text></Text>
+                                <Text style={styles.newUserText}>New User?<Text style={{ color: 'black' }} onPress={()=> navigation.navigate('Sign Up')}> Sign Up </Text></Text>
 
                             </View>
                             <View>
-                                <TouchableOpacity style={styles.signInBtnContainer}>
+                                <TouchableOpacity style={styles.signInBtnContainer} onPress={()=> navigation.navigate('Home')}>
                                     <Text style={styles.signInBtn}>Sign In</Text>
                                 </TouchableOpacity>
                             </View>

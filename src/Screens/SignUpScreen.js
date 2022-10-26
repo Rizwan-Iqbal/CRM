@@ -1,17 +1,9 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Header from '../components/Header';
 const SignUpScreen = () => {
-    const [isSelected, setSelection] = useState(false);
-
-
-    // const email = <FontAwesome5 name={'email'} />;
 
     return (
         <KeyboardAvoidingView

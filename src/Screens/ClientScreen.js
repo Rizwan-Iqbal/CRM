@@ -1,28 +1,17 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, Image, ScrollView } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import OTPInputView from '@twotalltotems/react-native-otp-input';
-import RnOtpTimer from 'rn-otp-timer';
 import { Tab, TabView } from '@rneui/themed';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { FAB } from '@rneui/themed';
 import { SpeedDial } from '@rneui/themed';
 import HeaderWithSearch from '../components/HeaderWithSearch';
+import { useNavigation } from '@react-navigation/native';
 
 
 const ClientScreen = () => {
-    const [isSelected, setSelection] = useState(false);
+    const navigation = useNavigation();
     const [index, setIndex] = useState(0);
-    const [visible, setVisible] = React.useState(true);
     const [open, setOpen] = React.useState(false);
-
-
-    // const email = <FontAwesome5 name={'email'} />;
 
     return (
 
@@ -32,8 +21,6 @@ const ClientScreen = () => {
                 <View>
                     <Text style={[styles.topTxt, styles.clientTopTxt]}>Contact Book</Text>
                 </View>
-                {/* <View style={styles.line} /> */}
-
             </View>
             <View style={{ flex: 1, }}>
 
@@ -41,8 +28,6 @@ const ClientScreen = () => {
                     value={index}
                     onChange={(e) => setIndex(e)}
                     indicatorStyle={{
-                        // backgroundColor: '#6F6F6F',
-                        // height: 2,
                     }}
                     disableIndicator={true}
                     containerStyle={{
@@ -59,9 +44,6 @@ const ClientScreen = () => {
                         titleStyle={(active) => ({
                             color: active ? 'white' : "#474747",
                         })}
-
-
-                        // icon={{ name: 'timer', type: 'ionicon', color: 'white' }}
                         containerStyle={(active) => ({
                             backgroundColor: active ? '#474747' : 'white',
                             borderTopLeftRadius: active ? 0 : undefined,
@@ -76,7 +58,7 @@ const ClientScreen = () => {
                         titleStyle={(active) => ({
                             color: active ? 'white' : '#474747',
                         })}
-                        // icon={{ name: 'heart', type: 'ionicon', color: 'white' }}
+
                         containerStyle={(active) => ({
                             backgroundColor: active ? '#474747' : 'white',
                             borderTopRightRadius: active ? 0
@@ -126,6 +108,7 @@ const ClientScreen = () => {
                                     <View>
                                         <Image style={styles.clentProfile}
                                             source={require('../../assets/images/clientProf.png')} />
+                                        <Icon style={[styles.options]} name={'ellipsis-v'} color={'black'} size={20} />
                                     </View>
                                 </View>
 
@@ -169,6 +152,8 @@ const ClientScreen = () => {
                                     <View>
                                         <Image style={styles.clentProfile}
                                             source={require('../../assets/images/clientProf.png')} />
+                                        <Icon style={[styles.options]} name={'ellipsis-v'} color={'black'} size={20} />
+
                                     </View>
                                 </View>
 
@@ -182,13 +167,6 @@ const ClientScreen = () => {
 
             </View>
 
-
-            {/* <FAB
-                    visible={visible}
-                    icon={{ name: 'add', color: 'white' }}
-                    color="#6F6F6F"
-                /> */}
-
             <SpeedDial
                 isOpen={open}
                 icon={{ name: 'add', color: '#fff' }}
@@ -199,17 +177,14 @@ const ClientScreen = () => {
                 <SpeedDial.Action
                     icon={{ name: 'person', color: '#fff' }}
                     title="Personal"
-                    onPress={() => console.log('Add Something')}
+                    onPress={()=> navigation.navigate('Personal Registration')}
                     style={{
                         backgroundColor: 'red'
-
-
-                    }}
-                />
+                    }} />
                 <SpeedDial.Action
                     icon={{ name: 'business', color: '#fff' }}
                     title="Company"
-                    onPress={() => console.log('Add Something')}
+                    onPress={()=> navigation.navigate('Company Registration')}
                 />
             </SpeedDial>
 

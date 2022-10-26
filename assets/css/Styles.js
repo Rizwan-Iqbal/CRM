@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         elevation: 16,
         borderRadius: 10,
         paddingHorizontal: 2,
-        
+
     },
 
     input: {
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         color: '#6F6F6F',
         fontSize: 10,
         fontWeight: '600',
-        fontFamily: 'Segoe-ui',
+        fontFamily: 'Poppins-regular',
         marginLeft: 4,
         marginTop: -2,
     },
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
         color: '#6F6F6F',
         fontSize: 9,
         fontWeight: '600',
-        fontFamily: 'Segoe-ui',
+        fontFamily: 'Poppins-regular',
         marginRight: 10,
         marginTop: 3,
     },
@@ -120,9 +120,8 @@ const styles = StyleSheet.create({
         color: '#474747',
         fontSize: 12,
         fontWeight: '700',
-        fontFamily: 'Segoe-ui',
+        fontFamily: 'Poppins-regular',
         textAlign: 'right',
-        // marginTop: -7,
         textDecorationLine: 'underline',
 
     },
@@ -166,7 +165,7 @@ const styles = StyleSheet.create({
         color: 'black',
         fontSize: 12,
         fontWeight: '700',
-        fontFamily: 'Segoe-ui',
+        fontFamily: 'Poppins-regular',
         padding: 10,
         textAlign: 'center',
 
@@ -174,7 +173,7 @@ const styles = StyleSheet.create({
     footerTxt: {
         textAlign: 'center',
         color: '#6F6F6F',
-        fontFamily: 'Segoe-ui',
+        fontFamily: 'Poppins-regular',
         fontSize: 10,
         marginTop: 25,
     },
@@ -197,7 +196,7 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 15,
         fontWeight: '700',
-        fontFamily: 'Segoe-ui',
+        fontFamily: 'Poppins-regular',
         padding: 12,
         textAlign: 'center',
         backgroundColor: '#6F6F6F',
@@ -921,6 +920,11 @@ const styles = StyleSheet.create({
     },
     LineColor: {
         color: '#6f6f6fc4'
+    },
+    options: {
+        position: 'absolute',
+        right: -8,
+        top: -7
     },
 
 

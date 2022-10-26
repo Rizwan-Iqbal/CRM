@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 50,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1666697102003,
@@ -208,6 +208,10 @@
                 {
                     "date": 1666700261090,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n                         </View>\r\n                     </View>\r\n                     <View style={[styles.AppDetailCon, styles.AppDetailConUpdate]}>\r\n                         <View style={{ width: '100%' }}>\r\n-                            <Text style={[styles.AppTitle, styles.AppTitleUpdate, styles.AppMainTitle]}>General Information</Text>\r\n+                            <Text style={[styles.AppTitle, styles.AppTitleUpdate, styles.AppMainTitle]}>Contact Information</Text>\r\n                             <Text style={[styles.AppTitle, styles.AppTitleUpdate]}>Name:</Text>\r\n                             <Text style={[styles.AppTxt, styles.AppTxtUpdate]}>John Smith</Text>\r\n                             <Text style={[styles.AppTitle, styles.AppTitleUpdate]}>Title:</Text>\r\n                             <Text style={[styles.AppTxt, styles.AppTxtUpdate]}>John Smith</Text>\r\n"
+                },
+                {
+                    "date": 1666762638737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n-import { View, Text, ScrollView, TouchableOpacity, Platform } from 'react-native';\r\n+import { View, Text, ScrollView, TouchableOpacity } from 'react-native';\r\n import React, { useState } from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n-import Icon from 'react-native-vector-icons/FontAwesome5';\r\n import HeaderWithOption from '../components/HeaderWithOption';\r\n \r\n const PersonalDetailScreen = () => {\r\n \r\n"
                 }
             ],
             "date": 1666697102003,

@@ -1,37 +1,17 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView} from 'react-native';
 import React, { useState } from 'react';
-import { Link } from '@react-navigation/native';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
-import Icon from 'react-native-vector-icons/FontAwesome5';
-import OTPInputView from '@twotalltotems/react-native-otp-input';
-import RnOtpTimer from 'rn-otp-timer';
-import { Tab, TabView } from '@rneui/themed';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { FAB } from '@rneui/themed';
 import { MultiDateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar'
 import englishLocale from 'dayjs/locale/en';
-import AddAppointmentScreen from './AddAppointmentScreen';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
 import Header from '../components/Header';
+import { useNavigation } from '@react-navigation/native';
 
-const BookingScreen = ({navigation}) => {
-    const [isSelected, setSelection] = useState(false);
-    const [index, setIndex] = useState(0);
+
+const BookingScreen = () => {
+    const navigation = useNavigation();
     const [visible, setVisible] = React.useState(true);
     const [selectedDates, setSelectedDates] = React.useState([]);
-
-
-    // const setMaxNumberOfSelectedDates = React.useCallback((_selectedDates) => {
-    //     const MAX_DATES = 10;
-    //     if (_selectedDates.length <= MAX_DATES) {
-    //         setSelectedDates(_selectedDates)
-    //     }
-    // })
 
     return (
 
@@ -48,7 +28,6 @@ const BookingScreen = ({navigation}) => {
                     </View>
                     <View style={{ height: '45%' }}>
                         <MultiDateSelectionCalendar
-                            // disabledDates={['2020-01-01', '2020-03-04']}
                             initVisibleDate={'2022-10-17'} // defaults to current date
                             minDate={'2022-10-17'}
                             maxDate={'2050-04-10'}
@@ -68,6 +47,18 @@ const BookingScreen = ({navigation}) => {
                     <Text style={[styles.topTxt, styles.topTxtAppointment, styles.bottomAppointTxt]}>October,17,2022 (Monday)</Text>
                 </View>
 
+                <View style={styles.appContainer}>
+                    <View style={styles.timeCon}>
+                        <Text style={styles.timeTxt}>2:45pm</Text>
+                    </View>
+                    <View>
+                        <Text style={styles.verticalLine}></Text>
+                    </View>
+                    <View style={styles.detailCon}>
+                        <Text style={[styles.timeTxt, styles.titleTxt,]}>Divorce Case</Text>
+                        <Text style={[styles.timeTxt, styles.subTxt]}>John Smith</Text>
+                    </View>
+                </View>
 
                 <View style={styles.appContainer}>
                     <View style={styles.timeCon}>
@@ -79,9 +70,7 @@ const BookingScreen = ({navigation}) => {
                     <View style={styles.detailCon}>
                         <Text style={[styles.timeTxt, styles.titleTxt,]}>Divorce Case</Text>
                         <Text style={[styles.timeTxt, styles.subTxt]}>John Smith</Text>
-
                     </View>
-
                 </View>
 
                 <View style={styles.appContainer}>
@@ -96,25 +85,7 @@ const BookingScreen = ({navigation}) => {
                         <Text style={[styles.timeTxt, styles.subTxt]}>John Smith</Text>
 
                     </View>
-
                 </View>
-
-
-                <View style={styles.appContainer}>
-                    <View style={styles.timeCon}>
-                        <Text style={styles.timeTxt}>2:45pm</Text>
-                    </View>
-                    <View>
-                        <Text style={styles.verticalLine}></Text>
-                    </View>
-                    <View style={styles.detailCon}>
-                        <Text style={[styles.timeTxt, styles.titleTxt,]}>Divorce Case</Text>
-                        <Text style={[styles.timeTxt, styles.subTxt]}>John Smith</Text>
-
-                    </View>
-
-                </View>
-
 
                 <View style={[styles.appContainer]}>
                     <View style={styles.timeCon}>
@@ -138,12 +109,8 @@ const BookingScreen = ({navigation}) => {
                     visible={visible}
                     icon={{ name: 'add', color: 'white' }}
                     color="#6F6F6F"
-                    onPress={() => navigation.navigate('AddAppionments')} 
+                    onPress={()=> navigation.navigate('Add Appointment')} 
                 />
-
-               
-
-            
             </View>
 
         </View>
@@ -167,7 +134,6 @@ const CustomTheme: Theme = {
 
     selectedDayText: {
         color: 'white',
-        // fontFamily: 'Poppins-regular',
     },
 
     titleText: {
@@ -178,11 +144,6 @@ const CustomTheme: Theme = {
         fontFamily: 'Poppins-regular',
     },
 
-    // normalMonthText: {
-    //     fontFamily: 'Poppins-semibold',
-    //     marginLeft: '35%',
-    // },
-
     normalArrowImage: {
         color: 'black',
 
@@ -191,23 +152,6 @@ const CustomTheme: Theme = {
         color: 'black',
     },
 
-    // calendarContainer: {
-    //     backgroundColor: 'white',
-    //     shadowColor: "#6F6F6F",
-    //     shadowOffset: {
-    //         width: 0,
-    //         height: 12,
-    //     },
-    //     shadowOpacity: 0.58,
-    //     shadowRadius: 16.00,
-    //     elevation: 16,
-    //     height: 400,
-    //     // marginHorizontal: 10,
-    // },
-
-
-
 };
-
 
 export default BookingScreen

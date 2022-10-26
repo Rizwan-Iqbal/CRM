@@ -1,28 +1,17 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TextInput, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import OTPInputView from '@twotalltotems/react-native-otp-input';
-import RnOtpTimer from 'rn-otp-timer';
 import { Tab, TabView } from '@rneui/themed';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { FAB } from '@rneui/themed';
-import { SpeedDial } from '@rneui/themed';
 import HeaderWithSearch from '../components/HeaderWithSearch';
+import { useNavigation } from '@react-navigation/native';
 
 
 const CasesScreen = () => {
-    const [isSelected, setSelection] = useState(false);
+    const navigation = useNavigation();
     const [index, setIndex] = useState(0);
     const [visible, setVisible] = React.useState(true);
-    const [open, setOpen] = React.useState(false);
-
-
-    // const email = <FontAwesome5 name={'email'} />;
 
     return (
 
@@ -33,8 +22,6 @@ const CasesScreen = () => {
                 <View>
                     <Text style={[styles.topTxt, styles.clientTopTxt]}>Case Book</Text>
                 </View>
-                {/* <View style={styles.line} /> */}
-
             </View>
             <View style={{ flex: 1, }}>
 
@@ -42,15 +29,12 @@ const CasesScreen = () => {
                     value={index}
                     onChange={(e) => setIndex(e)}
                     indicatorStyle={{
-                        // backgroundColor: '#6F6F6F',
-                        // height: 2,
                     }}
                     disableIndicator={true}
                     containerStyle={{
                         borderColor: '#6F6F6F',
                         borderWidth: .5,
                         backgroundColor: 'white'
-
                     }}
                     variant="primary" >
                     <Tab.Item
@@ -60,15 +44,11 @@ const CasesScreen = () => {
                         titleStyle={(active) => ({
                             color: active ? 'white' : "#474747",
                         })}
-
-
-                        // icon={{ name: 'timer', type: 'ionicon', color: 'white' }}
                         containerStyle={(active) => ({
                             backgroundColor: active ? '#474747' : 'white',
                             borderTopLeftRadius: active ? 0 : undefined,
                             borderRadius: active ? 0 : undefined,
                             borderBottomRightRadius: active ? 15 : undefined,
-
                         })}
                     />
                     <Tab.Item
@@ -77,7 +57,7 @@ const CasesScreen = () => {
                         titleStyle={(active) => ({
                             color: active ? 'white' : '#474747',
                         })}
-                        // icon={{ name: 'heart', type: 'ionicon', color: 'white' }}
+                   
                         containerStyle={(active) => ({
                             backgroundColor: active ? '#474747' : 'white',
                             borderTopRightRadius: active ? 0
@@ -108,30 +88,25 @@ const CasesScreen = () => {
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'file-alt'} color={'#474747'} size={16} />
                                             <Text style={[styles.notiTxt, styles.clientDetail]}>Divorce case</Text>
-
                                         </View>
 
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'envelope'} color={'#474747'} size={16} />
                                             <Text style={[styles.notiTxt, styles.clientDetail]}>info@lloyds.com</Text>
-
                                         </View>
 
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'phone-alt'} color={'#474747'} size={16} />
                                             <Text style={[styles.notiTxt, styles.clientDetail]}>78125643</Text>
-
                                         </View>
-
                                     </View>
                                     <View>
                                         <Image style={styles.clentProfile}
                                             source={require('../../assets/images/clientProf.png')} />
+                                        <Icon style={[styles.options]} name={'ellipsis-v'} color={'black'} size={20} />
                                     </View>
                                 </View>
-
                             </View>
-
                         </ScrollView>
                     </TabView.Item>
                     <TabView.Item style={{ width: '100%', marginTop: 8, }}>
@@ -151,9 +126,7 @@ const CasesScreen = () => {
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'file-alt'} color={'#474747'} size={16} />
                                             <Text style={[styles.notiTxt, styles.clientDetail]}>Divorce case</Text>
-
                                         </View>
-
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'envelope'} color={'#474747'} size={16} />
                                             <Text style={[styles.notiTxt, styles.clientDetail]}>info@lloyds.com</Text>
@@ -163,19 +136,16 @@ const CasesScreen = () => {
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Icon style={styles.clientIcon} name={'phone-alt'} color={'#474747'} size={16} />
                                             <Text style={[styles.notiTxt, styles.clientDetail]}>78125643</Text>
-
                                         </View>
-
                                     </View>
                                     <View>
                                         <Image style={styles.clentProfile}
                                             source={require('../../assets/images/clientProf.png')} />
+                                        <Icon style={[styles.options]} name={'ellipsis-v'} color={'black'} size={20} />
                                     </View>
                                 </View>
 
                             </View>
-
-
                         </ScrollView>
                     </TabView.Item>
 
@@ -187,8 +157,7 @@ const CasesScreen = () => {
                     visible={visible}
                     icon={{ name: 'add', color: 'white' }}
                     color="#6F6F6F"
-                />
-
+                    onPress={()=> navigation.navigate('Add Case')}/>
             </View>
 
         </View>

@@ -1,7 +1,6 @@
-import { View, Text, ScrollView, TouchableOpacity, Platform } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import Icon from 'react-native-vector-icons/FontAwesome5';
 import HeaderWithOption from '../components/HeaderWithOption';
 
 const PersonalDetailScreen = () => {

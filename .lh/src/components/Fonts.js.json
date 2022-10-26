@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/components/Fonts.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1666769943607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1666769995391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,37 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n \r\n const Fonts = () => {\r\n-  return (\r\n-    <View>\r\n-      <Text>Fonts</Text>\r\n-    </View>\r\n-  )\r\n+    const [fontsLoaded] = useFonts({\r\n+        'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n+        'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n+        'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n+        'Poppins-Medium': require('./assets/fonts/Poppins-Medium.ttf'),\r\n+        'Poppins-Bold': require('./assets/fonts/Poppins-Bold.ttf'),\r\n+    });\r\n+\r\n+    useEffect(() => {\r\n+        async function prepare() {\r\n+            await SplashScreen.preventAutoHideAsync();\r\n+        }\r\n+        prepare();\r\n+    }, []);\r\n+\r\n+    const onLayoutRootView = useCallback(async () => {\r\n+        if (fontsLoaded) {\r\n+            await SplashScreen.hideAsync();\r\n+        }\r\n+    }, [fontsLoaded]);\r\n+\r\n+    if (!fontsLoaded) {\r\n+        return null;\r\n+    }\r\n+\r\n+    return (\r\n+        <View>\r\n+            {/* <Text>Fonts</Text> */}\r\n+        </View>\r\n+    )\r\n }\r\n \r\n export default Fonts\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666770185483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,15 @@\n import React from 'react'\r\n \r\n const Fonts = () => {\r\n     const [fontsLoaded] = useFonts({\r\n-        'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n-        'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n-        'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n-        'Poppins-Medium': require('./assets/fonts/Poppins-Medium.ttf'),\r\n-        'Poppins-Bold': require('./assets/fonts/Poppins-Bold.ttf'),\r\n+        // 'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n+        // 'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n+        // 'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n+        // 'Poppins-Medium': require('./assets/fonts/Poppins-Medium.ttf'),\r\n+        // 'Poppins-Bold': require('./assets/fonts/Poppins-Bold.ttf'),\r\n+        'Poppins-semibold': require('../assets/fonts/Poppins-SemiBold.ttf'),\r\n+\r\n     });\r\n \r\n     useEffect(() => {\r\n         async function prepare() {\r\n"
+                },
+                {
+                    "date": 1666770214668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         // 'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n         // 'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n         // 'Poppins-Medium': require('./assets/fonts/Poppins-Medium.ttf'),\r\n         // 'Poppins-Bold': require('./assets/fonts/Poppins-Bold.ttf'),\r\n-        'Poppins-semibold': require('../assets/fonts/Poppins-SemiBold.ttf'),\r\n+        'Poppins-semibold': require('../../assets/fonts/Poppins-SemiBold.ttf'),\r\n \r\n     });\r\n \r\n     useEffect(() => {\r\n"
+                },
+                {
+                    "date": 1666770324383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n \r\n-const Fonts = () => {\r\n+export default function Fonts = () => {\r\n     const [fontsLoaded] = useFonts({\r\n         // 'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n         // 'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n         // 'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n@@ -35,5 +35,5 @@\n         </View>\r\n     )\r\n }\r\n \r\n-export default Fonts\n\\ No newline at end of file\n+ Fonts\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666770371909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n \r\n-export default function Fonts = () => {\r\n+export default function Fonts () {\r\n     const [fontsLoaded] = useFonts({\r\n         // 'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n         // 'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n         // 'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n@@ -34,6 +34,4 @@\n             {/* <Text>Fonts</Text> */}\r\n         </View>\r\n     )\r\n }\r\n-\r\n- Fonts\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1666770465299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,14 @@\n import React from 'react'\r\n \r\n export default function Fonts () {\r\n     const [fontsLoaded] = useFonts({\r\n-        // 'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),\r\n-        // 'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),\r\n-        // 'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),\r\n-        // 'Poppins-Medium': require('./assets/fonts/Poppins-Medium.ttf'),\r\n-        // 'Poppins-Bold': require('./assets/fonts/Poppins-Bold.ttf'),\r\n         'Poppins-semibold': require('../../assets/fonts/Poppins-SemiBold.ttf'),\r\n+        'Poppins-regular': require('../../assets/fonts/Poppins-Regular.ttf'),\r\n+        'Poppins-Thin': require('../../assets/fonts/Poppins-Thin.ttf'),\r\n+        'Poppins-Medium': require('../../assets/fonts/Poppins-Medium.ttf'),\r\n+        'Poppins-Bold': require('../../assets/fonts/Poppins-Bold.ttf'),\r\n+        'Poppins-semibold': require('../../assets/fonts/Poppins-SemiBold.ttf'),\r\n \r\n     });\r\n \r\n     useEffect(() => {\r\n"
+                },
+                {
+                    "date": 1666770720894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         return null;\r\n     }\r\n \r\n     return (\r\n-        <View>\r\n+        <View onLayoutRootView>\r\n             {/* <Text>Fonts</Text> */}\r\n         </View>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1666770735974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         return null;\r\n     }\r\n \r\n     return (\r\n-        <View onLayoutRootView>\r\n+        <View onLayout={onLayoutRootView}>\r\n             {/* <Text>Fonts</Text> */}\r\n         </View>\r\n     )\r\n }\r\n"
+                }
+            ],
+            "date": 1666769943607,
+            "name": "Commit-0",
+            "content": "import { View, Text } from 'react-native'\r\nimport React from 'react'\r\n\r\nconst Fonts = () => {\r\n  return (\r\n    <View>\r\n      <Text>Fonts</Text>\r\n    </View>\r\n  )\r\n}\r\n\r\nexport default Fonts"
+        }
+    ]
+}

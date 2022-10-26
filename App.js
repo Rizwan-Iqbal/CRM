@@ -1,26 +1,40 @@
 import { useEffect, useCallback } from 'react';
-import { Text, View, StyleSheet, KeyboardAvoidingView, Image } from 'react-native';
+import { View, StyleSheet, KeyboardAvoidingView, } from 'react-native';
 import { useFonts } from 'expo-font';
+import { createStackNavigator } from '@react-navigation/stack';
+import Navigation from './src/components/Navigation';
 import * as SplashScreen from 'expo-splash-screen';
+import { NavigationContainer } from '@react-navigation/native';
 import HomeScreen from './src/Screens/HomeScreen';
 import ClientScreen from './src/Screens/ClientScreen';
 import BookingScreen from './src/Screens/BookingScreen';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
 import CasesScreen from './src/Screens/CasesScreen';
 import SupportScreen from './src/Screens/SupportScreen';
-import AddOppointmentScreen from './src/Screens/AddAppointmentScreen'; 
-import NotificationScreen from './src/Screens/NotificationScreen';
-import CompanyRegScreen from './src/Screens/CompanyRegScreen';
-import PersonalDetailScreen from './src/Screens/PersonalDetailScreen';
+import AddAppointmentScreen from './src/Screens/AddAppointmentScreen';
 import CaseDetailScreen from './src/Screens/CaseDetailScreen';
-
-const Tab = createBottomTabNavigator();
+import AppointmentDetailScreen from './src/Screens/AppointmentDetailScreen'; 
+import CaseFormScreen from './src/Screens/CaseFormScreen';
+import ComingSoonScreen from './src/Screens/ComingSoonScreen';
+import CompanyDetailScreen from './src/Screens/CompanyDetailScreen';
+import CompanyRegScreen from './src/Screens/CompanyRegScreen';
+import EditProfileScreen from './src/Screens/EditProfileScreen';
+import EmptySearchScreen from './src/Screens/EmptySearchScreen'; 
+import ForgetPasswordScreen from './src/Screens/ForgetPasswordScreen'; 
+import NoNotificationScreen from './src/Screens/NoNotificationScreen'; 
+import NotificationScreen from './src/Screens/NotificationScreen'; 
+import NotificationSettingScreen from './src/Screens/NotificationSettingScreen'; 
+import OtpVarification from './src/Screens/OtpVarification'; 
+import PersonalDetailScreen from './src/Screens/PersonalDetailScreen'; 
+import PersonalRegScreen from './src/Screens/PersonalRegScreen'; 
+import ResetPasswordScreen from './src/Screens/ResetPasswordScreen'; 
+import SearchScreen from './src/Screens/SearchScreen'; 
+import SettingScreen from './src/Screens/SettingScreen'; 
+import SignInScreen from './src/Screens/SignInScreen'; 
+import SignUpScreen from './src/Screens/SignUpScreen'; 
+const Stack = createStackNavigator();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    'Segoe-ui-bold': require('./assets/fonts/Segoe-UI-Bold.ttf'),
-    'Segoe-ui': require('./assets/fonts/Segoe-UI.ttf'),
     'Poppins-semibold': require('./assets/fonts/Poppins-SemiBold.ttf'),
     'Poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),
     'Poppins-Thin': require('./assets/fonts/Poppins-Thin.ttf'),
@@ -44,128 +58,45 @@ export default function App() {
   if (!fontsLoaded) {
     return null;
   }
-
   return (
-    // <View style = {styles.container} onLayout={onLayoutRootView}>
-    //   <IntroScreen />
-    // </View>
 
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}>
-
       <View style={{ height: '100%' }} onLayout={onLayoutRootView}>
-        {/* <AddOppointmentScreen /> */}
-
         <NavigationContainer>
-          <Tab.Navigator screenOptions={{
-            tabBarShowLabel: true,
+          <Stack.Navigator screenOptions={{
             headerShown: false,
-            tabBarStyle: { backgroundColor: '#000000', borderTopEndRadius: 20, borderTopStartRadius: 20, height: 55, },
-            tabBarInactiveTintColor: "#A9A9A9",
-            // tabBarInactiveBackgroundColor: '',
-            tabBarActiveTintColor: "white",
-            // tabBarActiveBackgroundColor: 'black',
-            tabBarHideOnKeyboard: true,
-            showIcon: true,
+          }}>
+            <Stack.Screen name="Navigation" component={Navigation} />
+            <Stack.Screen name="Clients" component={ClientScreen} />
+            <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Screen name="Cases" component={CasesScreen} />
+            <Stack.Screen name="Add Appointment" component={AddAppointmentScreen} />
+            <Stack.Screen name="Appointment Detail" component={AppointmentDetailScreen} />
+            <Stack.Screen name="Appointment" component={BookingScreen} />
+            <Stack.Screen name="Case Detail" component={CaseDetailScreen} />
+            <Stack.Screen name="Add Case" component={CaseFormScreen} />
+            <Stack.Screen name="Coming Soon" component={ComingSoonScreen} />
+            <Stack.Screen name="Company Detail" component={CompanyDetailScreen} />
+            <Stack.Screen name="Company Registration" component={CompanyRegScreen} />
+            <Stack.Screen name="Edit Profile" component={EditProfileScreen} />
+            <Stack.Screen name="Empty Search" component={EmptySearchScreen} />
+            <Stack.Screen name="Forget Password" component={ForgetPasswordScreen} />
+            <Stack.Screen name="No Notification" component={NoNotificationScreen} />
+            <Stack.Screen name="Notification" component={NotificationScreen} />
+            <Stack.Screen name="Notification Setting" component={NotificationSettingScreen} />
+            <Stack.Screen name="OTP Varification" component={OtpVarification} />
+            <Stack.Screen name="Personal Detail" component={PersonalDetailScreen} />
+            <Stack.Screen name="Personal Registration" component={PersonalRegScreen} />
+            <Stack.Screen name="Reset Password" component={ResetPasswordScreen} />
+            <Stack.Screen name="Search" component={SearchScreen} />
+            <Stack.Screen name="Setting" component={SettingScreen} />
+            <Stack.Screen name="Sign Up" component={SignUpScreen} />
+            <Stack.Screen name="Support" component={SupportScreen} />
 
-
-          }}
-          >
-            <Tab.Screen name="Home" component={HomeScreen} options={{
-              tabBarIcon: ({ size, color }) => (
-                <Image source={require('./assets/images/home.png')}
-
-                  style={{
-                    color: 'red',
-                    width: 30,
-                    height: 24,
-                    color: color
-                  }}
-                  color={color}
-
-                />
-              ),
-            }} />
-            <Tab.Screen name="Clients" component={ClientScreen} options={{
-              tabBarIcon: ({ size, color }) => (
-                <Image source={require('./assets/images/client.png')}
-                  style={{
-                    width: 35,
-                    height: 24,
-                    color: { color }
-                  }} />
-              )
-            }} />
-
-            <Tab.Screen name="Cases" component={CasesScreen} options={{
-              tabBarIcon: ({ size, color }) => (
-                <Image source={require('./assets/images/casesicon.png')}
-                  style={{
-                    width: 34,
-                    height: 31,
-                    color: { color }
-                  }} />
-              )
-            }} />
-
-            <Tab.Screen name="Appointnments" component={BookingScreen} options={{
-              tabBarIcon: ({ size, color }) => (
-                <Image source={require('./assets/images/app.png')}
-                  style={{
-                    width: 28,
-                    height: 28,
-
-                    color: { color }
-                  }} />
-              )
-            }} />
-
-            <Tab.Screen name="Add Appointment" component={AddOppointmentScreen} options={{
-              tabBarIcon: ({ size, color }) => (
-                <Image source={require('./assets/images/app.png')}
-                  style={{
-                    width: 28,
-                    height: 28,
-
-                    color: { color }
-                  }} />
-              )
-            }}
-
-            />
-
-
-            <Tab.Screen name="SupportScreen" component={SupportScreen} options={{
-              tabBarIcon: ({ size, color }) => (
-                <Image source={require('./assets/images/app.png')}
-                  style={{
-                    width: 28,
-                    height: 28,
-
-                    color: { color }
-                  }} />
-              )
-            }}
-
-            />
-
-            <Tab.Screen name="CaseDetailScreen" component={CaseDetailScreen} options={{
-              tabBarIcon: ({ size, color }) => (
-                <Image source={require('./assets/images/app.png')}
-                  style={{
-                    width: 28,
-                    height: 28,
-
-                    color: { color }
-                  }} />
-              )
-            }}
-
-            />
-          </Tab.Navigator>
+          </Stack.Navigator>
         </NavigationContainer>
       </View>
-
     </KeyboardAvoidingView>
 
   );
@@ -179,6 +110,5 @@ const styles = StyleSheet.create({
     margin: 0,
     padding: 0,
     backgroundColor: 'black',
-
   },
 });

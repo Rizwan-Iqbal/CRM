@@ -1,41 +1,13 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity, Platform } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Platform } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
-import Icon from 'react-native-vector-icons/FontAwesome5';
-import OTPInputView from '@twotalltotems/react-native-otp-input';
-import RnOtpTimer from 'rn-otp-timer';
-import { Tab, TabView } from '@rneui/themed';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { FAB } from '@rneui/themed';
 import { MultiDateSelectionCalendar, DefaultTheme, Theme } from 'react-native-easy-calendar'
-import englishLocale from 'dayjs/locale/en';
-import { Picker } from '@react-native-picker/picker';
-import DateTimePicker from '@react-native-community/datetimepicker';
 import HeaderWithOption from '../components/HeaderWithOption';
 
-
-
 const AppointmentDetailScreen = () => {
-    const [isSelected, setSelection] = useState(false);
-    const [index, setIndex] = useState(0);
-    const [visible, setVisible] = React.useState(true);
-    const [selectedDates, setSelectedDates] = React.useState([]);
-    const [selectedLanguage, setSelectedLanguage] = useState();
     const [date, setDate] = useState(new Date(1598051730000));
     const [mode, setMode] = useState('date');
     const [show, setShow] = useState(false);
-
-
-    // const setMaxNumberOfSelectedDates = React.useCallback((_selectedDates) => {
-    //     const MAX_DATES = 10;
-    //     if (_selectedDates.length <= MAX_DATES) {
-    //         setSelectedDates(_selectedDates)
-    //     }
-    // })
 
     const onChange = (event, selectedDate) => {
         const currentDate = selectedDate || date;
@@ -101,8 +73,6 @@ const AppointmentDetailScreen = () => {
                                 explains what a person, place,
                                 or thing is like.</Text>
                         </View>
-
-
                     </View>
                     <View style = {{marginBottom: 20,}}>
                         <TouchableOpacity style={{ width: '45%', marginLeft: '25%', marginTop: 20, }} disabled={'true'}>
@@ -130,12 +100,10 @@ const CustomTheme: Theme = {
         paddingTop: 2,
         marginTop: 5,
         marginLeft: 13,
-
     },
 
     selectedDayText: {
         color: 'white',
-        // fontFamily: 'Poppins-regular',
     },
 
     titleText: {
@@ -146,11 +114,6 @@ const CustomTheme: Theme = {
         fontFamily: 'Poppins-regular',
     },
 
-    // normalMonthText: {
-    //     fontFamily: 'Poppins-semibold',
-    //     marginLeft: '35%',
-    // },
-
     normalArrowImage: {
         color: 'black',
 
@@ -158,22 +121,6 @@ const CustomTheme: Theme = {
     selectedMonthText: {
         color: 'black',
     },
-
-    // calendarContainer: {
-    //     backgroundColor: 'white',
-    //     shadowColor: "#6F6F6F",
-    //     shadowOffset: {
-    //         width: 0,
-    //         height: 12,
-    //     },
-    //     shadowOpacity: 0.58,
-    //     shadowRadius: 16.00,
-    //     elevation: 16,
-    //     height: 400,
-    //     // marginHorizontal: 10,
-    // },
-
-
 
 };
 

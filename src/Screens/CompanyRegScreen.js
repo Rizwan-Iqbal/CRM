@@ -1,28 +1,12 @@
 import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity, ViewBase } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
-import Icon from 'react-native-vector-icons/FontAwesome5';
-import { Tab, TabView } from '@rneui/themed';
-import { Picker } from '@react-native-picker/picker';
-import DateTimePicker from '@react-native-community/datetimepicker';
 import Header from '../components/Header';
 
-
 const CompanyRegScreen = () => {
-    const [isSelected, setSelection] = useState(false);
-    const [index, setIndex] = useState(0);
-    const [selectedCountry, setSelectedCountry] = useState();
-    const [selectedPracticeArea, setSelectedPracticeArea] = useState();
-    const [selectedCity, setSelectedCity] = useState();
-    const [selectedAttornyes, setSelectedAttornyes] = useState();
     const [date, setDate] = useState(new Date(1598051730000));
     const [mode, setMode] = useState('date');
     const [show, setShow] = useState(false);
-
 
     const onChange = (event, selectedDate) => {
         const currentDate = selectedDate || date;
@@ -43,25 +27,19 @@ const CompanyRegScreen = () => {
         showMode('time');
     };
 
-
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >
 
-
             <View style={{ height: '100%', backgroundColor: 'white', }}>
                 <Header title='Company Registration' />
-
 
                 <View style={{ flex: 1, marginVertical: 7, }}>
                     <ScrollView>
                         <View style={styles.form}>
                             <View style={{ flexDirection: 'row' }}>
                                 <Text style={[styles.supportTopTxt, styles.underlineTxt]}>General Information</Text>
-                                {/* <View style= {{flexDirection:'row', justifyContent: 'flex-start'}}>
-                                    <Text style={{ textAlignVertical: 'top', marginTop: -5, }}>_________________</Text>
-                                    <Icon style={styles.backIcon} name={'user'} color={'black'} size={20} />
-                                </View> */}
+                               
                             </View>
                             <View style={styles.inputEmail}>
                                 <Text style={styles.inputLabel}>Company Name</Text>
@@ -146,9 +124,6 @@ const CompanyRegScreen = () => {
                         </View>
                     </ScrollView>
                 </View>
-
-
-
             </View>
 
         </KeyboardAvoidingView>

@@ -1,20 +1,15 @@
 import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity, ViewBase } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { Tab, TabView } from '@rneui/themed';
 import { Picker } from '@react-native-picker/picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
-
-
+import { useNavigation } from '@react-navigation/native';
 
 
 const EditProfileScreen = () => {
-    const [isSelected, setSelection] = useState(false);
+    const navigation = useNavigation();
     const [index, setIndex] = useState(0);
     const [selectedCountry, setSelectedCountry] = useState();
     const [selectedPracticeArea, setSelectedPracticeArea] = useState();
@@ -23,7 +18,6 @@ const EditProfileScreen = () => {
     const [date, setDate] = useState(new Date(1598051730000));
     const [mode, setMode] = useState('date');
     const [show, setShow] = useState(false);
-
 
     const onChange = (event, selectedDate) => {
         const currentDate = selectedDate || date;
@@ -49,11 +43,10 @@ const EditProfileScreen = () => {
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >
 
-
             <View style={{ height: '100%', backgroundColor: 'white', }}>
                 <View>
                     <View style={{ marginTop: 20, }}>
-                        <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'#6F6F6F'} size={30} />
+                        <Icon style={styles.backIcon} name={'arrow-alt-circle-left'} color={'#6F6F6F'} size={30} onPress={()=> navigation.goBack()} />
                         <View style={{ alignItems: 'center' }}>
                             <View style={{ position: 'relative' }}>
                                 <Image source={require('../../assets/images/account.png')}
@@ -92,9 +85,7 @@ const EditProfileScreen = () => {
                         }}
 
                         containerStyle={{
-                            // borderColor: '#6F6F6F',
-                            // borderWidth: .5,
-                            // backgroundColor: 'trans'
+                           
                             width: '100%',
                             height: 50,
 
@@ -108,18 +99,9 @@ const EditProfileScreen = () => {
                                 color: active ? '#6F6F6F' : "#B7B7B7",
                                 fontSize: active ? 12 : 12,
                                 paddingLeft: 0,
-
-
                             })}
-
-
-                            // icon={{ name: 'timer', type: 'ionicon', color: 'white' }}
                             containerStyle={(active) => ({
                                 backgroundColor: active ? 'white' : 'white',
-                                // borderTopLeftRadius: active ? 0 : undefined,
-                                // borderRadius: active ? 0 : undefined,
-                                // borderBottomRightRadius: active ? 15 : undefined,
-
                             })}
                         />
                         <Tab.Item
@@ -129,17 +111,9 @@ const EditProfileScreen = () => {
                                 color: active ? '#6F6F6F' : "#B7B7B7",
                                 fontSize: active ? 12 : 12,
                                 paddingLeft: 0,
-
-
                             })}
-                            // icon={{ name: 'heart', type: 'ionicon', color: 'white' }}
                             containerStyle={(active) => ({
                                 backgroundColor: active ? 'white' : 'white',
-                                // borderTopRightRadius: active ? 0
-                                //     : undefined,
-                                // borderRadius: active ? 0 : undefined,
-                                // borderBottomLeftRadius: active ? 15 : undefined,
-
                             })}
                         />
 
@@ -190,8 +164,6 @@ const EditProfileScreen = () => {
                                             <Picker.Item label="US" value="US" color='black'
                                                 style={styles.inputFont} />
 
-
-
                                         </Picker>
                                     </View>
                                     <Text style={{ marginTop: -12, }}></Text>
@@ -210,8 +182,6 @@ const EditProfileScreen = () => {
                                                 enabled={false}
                                                 color='#6f6f6fb3'
                                                 style={styles.inputFont}
-
-
                                             />
                                             <Picker.Item label="Lahore" value="Lahore"
                                                 color='black'
@@ -310,8 +280,6 @@ const EditProfileScreen = () => {
                                                 enabled={false}
                                                 color='#6f6f6fb3'
                                                 style={styles.inputFont}
-
-
                                             />
                                             <Picker.Item label="Law" value="Law"
                                                 color='black'
@@ -336,8 +304,6 @@ const EditProfileScreen = () => {
                                                 enabled={false}
                                                 color='#6f6f6fb3'
                                                 style={styles.inputFont}
-
-
                                             />
                                             <Picker.Item label="1" value="1"
                                                 color='black'
@@ -367,9 +333,7 @@ const EditProfileScreen = () => {
                                             <Icon style={[styles.dateIcon]} name={'calendar-alt'} color={'#6f6f6fb3'} size={25} onPress={showDatepicker} />
 
                                         </View>
-                                        {/* <View>
-                            <Button onPress={showTimepicker} title="Show time picker!" />
-                        </View> */}
+                                        
                                         {show && (
                                             <DateTimePicker
                                                 testID="dateTimePicker"
@@ -394,7 +358,6 @@ const EditProfileScreen = () => {
                                             placeholder="445454544" value='45444664' />
                                     </View>
 
-
                                     <View>
                                         <TouchableOpacity style={{ width: '45%', marginLeft: '25%', marginTop: 20, }} disabled={'true'}>
                                             <Text style={styles.forgetBtn} >Update</Text>
@@ -402,17 +365,12 @@ const EditProfileScreen = () => {
                                     </View>
 
                                 </View>
-
-
                             </ScrollView>
                         </TabView.Item>
 
                     </TabView>
 
                 </View>
-
-
-
             </View>
 
         </KeyboardAvoidingView>

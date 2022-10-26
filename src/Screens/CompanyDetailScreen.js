@@ -1,7 +1,6 @@
-import { View, Text, ScrollView, TouchableOpacity, Platform } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import Icon from 'react-native-vector-icons/FontAwesome5';
 import HeaderWithOption from '../components/HeaderWithOption';
 
 const CompanyDetailScreen = () => {
@@ -56,8 +55,6 @@ const CompanyDetailScreen = () => {
                             
                         </View>
                     </View>
-                    
-                   
                 
                     <View style={{ marginBottom: 20, }}>
                         <TouchableOpacity style={{ width: '45%', marginLeft: '25%', marginTop: 20, }} disabled={'true'}>
@@ -73,6 +70,5 @@ const CompanyDetailScreen = () => {
 
     )
 }
-
 
 export default CompanyDetailScreen

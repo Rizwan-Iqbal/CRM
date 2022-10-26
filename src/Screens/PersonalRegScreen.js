@@ -1,28 +1,17 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity, ViewBase } from 'react-native';
+import { View, Text, TextInput, KeyboardAvoidingView, ScrollView, Pressable, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import { Tab, TabView } from '@rneui/themed';
 import { Picker } from '@react-native-picker/picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import Header from '../components/Header';
 
 
 const PersonalRegScreen = () => {
-    const [isSelected, setSelection] = useState(false);
-    const [index, setIndex] = useState(0);
     const [selectedCountry, setSelectedCountry] = useState();
-    const [selectedPracticeArea, setSelectedPracticeArea] = useState();
-    const [selectedCity, setSelectedCity] = useState();
-    const [selectedAttornyes, setSelectedAttornyes] = useState();
     const [date, setDate] = useState(new Date(1598051730000));
     const [mode, setMode] = useState('date');
     const [show, setShow] = useState(false);
-
 
     const onChange = (event, selectedDate) => {
         const currentDate = selectedDate || date;
@@ -43,7 +32,6 @@ const PersonalRegScreen = () => {
         showMode('time');
     };
 
-
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >
@@ -58,10 +46,6 @@ const PersonalRegScreen = () => {
                         <View style={styles.form}>
                             <View style={{ flexDirection: 'row' }}>
                                 <Text style={[styles.supportTopTxt, styles.underlineTxt]}>General Information</Text>
-                                {/* <View style= {{flexDirection:'row', justifyContent: 'flex-start'}}>
-                                    <Text style={{ textAlignVertical: 'top', marginTop: -5, }}>_________________</Text>
-                                    <Icon style={styles.backIcon} name={'user'} color={'black'} size={20} />
-                                </View> */}
                             </View>
                             <View style={styles.inputEmail}>
                                 <Text style={styles.inputLabel}>First Name</Text>
@@ -79,9 +63,7 @@ const PersonalRegScreen = () => {
                                 <Text style={styles.inputLabel}>Last Name</Text>
                                 <TextInput style={[styles.input, styles.inputUpdate, styles.inputFont]}
                                     placeholder="Last Name" />
-
                             </View>
-
                             <View style={styles.inputEmail}>
                                 <Text style={styles.inputLabel}>Title</Text>
                                 <TextInput style={[styles.input, styles.inputUpdate, styles.inputFont]}
@@ -202,8 +184,6 @@ const PersonalRegScreen = () => {
                         </View>
                     </ScrollView>
                 </View>
-
-
 
             </View>
 

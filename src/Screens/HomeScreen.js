@@ -2,22 +2,16 @@ import { View, Text, Image, KeyboardAvoidingView, ScrollView, TouchableOpacity }
 import React, { useState } from 'react';
 import { styles } from '../../assets/css/Styles';
 import { ImageBackground } from 'react-native';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-// import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-// import OTPInputView from '@twotalltotems/react-native-otp-input';
-// import RnOtpTimer from 'rn-otp-timer';
+import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
-    // const [isSelected, setSelection] = useState(false);
+    const navigation = useNavigation();
 
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >
-
             <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>
-                {/* <ImageBackground source={require('../../assets/images/homeHeader.png')} resizeMode={'cover'} style = {{height: 'auto'}} > */}
                     <View style={{ flexDirection: 'row' }}>
                         <View>
                             <Text style={styles.HomeTitle}> Law Case </Text>
@@ -37,7 +31,6 @@ const HomeScreen = () => {
                             <Text style={styles.userName}>John Smith</Text>
                         </View>
                     </View>
-                {/* </ImageBackground> */}
             </View>
             <ScrollView>
                 <View>
@@ -52,7 +45,7 @@ const HomeScreen = () => {
                     </View>
                     <View style={styles.ItemsContainer}>
                         <View style={styles.left}>
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={()=> navigation.navigate('Clients')}>
                                 <View style={styles.singleItem}>
                                     <ImageBackground source={require('../../assets/images/clients.png')} resizeMode={'cover'} style={styles.clientsBackImg} >
                                         <View style={styles.clientsIcon}>
@@ -69,7 +62,7 @@ const HomeScreen = () => {
                                 </View>
                             </TouchableOpacity>
 
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={()=> navigation.navigate('Appointment')}>
                                 <View style={styles.singleItem}>
                                     <ImageBackground source={require('../../assets/images/appointment.png')} resizeMode={'cover'} style={styles.clientsBackImg} >
                                         <View style={styles.clientsIcon}>
@@ -86,7 +79,7 @@ const HomeScreen = () => {
                                 </View>
                             </TouchableOpacity>
 
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={()=> navigation.navigate('Edit Profile')}>
                                 <View>
                                     <ImageBackground source={require('../../assets/images/prof.png')} resizeMode={'cover'} style={styles.casesBackImg} >
                                         <View style={styles.casesIcon}>
@@ -102,7 +95,7 @@ const HomeScreen = () => {
                                     </ImageBackground>
                                 </View>
                             </TouchableOpacity>
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={()=> navigation.navigate('Setting')}>
                                 <View style={styles.singleItem}>
                                     <ImageBackground source={require('../../assets/images/setting.png')} resizeMode={'cover'} style={styles.clientsBackImg} >
                                         <View style={styles.clientsIcon}>
@@ -119,11 +112,10 @@ const HomeScreen = () => {
                                 </View>
                             </TouchableOpacity>
 
-
                         </View>
 
                         <View style={styles.right} >
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={()=> navigation.navigate('Cases')}>
                                 <View>
                                     <ImageBackground source={require('../../assets/images/cases.png')} resizeMode={'cover'} style={styles.casesBackImg} >
                                         <View style={styles.casesIcon}>

@@ -1,10 +1,6 @@
-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, KeyboardAvoidingView, Button, Pressable } from 'react-native';
 import React, { useState , useCallback } from 'react';
 import { styles } from '../../assets/css/Styles';
-import { ImageBackground } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Checkbox from 'expo-checkbox';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
 import { Picker } from '@react-native-picker/picker';
@@ -13,8 +9,6 @@ import DocumentPicker, { types } from 'react-native-document-picker';
 import Header from '../components/Header';
 
 const CaseFormScreen = () => {
-    const [isSelected, setSelection] = useState(false);
-    const [index, setIndex] = useState(0);
     const [selectedLocation, setSelectedLocation] = useState();
     const [selectedClient, setSelectedClient] = useState();
     const [selectedStage, setSelectedStage] = useState();
@@ -55,9 +49,6 @@ const CaseFormScreen = () => {
     const buttonTextStyle = {
         color: '#393939'
     };
-
-    // const email = <FontAwesome5 name={'email'} />;
-
     return (
         <KeyboardAvoidingView
             behavior={Platform.OS === "ios" ? "padding" : "height"} >
@@ -163,8 +154,6 @@ const CaseFormScreen = () => {
                                                 enabled={false}
                                                 color='#6f6f6fb3'
                                                 style={styles.inputFont}
-
-
                                             />
                                             <Picker.Item label="Category Name etc" value="Category Name etc"
                                                 color='black'
@@ -190,8 +179,6 @@ const CaseFormScreen = () => {
                                                 enabled={false}
                                                 color='#6f6f6fb3'
                                                 style={styles.inputFont}
-
-
                                             />
                                             <Picker.Item label="Stage Name etc" value="Stage Name etc"
                                                 color='black'
@@ -390,10 +377,6 @@ const CaseFormScreen = () => {
                                     ))}
                                     <Button title="Select 📑" onPress={handleDocumentSelection} />
                                 </View>
-
-
-
-
                             </View>
                         </ProgressStep>
 
@@ -419,8 +402,6 @@ const CaseFormScreen = () => {
                                             enabled={false}
                                             color='#6f6f6fb3'
                                             style={styles.inputFont}
-
-
                                         />
                                         <Picker.Item label="Civil Court" value="Civil Court"
                                             color='black'
@@ -510,8 +491,6 @@ const CaseFormScreen = () => {
                                     <TextInput
                                         multiline={true}
                                         numberOfLines={6}
-                                        // onChangeText={(text) => setState({ text })}
-                                        // value={this.state.text}
                                         placeholder={'Enter Description'}
                                         style={[styles.input, styles.textArea]} />
                                 </View>
@@ -523,8 +502,6 @@ const CaseFormScreen = () => {
                                     <TextInput
                                         multiline={true}
                                         numberOfLines={6}
-                                        // onChangeText={(text) => setState({ text })}
-                                        // value={this.state.text}
                                         placeholder={'Enter Remarks'}
                                         style={[styles.input, styles.textArea]} />
                                 </View>

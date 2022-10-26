@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1666679077754,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1666762272062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,27 +1,10 @@\n-import { View, Text, Image, TextInput, KeyboardAvoidingView, ScrollView, Button, Pressable, TouchableOpacity } from 'react-native';\r\n+import { View, Text, Image, TextInput,} from 'react-native';\r\n import React, { useState } from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';\r\n-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';\r\n-import Checkbox from 'expo-checkbox';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n-import OTPInputView from '@twotalltotems/react-native-otp-input';\r\n-import RnOtpTimer from 'rn-otp-timer';\r\n-import { Tab, TabView } from '@rneui/themed';\r\n-import { SafeAreaProvider } from 'react-native-safe-area-context';\r\n-import { FAB } from '@rneui/themed';\r\n-import Header from '../components/Header';\r\n-\r\n const EmptySearchScreen = () => {\r\n-    const [isSelected, setSelection] = useState(false);\r\n-    const [index, setIndex] = useState(0);\r\n-    const [visible, setVisible] = React.useState(true);\r\n-\r\n-\r\n-    // const email = <FontAwesome5 name={'email'} />;\r\n-\r\n     return (\r\n \r\n         <View style={{ height: '100%' }}>\r\n             <View>\r\n"
+                },
+                {
+                    "date": 1666762788318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { View, Text, Image, TextInput,} from 'react-native';\r\n+import { View, Text, Image, TextInput, } from 'react-native';\r\n import React, { useState } from 'react';\r\n import { styles } from '../../assets/css/Styles';\r\n import { ImageBackground } from 'react-native';\r\n import Icon from 'react-native-vector-icons/FontAwesome5';\r\n@@ -25,22 +25,18 @@\n             </View>\r\n \r\n             <View>\r\n \r\n-                <View style= {styles.emptySearchContainer}>\r\n+                <View style={styles.emptySearchContainer}>\r\n \r\n-                    <Image \r\n-                        source={require('../../assets/images/empty.png')} \r\n-                        style = {styles.emptyImages} />\r\n+                    <Image\r\n+                        source={require('../../assets/images/empty.png')}\r\n+                        style={styles.emptyImages} />\r\n                 </View>\r\n \r\n                 <View>\r\n-                    <Text style = {[styles.topTxt , styles.notFound]}>Not Found!</Text>\r\n+                    <Text style={[styles.topTxt, styles.notFound]}>Not Found!</Text>\r\n                 </View>\r\n-\r\n-\r\n-\r\n-\r\n             </View>\r\n \r\n \r\n \r\n"
                 }
             ],
             "date": 1666679077754,

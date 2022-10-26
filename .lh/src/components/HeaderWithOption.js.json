@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1666697411967,
@@ -24,6 +24,10 @@
                 {
                     "date": 1666697583735,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import { View, Text } from 'react-native'\r\n import React from 'react'\r\n import Icon from 'react-native-vector-icons/FontAwesome5'\r\n+import { styles } from '../../assets/css/Styles';\r\n \r\n+\r\n const HeaderWithOption = (props) => {\r\n     return (\r\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n \r\n"
+                },
+                {
+                    "date": 1666775406827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         <View style={{ backgroundColor: 'black', borderBottomLeftRadius: 20, }}>\r\n \r\n             <View style={{ flexDirection: 'row', alignItems: 'center', }}>\r\n \r\n-                <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} />\r\n+                <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'arrow-alt-circle-left'} color={'white'} size={30} onPress={()=> navigation.goBack()} />\r\n                 <Text style={[styles.appointmentTxt]}>{props.title} </Text>\r\n                 <Icon style={[styles.backIcon, styles.AppointBackIcon]} name={'ellipsis-v'} color={'white'} size={20} />\r\n \r\n             </View>\r\n"
                 }
             ],
             "date": 1666697411967,
